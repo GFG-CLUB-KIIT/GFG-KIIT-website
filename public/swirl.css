@@ -1,47 +1,32 @@
+/* please add reset styleheet for this webpage */
+
 * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    background: #fefefe;
-  }
-  
-  #stage {
-    background-position: fixed;
-    z-index: 10;
-    clip-path: polygon(0 0, 100% 26%, 100% 83%, 19% 100%, 0 74%);
-  }
-  
-  #info {
-    position: fixed;
-    pointer-events: none;
-    padding: 12px;
-    color: #ddd;
-    font-size: 16px;
-    user-select: none;
-    font-weight: bold;
-    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5),
-      -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
-  }
-  .blend-mode {
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #12f29b;
-    mix-blend-mode: color;
-    z-index: 20;
-    clip-path: polygon(0 0, 100% 26%, 100% 83%, 19% 100%, 0 74%);
-  }
-  
-  .after {
-    width: 100vh;
-    height: 100vh;
-    z-index: 30;
-    display: block;
-    position: relative;
-    top: 1000px;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fefefe;
+}
+
+#stage {
+  z-index: -1;
+}
+
+.blend-mode {
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #12f29b;
+  mix-blend-mode: color;
+}
+
+.landing-clipping-mask {
+  clip-path: polygon(0 0, 100% 26%, 100% 83%, 19% 100%, 0 74%);
+}
+
+.landing-blurred {
+  backdrop-filter: blur(25px);
+}
