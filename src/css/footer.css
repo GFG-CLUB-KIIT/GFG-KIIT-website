@@ -2,7 +2,7 @@
 :root {
   --text-light: #fefefe;
   --text-dark: #333;
-  --font-size-heading: clamp(30px, 4vw, 50px);
+  --font-size-heading: clamp(30px, 4vw, 70px);
   --font-size-subheading: clamp(25px, 2.5vw, 40px);
   --font-size-paragragh: clamp(12px, 1.25vw, 22px);
 
@@ -14,24 +14,34 @@
 *:focus {
   outline: none;
 }
-.footer {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100vw;
-  height: fit-content;
+.background-static {
+  background-image: url("../img/swirl-liq.png");
+  background-size: cover;
 }
-
 .footer {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* width: 100vw;
+  height: 100vh; */
+  background-color: #222;
   display: grid;
   place-items: center;
-
   z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
 }
-
+/* .set-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(25px);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: fit-content;
+  display: grid;
+  place-items: center;
+} */
 .grid-container {
   color: white;
   font-size: 3rem;
@@ -57,7 +67,7 @@
   align-items: center;
 
   font-size: var(--font-size-heading);
-  padding-top: 8%;
+  padding-top: 8vh;
   font-family: var(--heading-font);
   font-weight: 600;
   /* font-size: clamp(50px, 4vw, 70px); */
@@ -73,7 +83,7 @@
 }
 
 .write-to-us form {
-  width: minmax(100%, 800px);
+  width: clamp(400px, 20vw, 800px);
 }
 #email,
 #message {
@@ -201,7 +211,8 @@
   } */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 720px) {
+
+@media only screen and (max-width: 600px) {
   .grid-container {
     grid-template-rows: minmax(minmax(100px, 10vh), 200px) 1fr 1fr 1fr;
     grid-template-areas:
@@ -213,6 +224,29 @@
   .wanna-talk-to-us {
     padding-top: 20%;
     margin: 1rem;
+  }
+  .write-to-us {
+    justify-content: center;
+  }
+  #email,
+  #message {
+    margin: 0.5rem 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-rows: minmax(minmax(100px, 10vh), 200px) 1fr 1fr 1fr;
+    grid-template-areas:
+      "wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us"
+      "write-to-us write-to-us write-to-us write-to-us"
+      "links links links links"
+      "footer-info footer-info footer-info footer-info";
+  }
+  .wanna-talk-to-us {
+    padding-top: 20%;
+    margin: 1rem;
+    justify-content: flex-start;
+    margin-left: 20%;
   }
   .write-to-us {
     justify-content: center;

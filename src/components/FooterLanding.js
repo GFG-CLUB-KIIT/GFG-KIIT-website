@@ -3,8 +3,8 @@ import BackgroundBlurred from './BackgroundBlurred'
 class FooterLanding extends Component {
    render() {
       return (
-         <div>
-            <BackgroundBlurred></BackgroundBlurred>
+         
+         <div class="parent-element">
             <div class="footer">
                <div class="grid-container">
                   <div class="wanna-talk-to-us"><h1>Wanna talk to us?</h1></div>
