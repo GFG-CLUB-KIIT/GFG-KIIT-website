@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../css/footer.css'
 import BackgroundBlurred from './BackgroundBlurred'
 class FooterLanding extends Component {
    render() {

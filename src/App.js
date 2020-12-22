@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import './css/footer.css'
+
+
 import BackgroundClipped from './components/BackgroundClipped';
 import FooterLanding from './components/FooterLanding';
 import BackgroundBlurred from './components/BackgroundBlurred';
@@ -11,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
        <div>
-          <LandingBody></LandingBody>
+          <BackgroundClipped></BackgroundClipped>
           <FooterLanding></FooterLanding>
        </div>
     );

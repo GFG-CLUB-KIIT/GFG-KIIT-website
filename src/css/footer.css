@@ -27,7 +27,7 @@
   background-color: #222;
   display: grid;
   place-items: center;
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
