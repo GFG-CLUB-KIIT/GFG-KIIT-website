@@ -9,9 +9,11 @@ class FooterLanding extends Component {
                <div class="grid-container">
                   <div class="wanna-talk-to-us"><h1>Wanna talk to us?</h1></div>
                      <div class="write-to-us">
-                        <form action="#">
+                        <form id="contact-us" action="#">
                            <input type="email" id="email" name="email" placeholder="Email"></input>
                            <textarea type="text" id="message" name="messsage" placeholder="Start typing!"></textarea>
+                           {/* TODO: style the button */}
+                           <input type="submit" value="send"></input>
                         </form>
                      </div>
                      <div class="links">
