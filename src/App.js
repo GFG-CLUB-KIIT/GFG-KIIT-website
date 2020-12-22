@@ -13,6 +13,7 @@ class App extends React.Component {
     return (
        <div>
           <BackgroundClipped></BackgroundClipped>
+          <LandingBody></LandingBody>
           <FooterLanding></FooterLanding>
        </div>
     );
