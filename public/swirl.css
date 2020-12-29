@@ -1,37 +1,70 @@
 /* please add reset styleheet for this webpage */
 
 * {
-  margin: 0;
-  padding: 0;
+   margin: 0;
+   padding: 0;
 }
 body {
-  background: #fefefe;
+   background: #fefefe;
 }
 
 #stage {
-  z-index: -1;
+   z-index: -1;
 }
 
 .blend-mode {
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background-color: #12f29b;
-  mix-blend-mode: color;
-  z-index: 1;
+   background-size: cover;
+   width: 100%;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   position: absolute;
+
+   mix-blend-mode: color;
+   z-index: 1;
 }
 
-.landing-clipping-mask {
-  clip-path: polygon(0 0, 100% 26%, 100% 83%, 19% 100%, 0 74%);
-}
+/* .landing-clipping-mask {
+   clip-path: polygon(0 0, 100% 26%, 100% 83%, 19% 100%, 0 74%);
+} */
 
 .landing-blurred {
-  backdrop-filter: blur(25px);
+   backdrop-filter: blur(25px);
 }
 
 .parent-element {
-  position: relative;
+   position: relative;
+}
+
+/* Styling for Landing Background component */
+.bgcolor-landing {
+   background-color: #12f29b;
+}
+
+.clipping-landing {
+   clip-path: polygon(0 0, 100% 26%, 100% 83%, 19% 100%, 0 74%);
+}
+
+/* Styling for Projects page background component */
+.bgcolor-projects {
+   background-color: #283cbd;
+}
+
+.clipping-projects {
+   clip-path: polygon(0 21%, 100% 10%, 81% 100%, 0 73%);
+}
+
+/* Styling for About Us page background component */
+.bgcolor-aboutUs {
+   background-color: #ff6698;
+}
+.clipping-aboutUs {
+   clip-path: polygon(27% 7%, 100% 22%, 88% 100%, 0 59%, 0 19%);
+}
+/* Styling for event page component background component*/
+.bgcolor-events {
+   background-color: #00f8ff;
+}
+.clipping-events {
+   clip-path: polygon(11% 100%, 0 0, 100% 21%, 100% 68%);
 }

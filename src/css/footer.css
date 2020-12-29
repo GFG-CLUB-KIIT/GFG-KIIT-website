@@ -1,37 +1,44 @@
 /* default reset styles */
 :root {
-  --text-light: #fefefe;
-  --text-dark: #333;
-  --font-size-heading: clamp(30px, 4vw, 70px);
-  --font-size-subheading: clamp(25px, 2.5vw, 40px);
-  --font-size-paragragh: clamp(12px, 1.25vw, 22px);
+   --text-light: #fefefe;
+   --text-dark: #333;
+   --font-size-heading: clamp(30px, 4vw, 70px);
+   --font-size-subheading: clamp(25px, 2.5vw, 40px);
+   --font-size-paragragh: clamp(12px, 1.25vw, 22px);
 
-  --footer-icon-size: clamp(30px, 5vw, 50px);
+   --footer-icon-size: clamp(30px, 5vw, 50px);
 
-  --heading-font: "Roboto";
-  --paragragh-font: "PT Sans", sans-serif;
+   --heading-font: "Roboto";
+   --paragragh-font: "PT Sans", sans-serif;
 }
 *:focus {
-  outline: none;
+   outline: none;
 }
 .background-static {
-  background-image: url("../img/swirl-liq.png");
-  background-size: cover;
+   background-image: url("../img/swirl-liq.png");
+   background-size: cover;
 }
 .footer {
-  width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
-  /* width: 100vw;
+   width: 100%;
+   min-height: 100vh;
+   overflow-x: hidden;
+   /* width: 100vw;
   height: 100vh; */
-  background-color: #222;
-  display: grid;
-  place-items: center;
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  left: 0;
+   display: grid;
+   place-items: center;
+   z-index: 1;
+   /* position: absolute;
+   top: 0;
+   left: 0; */
 }
+/* Variable props */
+.footer-events {
+   background-image: url("../img/swirl-liq-mono.png");
+   background-size: cover;
+   background-color: rgb(32, 142, 185);
+   background-blend-mode: overlay;
+}
+
 /* .set-bg {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(25px);
@@ -43,167 +50,176 @@
   place-items: center;
 } */
 .grid-container {
-  color: white;
-  font-size: 3rem;
-
-  width: 90%;
-  height: 100%;
+   color: white;
+   font-size: 3rem;
+   /* margin: 0 10%; */
+   width: 100%;
+   height: 100%;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: minmax(minmax(100px, 10vh), 200px) 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us ."
-    "write-to-us write-to-us links links"
-    "write-to-us write-to-us footer-info footer-info";
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: minmax(minmax(100px, 10vh), 200px) 1fr 1fr;
+   gap: 0px 0px;
+   grid-template-areas:
+      "wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us ."
+      "write-to-us write-to-us links links"
+      "write-to-us write-to-us footer-info footer-info";
+
+   backdrop-filter: blur(25px);
 }
 .wanna-talk-to-us {
-  grid-area: wanna-talk-to-us;
+   grid-area: wanna-talk-to-us;
 
-  display: flex;
-  align-items: center;
+   display: flex;
+   align-items: center;
 
-  font-size: var(--font-size-heading);
-  padding-top: 8vh;
-  font-family: var(--heading-font);
-  font-weight: 600;
-  /* font-size: clamp(50px, 4vw, 70px); */
+   font-size: var(--font-size-heading);
+   /* padding-top: 8vh; */
+   padding-top: 100px;
+   font-family: var(--heading-font);
+   font-weight: 600;
+   /* font-size: clamp(50px, 4vw, 70px); */
 
-  /* background-color: #cccccc; */
+   /* background-color: #cccccc; */
+
+   margin-left: 5vw;
 }
 .write-to-us {
-  grid-area: write-to-us;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  /* background-color: #555; */
+   grid-area: write-to-us;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   margin-left: 5vw;
+   /* background-color: #555; */
 }
 
 .write-to-us form {
-  width: clamp(400px, 20vw, 800px);
+   width: clamp(400px, 20vw, 800px);
 }
 #email,
 #message {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: none;
-  color: #fefefe;
+   background-color: rgba(255, 255, 255, 0.2);
+   border: none;
+   color: #fefefe;
 
-  border-radius: 10px;
-  font-size: var(--font-size-paragragh);
-  font-family: var(--paragragh-font);
+   border-radius: 10px;
+   font-size: var(--font-size-paragragh);
+   font-family: var(--paragragh-font);
 }
 
 #email:focus {
-  background-color: rgba(255, 255, 255, 0.4);
-  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+   background-color: rgba(255, 255, 255, 0.4);
+   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
 }
 #message:focus {
-  background-color: rgba(255, 255, 255, 0.4);
-  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+   background-color: rgba(255, 255, 255, 0.4);
+   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
 }
 
 #email::placeholder {
-  color: rgba(254, 254, 254, 0.75);
-  font-size: var(--font-size-paragragh);
-  font-family: var(--paragragh-font);
-  font-style: italic;
+   color: rgba(254, 254, 254, 0.75);
+   font-size: var(--font-size-paragragh);
+   font-family: var(--paragragh-font);
+   font-style: italic;
 }
 #message::placeholder {
-  color: rgba(254, 254, 254, 0.75);
-  font-size: var(--font-size-paragragh);
-  font-family: var(--paragragh-font);
-  font-style: italic;
+   color: rgba(254, 254, 254, 0.75);
+   font-size: var(--font-size-paragragh);
+   font-family: var(--paragragh-font);
+   font-style: italic;
 }
 
 #email {
-  width: 90%;
-  padding: 0.8rem;
-  margin: 1rem 0;
+   width: 90%;
+   padding: 0.8rem;
+   margin: 1rem 0;
 }
 #message {
-  width: 90%;
-  height: clamp(170px, 15vw, 500px);
-  padding: 1rem;
-  margin: 1rem 0;
+   width: 90%;
+   height: clamp(170px, 15vw, 500px);
+   padding: 1rem;
+   margin: 1rem 0;
 
-  resize: none;
+   resize: none;
 }
 
 .links {
-  grid-area: links;
-  /* background-color: #777; */
+   grid-area: links;
+   margin-right: 5vw;
+   /* background-color: #777; */
 }
 .links .flex-container {
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  flex-direction: row;
-  flex-wrap: nowrap;
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   flex-direction: row;
+   flex-wrap: nowrap;
 
-  height: 100%;
+   height: 100%;
 }
 .links .flex-container li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
-  width: 20%;
-  height: 10vh;
+   width: 20%;
+   height: 10vh;
 }
 .links .flex-container li a i {
-  color: #fefefe;
-  background-color: rgba(255, 255, 255, 0.01);
-  font-size: var(--footer-icon-size);
+   color: #fefefe;
+   background-color: rgba(255, 255, 255, 0.01);
+   font-size: var(--footer-icon-size);
 
-  border-radius: 5rem;
-  padding: 1rem;
+   border-radius: 5rem;
+   padding: 1rem;
 }
 .links .flex-container li a i:hover {
-  padding: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: 0.3s ease-out;
+   padding: 1.5rem;
+   background-color: rgba(255, 255, 255, 0.3);
+   transition: 0.3s ease-out;
 }
 
 .footer-info {
-  grid-area: footer-info;
-  /* background-color: #454545; */
+   grid-area: footer-info;
+   margin-right: 5vw;
 
-  font-size: var(--font-size-paragragh);
+   /* background-color: #454545; */
+
+   font-size: var(--font-size-paragragh);
 }
 .description {
-  font-size: var(--font-size-paragragh);
+   font-size: var(--font-size-paragragh);
 }
 .description p {
-  font-family: var(--paragragh-font);
+   font-family: var(--paragragh-font);
 }
 .description1 {
-  float: right;
-  margin-right: 2vw;
-  margin-left: 0;
-  text-align: right;
-  font-family: var(--paragragh-font);
-  line-height: 2.2ch;
+   float: right;
+   margin-right: 2vw;
+   margin-left: 0;
+   text-align: right;
+   font-family: var(--paragragh-font);
+   line-height: 2.2ch;
 }
 .description2 {
-  float: right;
-  margin-right: 2vw;
-  text-align: right;
-  font-family: var(--paragragh-font);
-  line-height: 2.2ch;
+   float: right;
+   margin-right: 2vw;
+   text-align: right;
+   font-family: var(--paragragh-font);
+   line-height: 2.2ch;
 }
 .description3 {
-  float: right;
-  margin-right: 2vw;
-  text-align: right;
-  font-family: var(--paragragh-font);
-  line-height: 2.2ch;
+   float: right;
+   margin-right: 2vw;
+   text-align: right;
+   font-family: var(--paragragh-font);
+   line-height: 2.2ch;
 }
 .strong {
-  font-weight: 700;
-  letter-spacing: 1pt;
+   font-weight: 700;
+   letter-spacing: 1pt;
 }
 /* Extra small devices (phones, 600px and down) */
 /* @media only screen and (max-width: 600px) {
@@ -213,46 +229,46 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (max-width: 600px) {
-  .grid-container {
-    grid-template-rows: minmax(minmax(100px, 10vh), 200px) 1fr 1fr 1fr;
-    grid-template-areas:
-      "wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us"
-      "write-to-us write-to-us write-to-us write-to-us"
-      "links links links links"
-      "footer-info footer-info footer-info footer-info";
-  }
-  .wanna-talk-to-us {
-    padding-top: 20%;
-    margin: 1rem;
-  }
-  .write-to-us {
-    justify-content: center;
-  }
-  #email,
-  #message {
-    margin: 0.5rem 0;
-  }
+   .grid-container {
+      grid-template-rows: minmax(minmax(100px, 10vh), 200px) 1fr 1fr 1fr;
+      grid-template-areas:
+         "wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us"
+         "write-to-us write-to-us write-to-us write-to-us"
+         "links links links links"
+         "footer-info footer-info footer-info footer-info";
+   }
+   .wanna-talk-to-us {
+      padding-top: 20%;
+      margin: 1rem;
+   }
+   .write-to-us {
+      justify-content: center;
+   }
+   #email,
+   #message {
+      margin: 0.5rem 0;
+   }
 }
 @media only screen and (max-width: 800px) {
-  .grid-container {
-    grid-template-rows: minmax(minmax(100px, 10vh), 200px) 1fr 1fr 1fr;
-    grid-template-areas:
-      "wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us"
-      "write-to-us write-to-us write-to-us write-to-us"
-      "links links links links"
-      "footer-info footer-info footer-info footer-info";
-  }
-  .wanna-talk-to-us {
-    padding-top: 20%;
-    margin: 1rem;
-    justify-content: flex-start;
-    margin-left: 20%;
-  }
-  .write-to-us {
-    justify-content: center;
-  }
-  #email,
-  #message {
-    margin: 0.5rem 0;
-  }
+   .grid-container {
+      grid-template-rows: minmax(minmax(100px, 10vh), 200px) 1fr 1fr 1fr;
+      grid-template-areas:
+         "wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us"
+         "write-to-us write-to-us write-to-us write-to-us"
+         "links links links links"
+         "footer-info footer-info footer-info footer-info";
+   }
+   .wanna-talk-to-us {
+      padding-top: 20%;
+      margin: 1rem;
+      justify-content: flex-start;
+      margin-left: 20%;
+   }
+   .write-to-us {
+      justify-content: center;
+   }
+   #email,
+   #message {
+      margin: 0.5rem 0;
+   }
 }
