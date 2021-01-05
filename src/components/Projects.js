@@ -7,7 +7,7 @@ function Projects() {
    return (
       <div>
          <Background clipType="clipping-projects" overlayColor="bgcolor-projects"></Background>
-         <FooterLanding></FooterLanding>
+         <FooterLanding bgColor="footer-projects"></FooterLanding>
       </div>
    )
 }

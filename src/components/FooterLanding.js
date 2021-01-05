@@ -12,7 +12,7 @@ function FooterLanding(props){
                         <input type="email" id="email" name="email" placeholder="Email"></input>
                         <textarea type="text" id="message" name="messsage" placeholder="Start typing!"></textarea>
                         {/* TODO: style the button */}
-                        <input type="submit" value="send"></input>
+                        <div className="send-btn-container"><input type="submit" value="send" className="send"></input></div>
                      </form>
                   </div>
                   <div class="links">

@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 // console.clear()
-=======
->>>>>>> upstream/master
 var log = console.log.bind(console);
 
 var baseUrl = "";
