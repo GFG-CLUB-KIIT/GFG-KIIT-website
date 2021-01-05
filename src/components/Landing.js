@@ -8,7 +8,7 @@ function Landing() {
    return (
       <div>
          <Background clipType="clipping-landing" overlayColor="bgcolor-landing"></Background>
-          <FooterLanding></FooterLanding>
+          <FooterLanding bgColor="footer-landing"></FooterLanding>
       </div>
    )
 }

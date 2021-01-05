@@ -8,7 +8,7 @@ function AboutUs() {
    return (
       <div>
          <Background clipType="clipping-aboutUs" overlayColor="bgcolor-aboutUs"></Background>
-         <FooterLanding></FooterLanding>
+         <FooterLanding bgColor="footer-aboutUs"></FooterLanding>
       </div>
    )
 }

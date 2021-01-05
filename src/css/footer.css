@@ -30,13 +30,22 @@
    /* position: absolute;
    top: 0;
    left: 0; */
-}
-/* Variable props */
-.footer-events {
    background-image: url("../img/swirl-liq-mono.png");
    background-size: cover;
-   background-color: rgb(32, 142, 185);
    background-blend-mode: overlay;
+}
+/* Variable props */
+.footer-landing {
+   background-color: rgb(22, 94, 52);
+}
+.footer-projects {
+   background-color: rgb(48, 54, 141);
+}
+.footer-events {
+   background-color: rgb(17, 71, 73);
+}
+.footer-aboutUs {
+   background-color: rgb(134, 20, 58);
 }
 
 /* .set-bg {
@@ -86,6 +95,8 @@
 
    margin-left: 5vw;
 }
+
+/* Form Section starts */
 .write-to-us {
    grid-area: write-to-us;
    display: flex;
@@ -144,6 +155,29 @@
 
    resize: none;
 }
+.send-btn-container {
+   width: 100%;
+   display: grid;
+   place-items: center;
+}
+.send {
+   width: 50%;
+   height: 2.5rem;
+   font-weight: 100;
+   font-family: var(--heading-font);
+   font-size: 1rem;
+   color: #fefefe;
+   background-color: rgba(255, 255, 255, 0.2);
+
+   border-style: none;
+   border-radius: 20px;
+   transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.send:hover {
+   background-color: rgba(255, 255, 255, 0.5);
+   transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+/* Form Section Ends */
 
 .links {
    grid-area: links;
@@ -169,11 +203,12 @@
 }
 .links .flex-container li a i {
    color: #fefefe;
-   background-color: rgba(255, 255, 255, 0.01);
+   background-color: rgba(255, 255, 255, 0);
    font-size: var(--footer-icon-size);
 
-   border-radius: 5rem;
-   padding: 1rem;
+   border-radius: 20px;
+   padding: 1vw;
+   transition: 0.3s ease-out;
 }
 .links .flex-container li a i:hover {
    padding: 1.5rem;
@@ -238,7 +273,7 @@
          "footer-info footer-info footer-info footer-info";
    }
    .wanna-talk-to-us {
-      padding-top: 20%;
+      padding-top: 100px;
       margin: 1rem;
    }
    .write-to-us {
@@ -246,7 +281,7 @@
    }
    #email,
    #message {
-      margin: 0.5rem 0;
+      margin: 0.5vw 0;
    }
 }
 @media only screen and (max-width: 800px) {
