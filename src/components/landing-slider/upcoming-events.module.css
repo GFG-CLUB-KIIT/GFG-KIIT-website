@@ -1,0 +1,15 @@
+#landing-events {
+   overflow: hidden;
+   position: relative;
+   width: 100vw;
+   display: grid;
+   place-items: center;
+}
+
+#levent-1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 80vw;
+   height: 50vh;
+}

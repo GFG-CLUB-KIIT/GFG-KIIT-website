@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
-import './MainEvents.css'
+import './main-events.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -9,13 +9,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default class PastEvents extends Component {
    render() {
+      let intViewportWidth = window.innerWidth;
+      let flag = intViewportWidth <= 1000 ? false : true;
       const settings={
          dots: true,
          infinite: false,
          speed: 500,
          slidesToShow: 1,
          slidesToScroll: 1,
-         vertical:true,
+         vertical:flag,
       };
    
       // };
@@ -28,7 +30,7 @@ export default class PastEvents extends Component {
 
       
       return (
-         <div className="event-slider-main" onLoad={this.createHandler}>
+         <div id="event-slider-main" onLoad={this.createHandler}>
               {/*Redundant Code may implement in the future  */}
          
                {/* <div className="slider-arrows">
@@ -40,10 +42,10 @@ export default class PastEvents extends Component {
                   </button>
                </div> */}
                
-            <Slider {...settings} id="event-slider">
+            <Slider {...settings}>
                   {/*  */}
                   
-               <section className="event-1">
+               <section className="event-1 event">
                   <div className="flex-container">
                      <div className="text-container">
                         <p>
@@ -59,7 +61,7 @@ export default class PastEvents extends Component {
                      <div className="img-container one"></div>
                   </div>
                </section>
-               <section className="event-2">
+               <section className="event-2 event">
                   <div className="flex-container">
                      <div className="text-container">
                         <p>
@@ -75,7 +77,7 @@ export default class PastEvents extends Component {
                      <div className="img-container two"></div>
                   </div>
                </section>
-               <section className="event-3">
+               <section className="event-3 event">
                   <div className="flex-container">
                      <div className="text-container">
                         <p>
