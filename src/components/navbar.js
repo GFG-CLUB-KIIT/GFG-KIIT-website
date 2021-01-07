@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import logo from "../img/logo.jpeg"
+import "../css/navbar.css"
 
 export class Navbar extends Component {
   render() {
