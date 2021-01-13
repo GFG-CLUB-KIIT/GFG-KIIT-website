@@ -5,7 +5,7 @@
    padding: 0;
 }
 body {
-   background-color: #fefefe;
+   background: #fefefe;
 }
 
 #stage {
@@ -59,7 +59,7 @@ body {
    background-color: #ff6698;
 }
 .clipping-aboutUs {
-   clip-path: polygon(27% 7%, 100% 22%, 88% 100%, 0 59%, 0 19%);
+   clip-path: polygon(27% 7%, 100% 22%, 88% 100%, 0 59%, 0 19%);  
 }
 /* Styling for event page component background component*/
 .bgcolor-events {

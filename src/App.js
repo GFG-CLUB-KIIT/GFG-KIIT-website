@@ -1,35 +1,28 @@
 import React from 'react';
-import './App.css';
-
-
-// import BackgroundClipped from './components/BackgroundClipped';
-// import FooterLanding from './components/FooterLanding';
-// import BackgroundBlurred from './components/BackgroundBlurred';
-// import LandingBody from './components/LandingBody';
-// import Navbar from './components/navbar';
-import {  BrowserRouter, Route, Switch } from "react-router-dom";
-import PastEvents from './components/slick-slider/PastEvents';
+import Navbar from './components/Navbar';
+import LandingBody from './components/LandingBody';
 import Events from './components/Events';
-import UpcomingEvents from './components/landing-slider/UpcomingEvents';
+import Project from './components/Project';
+import AboutUs from './components/AboutUs';
+import './App.css';
+import RegistrationForm from './components/RegistrationForm';
+import {BrowserRouter, Route , Switch } from 'react-router-dom';
 
 class App extends React.Component {
   render() {
     return (
        <div>
-          {/* <Navbar></Navbar>
-          <BackgroundClipped></BackgroundClipped>
-          <BrowserRouter>
+         <Navbar></Navbar>
+         <BrowserRouter>
             <Switch>
-              <Route path="/home" component={LandingBody} />
               <Route path="/" exact component={LandingBody} />
-              <Route render={() => <h1>404: page not found</h1>} />
+              <Route path="/Events" exact component={Events} />
+              <Route path="/Projects" exact component={Project} />
+              <Route path="/AboutUs" exact component={AboutUs} />
+              <Route path="/RegistrationForm" exact component={RegistrationForm} />
+              <Route render={()=><div className="main_title_error">404 : Page Not Found</div>} />
             </Switch>
-          </BrowserRouter>
-          <FooterLanding></FooterLanding> */}
-         {/* <PastEvents></PastEvents> */}
-         {/* <LandingBody></LandingBody> */}
-          {/* <UpcomingEvents></UpcomingEvents> */}
-          <Events></Events>
+         </BrowserRouter>
        </div>
     );
   }

@@ -1,4 +1,3 @@
-// console.clear()
 var log = console.log.bind(console);
 
 var baseUrl = "";

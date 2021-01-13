@@ -1,46 +1,81 @@
-import React, { Component } from 'react'
-import '../css/RegistrationForm.css'
+import React, { Component } from "react";
+import "../css/RegistrationForm.css";
+
+// sets page title dynamically
+document.title = "Event Registration Form";
 
 export default class RegistrationForm extends Component {
-    render() {
-        return (
-            <div>
-               <div class="container animated bounceInDown">
-                  <h1 class="brand "><span><img
-                     src="https://raw.githubusercontent.com/bitraylee/GFG-KIIT-web-design/0fb2e7dec9201f8557903436a3e3677525ff6212/gfg-logo.svg"
-                     alt="GFG|KIIT"></img></span><span>GeeksforGeeks</span> | KIIT Chapter </h1>
-
-                  <div class="contact">
-                     <h1><em class="fas fa-envelope"></em> Register Now!</h1>
-                     <form method="" action="">
-                           <p>
-                              <label>Full Name</label>
-                              <input type="text" name="name" placeholder="Enter Name" spellCheck="false"></input>
-                           </p>
-                           <p>
-                              <label>Contact Number</label>
-                              <input type="text" name="phone" placeholder="Enter Number" spellCheck="false"></input>
-                           </p>
-                           <p>
-                              <label>Branch</label>
-                              <input type="text" name="domain" placeholder="Enter Branch" spellCheck="false"></input>
-                           </p>
-                           <p>
-                              <label>KIIT Mail Id</label>
-                              <input type="email" name="email" placeholder="Enter KIIT mail address" spellCheck="false"></input>
-                           </p>
-                           
-                           <p class="full">
-                           <label >CodeChef Username</label>
-                              <input type="text" name="codechefid" placeholder="Enter CodeChef Username" spellCheck="false"/>
-                           </p>
-                           <p class="full">
-                              <button type="submit">Submit</button>
-                           </p>
-                     </form>
-                  </div>
-               </div>
+  render() {
+    return (
+      <div>
+        {/* form art */}
+        <div className="form-art"></div>
+        {/* header */}
+        <div className="card-container">
+          <div className="card_title">
+            <div className="container-title">
+              <h1 className="form-title">GeeksForGeeks</h1>
+              <p className="form-subtitle">Registration Form</p>
             </div>
-        )
-    }
+            <div className="form-header-logo">
+            </div>
+          </div>
+          {/* body */}
+          <div className="col">
+            <div className="card_content">
+              <div className="container">
+                <form>
+                  <div className="form-element">
+                    <input
+                      type="text"
+                      name="full_name"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </div>
+                  <div className="form-element">
+                    <input
+                      type="number"
+                      name="roll_no"
+                      placeholder="Roll No"
+                      required
+                    />
+                  </div>
+                  <div className="form-element">
+                    <select name="year" required>
+                      <option>--Year--</option>
+                      <option>1st Year</option>
+                      <option>2nd Year</option>
+                      <option>3rd Year</option>
+                      <option>4th Year</option>
+                    </select>
+                  </div>
+                  <div className="form-element">
+                    <input
+                      type="number"
+                      max="10"
+                      name="whatsapp_number"
+                      placeholder="Your WhatsApp No"
+                      required
+                    />
+                  </div>
+                  <div className="form-element">
+                    <input
+                      type="text"
+                      name="code_chef_id"
+                      placeholder="Your codechef handle"
+                      required
+                    />
+                  </div>
+                  <div className="form-element">
+                    <button>Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
