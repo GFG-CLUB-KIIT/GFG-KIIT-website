@@ -255,17 +255,19 @@ p {
 }
 .popup-context{
     margin-top: 120px;
-    padding: 15px 15px;
-    font-size: 0.9rem;
+    padding: 25px 20px;
+    font-size: 1rem;
     line-height:1.1rem;
     font-weight: 100!important;
 }
-.popup_bottom_lang{
-    font-size: 20px;
-    font-weight: 700;
+.popup_bottom{
     float: left;
-    margin-left: 15px;
-    text-transform: uppercase;
+    margin-top: 10px;
+}
+.popup_bottom_lang{
+    font-size: 18px;
+    font-weight: 500;
+    float: left;
 }
 .popup_bottom_lang_logo{
     width: 20px;

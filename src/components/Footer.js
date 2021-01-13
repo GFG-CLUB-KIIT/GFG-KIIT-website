@@ -16,11 +16,11 @@ function Footer(props){
                   </div>
                   <div class="links">
                         <ul class="footer-links flex-container">
-                           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                           <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                           <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                           <li><a href="https://www.linkedin.com/company/geeksforgeeks-kiit"><i class="fab fa-linkedin"></i></a></li>
+                           <li><a href="https://youtube.com/channel/UC281oAcZl0asjjuvmnXh2PQ"><i class="fab fa-youtube"></i></a></li>
+                           <li><a href="https://github.com/GFG-CLUB-KIIT"><i class="fab fa-github"></i></a></li>
                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                           <li><a href="#"><i class="fab fa-github"></i></a></li>
+                           <li><a href="https://instagram.com/gfg_kiit_club?igshid=rnewwd09app3"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                   </div>
                   <div class="footer-info">
