@@ -72,25 +72,22 @@ class Project extends Component {
                     <div class="popup_card">
                         <div>
                             <img src={github} id="popup_card_github" />
-                            <a href="#" id="popup_card_project_link">Go to Website</a>
+                            <a href="https://github.com/GFG-CLUB-KIIT/thegeekbot" id="popup_card_project_link">Go to Website</a>
                         </div>
                         <div id="popup_card_project_title">The Geek Bot</div>
                         <div id="popup_card_project_contributor">
                             <div id="popup_card_project_contributor_title">Contributors</div>
                             <div id="popup_card_project_contributor_img">
                                 <a href="#" title="Aditya Das"><img src={AdityaDas} class="project_contri_img1" /></a>
-                                <a href="#" title=""><img src={AdityaDas} class="project_contri_img2" /></a>
-                                <a href="#" title=""><img src={AdityaDas} class="project_contri_img2" /></a>
-                                <a href="#" title=""><img src={AdityaDas} class="project_contri_img2" /></a>
                             </div>
+                        </div>
+                        <div class="popup_bottom">
+                            <lable class="popup_bottom_lang">Language Used:</lable> 
+                            <img src={Phython} class="popup_bottom_lang_logo" title="Phython" />
                         </div>
                     </div>
                     <div class="popup-context">
                         Our App-Dev Team started working on their 1st project, the Geek Bot. It possesses a programmer’s search feature that enables the users to search various programming concepts. It also gives the list of top articles from the GeeksforGeeks website along with their respective links. Besides, it even returns the list of all ongoing coding events all around the world when called. It also has been administered with a profanity filter that identifies unparliamentary language by any user and purges them.
-                    </div>
-                    <div class="popup_bottom">
-                        <lable class="popup_bottom_lang">Language Used:</lable> 
-                        <img src={Phython} class="popup_bottom_lang_logo" title="Phython" />
                     </div>
                 </div>
                 </div>
