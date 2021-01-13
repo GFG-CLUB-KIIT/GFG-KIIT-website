@@ -4,11 +4,9 @@ import LandingBody from './components/LandingBody';
 import Events from './components/Events';
 import Project from './components/Project';
 import AboutUs from './components/AboutUs';
+import './App.css';
 import RegistrationForm from './components/RegistrationForm';
 import {BrowserRouter, Route , Switch } from 'react-router-dom';
-
-// sets page title dynamically
-document.title = "Geeksforgeeks | KIIT - Home";
 
 class App extends React.Component {
   render() {
@@ -22,7 +20,7 @@ class App extends React.Component {
               <Route path="/Projects" exact component={Project} />
               <Route path="/AboutUs" exact component={AboutUs} />
               <Route path="/RegistrationForm" exact component={RegistrationForm} />
-              <Route render={()=><h1>404: Page Not found</h1>} />
+              <Route render={()=><div className="main_title_error">404 : Page Not Found</div>} />
             </Switch>
          </BrowserRouter>
        </div>
