@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import "../css/RegistrationForm.css";
-
-// sets page title dynamically
-document.title = "Event Registration Form";
+import {Helmet} from 'react-helmet';
 
 export default class RegistrationForm extends Component {
   render() {
     return (
       <div>
+        {/* <!-- Dynamic Title --> */}
+        <Helmet>
+            <title>Geeksforgeeks | KIIT - Event Registration Form</title>
+        </Helmet>
         {/* form art */}
         <div className="form-art"></div>
         {/* header */}
@@ -68,7 +70,7 @@ export default class RegistrationForm extends Component {
                     />
                   </div>
                   <div className="form-element">
-                    <button>Submit</button>
+                    <button id="form_submit">Submit</button>
                   </div>
                 </form>
               </div>

@@ -14,7 +14,6 @@ class UpcomingEvents extends Component {
       //    slidesToScroll: 1,
       //    vertical:true,
       // };
-   
       
       return (
          <div id="landing">

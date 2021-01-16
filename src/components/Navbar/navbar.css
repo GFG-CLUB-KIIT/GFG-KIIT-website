@@ -1,0 +1,224 @@
+/* for removing scroll bar */
+
+::-webkit-scrollbar {
+   width: 0px;
+}
+nav {
+   padding-bottom: 10px;
+   position: fixed;
+   width: 100vw;
+   z-index: 200;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.3s ease;
+}
+.makeBigger {
+   width: 80px !important;
+   transition: all 0.3s ease-in-out;
+   padding: 0;
+}
+.makeSmaller {
+   width: 50px !important;
+   transition: all 0.3s ease-in-out;
+   padding: 0;
+}
+
+.sticky {
+   background-color: rgba(255, 255, 255, 1);
+   padding: 0 0;
+   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+nav .logo {
+   width: 45vw;
+   display: flex;
+   justify-content: flex-start;
+}
+#nav_gfglogo {
+   width: 100px;
+   height: 100px;
+   padding: 0;
+}
+nav ul {
+   display: flex;
+   width: 45vw;
+   justify-content: flex-end;
+   font-family: sans-serif;
+   font-weight: bold;
+}
+
+nav ul li {
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 2vw;
+}
+
+nav ul li a {
+   color: #333;
+   font-size: 17px;
+   padding: 7px 13px;
+   border-radius: 0;
+   list-style: none;
+   text-decoration: none;
+}
+
+.nav_home {
+   border-bottom: none;
+}
+
+.nav_home:hover {
+   border-bottom: 3px solid rgb(141, 248, 141);
+}
+
+.nav_event {
+   border-bottom: none;
+}
+
+.nav_event:hover {
+   border-bottom: 3px solid  #ffc107 ; 
+}
+
+.nav_projects {
+   border-bottom: none;
+}
+
+.nav_projects:hover {
+   border-bottom: 3px solid rgb(139, 139, 235);
+}
+
+.nav_about {
+   border-bottom: none;
+}
+
+.nav_about:hover {
+   border-bottom: 3px solid rgb(240, 77, 132);
+}
+
+.nav_checkbtn {
+   color: white;
+   text-align: right;
+   height: 60px;
+   font-size: 30px;
+   line-height: 60px;
+   margin-right: 40px;
+   float: right;
+   display: none;
+   cursor: pointer;
+}
+
+#nav_check {
+   display: none;
+}
+@media screen and (max-width: 1500px) {
+   nav ul li {
+      margin: 0 10px;
+   }
+}
+@media screen and (max-width: 1100px) {
+   nav ul li {
+      margin: 0 5px;
+   }
+}
+@media screen and (max-width: 952px) {
+   label.logo {
+      font-size: 14px;
+      padding-left: 5%;
+   }
+
+   nav ul li a {
+      font-size: 16px;
+   }
+}
+
+@media screen and (max-width: 858px) {
+   * {
+      box-sizing: border-box;
+   }
+
+   nav for minimised screen nav background {
+      background: black;
+      height: 100vh;
+      width: 100vw;
+   }
+
+   #burger-menu {
+      font-size: 30px;
+      transition: 0.3s ease-in-out;
+   }
+   .nav_checkbtn {
+      display: block;
+      color: black;
+   }
+   #nav_gfglogo {
+      width: 80px;
+      height: 80px;
+   }
+
+   nav ul {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      left: -100vw;
+      top: 0;
+
+      background-color: rgba(0, 0, 0, 0.95);
+
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      transition: all 0.5s;
+   }
+
+   nav ul li {
+      display: block;
+      margin: 50px 0%;
+      line-height: 30px;
+   }
+
+   nav ul li a {
+      font-size: 20px;
+      color: white;
+   }
+
+   .nav_home {
+      color: rgb(141, 248, 141);
+      border: none;
+   }
+
+   .nav_event {
+      color: rgb(240, 77, 132);
+      border: none;
+   }
+
+   .nav_projects {
+      color: rgb(139, 139, 235);
+      border: none;
+   }
+
+   .nav_about {
+      color: #ffc107;
+      border: none;
+   }
+
+   .nav_checkbtn {
+      width: 45vw;
+      height: 100%;
+      z-index: 200;
+   }
+   #nav_check:checked ~ ul {
+      left: 0;
+      z-index: 100;
+   }
+   /* #nav_check:checked ~ #nav_gfglogo {
+      color: white;
+   } */
+}
+
+@media screen and (max-width: 500px) {
+   * {
+      box-sizing: border-box;
+   }
+}

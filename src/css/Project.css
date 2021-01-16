@@ -131,7 +131,7 @@ p {
     justify-content: center;
     align-items: center;
     display: none;
-    z-index: 1;
+    z-index: 250;
 }
 
 .modal-content1,
@@ -231,7 +231,7 @@ p {
 #popup_card_project_title{
     font-size: 25px;
     font-weight: 600;
-    padding:15px 0px;
+    padding:15px 0px 10px 0px;
     float: left;
 }
 #popup_card_project_contributor{
@@ -239,23 +239,39 @@ p {
 }
 #popup_card_project_contributor_title{
     font-size: 15px;
-    color: rgba(5, 5, 5, 0.82);
-    margin-bottom: 10px;
+    color: 	#808080;
 }
 .project_contri_img1{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    margin-top: 10px;
 }
 .project_contri_img2{
     width: 30px;
     height: 30px;
     border-radius: 50%;
     margin-left: 5px;
+    margin-top: 10px;
+}
+.popup_card_bottom{
+    float: left;
+    margin-top: 10px;
+}
+.popup_card_bottom_lang{
+    font-size: 18px;
+    font-weight: 500;
+    float: left;
+}
+.popup_card_bottom_lang_logo{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 .popup-context{
     margin-top: 120px;
-    padding: 25px 20px;
+    padding: 25px 20px 8px 20px;
     font-size: 1rem;
     line-height:1.1rem;
     font-weight: 100!important;
@@ -266,7 +282,8 @@ p {
 }
 .popup_bottom_lang{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
+    margin-left: 20px;
     float: left;
 }
 .popup_bottom_lang_logo{
@@ -274,4 +291,11 @@ p {
     height: 20px;
     cursor: pointer;
     margin-left: 10px;
+    float: left;
+}
+.popup_bottom_frame{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 50px;
+    float: left;
 }
