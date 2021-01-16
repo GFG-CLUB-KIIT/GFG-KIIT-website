@@ -31,10 +31,6 @@
   margin-top: 15px;
 }
 
-/* .card:hover {
-  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
-} */
-
 .container {
   padding: 2px 16px;
 }
@@ -84,7 +80,7 @@ select:focus {
   border: 2px solid #3cbc8d;
 }
 
-button {
+#form_submit{
   background-color: #3cbc8d;
   border: none;
   color: white;

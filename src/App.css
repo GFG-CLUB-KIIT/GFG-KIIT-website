@@ -4,11 +4,9 @@
   text-align: center;
   padding-top: 10rem;
   padding-bottom: 1rem;
-  /* background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); */
   background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  /* -webkit-text-stroke: 1px black; */
 }

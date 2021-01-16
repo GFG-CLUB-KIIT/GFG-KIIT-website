@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto&display=swap");
+
+#event-slider-main
+   .slick-slider
+   .slick-list
+   .slick-track
+   .slick-slide
+   div
+   section
+   .flex-container
+   .text-container {
+   width: 50%;
+   margin: 0 20px;
+   margin-left: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+
+   color: #333;
+}
+#event-slider-main
+   .slick-slider
+   .slick-list
+   .slick-track
+   .slick-slide
+   div
+   section
+   .flex-container
+   .dev-cast-ep-1-img {
+   background-image: url("images/road-to-fang-events.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: white;
+}
+#event-slider-main
+   .slick-slider
+   .slick-list
+   .slick-track
+   .slick-slide
+   div
+   section
+   .flex-container
+   .dev-cast-ep-2-img {
+   background-image: url("images/shashank-pathak-events.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: white;
+}
+/* Styling for the paragraph in the events */
+
+#event-slider-main
+   .slick-slider
+   .slick-list
+   .slick-track
+   .slick-slide
+   div
+   section
+   .flex-container
+   .text-container
+   p {
+   margin: 0;
+   padding: 5vh 0;
+   font-family: "Roboto";
+   line-height: 1.2rem;
+   font-size: 1rem;
+}
+/*Main heading styling*/
+
+#event-slider-main
+   .slick-slider
+   .slick-list
+   .slick-track
+   .slick-slide
+   div
+   section
+   .flex-container
+   .text-container
+   div
+   h2 {
+   margin: 0;
+   padding: 2vh 0;
+   font-family: "Montserrat";
+   font-size: 3rem;
+   font-weight: 800;
+}
+/*Part of the main heading*/
+#event-slider-main
+   .slick-slider
+   .slick-list
+   .slick-track
+   .slick-slide
+   div
+   section
+   .flex-container
+   .text-container
+   div
+   .part-heading {
+   font-size: 2rem;
+   padding: 0 10px;
+}
+/*Sub-heading styling*/
+
+#event-slider-main
+   .slick-slider
+   .slick-list
+   .slick-track
+   .slick-slide
+   div
+   section
+   .flex-container
+   .text-container
+   div
+   h3 {
+   margin: 0;
+   padding-bottom: 2vh 0;
+   font-family: "Montserrat";
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: #999;
+}
+
+/*styling for the youtube button*/
+
+.event .flex-container .youtube-btn {
+   border: none;
+   background-color: #eee;
+   justify-content: center;
+   width: 200px;
+   height: 50px;
+   border-radius: 5px;
+   transition: 0.5s ease-in-out;
+}
+.event .flex-container .youtube-btn a {
+   display: flex;
+   align-items: center;
+   color: #333;
+   background-color: #eee;
+   justify-content: center;
+   width: 200px;
+   height: 50px;
+   border-radius: 5px;
+   transition: 0.5s ease-in-out;
+   text-decoration: none;
+}
+.event .flex-container .youtube-btn a .hover-bg {
+   position: absolute;
+   background-color: red;
+   width: 0;
+   height: inherit;
+   z-index: 0;
+   transition: 0.5s ease-in-out;
+}
+
+.event .flex-container .youtube-btn:hover a .youtube-icon {
+   color: #fefefe;
+   transition: 0.5s ease-in-out;
+}
+.event .flex-container .youtube-btn:hover {
+   -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 0, 0, 0.5);
+   -moz-box-shadow: 0px 0px 20px 0px rgba(255, 0, 0, 0.5);
+   box-shadow: 0px 0px 20px 0px rgba(255, 0, 0, 0.5);
+
+   transform: translateX(10px);
+
+   transition: all 0.6s ease-in-out;
+}
+
+.event .flex-container .youtube-btn a h5 {
+   padding: 5px;
+   z-index: 1;
+   transition: 0.5s ease-in-out;
+}
+.event .flex-container .youtube-btn a .youtube-icon {
+   padding: 5px;
+   z-index: 1;
+   transition: 0.5s ease-in-out;
+}
+
+.event .flex-container .youtube-btn:hover a .hover-bg {
+   width: inherit;
+   transition: 0.5s ease-in-out;
+   border-radius: 5px;
+}
+.event .flex-container .youtube-btn:hover a h5 {
+   color: #fefefe;
+   transition: 0.5s ease-in-out;
+}
+/*styling for the youtube button ends here*/
+
+.event .flex-container .code-rush-1-0-img {
+   background-image: url("images/code-rush-1-0.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: white;
+}
+.event .flex-container .code-rush-1-1-img {
+   background-image: url("images/code-rush-1-1.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+   #event-slider-main
+      .slick-slider
+      .slick-list
+      .slick-track
+      .slick-slide
+      div
+      section
+      .flex-container
+      .text-container {
+      margin: 0 10%;
+      width: 80%;
+      height: 50vh;
+   }
+   #event-slider-main
+      .slick-slider
+      .slick-list
+      .slick-track
+      .slick-slide
+      div
+      section
+      .flex-container
+      .text-container
+      p {
+      padding: 3vh 0;
+      font-size: 0.8rem;
+   }
+   #event-slider-main
+      .slick-slider
+      .slick-list
+      .slick-track
+      .slick-slide
+      div
+      section
+      .flex-container
+      .text-container
+      div
+      h2 {
+      padding: 1vh 0;
+      font-size: 2rem;
+   }
+   #event-slider-main
+      .slick-slider
+      .slick-list
+      .slick-track
+      .slick-slide
+      div
+      section
+      .flex-container
+      .text-container
+      div
+      .part-heading {
+      font-size: 1.5rem;
+   }
+   #event-slider-main
+      .slick-slider
+      .slick-list
+      .slick-track
+      .slick-slide
+      div
+      section
+      .flex-container
+      .text-container
+      div
+      h3 {
+      padding-bottom: 1vh 0;
+      font-size: 0.8rem;
+   }
+}
