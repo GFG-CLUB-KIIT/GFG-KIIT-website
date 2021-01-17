@@ -70,15 +70,15 @@ class Project extends Component {
                         </div>
                         <div class="popup_card">
                             <div>
-                                <img src={github} id="popup_card_github" />
-                                <a href="https://github.com/GFG-CLUB-KIIT/thegeekbot" id="popup_card_project_link">Go to Website</a>
+                                <a href="https://github.com/GFG-CLUB-KIIT/" target="_blank"><img src={github} id="popup_card_github" /></a>
+                                <a href="https://github.com/GFG-CLUB-KIIT/thegeekbot" target="_blank" id="popup_card_project_link">Go to Website</a>
                             </div>
                             <div id="popup_card_project_title">The Geek Bot</div>
                             <div id="popup_card_project_contributor">
                                 <div id="popup_card_project_contributor_title">Contributors</div>
                                 <div id="popup_card_project_contributor_img">
-                                    <a href="https://github.com/ThatOneTallKid" title="Aditya Das"><img src={AdityaDas} class="project_contri_img1" /></a>
-                                    <a href="https://github.com/DarthCucumber" title="Souvik Kar Mahapatra"><img src={SouvikKar} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/ThatOneTallKid" target="_blank" title="Aditya Das"><img src={AdityaDas} class="project_contri_img1" /></a>
+                                    <a href="https://github.com/DarthCucumber" target="_blank" title="Souvik Kar Mahapatra"><img src={SouvikKar} class="project_contri_img2" /></a>
                                 </div>
                             </div>
                             <div class="popup_card_bottom">
@@ -100,23 +100,23 @@ class Project extends Component {
                         </div>
                         <div class="popup_card">
                             <div>
-                                <img src={github} id="popup_card_github" />
-                                <a href="https://github.com/GFG-CLUB-KIIT/GFG-KIIT-website" id="popup_card_project_link">Go to Website</a>
+                                <a href="https://github.com/GFG-CLUB-KIIT/" target="_blank"><img src={github} id="popup_card_github" /></a>
+                                <a href="https://github.com/GFG-CLUB-KIIT/GFG-KIIT-website" target="_blank" id="popup_card_project_link">Go to Website</a>
                             </div>
                             <div id="popup_card_project_title">GFG Website</div>
                             <div id="popup_card_project_contributor">
                                 <div id="popup_card_project_contributor_title">Contributors</div>
                                 <div id="popup_card_project_contributor_img">
-                                    <a href="https://github.com/bitraylee" title="Anshu Mohanta"><img src={Anshu} class="project_contri_img1" /></a>
-                                    <a href="https://github.com/AnkitRajCode" title="Ankit Raj"><img src={AnkitRaj} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/DarthCucumber" title="Souvik Kar Mahapatra"><img src={SouvikKar} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/Devansh2000Shaw" title="Devansh Shaw"><img src={DevanshShaw} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/kingsrv18" title="Sourav Dash"><img src={SouravDash} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/akashchouhan16" title="Akash Chouhan"><img src={AkashChouhan} class="project_contri_img1" /></a>
-                                    <a href="https://github.com/shivam-kumar123" title="Shivam Kumar"><img src={ShivamKumar} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/ashishmishra-bit" title="Ashish Kumar Mishra"><img src={AshishKumarMishra} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/divshekhar/" title="Divyanshu Shekhar"><img src={DivyanshuShekhar} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/arn4b" title="Arnab Chatterjee"><img src={ArnabChatterjee} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/bitraylee" target="_blank" title="Anshu Mohanta"><img src={Anshu} class="project_contri_img1" /></a>
+                                    <a href="https://github.com/AnkitRajCode" target="_blank" title="Ankit Raj"><img src={AnkitRaj} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/DarthCucumber" target="_blank" title="Souvik Kar Mahapatra"><img src={SouvikKar} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/Devansh2000Shaw" target="_blank" title="Devansh Shaw"><img src={DevanshShaw} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/kingsrv18" target="_blank" title="Sourav Dash"><img src={SouravDash} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/akashchouhan16" target="_blank" title="Akash Chouhan"><img src={AkashChouhan} class="project_contri_img1" /></a>
+                                    <a href="https://github.com/shivam-kumar123" target="_blank" title="Shivam Kumar"><img src={ShivamKumar} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/ashishmishra-bit" target="_blank" title="Ashish Kumar Mishra"><img src={AshishKumarMishra} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/divshekhar/" target="_blank" title="Divyanshu Shekhar"><img src={DivyanshuShekhar} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/arn4b" target="_blank" title="Arnab Chatterjee"><img src={ArnabChatterjee} class="project_contri_img2" /></a>
                                 </div>
                             </div>
                         </div>

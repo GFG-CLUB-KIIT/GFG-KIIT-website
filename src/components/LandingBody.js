@@ -55,11 +55,94 @@ class LandingBody extends Component {
                   </div>
                   <div class="project_title">GeeksforGeeks KIIT Website</div>
                   <div class="project_desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi alias natus impedit beatae et! Corporis reprehenderit, quam optio quidem illo.
+                  Our Web-Dev Team started working on their 1st project, Geeksforgeeks KIIT Student Club Website. 
+                  It possesses a programmer’s search feature that enables the users to search various programming concepts. 
+                  It also has been administered with a profanity filter that identifies unparliamentary language by any user and purges them.
                   </div>
               </a>
           </div>
-          <div id="landing_page_style"></div>
+          <section class="landing-scroll-branding">
+            <div class="scroll designers org">
+                <div>
+                <span class="filled">Designers</span> <span>Developers</span>
+                <span>Programmers</span> <span>Creators</span>
+                <span>Enthusiasts</span> <span class="filled">Designers</span>
+                <span>Developers</span> <span>Programmers</span>
+                <span>Creators</span> <span>Enthusiasts</span>
+                </div>
+                <div>
+                <span class="filled">Designers</span> <span>Developers</span>
+                <span>Programmers</span> <span>Creators</span>
+                <span>Enthusiasts</span> <span class="filled">Designers</span>
+                <span>Developers</span> <span>Programmers</span>
+                <span>Creators</span> <span>Enthusiasts</span>
+                </div>
+            </div>
+            <div class="scroll developers alt">
+                <div>
+                <span>Designers</span> <span class="filled">Developers</span>
+                <span>Programmers</span> <span>Creators</span>
+                <span>Enthusiasts</span> <span>Designers</span>
+                <span class="filled">Developers</span> <span>Programmers</span>
+                <span>Creators</span> <span>Enthusiasts</span>
+                </div>
+                <div>
+                <span>Designers</span> <span class="filled">Developers</span>
+                <span>Programmers</span> <span>Creators</span>
+                <span>Enthusiasts</span> <span>Designers</span>
+                <span class="filled">Developers</span> <span>Programmers</span>
+                <span>Creators</span> <span>Enthusiasts</span>
+                </div>
+            </div>
+            <div class="scroll programmers org">
+                <div>
+                <span>Designers</span> <span>Developers</span>
+                <span class="filled">Programmers</span> <span>Creators</span>
+                <span>Enthusiasts</span> <span>Designers</span>
+                <span>Developers</span> <span class="filled">Programmers</span>
+                <span>Creators</span> <span>Enthusiasts</span>
+                </div>
+                <div>
+                <span>Designers</span> <span>Developers</span>
+                <span class="filled">Programmers</span> <span>Creators</span>
+                <span>Enthusiasts</span> <span>Designers</span>
+                <span>Developers</span> <span class="filled">Programmers</span>
+                <span>Creators</span> <span>Enthusiasts</span>
+                </div>
+            </div>
+            <div class="scroll creators alt">
+                <div>
+                <span>Designers</span> <span>Developers</span>
+                <span>Programmers</span> <span class="filled">Creators</span>
+                <span>Enthusiasts</span> <span>Designers</span>
+                <span>Developers</span> <span>Programmers</span>
+                <span class="filled">Creators</span> <span>Enthusiasts</span>
+                </div>
+                <div>
+                <span>Designers</span> <span>Developers</span>
+                <span>Programmers</span> <span class="filled">Creators</span>
+                <span>Enthusiasts</span> <span>Designers</span>
+                <span>Developers</span> <span>Programmers</span>
+                <span class="filled">Creators</span> <span>Enthusiasts</span>
+                </div>
+            </div>
+            <div class="scroll enthusiasts org">
+                <div>
+                <span>Designers</span> <span>Developers</span>
+                <span>Programmers</span> <span>Creators</span>
+                <span class="filled">Enthusiasts</span> <span>Designers</span>
+                <span>Developers</span> <span>Programmers</span>
+                <span>Creators</span> <span class="filled">Enthusiasts</span>
+                </div>
+                <div>
+                <span>Designers</span> <span>Developers</span>
+                <span>Programmers</span> <span>Creators</span>
+                <span class="filled">Enthusiasts</span> <span>Designers</span>
+                <span>Developers</span> <span>Programmers</span>
+                <span>Creators</span> <span class="filled">Enthusiasts</span>
+                </div>
+            </div>
+        </section>
           <Footer bgColor="footer-landing"></Footer>
       </div>
       )

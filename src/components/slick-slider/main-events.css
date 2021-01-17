@@ -43,12 +43,12 @@
    -webkit-font-smoothing: antialiased;
 
    /* Material Icons for CSS pseudo elments styling */
-   font-family: "Material Icons" !important;
-   font-size: 40px !important;
+   font-family: "Font Awesome 5 Free" !important;
+   font-size: 30px !important;
    color: #fff !important;
 
    background-color: #555;
-   padding: 5px;
+   padding: 10px 15px;
    border-radius: 20px;
 
    -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.68);
@@ -62,16 +62,19 @@
 
 #event-slider-main .slick-slider .slick-prev::before {
    position: absolute;
-   /* content: "keyboard_arrow_up" ; */
+   content: "\f106" ;
+   font-weight: 700;
    transform: translate(30px, -40vh) !important;
 }
 #event-slider-main .slick-slider .slick-next::before {
    position: absolute;
    left: -100vw !important;
    top: 50% !important;
-   /* left: 10px; */
-   /* content: "keyboard_arrow_down" !important; */
    transform: translate(60px, 35vh) !important;
+   /* style */
+   
+   content: "\f107" ;
+   font-weight: 700;
 }
 
 /* Redundant Code */
@@ -249,12 +252,16 @@
       background-color: rgb(12, 233, 178) !important;
    }
    #event-slider-main .slick-slider .slick-next::before {
-      content: "keyboard_arrow_right" !important;
+      /* content: "keyboard_arrow_right" !important; */
+      content: "\f105" ;
+      font-weight: 700;
       transform: translateX(90vw) !important;
    }
 
    #event-slider-main .slick-slider .slick-prev::before {
+      content: "\f104" ;
+      font-weight: 700;
       transform: translateX(5vw) !important;
-      content: "keyboard_arrow_left" !important;
+      /* content: "keyboard_arrow_left" !important; */
    }
 }
