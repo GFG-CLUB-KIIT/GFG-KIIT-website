@@ -157,6 +157,7 @@
 .links {
    grid-area: links;
    margin-right: 5vw;
+   margin-top: 10px;
 }
 .links .flex-container {
    display: flex;
@@ -265,7 +266,8 @@
       text-align: right;
       font-family: var(--paragragh-font);
       line-height: 2.2ch;
-      width: 200px;
+      width: 250px;
+      margin-top: 30px;
    }
    .description2 {
       float: right;
@@ -273,6 +275,7 @@
       text-align: right;
       font-family: var(--paragragh-font);
       line-height: 2.2ch;
+      width: 100px;
    }
    .description3 {
       float: right;
@@ -280,7 +283,8 @@
       text-align: right;
       font-family: var(--paragragh-font);
       line-height: 2.2ch;
-      width: 100px;
+      width: 200px;
+      margin-top: 30px;
    }
 }
 @media only screen and (max-width: 800px) {

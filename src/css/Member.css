@@ -1,14 +1,14 @@
 body{
     margin: 0px;
     padding: 0px;
-    font-family: pt sans !important;
+    font-family: "pt sans" !important;
     overflow-x: hidden;
 }
 #aboutUs_title{
     width: 400px;
     float: left!important;
     color: white;
-    margin-left: 70%;
+    margin-left: 75%;
     margin-top: -300px;
     position:absolute;
 }
@@ -43,7 +43,6 @@ body{
     height: 2px;
     margin-top: 25px;
     background-color: rgb(44, 43, 43);
-    /* background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%); */
 }
 .aboutUs_row{
     width: 100%;
@@ -124,19 +123,8 @@ body{
     height: 2px;
     margin-top: 25px;
     background-color: rgb(44, 43, 43);
-    /* background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%); */
 }
-@media screen and (max-width: 1000px){
-    .cm_title_display ,.lead_title_display{
-        width: 100%;
-    }
-    .cm_title_line, .lead_title_line{
-        display: none;
-    }
-    .coreMemberCard{
-        margin-left: 18%;
-    }
-}
+
 /*swiper*/
 .member_title_display{
     float: left;
@@ -190,3 +178,24 @@ body{
        inset -4px -4px 8px 0 rgba(255,255,255,0.15);
     padding: 5px;
   }
+  @media screen and (max-width: 1000px){
+    #aboutUs_title{
+        margin-left: 55%;
+    }
+    .cm_title_display ,.lead_title_display{
+        width: 100%;
+    }
+    .cm_title_line, .lead_title_line{
+        display: none;
+    }
+    .coreMemberCard{
+        margin-left: 18%;
+    }
+    .member_title_display{
+       font-size: 24px;
+    }
+    .lead_title_display{
+        border-bottom: 1.5px solid black;
+        width: 80%;
+    }
+}

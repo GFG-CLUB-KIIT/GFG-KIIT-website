@@ -191,7 +191,7 @@ p {
     margin-left: 13%;
 }
 .project_popup_detail{
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 200;
     margin-bottom: 10px;
 }
@@ -298,4 +298,11 @@ p {
     font-weight: 600;
     margin-left: 50px;
     float: left;
+}
+
+@media screen and (max-width: 800px){
+    .popup_card{
+        width: 200px;
+        height: 190px;
+    }
 }

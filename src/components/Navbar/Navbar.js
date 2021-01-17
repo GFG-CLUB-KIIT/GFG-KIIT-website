@@ -48,61 +48,53 @@ class Navbar extends Component {
                   navbarItems[i].style.color="#333";
             }
             burgerMenu.style.color="#333";
-
-
-            // for(let i=0;i< navbarItems.length; i++)
-            //    navbarItems[i].style.color="#333";
          }
-         console.log(footer.getBoundingClientRect().top);
          
       }
 
       let navCheck= document.getElementById("nav_check");
       navCheck.addEventListener("click", ()=>{
          let burger=document.getElementById("burger-menu");
-         if(burger.innerHTML=="menu"){
+         if(burger.classList.contains("fa-bars")==true){
             if(footer.getBoundingClientRect().top<1){
                burger.style.color="#fefefe";
             }
             else
                burger.style.color="#333";
-            
-            burger.innerHTML="close";
+               burger.classList.remove("fa-bars");
+               burger.classList.add("fa-times");
          }
-         else if(burger.innerHTML=="close"){
+         else if(burger.classList.contains("fa-times")){
             if(footer.getBoundingClientRect().top<1){
                burger.style.color="#fefefe";
             }
             else
                burger.style.color="#333";
-            
-               
-            burger.innerHTML="menu";
+               burger.classList.remove("fa-times");
+             burger.classList.add("fa-bars");
          }
-         console.log(burger.innerHTML);
       });
-
-      
    } 
    render() {
       return (
-            <nav id="navbar"  >
-               <input type="checkbox" id = "nav_check" />
-               <label className = "logo"><a href="/"><img src = {logo} id = "nav_gfglogo" /></a></label>
-               <ul>
-                  <li><a href="/" className = "nav_home">Home</a></li>
-                  <li><a href="/Events" className = "nav_event">Events </a></li>
-                  <li><a href="/Projects" className = "nav_projects">Projects </a></li>
-                  <li><a href="/Member" className= "nav_about">Members </a></li>
-               </ul>
-               <label for = "nav_check" className="nav_checkbtn" >
-                  <span class="material-icons" id="burger-menu">
-                     menu
-                  </span>
-               </label>
-            </nav>
+         <nav id="navbar"  >
+            <input type="checkbox" id = "nav_check" />
+            <label className = "logo"><a href="/"><img src = {logo} id = "nav_gfglogo" /></a></label>
+            <ul>
+               <li><a href="/" className = "nav_home">Home</a></li>
+               <li><a href="/Events" className = "nav_event">Events </a></li>
+               <li><a href="/Projects" className = "nav_projects">Projects </a></li>
+               <li><a href="/Member" className= "nav_about">Members </a></li>
+            </ul>
+            <label for = "nav_check" className="nav_checkbtn" >
+               {/* <span class="material-icons" id="burger-menu">
+                  menu
+               </span> */}
+               <i class="fas fa-bars" id="burger-menu"></i>
+            </label>
+         </nav>
       )
-    }
+   }
 }
 
 export default Navbar;
