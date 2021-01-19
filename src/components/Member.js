@@ -388,17 +388,6 @@ render() {
                                     <a href="https://github.com/Lord-Lava" title="Github"><img src={github} className="cm_logo" /></a>
                                 </div>
                         </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img src={SuryavardhanThangirala} className="dp_cm_member"/>
-                                <div className="name_member">Suryavardhan Thangirala</div>
-                                <div className="desg_member">Competitive Programmer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/suryavardhan-thangirala-9800a81a5" title="Linkedin"><img src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://twitter.com/SuryavardhanT" title="Github"><img src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/suryathangirala/" title="Instagram"><img src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/SuryavardhanT" title="Twitter"><img src={twitter} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
                     </Swiper>
                 
                     <div class="member_title_display">Members : Android Developers  </div>
@@ -491,6 +480,17 @@ render() {
                                     <a href="https://github.com/Sayak11" title="Github"><img src={github} className="cm_logo" /></a>
                                     <a href="https://www.instagram.com/its_me_sayakroychowdhury/" title="Instagram"><img src={instagram} className="cm_logo" /></a>
                                     <a href="https://twitter.com/itsSRC3" title="Twitter"><img src={twitter} className="cm_logo" /></a>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide className="swiper-slide">
+                            <img src={SuryavardhanThangirala} className="dp_cm_member"/>
+                                <div className="name_member">Suryavardhan Thangirala</div>
+                                <div className="desg_member">Content Writer</div><br/>
+                                <div className="cm_social">
+                                    <a href="https://www.linkedin.com/in/suryavardhan-thangirala-9800a81a5" title="Linkedin"><img src={linkedin} className="cm_logo1" /></a>
+                                    <a href="https://twitter.com/SuryavardhanT" title="Github"><img src={github} className="cm_logo" /></a>
+                                    <a href="https://www.instagram.com/suryathangirala/" title="Instagram"><img src={instagram} className="cm_logo" /></a>
+                                    <a href="https://twitter.com/SuryavardhanT" title="Twitter"><img src={twitter} className="cm_logo" /></a>
                                 </div>
                         </SwiperSlide>
                     </Swiper>
