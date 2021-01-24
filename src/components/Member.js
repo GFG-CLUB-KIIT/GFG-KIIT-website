@@ -41,7 +41,7 @@ import instagram from '../img/instagramColor.png';
 import twitter from '../img/twitterColor.png';
 import github from '../img/githubWhite.png';
 import gfglogo from '../img/gfglogo.png';
-import '../css/member.css';
+import '../css/Members.css';
 import '../css/swiper.min.css';
 import Background from './Background';
 import Footer from './Footer';
