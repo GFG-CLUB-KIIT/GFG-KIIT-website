@@ -16,11 +16,11 @@ function FooterLanding(props){
                   </div>
                   <div class="links">
                         <ul class="footer-links flex-container">
-                           <li><a href="https://www.linkedin.com/company/geeksforgeeks-kiit" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                           <li><a href="https://youtube.com/channel/UC281oAcZl0asjjuvmnXh2PQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                           <li><a href="https://github.com/GFG-CLUB-KIIT"  target="_blank"><i class="fab fa-github"></i></a></li>
-                           <li><a href="https://twitter.com/ClubGfg?s=08" target="_blank"><i class="fab fa-twitter" ></i></a></li>
-                           <li><a href="https://instagram.com/gfg_kiit_club?igshid=rnewwd09app3" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                           <li><a href="https://www.linkedin.com/company/geeksforgeeks-kiit" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+                           <li><a href="https://youtube.com/channel/UC281oAcZl0asjjuvmnXh2PQ" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
+                           <li><a href="https://github.com/GFG-CLUB-KIIT"  target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+                           <li><a href="https://twitter.com/ClubGfg?s=08" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter" ></i></a></li>
+                           <li><a href="https://instagram.com/gfg_kiit_club?igshid=rnewwd09app3" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                   </div>
                   <div class="footer-info">
