@@ -54,10 +54,10 @@ class Project extends Component {
                     <h2>done in the past</h2>
                 </div>
                 <div className="image1"  id = "click1">
-                    <img src={geekbot} onClick={displayFlex1} className="image1" />
+                    <img alt="images" src={geekbot} onClick={displayFlex1} className="image1" />
                 </div>
                 <div className="image3">
-                    <img src={gfgwebsite} onClick={displayFlex3} className="image3" />
+                    <img alt="images" src={gfgwebsite} onClick={displayFlex3} className="image3" />
                 </div>
 
                 {/* <!-- POPUP --> */}
@@ -65,25 +65,25 @@ class Project extends Component {
                     <div class="modal-content1">
                         <div id="popup_top_image1">
                             <div className="cross">
-                                <a href="#" className="list-item" onClick={displayNone1} ><img src={cross} className="fa-times"/></a>
+                                <a href="#" className="list-item" onClick={displayNone1} ><img alt="images" src={cross} className="fa-times"/></a>
                             </div>
                         </div>
                         <div class="popup_card">
                             <div>
-                                <a href="https://github.com/GFG-CLUB-KIIT/" target="_blank"><img src={github} id="popup_card_github" /></a>
-                                <a href="https://github.com/GFG-CLUB-KIIT/thegeekbot" target="_blank" id="popup_card_project_link">Go to Website</a>
+                                <a href="https://github.com/GFG-CLUB-KIIT/" target="_blank" rel="noopener noreferrer"><img alt="images" src={github} id="popup_card_github" /></a>
+                                <a href="https://github.com/GFG-CLUB-KIIT/thegeekbot" target="_blank" rel="noopener noreferrer" id="popup_card_project_link">Go to Website</a>
                             </div>
                             <div id="popup_card_project_title">The Geek Bot</div>
                             <div id="popup_card_project_contributor">
                                 <div id="popup_card_project_contributor_title">Contributors</div>
                                 <div id="popup_card_project_contributor_img">
-                                    <a href="https://github.com/ThatOneTallKid" target="_blank" title="Aditya Das"><img src={AdityaDas} class="project_contri_img1" /></a>
-                                    <a href="https://github.com/DarthCucumber" target="_blank" title="Souvik Kar Mahapatra"><img src={SouvikKar} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/ThatOneTallKid" target="_blank" rel="noopener noreferrer" title="Aditya Das"><img alt="images" src={AdityaDas} class="project_contri_img1" /></a>
+                                    <a href="https://github.com/DarthCucumber" target="_blank" rel="noopener noreferrer" title="Souvik Kar Mahapatra"><img alt="images" src={SouvikKar} class="project_contri_img2" /></a>
                                 </div>
                             </div>
                             <div class="popup_card_bottom">
                                 <lable class="popup_card_bottom_lang">Language Used:</lable> 
-                                <img src={Phython} class="popup_card_bottom_lang_logo" title="Phython" />
+                                <img alt="images" src={Phython} class="popup_card_bottom_lang_logo" title="Phython" />
                             </div>
                         </div>
                         <div class="popup-context">
@@ -95,28 +95,28 @@ class Project extends Component {
                     <div class="modal-content3">
                         <div id="popup_top_image2">
                             <div className="cross">
-                                <a href="#" className="list-item" onClick={displayNone3} ><img src={cross} className="fa-times"/></a>
+                                <a href="#" className="list-item" onClick={displayNone3} ><img alt="images" src={cross} className="fa-times"/></a>
                             </div>
                         </div>
                         <div class="popup_card">
                             <div>
-                                <a href="https://github.com/GFG-CLUB-KIIT/" target="_blank"><img src={github} id="popup_card_github" /></a>
-                                <a href="https://github.com/GFG-CLUB-KIIT/GFG-KIIT-website" target="_blank" id="popup_card_project_link">Go to Website</a>
+                                <a href="https://github.com/GFG-CLUB-KIIT/" target="_blank" rel="noopener noreferrer"><img alt="images" src={github} id="popup_card_github" /></a>
+                                <a href="https://github.com/GFG-CLUB-KIIT/GFG-KIIT-website" target="_blank" rel="noopener noreferrer" id="popup_card_project_link">Go to Website</a>
                             </div>
                             <div id="popup_card_project_title">GFG Website</div>
                             <div id="popup_card_project_contributor">
                                 <div id="popup_card_project_contributor_title">Contributors</div>
                                 <div id="popup_card_project_contributor_img">
-                                    <a href="https://github.com/bitraylee" target="_blank" title="Anshu Mohanta"><img src={Anshu} class="project_contri_img1" /></a>
-                                    <a href="https://github.com/AnkitRajCode" target="_blank" title="Ankit Raj"><img src={AnkitRaj} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/DarthCucumber" target="_blank" title="Souvik Kar Mahapatra"><img src={SouvikKar} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/Devansh2000Shaw" target="_blank" title="Devansh Shaw"><img src={DevanshShaw} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/kingsrv18" target="_blank" title="Sourav Dash"><img src={SouravDash} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/akashchouhan16" target="_blank" title="Akash Chouhan"><img src={AkashChouhan} class="project_contri_img1" /></a>
-                                    <a href="https://github.com/shivam-kumar123" target="_blank" title="Shivam Kumar"><img src={ShivamKumar} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/ashishmishra-bit" target="_blank" title="Ashish Kumar Mishra"><img src={AshishKumarMishra} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/divshekhar/" target="_blank" title="Divyanshu Shekhar"><img src={DivyanshuShekhar} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/arn4b" target="_blank" title="Arnab Chatterjee"><img src={ArnabChatterjee} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/bitraylee" target="_blank" rel="noopener noreferrer" title="Anshu Mohanta"><img alt="images" src={Anshu} class="project_contri_img1" /></a>
+                                    <a href="https://github.com/AnkitRajCode" target="_blank" rel="noopener noreferrer" title="Ankit Raj"><img alt="images" src={AnkitRaj} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/DarthCucumber" target="_blank" rel="noopener noreferrer" title="Souvik Kar Mahapatra"><img alt="images" src={SouvikKar} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/Devansh2000Shaw" target="_blank" rel="noopener noreferrer" title="Devansh Shaw"><img alt="images" src={DevanshShaw} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/kingsrv18" target="_blank" rel="noopener noreferrer" title="Sourav Dash"><img alt="images" src={SouravDash} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/akashchouhan16" target="_blank" rel="noopener noreferrer" title="Akash Chouhan"><img alt="images" src={AkashChouhan} class="project_contri_img1" /></a>
+                                    <a href="https://github.com/shivam-kumar123" target="_blank" rel="noopener noreferrer" title="Shivam Kumar"><img alt="images" src={ShivamKumar} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/ashishmishra-bit" target="_blank" rel="noopener noreferrer" title="Ashish Kumar Mishra"><img alt="images" src={AshishKumarMishra} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/divshekhar/" target="_blank" rel="noopener noreferrer" title="Divyanshu Shekhar"><img alt="images" src={DivyanshuShekhar} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/arn4b" target="_blank" rel="noopener noreferrer" title="Arnab Chatterjee"><img alt="images" src={ArnabChatterjee} class="project_contri_img2" /></a>
                                 </div>
                             </div>
                         </div>
@@ -125,11 +125,11 @@ class Project extends Component {
                         </div>
                         <div class="popup_bottom">
                             <lable class="popup_bottom_lang">Language Used:</lable> 
-                                <img src={html} class="popup_bottom_lang_logo" title="HTML" />
-                                <img src={css} class="popup_bottom_lang_logo" title="CSS" />
-                                <img src={JavaScript} class="popup_bottom_lang_logo" title="JavaScript" />
+                                <img alt="images" src={html} class="popup_bottom_lang_logo" title="HTML" />
+                                <img alt="images" src={css} class="popup_bottom_lang_logo" title="CSS" />
+                                <img alt="images" src={JavaScript} class="popup_bottom_lang_logo" title="JavaScript" />
                             <lable class="popup_bottom_frame">Framework Used:</lable>
-                                <img src={react} class="popup_bottom_lang_logo" title="React" />
+                                <img alt="images" src={react} class="popup_bottom_lang_logo" title="React" />
                         </div>
                     </div>
                 </div>

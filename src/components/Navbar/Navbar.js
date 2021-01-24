@@ -55,7 +55,7 @@ class Navbar extends Component {
       let navCheck= document.getElementById("nav_check");
       navCheck.addEventListener("click", ()=>{
          let burger=document.getElementById("burger-menu");
-         if(burger.classList.contains("fa-bars")==true){
+         if(burger.classList.contains("fa-bars")===true){
             if(footer.getBoundingClientRect().top<1){
                burger.style.color="#fefefe";
             }
@@ -79,7 +79,7 @@ class Navbar extends Component {
       return (
          <nav id="navbar"  >
             <input type="checkbox" id = "nav_check" />
-            <label className = "logo"><a href="/"><img src = {logo} id = "nav_gfglogo" /></a></label>
+            <label className = "logo"><a href="/"><img alt="images" src = {logo} id = "nav_gfglogo" /></a></label>
             <ul>
                <li><a href="/" className = "nav_home">Home</a></li>
                <li><a href="/Events" className = "nav_event">Events </a></li>

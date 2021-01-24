@@ -60,7 +60,7 @@ export default class PastEvents extends Component {
                         </p>
 
                         <button className="youtube-btn">
-                           <a href="https://www.youtube.com/watch?v=w1Fv5JkyI8g" target="_blank">
+                           <a href="https://www.youtube.com/watch?v=w1Fv5JkyI8g" target="_blank" rel="noopener noreferrer">
                               <div className="hover-bg"></div>
                               <YouTubeIcon className="youtube-icon"></YouTubeIcon>
                               <h5>Watch on YouTube</h5>
@@ -84,7 +84,7 @@ export default class PastEvents extends Component {
                         </p>
 
                         <button className="youtube-btn">
-                           <a href="https://www.youtube.com/watch?v=I6Q1v3D4gyw&t=1195s" target="_blank">
+                           <a href="https://www.youtube.com/watch?v=I6Q1v3D4gyw&t=1195s" target="_blank" rel="noopener noreferrer">
                               <div className="hover-bg"></div>
                               <YouTubeIcon className="youtube-icon"></YouTubeIcon>
                               <h5>Watch on YouTube</h5>
@@ -108,7 +108,7 @@ export default class PastEvents extends Component {
                         </p>
 
                         {/* <button className="youtube-btn">
-                           <a href="https://www.youtube.com/watch?v=I6Q1v3D4gyw&t=1195s" target="_blank">
+                           <a href="https://www.youtube.com/watch?v=I6Q1v3D4gyw&t=1195s" target="_blank" rel="noopener noreferrer">
                               <div className="hover-bg"></div>
                               <YouTubeIcon className="youtube-icon"></YouTubeIcon>
                               <h5>Watch on YouTube</h5>
@@ -132,7 +132,7 @@ export default class PastEvents extends Component {
                         </p>
 
                         {/* <button className="youtube-btn">
-                           <a href="https://www.youtube.com/watch?v=I6Q1v3D4gyw&t=1195s" target="_blank">
+                           <a href="https://www.youtube.com/watch?v=I6Q1v3D4gyw&t=1195s" target="_blank" rel="noopener noreferrer">
                               <div className="hover-bg"></div>
                               <YouTubeIcon className="youtube-icon"></YouTubeIcon>
                               <h5>Watch on YouTube</h5>
