@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import '../css/Footer.css'
+import React from 'react'
+import '../css/footer.css'
 function FooterLanding(props){
    return ( 
       <div class="parent-element">

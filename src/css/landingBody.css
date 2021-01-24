@@ -49,7 +49,7 @@
 #event_img_display {
    width: 100%;
    height: 350px;
-   background-image: url("../img/coderush1.2.jpeg");
+   background-image: url("../components/slick-slider/images/code-rush-1-2.png");
    background-position: center;
    background-repeat: no-repeat;
    background-size: contain;
@@ -152,14 +152,16 @@
    background-repeat: no-repeat;
    background-size: cover;
    border-radius: 6px;
+   border: 1px solid black;
 }
 
 #project_img_display2 {
    width: 100%;
    height: 180px;
-   background-image: url("../img/img-3.jpg");
+   background-image: url("../img/GFGKIITWebsitePoster.png");
    background-position: center;
    background-repeat: no-repeat;
+   border: 1px solid black;
    background-size: cover;
    border-radius: 6px;
 }
@@ -184,7 +186,6 @@
    height: 300px;
    margin-top: 100px;
    margin-bottom: 150px;
-   background-image: url(../img/style.png);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -246,6 +247,9 @@
    text-transform: none;
    -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: rgba(0, 0, 0, 0.75);
+}
+.landing-scroll-branding .scroll div span{
+   padding-left:10px ;
 }
 .landing-scroll-branding .scroll .filled {
    color: rgba(0, 0, 0, 0.75);
