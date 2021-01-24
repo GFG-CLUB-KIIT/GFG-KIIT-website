@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../css/landingBody.css';
+import '../css/landing-body.css';
 import Background from './Background';
 import Footer from './Footer';
 import {Helmet} from 'react-helmet';
