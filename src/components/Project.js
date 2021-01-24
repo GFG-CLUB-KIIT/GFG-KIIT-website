@@ -21,7 +21,7 @@ import css from '../img/css.png';
 import JavaScript from '../img/javaScript.png';
 import gfgwebsite from '../img/GFGKIITWebsitePoster.png';
 import cross from '../img/cross.png';
-import '../css/project.css';
+import '../css/Project.css';
 import {Helmet} from 'react-helmet';
 
 //Vanilla JavaScript for Pop-up
