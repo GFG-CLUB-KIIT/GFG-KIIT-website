@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../css/LandingBody.css';
+import '../css/landing-body.css';
 import Background from './Background';
 import Footer from './Footer';
 import {Helmet} from 'react-helmet';
@@ -53,11 +53,10 @@ class LandingBody extends Component {
                   <div class="project_img">
                     <div id="project_img_display2"></div>
                   </div>
-                  <div class="project_title">GeeksforGeeks KIIT Website</div>
+                  <div class="project_title">GFG KIIT Website</div>
                   <div class="project_desc">
                   Our Web-Dev Team started working on their 1st project, Geeksforgeeks KIIT Student Club Website. 
                   It possesses a programmer’s search feature that enables the users to search various programming concepts. 
-                  It also has been administered with a profanity filter that identifies unparliamentary language by any user and purges them.
                   </div>
               </a>
           </div>

@@ -19,9 +19,9 @@ import react from '../img/react.png';
 import html from '../img/html.png';
 import css from '../img/css.png';
 import JavaScript from '../img/javaScript.png';
-import gfgwebsite from '../img/gfgwebsite.png';
+import gfgwebsite from '../img/GFGKIITWebsitePoster.png';
 import cross from '../img/cross.png';
-import '../css/Project.css';
+import '../css/project.css';
 import {Helmet} from 'react-helmet';
 
 //Vanilla JavaScript for Pop-up
@@ -93,7 +93,7 @@ class Project extends Component {
                 </div>
                 <div className="bg-modal3">
                     <div class="modal-content3">
-                        <div id="popup_top_image1">
+                        <div id="popup_top_image2">
                             <div className="cross">
                                 <a href="#" className="list-item" onClick={displayNone3} ><img src={cross} className="fa-times"/></a>
                             </div>

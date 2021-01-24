@@ -1,0 +1,308 @@
+/*EVENT*/
+#upcomingEvent {
+    margin-left: 8%;
+    width: 26%;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 50px;
+    font-family: sans-serif;
+    position: relative;
+    float: left;
+ }
+ #landing_line_Event {
+    float: left;
+    position: relative;
+    width: 58%;
+    margin-top: 68px;
+    background-color: rgb(44, 43, 43);
+    height: 1px;
+ }
+ #landing_title {
+    width: 400px;
+    float: left !important;
+    color: white;
+    margin-left: 70%;
+    margin-top: -300px;
+    position: absolute;
+ }
+ #landing_title_right1 {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: sans-serif;
+    letter-spacing: 1.5px;
+ }
+ #landing_title_right2 {
+    font-size: 20px;
+    margin-left: 5px;
+ }
+ #event {
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+ }
+ #event_img {
+    padding: 3% 4% 5% 4%;
+    width: 42%;
+    float: left;
+ }
+ #event_img_display {
+    width: 100%;
+    height: 350px;
+    background-image: url("../components/slick-slider/images/code-rush-1-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 6px;
+ }
+ #event_context {
+    width: 44%;
+    float: left;
+    padding: 3% 4% 5% 2%;
+    text-align: right;
+ }
+ #event_content {
+    float: left;
+    width: 100%;
+    border-right: 2px solid black;
+    padding-right: 10px;
+ }
+ #event_title {
+    font-size: 30px;
+    float: right;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    font-weight: 600;
+ }
+ #event_desc {
+    font-size: 16px;
+    padding-right: 15px;
+    font-weight: 500;
+    float: right;
+    line-height: 1.2rem;
+ }
+ .event_space {
+    padding-top: 8px !important;
+ }
+ .event_bold {
+    font-weight: 800;
+ }
+ #register_button {
+    margin-top: 3rem;
+    text-decoration: none;
+    padding: 12px 15px;
+    font-size: 17px;
+    background-color: #ffc107;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    float: right;
+    transition: 0.6s ease;
+    z-index: 150;
+    position: relative;
+ }
+ #register_button:hover {
+    background-color: #eeb200;
+    box-shadow: 4px 4px 8px gray;
+ }
+ /*projects*/
+ #landingProjectsDisplay {
+    margin-left: 7%;
+    width: 15%;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 33px;
+    font-family: sans-serif;
+    position: relative;
+    float: left;
+ }
+ #landing_line_Project {
+    float: left;
+    position: relative;
+    width: 71%;
+    margin-top: 55px;
+    background-color: rgb(44, 43, 43);
+    height: 1.5px;
+ }
+ #projects {
+    width: 100%;
+    margin-top: 40px;
+    float: left;
+ }
+ .project_card {
+    float: left;
+    width: 300px;
+    margin-left: 7%;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: black;
+    z-index: 150;
+    position: relative;
+ }
+ .project_img {
+    width: 100%;
+ }
+ #project_img_display1 {
+    width: 100%;
+    height: 180px;
+    background-image: url("../img/geekbot_dark.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    border: 1px solid black;
+ }
+ 
+ #project_img_display2 {
+    width: 100%;
+    height: 180px;
+    background-image: url("../img/GFGKIITWebsitePoster.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    background-size: cover;
+    border-radius: 6px;
+ }
+ .project_title {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 5px;
+ }
+ .project_desc {
+    float: left;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 100!important;
+ }
+ 
+ /* landing page style  */
+ #landing_page_style {
+    float: left;
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ 
+ @media screen and (max-width: 730px) {
+    #landing_line_Event, #landing_line_Project{
+       display: none;
+    }
+    #upcomingEvent{
+       width: 100%;
+    }
+    #landing_title {
+       margin-left: 33%;
+    }
+    #event_title{
+       margin-top: 15px;
+    }
+    #event_img {
+       width: 92%;
+       padding: 5% 4% 0% 4%;
+    }
+    #event_context {
+       width: 96%;
+       padding: 0%;
+       margin-bottom: 50px;
+    }
+    #event_button {
+       margin-top: 1rem;
+    }
+    .project_card {
+       margin-left: 20%;
+    }
+ }
+ 
+ /* landing page marquee style  */
+ .landing-scroll-branding {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px 100px 0px !important;
+    overflow: hidden;
+    font-family: "Montserrat";
+ }
+ .landing-scroll-branding .scroll {
+    width: 100%;
+    display: flex;
+ }
+ .landing-scroll-branding .scroll {
+    animation-play-state: paused;
+ }
+ 
+ .landing-scroll-branding .scroll div {
+    color: rgba(0, 0, 0, 0);
+    font-size: 3em;
+    white-space: nowrap;
+    padding: 10px;
+    font-weight: 800;
+    text-transform: none;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.75);
+ }
+ .landing-scroll-branding .scroll div span{
+    padding-left:10px ;
+ }
+ .landing-scroll-branding .scroll .filled {
+    color: rgba(0, 0, 0, 0.75);
+ }
+ .landing-scroll-branding .org div {
+    animation: animate 80s linear infinite;
+    animation-delay: -80s;
+ }
+ .landing-scroll-branding .org div:nth-child(2) {
+    animation: animate2 80s linear infinite;
+    animation-delay: -40s;
+ }
+ 
+ .landing-scroll-branding .alt div {
+    animation: animate-alt 80s linear infinite;
+    animation-delay: -80s;
+ }
+ 
+ .landing-scroll-branding .alt div:nth-child(2) {
+    animation: animate-alt2 80s linear infinite;
+    animation-delay: -40s;
+ }
+ 
+ @keyframes animate {
+    0% {
+       transform: translateX(100%);
+    }
+    100% {
+       transform: translateX(-100%);
+    }
+ }
+ @keyframes animate2 {
+    0% {
+       transform: translateX(0%);
+    }
+    100% {
+       transform: translateX(-200%);
+    }
+ }
+ 
+ @keyframes animate-alt {
+    0% {
+       transform: translateX(-100%);
+    }
+    100% {
+       transform: translateX(100%);
+    }
+ }
+ @keyframes animate-alt2 {
+    0% {
+       transform: translateX(-200%);
+    }
+    100% {
+       transform: translateX(0%);
+    }
+ }
