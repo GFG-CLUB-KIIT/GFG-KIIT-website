@@ -20,6 +20,7 @@ body{
 }
 #aboutUs_body{
     padding: 0px 5%;
+    overflow-x: hidden;
 }
 #cm_title{
     width: 100%;
@@ -180,7 +181,7 @@ body{
   }
   @media screen and (max-width: 1000px){
     #aboutUs_title{
-        margin-left: 55%;
+        display: none;
     }
     .cm_title_display ,.lead_title_display{
         width: 100%;

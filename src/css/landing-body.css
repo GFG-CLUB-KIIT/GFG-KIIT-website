@@ -40,6 +40,7 @@
     float: left;
     width: 90%;
     margin-left: 5%;
+    overflow-x: hidden;
  }
  #event_img {
     padding: 3% 4% 5% 4%;
@@ -130,6 +131,7 @@
     width: 100%;
     margin-top: 40px;
     float: left;
+    overflow-x: hidden;
  }
  .project_card {
     float: left;
