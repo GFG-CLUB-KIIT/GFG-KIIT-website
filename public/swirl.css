@@ -1,8 +1,8 @@
 /* please add reset styleheet for this webpage */
 
 * {
-   margin: 0;
-   padding: 0;
+   margin: 0px;
+   padding: 0px;
 }
 body {
    background: #fefefe;
@@ -23,7 +23,11 @@ body {
    mix-blend-mode: color;
    z-index: 1;
 }
-
+@media screen and (max-width: 800px){
+   .blend-mode{
+      height: 100%;
+   }
+}
 /* .landing-clipping-mask {
    clip-path: polygon(0 0, 100% 26%, 100% 83%, 19% 100%, 0 74%);
 } */

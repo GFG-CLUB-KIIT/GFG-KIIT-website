@@ -1,5 +1,4 @@
 /* for removing scroll bar */
-
 ::-webkit-scrollbar {
    width: 0px;
 }

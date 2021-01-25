@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto&display=swap");
-
+#Events_title{
+   width: 400px;
+   float: left!important;
+   color: white;
+   margin-left: 15%;
+   margin-top: -300px;
+   position:absolute;
+}
+#Events_title_right{
+   font-size: 40px;
+   font-weight: 500;
+   font-family: sans-serif;
+   letter-spacing: 1.5px;
+}
 #event-slider-main
    .slick-slider
    .slick-list
@@ -199,6 +212,13 @@
 }
 .event .flex-container .code-rush-1-1-img {
    background-image: url("images/code-rush-1-1.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: white;
+}
+.event .flex-container .code-rush-1-2-img {
+   background-image: url("images/code-rush-1-2.png");
    background-size: contain;
    background-repeat: no-repeat;
    background-position: center;
