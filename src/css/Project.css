@@ -320,7 +320,8 @@ p {
     #project_title{
         display: none;
     }
-    .modal-content3{
+    .modal-content3,
+    .modal-content1{
         height: 550px!important;
     }
     .popup_bottom_frame{
