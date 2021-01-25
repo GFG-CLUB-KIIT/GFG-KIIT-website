@@ -139,8 +139,8 @@ p {
 .modal-content2,
 .modal-content3,
 .modal-content4 {
-    width: 550px!important;
-    height: 500px !important;
+    width: 550px;
+    height: 500px;
     color: black;
     border-radius: 10px;
     position: relative;
@@ -319,5 +319,12 @@ p {
 @media screen and (max-width: 730px){
     #project_title{
         display: none;
+    }
+    .modal-content3{
+        height: 550px!important;
+    }
+    .popup_bottom_frame{
+        margin-left: 10px;
+        margin-top: 5px;
     }
 }
