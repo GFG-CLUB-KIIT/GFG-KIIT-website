@@ -12,6 +12,9 @@ function Events() {
                <title>Geeksforgeeks | KIIT - Events</title>
          </Helmet>
          <Background clipType="clipping-events" overlayColor="bgcolor-events"></Background>
+         <div id="Events_title">
+            <lable id="Events_title_right">Events</lable> 
+         </div>
          <PastEvents></PastEvents>
          <FooterLanding bgColor="footer-events"></FooterLanding>
       </div>

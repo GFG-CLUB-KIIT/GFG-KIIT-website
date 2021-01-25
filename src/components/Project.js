@@ -113,8 +113,6 @@ class Project extends Component {
                                     <a href="https://github.com/Devansh2000Shaw" target="_blank" rel="noopener noreferrer" title="Devansh Shaw"><img alt="images" src={DevanshShaw} class="project_contri_img2" /></a>
                                     <a href="https://github.com/kingsrv18" target="_blank" rel="noopener noreferrer" title="Sourav Dash"><img alt="images" src={SouravDash} class="project_contri_img2" /></a>
                                     <a href="https://github.com/akashchouhan16" target="_blank" rel="noopener noreferrer" title="Akash Chouhan"><img alt="images" src={AkashChouhan} class="project_contri_img1" /></a>
-                                    <a href="https://github.com/shivam-kumar123" target="_blank" rel="noopener noreferrer" title="Shivam Kumar"><img alt="images" src={ShivamKumar} class="project_contri_img2" /></a>
-                                    <a href="https://github.com/ashishmishra-bit" target="_blank" rel="noopener noreferrer" title="Ashish Kumar Mishra"><img alt="images" src={AshishKumarMishra} class="project_contri_img2" /></a>
                                     <a href="https://github.com/divshekhar/" target="_blank" rel="noopener noreferrer" title="Divyanshu Shekhar"><img alt="images" src={DivyanshuShekhar} class="project_contri_img2" /></a>
                                     <a href="https://github.com/arn4b" target="_blank" rel="noopener noreferrer" title="Arnab Chatterjee"><img alt="images" src={ArnabChatterjee} class="project_contri_img2" /></a>
                                 </div>

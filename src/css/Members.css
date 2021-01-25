@@ -192,10 +192,11 @@ body{
         margin-left: 18%;
     }
     .member_title_display{
-       font-size: 24px;
+       font-size: 20px;
     }
     .lead_title_display{
         border-bottom: 1.5px solid black;
         width: 80%;
+        font-size: 24px;
     }
 }
