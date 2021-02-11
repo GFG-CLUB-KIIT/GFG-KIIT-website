@@ -211,9 +211,6 @@ nav ul li a {
       left: 0;
       z-index: 100;
    }
-   /* #nav_check:checked ~ #nav_gfglogo {
-      color: white;
-   } */
 }
 
 @media screen and (max-width: 500px) {

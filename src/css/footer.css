@@ -310,3 +310,8 @@
       margin: 0.5rem 0;
    }
 }
+@media only screen and (max-width: 400px) {
+   .description2{
+      margin-top: 29px;
+   }
+}

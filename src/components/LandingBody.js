@@ -25,14 +25,17 @@ class LandingBody extends Component {
             </div>
               <div id="event_context">
                   <div id="event_content">
-                      <div id="event_title">Code Rush 1.2</div>
+                      <div id="event_title">Dev<lable className="cast_green">Cast</lable> E03</div>
                       <div id="event_desc">
-                          <p>Hash Code is a team programming competition, organized by Google, for students and professionals around the world. You pick your team and programming language and we pick an engineering problem for you to solve. This year’s contest kicks off with an Online Qualification, where your team can compete virtually from wherever you’d like, alongside your virtual Hub. Top teams will then be invited to compete from our virtual World Finals.</p>
-                          <p class="event_space"><b class="event_bold">TIME :</b> 7:00 - 9:00 PM </p>
-                          <p class="event_space"><b class="event_bold">DATE :</b> 23-01-2021 </p>
+                          <p>DevCast E03 is here & will feature Samridhi Mehta, a KIIT-alumni who has made it to Google.
+                            So brace your selves up and watch her bring life to the show as she will give some quick tips and share valuable experiences of her amazing journey.
+                            Take note of the tips 'n tricks, 'cuz why not?</p>
+                          <p class="event_space"><b class="event_bold">TIME :</b> 4:00 PM </p>
+                          <p class="event_space"><b class="event_bold">DATE :</b> 31-01-2021 </p>
                       </div>
                   </div>
-                  <a href="/RegistrationForm" id="register_button">Register Now</a>
+                  {/* <a href="/RegistrationForm" id="register_button">Register Now</a> */}
+                  {/* <a href="/RegistrationForm" id="watch_now_button">Watch Now</a> */}
               </div>
           </div>
           <h1 id="landingProjectsDisplay">Projects</h1>
