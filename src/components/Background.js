@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 function Background(props) {
    console.log(props);
    return (
