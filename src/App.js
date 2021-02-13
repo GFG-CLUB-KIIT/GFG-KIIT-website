@@ -11,7 +11,7 @@ import {BrowserRouter, Route , Switch } from 'react-router-dom';
 class App extends React.Component {
   render() {
     return (
-       <div>
+       <div style={{overflowX:'hidden'}}>
          <Navbar></Navbar>
          <BrowserRouter>
             <Switch>
