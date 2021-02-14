@@ -47,8 +47,8 @@ import Footer from './Footer';
 import { Helmet } from 'react-helmet';
 import '../css/Members.css';
 import '../css/swiper.min.css';
-import Background from './Background';
-import FooterLanding from './FooterLanding.js';
+// import Background from './Background';
+// import FooterLanding from './FooterLanding.js';
 
 class AboutUs extends Component {
    render() {

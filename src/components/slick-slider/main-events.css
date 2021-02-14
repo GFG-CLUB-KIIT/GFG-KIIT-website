@@ -20,7 +20,7 @@
 #event-slider-main .slick-slider .slick-dots li button::before {
    font-size: 12px;
    transition: all 0.3s ease-in-out;
-   color: rgba(0, 0, 0, 1) !important;
+   color: #333;
 
    text-shadow: 0px 0px 4px rgba(150, 150, 150, 1);
 }
@@ -141,6 +141,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
+   #event-slider-main {
+      padding: 50px 0;
+   }
    #event-slider-main
       .slick-slider
       .slick-list
@@ -168,13 +171,24 @@
    #event-slider-main .slick-slider .slick-dots {
       transform: rotate(0deg);
       top: 90%;
-      left: 40%;
+      left: 10%;
+      height: 10%;
+      width: 80vw;
    }
 
    #event-slider-main .slick-slider .slick-dots li button::before {
-      color: #fefefe !important;
+      color: #cdcdcd;
       opacity: 1 !important;
    }
+
+   #event-slider-main .slick-slider .slick-active button:before {
+      color: #333 !important;
+      text-shadow: none;
+      /* text-shadow: 0px 0px 5px rgba(12, 233, 178, 0.68) !important; */
+   }
+   /* #event-slider-main .slick-slider .slick-active li button:before {
+      color: rgb(12, 233, 178) !important;
+   } */
 
    .slider-arrows {
       transform: rotate(0deg);
