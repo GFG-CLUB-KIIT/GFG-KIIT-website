@@ -1,5 +1,56 @@
+/* INTRO */
+.landing_intro{
+   width: 100%;
+   float: left;
+}
+#landing_intro_title {
+   margin-left: 8%;
+   width: 35%;
+   margin-bottom: 10px;
+   font-weight: 700;
+   font-size: 40px;
+   margin-top: 50px;
+   font-family: sans-serif;
+   position: relative;
+   float: left;
+}
+#landing_intro_line {
+   float: left;
+   position: relative;
+   width: 49%;
+   margin-top: 68px;
+   background-color: rgb(44, 43, 43);
+   height: 1px;
+}
+.LI_content{
+   width: 100%;
+   float: left;
+}
+.LI_image{
+   float: left;
+   width: 42%;
+   height: 380px;
+   margin-left: 7%;
+   background-image: url("../img/landingpage.png");
+   background-position: cover;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+.LI_context{
+   float: left;
+   width: 43%;
+   margin: 2% 6% 0% 0%;
+   padding-right: 1%;
+   font-family: Raleway;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 35px;
+   text-align: right;
+   border-right: 2px solid black;
+}
 /*EVENT*/
-#upcomingEvent {
+#upcomingEvent{
     margin-left: 8%;
     width: 26%;
     margin-bottom: 10px;
@@ -72,18 +123,18 @@
     padding-right: 10px;
  }
  #event_title {
-    font-size: 30px;
+    font-size: 35px;
     float: right;
     padding-bottom: 10px;
     padding-right: 15px;
     font-weight: 600;
  }
  #event_desc {
-    font-size: 16px;
+    font-size: 18px;
     padding-right: 15px;
-    font-weight: 500;
+    font-weight: 100;
     float: right;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
  }
  .event_space {
     padding-top: 8px !important;
@@ -171,7 +222,7 @@
  #project_img_display1 {
     width: 100%;
     height: 180px;
-    background-image: url("../img/geekbot_dark.png");
+    background-image: url("../img/geekbot.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,27 +230,41 @@
     border: 1px solid black;
  }
  
- #project_img_display2 {
-    width: 100%;
-    height: 180px;
-    background-image: url("../img/GFGKIITWebsitePoster.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 1px solid black;
-    background-size: cover;
-    border-radius: 6px;
- }
+#project_img_display2 {
+   width: 100%;
+   height: 180px;
+   background-image: url("../img/GFGKIITWebsitePoster.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   border: 1px solid black;
+   background-size: cover;
+   border-radius: 6px;
+}
+#project_img_display3 {
+   width: 100%;
+   height: 180px;
+   background-image: url("../img/devcast3.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   border: 1px solid black;
+   background-size: cover;
+   border-radius: 6px;
+}
  .project_title {
     width: 100%;
-    font-size: 22px;
-    font-weight: 700;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 900;
     letter-spacing: 1px;
-    padding: 5px;
+    padding-top: 15px;
  }
  .project_desc {
     float: left;
+    font-weight: 500;
     padding: 5px;
-    font-size: 15px;
+    text-align: center;
+    font-size: 16px;
     font-weight: 100!important;
  }
  
