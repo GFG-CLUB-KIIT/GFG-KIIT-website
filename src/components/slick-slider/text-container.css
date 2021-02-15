@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto&display=swap");
-#Events_title{
-   width: 400px;
-   float: left!important;
-   color: white;
-   margin-left: 15%;
-   margin-top: -300px;
-   position:absolute;
+#Events_title {
+   /* width: 100vw; */
+   float: left !important;
+   color: #fefefe;
+   padding-left: 10%;
+   position: absolute;
+   top: 60%;
 }
-#Events_title_right{
+#Events_title_right {
    font-size: 40px;
    font-weight: 500;
    font-family: sans-serif;
@@ -237,7 +237,7 @@
       .text-container {
       margin: 0 10%;
       width: 80%;
-      height: 50vh;
+      height: 60vh;
    }
    #event-slider-main
       .slick-slider
