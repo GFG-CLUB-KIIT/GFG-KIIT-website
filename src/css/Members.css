@@ -75,6 +75,9 @@ body {
    margin-top: 10px;
 }
 .member-box {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
    float: left;
 
    margin-bottom: 150px;
