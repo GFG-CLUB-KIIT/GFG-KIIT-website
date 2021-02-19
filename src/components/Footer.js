@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/footer.css'
 function FooterLanding(props){
    return ( 
-      <div class="parent-element">
+      <div>
          <div className={`footer ${props.bgColor}`}>
             <div class="grid-container">
                <div class="wanna-talk-to-us"><h1>Wanna talk to us?</h1></div>

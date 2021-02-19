@@ -44,15 +44,20 @@ import '../css/swiper.min.css';
 import '../css/Members.css';
 import Background from './Background';
 import Footer from './Footer';
-import {Helmet} from 'react-helmet';
+import { Helmet } from 'react-helmet';
+import '../css/Members.css';
+import '../css/swiper.min.css';
+// import { responsiveFontSizes } from '@material-ui/core';
+// import Background from './Background';
+// import FooterLanding from './FooterLanding.js';
 
 class AboutUs extends Component {
-render() {
-    return (
-        <div className="parent-element">
+   render() {
+      return (
+         <div className="parent-element">
             {/* <!-- Dynamic Title --> */}
             <Helmet>
-                <title>Geeksforgeeks | KIIT - About Us</title>
+               <title>Geeksforgeeks | KIIT - About Us</title>
             </Helmet>
             <Background clipType="clipping-aboutUs" overlayColor="bgcolor-aboutUs"></Background>
             <div className="aboutUsBody">
@@ -108,11 +113,24 @@ render() {
                 <div className="member-box">
                 <div className="member_title">Competitive Programmers</div>
                     <div className="member">
-                        <div className="member_photo">
-                            <img src={HarshDwivedi} alt="HeadImage" />
+                        
+                        <div className="member_photo" style={{backgroundImage:`url(${HarshDwivedi})`}}>
+                           <div className="overlay">
+                           <div className="flex-container">
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                              <a href="#"><i class="fab fa-github"></i></a>
+                              <a href="#"><i class="fab fa-linkedin"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              {/* <a href="#"><i class="fab fa-"></i></a> */}
+                              {/* <i class="fab fa-github"></i>
+                              <i class="fab fa-linkedin"></i> */}
+                           </div>
+                           </div>
+                           
+                           {/* <img src={HarshDwivedi} alt="HeadImage" /> */}
                         </div>
                         <div className="member_name">Harsh Dwivedi</div>
-                        <div>Lead</div>
+                        <div className="member-position">Lead</div>
                     </div>
                     <div className="member">
                         <div className="member_photo">
