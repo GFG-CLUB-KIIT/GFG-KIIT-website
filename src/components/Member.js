@@ -44,15 +44,19 @@ import '../css/swiper.min.css';
 import '../css/Members.css';
 import Background from './Background';
 import Footer from './Footer';
-import {Helmet} from 'react-helmet';
+import { Helmet } from 'react-helmet';
+import '../css/Members.css';
+import '../css/swiper.min.css';
+// import Background from './Background';
+// import FooterLanding from './FooterLanding.js';
 
 class AboutUs extends Component {
-render() {
-    return (
-        <div className="parent-element">
+   render() {
+      return (
+         <div className="parent-element">
             {/* <!-- Dynamic Title --> */}
             <Helmet>
-                <title>Geeksforgeeks | KIIT - About Us</title>
+               <title>Geeksforgeeks | KIIT - About Us</title>
             </Helmet>
             <Background clipType="clipping-aboutUs" overlayColor="bgcolor-aboutUs"></Background>
             <div className="aboutUsBody">
