@@ -117,9 +117,13 @@ class AboutUs extends Component {
                         <div className="member_photo" style={{backgroundImage:`url(${HarshDwivedi})`}}>
                            <div className="overlay">
                            <div className="flex-container">
-                              <i class="fab fa-instagram"></i>
-                              <i class="fab fa-github"></i>
-                              <i class="fab fa-linkedin"></i>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                              <a href="#"><i class="fab fa-github"></i></a>
+                              <a href="#"><i class="fab fa-linkedin"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              {/* <a href="#"><i class="fab fa-"></i></a> */}
+                              {/* <i class="fab fa-github"></i>
+                              <i class="fab fa-linkedin"></i> */}
                            </div>
                            </div>
                            

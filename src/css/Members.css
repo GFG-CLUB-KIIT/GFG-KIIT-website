@@ -131,10 +131,19 @@ body {
    transition: 0.3s ease-in-out;
 }
 .member_photo .overlay .flex-container i:hover {
-   color: #f85cf8;
+   /* color: #f85cf8; */
    margin-bottom: 10px;
    transition: 0.2s ease-in-out;
    cursor: pointer;
+}
+.member_photo .overlay .flex-container .fa-instagram:hover {
+   color: #e1306c;
+}
+.member_photo .overlay .flex-container .fa-github:hover {
+   color: lime;
+}
+.member_photo .overlay .flex-container .fa-linkedin:hover {
+   color: #307de1;
 }
 .member_photo .overlay {
    position: absolute;
