@@ -17,6 +17,19 @@ class LandingBody extends Component {
                 <lable id="landing_title_right1">GeeksforGeeks</lable> <br/>
                 <lable id="landing_title_right2">KIIT Chapter</lable> 
             </div>
+            <div className="landing_intro">
+                <h1 id="landing_intro_title">One for All, All for One</h1>
+                <div id="landing_intro_line"></div>
+                <div className="LI_content">
+                    <div className="LI_image"></div>
+                    <div className="LI_context">
+                    We are a group of enthusiasts trying to spread the idea of One for All and All for One.
+                    We inspire students to practice coding, get 
+                    acquainted with algorithms and enjoy the concepts in a full fledged way.
+                    We are putting immense efforts in increasing the standards of our society by proposing new ideas for the benefit of our fellow mates and for our growth as well.
+                    </div>
+                </div>
+            </div>
           <h1 id="upcomingEvent">Upcoming Event</h1>
           <div id="landing_line_Event"></div>
           <div id="event">
@@ -25,7 +38,8 @@ class LandingBody extends Component {
             </div>
               <div id="event_context">
                   <div id="event_content">
-                      <div id="event_title">Dev<lable className="cast_green">Cast</lable> E03</div>
+                      {/* <div id="event_title">Dev<lable className="cast_green">Cast</lable> E03</div> */}
+                      <div id="event_title">Google Hashcode</div>
                       <div id="event_desc">
                           <p>DevCast E03 is here & will feature Samridhi Mehta, a KIIT-alumni who has made it to Google.
                             So brace your selves up and watch her bring life to the show as she will give some quick tips and share valuable experiences of her amazing journey.
@@ -34,7 +48,7 @@ class LandingBody extends Component {
                           <p class="event_space"><b class="event_bold">DATE :</b> 31-01-2021 </p>
                       </div>
                   </div>
-                  {/* <a href="/RegistrationForm" id="register_button">Register Now</a> */}
+                  <a href="/RegistrationForm" id="register_button">Register Now</a>
                   {/* <a href="/RegistrationForm" id="watch_now_button">Watch Now</a> */}
               </div>
           </div>
@@ -57,6 +71,16 @@ class LandingBody extends Component {
                     <div id="project_img_display2"></div>
                   </div>
                   <div class="project_title">GFG KIIT Website</div>
+                  <div class="project_desc">
+                  Our Web-Dev Team started working on their 1st project, Geeksforgeeks KIIT Student Club Website. 
+                  It possesses a programmer’s search feature that enables the users to search various programming concepts. 
+                  </div>
+              </a>
+              <a href="/projects" class="project_card">
+                  <div class="project_img">
+                    <div id="project_img_display3"></div>
+                  </div>
+                  <div class="project_title">Hear ME</div>
                   <div class="project_desc">
                   Our Web-Dev Team started working on their 1st project, Geeksforgeeks KIIT Student Club Website. 
                   It possesses a programmer’s search feature that enables the users to search various programming concepts. 
