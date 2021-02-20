@@ -45,7 +45,11 @@ class Project extends Component {
                     <title>Geeksforgeeks | KIIT - Projects</title>
                 </Helmet>
                 <Background clipType="clipping-projects" overlayColor="bgcolor-projects"></Background>
-                <div id="project_title">Projects</div>
+                <div className="projects_header_slogan">
+                    <div style={{fontWeight: "600", fontSize: "35px"}}>Projects</div><br></br>
+                    From Concept to Creation - Projects are the way to showcase not only what one has learnt, but also what brainstorming one has done with their ideas.
+                    Here are the projects our teams have worked on so far.
+                </div>
                 {/* <!-- CONTENT --> */}
                 <p className = "project">Projects</p>
                 <div className="slogan_project" >

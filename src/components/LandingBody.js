@@ -39,16 +39,16 @@ class LandingBody extends Component {
               <div id="event_context">
                   <div id="event_content">
                       {/* <div id="event_title">Dev<lable className="cast_green">Cast</lable> E03</div> */}
-                      <div id="event_title">Google Hashcode</div>
+                      <div id="event_title">Google Hashcode 2021</div>
                       <div id="event_desc">
-                          <p>DevCast E03 is here & will feature Samridhi Mehta, a KIIT-alumni who has made it to Google.
-                            So brace your selves up and watch her bring life to the show as she will give some quick tips and share valuable experiences of her amazing journey.
-                            Take note of the tips 'n tricks, 'cuz why not?</p>
-                          <p class="event_space"><b class="event_bold">TIME :</b> 4:00 PM </p>
-                          <p class="event_space"><b class="event_bold">DATE :</b> 31-01-2021 </p>
+                          <p>Hey Geeks, <br></br>It's almost time to wind up the registration process of HASHCODE 2021 and we don't want any of you to let this opportunity go in vain.
+                            So if you are yet to get yourself enrolled. This year we are enlightened to be the organizers of the Google Hashcode 2021.
+                            <br></br>Make sure you register under the "KIIT-GFG Hub".</p>
+                          <p class="event_space"><b class="event_bold">TIME :</b> 11:00 PM - 3:00 AM </p>
+                          <p class="event_space"><b class="event_bold">DATE :</b> 25-02-2021 </p>
                       </div>
                   </div>
-                  <a href="/RegistrationForm" id="register_button">Register Now</a>
+                  <a href="https://discord.gg/rJmtsvTH8F" id="register_button" target="_blank" rel="noopener noreferrer">Join Discord</a>
                   {/* <a href="/RegistrationForm" id="watch_now_button">Watch Now</a> */}
               </div>
           </div>
@@ -63,7 +63,7 @@ class LandingBody extends Component {
                   <div class="project_desc">
                     Our App-Dev Team started working on their 1st project, the Geek Bot. 
                     It possesses a programmer’s search feature that enables the users to search various programming concepts. 
-                    Besides, it even returns the list of all ongoing coding events all around the world when called. 
+                    Besides, it even returns the list of all ongoing coding events all around the world. 
                   </div>
               </a>
               <a href="/projects" class="project_card">
@@ -82,7 +82,7 @@ class LandingBody extends Component {
                   </div>
                   <div class="project_title">Hear ME</div>
                   <div class="project_desc">
-                  Our Web-Dev Team started working on their 1st project, Geeksforgeeks KIIT Student Club Website. 
+                  Our CP Team started working on their 1st project, Hear Me. 
                   It possesses a programmer’s search feature that enables the users to search various programming concepts. 
                   </div>
               </a>

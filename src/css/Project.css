@@ -4,6 +4,20 @@
     margin-top: 10px;
     margin-bottom: 5px;
 }
+.projects_header_slogan{
+    float: left !important;
+   color: white;
+   margin-left: 46%;
+   position: absolute;
+   width: 515px;
+   height: 190px;
+   top: 200px;
+   font-size: 30px;
+   font-family: raleway;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 37px;
+}
 #project_title{
     width: 400px;
     float: left!important;
@@ -311,6 +325,16 @@ p {
 }
 
 @media screen and (max-width: 800px){
+    .projects_header_slogan{
+        top:130px;
+        font-size: 21px;
+        width: 260px;
+        height: 200px;
+        margin-left: 7%;
+        padding: 18px;
+        line-height: 25px;
+        font-weight: 400;
+    }
     .popup_card{
         width: 200px;
         height: 190px;

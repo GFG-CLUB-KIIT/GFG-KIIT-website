@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto&display=swap");
 #Events_title {
-   /* width: 100vw; */
    float: left !important;
    color: #fefefe;
-   padding-left: 10%;
+   margin-left: 15%;
    position: absolute;
-   top: 60%;
-}
-#Events_title_right {
-   font-size: 40px;
-   font-weight: 500;
-   font-family: sans-serif;
-   letter-spacing: 1.5px;
+   width: 515px;
+   height: 190px;
+   top: 40%;
+   font-size: 30px;
+   font-family: raleway;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 37px;
 }
 #event-slider-main
    .slick-slider
@@ -226,6 +226,16 @@
 }
 
 @media only screen and (max-width: 600px) {
+   #Events_title{
+      top:30%;
+      font-size: 21px;
+      width: 260px;
+      height: 200px;
+      margin-left: 10%;
+      padding: 18px;
+      line-height: 25px;
+      font-weight: 400;
+   }
    #event-slider-main
       .slick-slider
       .slick-list
