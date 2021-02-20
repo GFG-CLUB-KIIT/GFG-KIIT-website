@@ -94,15 +94,15 @@
     overflow-x: hidden;
  }
  #event_img {
-    padding: 3% 4% 5% 4%;
-    width: 42%;
+    padding: 3% 0% 5% 4%;
+    width: 46%;
     float: left;
  }
  #event_img_display {
     width: 100%;
     height: 350px;
-    background-image: url("../img/devcast3.jpg");
-    background-position: cover;
+    background-image: url("../img/hashcode.png");
+    background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 6px;
@@ -227,7 +227,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 6px;
-    border: 1px solid black;
  }
  
 #project_img_display2 {
@@ -236,17 +235,15 @@
    background-image: url("../img/GFGKIITWebsitePoster.png");
    background-position: center;
    background-repeat: no-repeat;
-   border: 1px solid black;
    background-size: cover;
    border-radius: 6px;
 }
 #project_img_display3 {
    width: 100%;
    height: 180px;
-   background-image: url("../img/devcast3.jpg");
+   background-image: url("../img/hearme.jfif");
    background-position: center;
    background-repeat: no-repeat;
-   border: 1px solid black;
    background-size: cover;
    border-radius: 6px;
 }
@@ -255,7 +252,7 @@
     text-align: center;
     font-family: Raleway;
     font-size: 25px;
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: 1px;
     padding-top: 15px;
  }
@@ -281,10 +278,10 @@
  }
  
  @media screen and (max-width: 730px) {
-    #landing_line_Event, #landing_line_Project{
+    #landing_line_Event, #landing_line_Project, #landing_intro_line{
        display: none;
     }
-    #upcomingEvent{
+    #upcomingEvent, #landing_intro_title{
        width: 100%;
     }
     #landing_title {
@@ -293,11 +290,11 @@
     #event_title{
        margin-top: 15px;
     }
-    #event_img {
+    #event_img , .LI_image{
        width: 92%;
        padding: 5% 4% 0% 4%;
     }
-    #event_context {
+    #event_context , .LI_context {
        width: 96%;
        padding: 0%;
        margin-bottom: 50px;
@@ -307,6 +304,7 @@
     }
     .project_card {
        margin-left: 20%;
+       margin-bottom: 90px;
     }
  }
  
@@ -396,16 +394,31 @@
     }
  }
  @media screen and (max-width: 400px) {
+   #landing_intro_title{
+      font-size: 30px;
+      margin-left: 5%;
+   }
    #landing_title {
-      margin-left: 15%;
+      margin-left: 8%;
+      margin-top: -250px;
+   }
+   #landing_title_right1{
+      font-size:38px ;
    }
    .project_card {
       margin-left: 8%;
+   }
+   .LI_image{
+      height: 200px;
    }
    #event_img_display {
       height: 250px;
    }
    #event_title{
       margin-top: 0px;
+   }
+   .LI_context{
+      padding-right: 10px;
+      padding-left: 10px;
    }
 }
