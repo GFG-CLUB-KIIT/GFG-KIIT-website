@@ -1,220 +1,216 @@
-/* for removing scroll bar */
-::-webkit-scrollbar {
-   width: 0px;
-}
-nav {
-   padding-bottom: 10px;
-   position: fixed;
-   width: 100vw;
-   z-index: 200;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   transition: all 0.3s ease;
-}
-.makeBigger {
-   width: 80px !important;
-   transition: all 0.3s ease-in-out;
-   padding: 0;
-}
-.makeSmaller {
-   width: 50px !important;
-   transition: all 0.3s ease-in-out;
-   padding: 0;
-}
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); */
 
+::-webkit-scrollbar {
+   width: 10px;
+}
+::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+   background: #888;
+}
+::selection {
+   background: rgb(0, 123, 255, 0.3);
+}
+.content {
+   max-width: 1250px;
+   margin: auto;
+   padding: 0px 30px;
+}
+.navbar {
+   position: fixed;
+   z-index: 5;
+   width: 100%;
+   padding: 25px 0;
+   transition: all 0.3s ease;
+
+   z-index: 3;
+}
+.navbar .content .gfg-logo {
+   width: 100px;
+}
+.navbar .content .make-smaller {
+   width: 70px;
+   transition: 0.2s ease-in-out;
+}
+.navbar .content .menu-list li a {
+   font-family: "Raleway";
+   font-weight: 500;
+   color: #343434;
+}
 .sticky {
-   background-color: rgba(255, 255, 255, 1);
-   padding: 0 0;
+   padding: 10px 0;
+   background-color: #1b1b1b;
    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
-nav .logo {
-   width: 45vw;
+.sticky > .content li a {
+   color: #fefefe !important;
+}
+.navbar .content {
    display: flex;
-   justify-content: flex-start;
+   align-items: center;
+   justify-content: space-between;
 }
-#nav_gfglogo {
-   width: 100px;
-   height: 100px;
-   padding: 0;
-}
-nav ul {
-   display: flex;
-   width: 45vw;
-   justify-content: flex-end;
-   font-family: sans-serif;
-   font-weight: bold;
-}
-
-nav ul li {
-   display: inline-block;
-   line-height: 80px;
-   margin: 0 2vw;
-}
-
-nav ul li a {
-   color: #333;
-   font-size: 17px;
-   padding: 7px 13px;
-   border-radius: 0;
-   list-style: none;
+.navbar .logo a {
+   color: #fff;
+   font-size: 30px;
+   font-weight: 600;
    text-decoration: none;
 }
-
-.nav_home {
-   border-bottom: none;
+.navbar .menu-list {
+   display: inline-flex;
+}
+.menu-list li {
+   list-style: none;
+}
+.menu-list li a {
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   margin-left: 25px;
+   text-decoration: none;
+   transition: all 0.3s ease;
+}
+.menu-list li a:hover {
+   color: #007bff;
 }
 
-.nav_home:hover {
-   border-bottom: 3px solid rgb(141, 248, 141);
-}
+.navbar .content .burger-menu {
+   width: 50px;
+   height: 50px;
+   opacity: 1;
 
-.nav_event {
-   border-bottom: none;
-}
+   display: flex;
+   justify-content: center;
+   place-items: center;
+   flex-direction: column;
+   flex-wrap: nowrap;
 
-.nav_event:hover {
-   border-bottom: 3px solid  #ffc107 ; 
-}
+   padding: 5px;
+   transition: 0.3s ease-in-out;
 
-.nav_projects {
-   border-bottom: none;
-}
+   background-color: none;
 
-.nav_projects:hover {
-   border-bottom: 3px solid rgb(139, 139, 235);
-}
-
-.nav_about {
-   border-bottom: none;
-}
-
-.nav_about:hover {
-   border-bottom: 3px solid rgb(240, 77, 132);
-}
-
-.nav_checkbtn {
-   color: white;
-   text-align: right;
-   height: 60px;
-   font-size: 30px;
-   line-height: 60px;
-   margin-right: 40px;
-   float: right;
-   display: none;
-   cursor: pointer;
-}
-
-#nav_check {
    display: none;
 }
-@media screen and (max-width: 1500px) {
-   nav ul li {
-      margin: 0 10px;
-   }
+
+.navbar .content .burger-menu .line-1 {
+   width: 24px;
+   height: 2px;
+
+   background-color: #fefefe;
+   margin: 3px 0;
+
+   /* transform: rotate(-45deg); */
+
+   transition: 0.3s ease-in-out;
 }
-@media screen and (max-width: 1100px) {
-   nav ul li {
-      margin: 0 5px;
-   }
+.navbar .content .burger-menu .line-2-container {
+   width: 24px;
+   height: 2px;
+
+   margin: 3px 0;
 }
-@media screen and (max-width: 952px) {
-   label.logo {
-      font-size: 14px;
-      padding-left: 5%;
-   }
+.navbar .content .burger-menu .line-2 {
+   width: 11px;
+   height: 2px;
+   /* display: none; */
+   background-color: #fefefe;
 
-   nav ul li a {
-      font-size: 16px;
-   }
+   position: relative;
+   left: 0;
+   transition: 0.3s ease-in-out;
+
+   transition: 0.3s ease-in-out;
+}
+.navbar .content .burger-menu .line-3 {
+   width: 24px;
+   height: 2px;
+
+   background-color: #fefefe;
+   margin: 3px 0;
+
+   transition: 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 858px) {
-   * {
-      box-sizing: border-box;
-   }
+.navbar .content .burger-menu:hover > .line-2-container .line-2 {
+   width: 24px;
+   transition: 0.3s ease-in-out;
+}
+.navbar .content .burger-menu:hover {
+   border-radius: 50px;
+   background-color: rgba(255, 255, 255, 0.1);
 
-   nav for minimised screen nav background {
-      background: black;
-      height: 100vh;
-      width: 100vw;
-   }
+   transition: 0.3s ease-in-out;
+}
 
-   #burger-menu {
-      font-size: 30px;
-      transition: 0.3s ease-in-out;
-   }
-   .nav_checkbtn {
-      display: block;
-      color: black;
-   }
-   #nav_gfglogo {
-      width: 80px;
-      height: 80px;
-   }
+.cross-state-1 {
+   margin: 0 !important;
+   position: relative;
+   top: 2px;
+   transform: rotate(45deg);
 
-   nav ul {
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      left: -100vw;
-      top: 0;
+   transition: 0.3s ease-in-out;
+}
+.cross-state-2 {
+   margin: 0 !important;
+   /* display: none; */
+   width: 0px !important;
 
-      background-color: rgba(0, 0, 0, 0.95);
+   transition: 0.3s ease-in-out;
+}
+.cross-state-3 {
+   margin: 0 !important;
+   position: relative;
+   top: -2px;
+   transform: rotate(-45deg);
 
-      text-align: center;
+   transition: 0.3s ease-in-out;
+}
+
+.navbar .menu-list li a:hover {
+   padding-bottom: 10px;
+   border-bottom: 3px solid #333;
+}
+
+@media (max-width: 868px) {
+   body.disabledScroll {
+      overflow: hidden;
+   }
+   .navbar .content .burger-menu {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-
-      transition: all 0.5s;
    }
-
-   nav ul li {
-      display: block;
-      margin: 50px 0%;
-      line-height: 30px;
+   .navbar .content .menu-list li a {
+      font-family: "Raleway";
+      font-weight: 500;
+      color: #fefefe;
    }
-
-   nav ul li a {
-      font-size: 20px;
-      color: white;
-   }
-
-   .nav_home {
-      color: rgb(141, 248, 141);
-      border: none;
-   }
-
-   .nav_event {
-      color: rgb(240, 77, 132);
-      border: none;
-   }
-
-   .nav_projects {
-      color: rgb(139, 139, 235);
-      border: none;
-   }
-
-   .nav_about {
-      color: #ffc107;
-      border: none;
-   }
-
-   .nav_checkbtn {
-      width: 45vw;
-      height: 100%;
-      z-index: 200;
-   }
-   #nav_check:checked ~ ul {
+   .navbar .menu-list {
+      position: fixed;
+      top: 0;
       left: 0;
-      z-index: 100;
+      height: 100vh;
+      width: 100%;
+      background: #121212;
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+      clip-path: circle(30px at calc(100% - 60px) calc(0% + 62px));
+      transition: all 0.3s ease;
+      z-index: -1;
    }
-}
-
-@media screen and (max-width: 500px) {
-   * {
-      box-sizing: border-box;
+   .navbar.sticky .menu-list {
+      clip-path: circle(25px at calc(100% - 60px) calc(0% + 40px));
+   }
+   .navbar .menu-list.active {
+      clip-path: circle(75%);
+   }
+   .navbar .menu-list li {
+      margin-top: 70px;
+      padding: 20px 0;
+   }
+   .navbar .menu-list li a {
+      font-size: 23px;
+      padding: 5px 0;
    }
 }
