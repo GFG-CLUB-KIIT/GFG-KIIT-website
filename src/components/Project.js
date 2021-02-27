@@ -48,7 +48,7 @@ class Project extends Component {
                 <div className="projects_header_slogan">
                     <div style={{fontWeight: "600", fontSize: "35px"}}>Projects</div><br></br>
                     From Concept to Creation - Projects are the way to showcase not only what one has learnt, but also what brainstorming one has done with their ideas.
-                    Here are the projects our teams have worked on so far.
+                    <lable className="projects_header_slogan_hide">Here are the projects our teams have worked on so far.</lable>
                 </div>
                 {/* <!-- CONTENT --> */}
                 <p className = "project">Projects</p>
