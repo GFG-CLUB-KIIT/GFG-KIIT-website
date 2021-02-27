@@ -63,7 +63,7 @@ class Navbar extends Component {
       return (
          <nav class="navbar" id="navbar-main">
             <div class="content">
-              <div class="logo"><a href="#"><img className="gfg-logo" src={logo}></img></a></div>
+              <div class="logo"><a href="/"><img className="gfg-logo" src={logo}></img></a></div>
                   <ul class="menu-list">
                   <li><a href="/" className = "nav_home list-item">Home</a></li>
                   <li><a href="/Events" className = "nav_event list-item">Events </a></li>

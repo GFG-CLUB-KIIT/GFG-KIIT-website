@@ -1,7 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); */
-
 ::-webkit-scrollbar {
-   width: 10px;
+   width: 0px;
 }
 ::-webkit-scrollbar-track {
    background: #f1f1f1;
@@ -21,10 +19,8 @@
    position: fixed;
    z-index: 5;
    width: 100%;
-   padding: 25px 0;
+   padding: 20px 0;
    transition: all 0.3s ease;
-
-   z-index: 3;
 }
 .navbar .content .gfg-logo {
    width: 100px;
@@ -34,17 +30,17 @@
    transition: 0.2s ease-in-out;
 }
 .navbar .content .menu-list li a {
-   font-family: "Raleway";
-   font-weight: 500;
+   font-family: "montserrat";
+   font-weight: 700;
    color: #343434;
 }
 .sticky {
    padding: 10px 0;
-   background-color: #1b1b1b;
+   background-color: white;
    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
 .sticky > .content li a {
-   color: #fefefe !important;
+   color: black  !important;
 }
 .navbar .content {
    display: flex;
@@ -66,8 +62,8 @@
 .menu-list li a {
    color: #fff;
    font-size: 18px;
-   font-weight: 500;
-   margin-left: 25px;
+   font-weight: 600;
+   margin-left: 35px;
    text-decoration: none;
    transition: all 0.3s ease;
 }
@@ -101,7 +97,6 @@
    background-color: #fefefe;
    margin: 3px 0;
 
-   /* transform: rotate(-45deg); */
 
    transition: 0.3s ease-in-out;
 }
@@ -114,7 +109,6 @@
 .navbar .content .burger-menu .line-2 {
    width: 11px;
    height: 2px;
-   /* display: none; */
    background-color: #fefefe;
 
    position: relative;
@@ -154,7 +148,6 @@
 }
 .cross-state-2 {
    margin: 0 !important;
-   /* display: none; */
    width: 0px !important;
 
    transition: 0.3s ease-in-out;
@@ -181,8 +174,8 @@
       display: flex;
    }
    .navbar .content .menu-list li a {
-      font-family: "Raleway";
-      font-weight: 500;
+      font-family: "montserrat";
+      font-weight: 600;
       color: #fefefe;
    }
    .navbar .menu-list {
@@ -212,5 +205,8 @@
    .navbar .menu-list li a {
       font-size: 23px;
       padding: 5px 0;
+   }
+   .sticky > .content li a {
+      color: white  !important;
    }
 }

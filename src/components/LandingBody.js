@@ -39,16 +39,20 @@ class LandingBody extends Component {
               <div id="event_context">
                   <div id="event_content">
                       {/* <div id="event_title">Dev<lable className="cast_green">Cast</lable> E03</div> */}
-                      <div id="event_title">Google Hashcode 2021</div>
+                      <div id="event_title">GEEK-I-KNACK</div>
                       <div id="event_desc">
-                          <p>Hey Geeks, <br></br>It's almost time to wind up the registration process of HASHCODE 2021 and we don't want any of you to let this opportunity go in vain.
-                            So if you are yet to get yourself enrolled. This year we are enlightened to be the organizers of the Google Hashcode 2021.
-                            <br></br>Make sure you register under the "KIIT-GFG Hub".</p>
-                          <p class="event_space"><b class="event_bold">TIME :</b> 11:00 PM - 3:00 AM </p>
-                          <p class="event_space"><b class="event_bold">DATE :</b> 25-02-2021 </p>
+                            <p>Hey Geeks,</p>
+                            <p>Is your phobia of facing interviews intruding your vision of your dream company? not!</p><br></br>
+                            <p>We have Geek-I-Knack planned just for you, a full-fledged placement interview drive to banish your fear and clear the mist before the view of your dream companies FAANG.<br></br>
+                                This event will provide all enthusiastic techies with real-time experience on the procedure of placement drives(fromCoding round to the HR interview) conducted by FAANG.
+                                You will find all the details of the event in the link itself.
+                            </p><br></br>
+                            <p><b class="event_bold">Use Invitation Code:</b> GFGO21AWG</p>
+                          <p class="event_space"><b class="event_bold">DATE :</b> 05-03-2021 to 07-03-2021 </p>
+                          <p class="event_space"><b class="event_bold">TIME :</b> 5:00 PM </p>
                       </div>
                   </div>
-                  <a href="https://discord.gg/rJmtsvTH8F" id="register_button" target="_blank" rel="noopener noreferrer">Join Discord</a>
+                  <a href="https://practice.geeksforgeeks.org/courses/geek-I-knack" id="register_button" target="_blank" rel="noopener noreferrer">Register Now</a>
                   {/* <a href="/RegistrationForm" id="watch_now_button">Watch Now</a> */}
               </div>
           </div>
@@ -76,7 +80,7 @@ class LandingBody extends Component {
                   It possesses a programmer’s search feature that enables the users to search various programming concepts. 
                   </div>
               </a>
-              <a href="/projects" class="project_card">
+              {/* <a href="/projects" class="project_card">
                   <div class="project_img">
                     <div id="project_img_display3"></div>
                   </div>
@@ -85,7 +89,7 @@ class LandingBody extends Component {
                   Our CP Team started working on their 1st project, Hear Me. 
                   It possesses a programmer’s search feature that enables the users to search various programming concepts. 
                   </div>
-              </a>
+              </a> */}
           </div>
           <section class="landing-scroll-branding">
             <div class="scroll designers org">

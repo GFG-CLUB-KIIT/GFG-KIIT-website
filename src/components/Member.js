@@ -4,6 +4,7 @@ import abhinavPrakash from '../profile/AbhinavPrakash.png';
 import adityaDas from '../profile/AdityaDas.png';
 import AnkitRaj from '../profile/AnkitRaj.png';
 import HarshDwivedi from '../profile/HarshDwivedi.png';
+import AbhinavDeep from '../profile/AbhinavDeep.jpg';
 import Taran from '../profile/Taran.png';
 import SouravDash from '../profile/SouravDash.png';
 import AshwaniSingh from '../profile/AshwaniSingh.png';
@@ -55,7 +56,7 @@ class AboutUs extends Component {
             <div className="aboutus_header_slogan">
                 <div style={{fontWeight: "600", fontSize: "35px"}}>Members</div><br></br>
                 Individual commitment along with overflowing team spirit--that is what makes a Team work.
-                Here is our powerhouse working behind the scenes to make every bit of learning a fun and enjoyable experience.
+                <lable className="aboutus_header_slogan_hide">Here is our powerhouse working behind the scenes to make every bit of learning a fun and enjoyable experience.</lable>
             </div>
             <div className="aboutUsBody">
                 <div className="our_Team_Title">Our Team</div>
@@ -133,6 +134,18 @@ class AboutUs extends Component {
                         </div>
                         <div className="member_name">Harsh Dwivedi</div>
                         <div className="member-position">Lead</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${AbhinavDeep})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://github.com/abhinav-deep" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/abhinav_deep/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/abhinavdeep0209" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                           </div>
+                        </div>
+                        <div className="member_name">Abhinav Deep</div>
                     </div>
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${KumarAnkit})`}}>

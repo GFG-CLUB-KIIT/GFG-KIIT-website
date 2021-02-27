@@ -76,6 +76,7 @@
     margin-left: 70%;
     margin-top: -300px;
     position: absolute;
+    letter-spacing: 2px;
  }
  #landing_title_right1 {
     font-size: 40px;
@@ -101,7 +102,7 @@
  #event_img_display {
     width: 100%;
     height: 350px;
-    background-image: url("../img/hashcode.png");
+    background-image: url("../img/knack.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
@@ -154,7 +155,7 @@
     font-weight: 600;
     float: right;
     transition: 0.6s ease;
-    z-index: 150;
+    z-index: 3;
     position: relative;
  }
  #register_button:hover {
@@ -173,7 +174,7 @@
    font-weight: 600;
    float: right;
    transition: 0.6s ease;
-   z-index: 150;
+   z-index: 3;
    position: relative;
  }
  #watch_now_button:hover {
@@ -213,7 +214,7 @@
     margin-bottom: 30px;
     text-decoration: none;
     color: black;
-    z-index: 150;
+    z-index: 3;
     position: relative;
  }
  .project_img {
@@ -410,15 +411,18 @@
    }
    .LI_image{
       height: 200px;
+      margin-left: 0px;
    }
    #event_img_display {
       height: 250px;
+      margin-bottom: 20px;
+      background-position: center;
    }
    #event_title{
       margin-top: 0px;
    }
    .LI_context{
-      padding-right: 10px;
-      padding-left: 10px;
+      padding-right: 15px;
+      padding-left: 5px;
    }
 }

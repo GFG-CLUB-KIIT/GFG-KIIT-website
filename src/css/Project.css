@@ -359,4 +359,7 @@ p {
     .reactlogo{
         margin-top: 10px;
     }
+    .projects_header_slogan_hide{
+        display: none;
+    }
 }

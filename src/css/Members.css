@@ -257,11 +257,11 @@ body {
 }
 @media screen and (max-width: 500px) {
    .aboutus_header_slogan {
-      top: 100px;
+      top: 130px;
       font-size: 21px;
       width: 260px;
       height: 200px;
-      margin-left: 18%;
+      margin-left: 13%;
       padding: 18px;
       line-height: 25px;
       font-weight: 400;
@@ -322,5 +322,8 @@ body {
    .member_title {
       font-size: 28px;
       text-align: center;
+   }
+   .aboutus_header_slogan_hide{
+      display: none;
    }
 }
