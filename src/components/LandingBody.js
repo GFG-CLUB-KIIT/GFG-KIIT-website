@@ -15,7 +15,7 @@ class LandingBody extends Component {
              <Background clipType="clipping-landing" overlayColor="bgcolor-landing"></Background>
              <div id="landing_title"> 
                 <lable id="landing_title_right1">GeeksforGeeks</lable> <br/>
-                <lable id="landing_title_right2">KIIT Chapter</lable> 
+                <lable id="landing_title_right2">KIIT Student Chapter</lable> 
             </div>
             <div className="landing_intro">
                 <h1 id="landing_intro_title">One for All, All for One</h1>
