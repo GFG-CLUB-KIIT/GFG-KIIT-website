@@ -126,7 +126,7 @@
    section
    .flex-container
    .two {
-   background-image: url("images/img-2.jpg");
+   background-image: url("images/google-hashcode-2021.jpg");
 }
 #event-slider-main
    .slick-slider
@@ -137,7 +137,7 @@
    section
    .flex-container
    .three {
-   background-image: url("images/img-3.jpg");
+   background-image: url("images/google-hashcode-2021.jpg");
 }
 
 @media only screen and (max-width: 1024px) {
@@ -170,7 +170,7 @@
 
    #event-slider-main .slick-slider .slick-dots {
       transform: rotate(0deg);
-      top: 90%;
+      top: 100%;
       left: 10%;
       height: 10%;
       width: 80vw;

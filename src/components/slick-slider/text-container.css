@@ -62,6 +62,21 @@
    background-position: center;
    background-color: white;
 }
+#event-slider-main
+   .slick-slider
+   .slick-list
+   .slick-track
+   .slick-slide
+   div
+   section
+   .flex-container
+   .dev-cast-ep-3-img {
+   background-image: url("images/samridhi-mehta.jpg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: white;
+}
 /* Styling for the paragraph in the events */
 
 #event-slider-main
@@ -203,6 +218,74 @@
 }
 /*styling for the youtube button ends here*/
 
+/*styling for the other event button*/
+.event .flex-container .otherEvent-btn {
+   border: none;
+   background-color: #eee;
+   justify-content: center;
+   width: 200px;
+   height: 50px;
+   border-radius: 5px;
+   transition: 0.5s ease-in-out;
+}
+.event .flex-container .otherEvent-btn a {
+   display: flex;
+   align-items: center;
+   color: #333;
+   background-color: #eee;
+   justify-content: center;
+   width: 200px;
+   height: 50px;
+   border-radius: 5px;
+   transition: 0.5s ease-in-out;
+   text-decoration: none;
+   font-weight: 600 !important;
+}
+.event .flex-container .otherEvent-btn a .hover-bg {
+   position: absolute;
+   background-color: #4286f5;
+   width: 0;
+   height: inherit;
+   z-index: 0;
+   transition: 0.5s ease-in-out;
+}
+
+.event .flex-container .otherEvent-btn:hover a .otherEvent-icon {
+   color: #fefefe;
+   transition: 0.5s ease-in-out;
+}
+.event .flex-container .otherEvent-btn:hover {
+   -webkit-box-shadow: 0px 0px 20px 0px #4286f5;
+   -moz-box-shadow: 0px 0px 20px 0px #4286f5;
+   box-shadow: 0px 0px 20px 0px #4286f5;
+
+   transform: translateX(10px);
+
+   transition: all 0.6s ease-in-out;
+}
+
+.event .flex-container .otherEvent-btn a h5 {
+   padding: 5px;
+   z-index: 1;
+   transition: 0.5s ease-in-out;
+}
+.event .flex-container .otherEvent-btn a .otherEvent-icon {
+   padding: 5px;
+   z-index: 1;
+   transition: 0.5s ease-in-out;
+}
+
+.event .flex-container .otherEvent-btn:hover a .hover-bg {
+   width: inherit;
+   transition: 0.5s ease-in-out;
+   border-radius: 5px;
+}
+.event .flex-container .otherEvent-btn:hover a h5 {
+   color: #fefefe;
+   transition: 0.5s ease-in-out;
+}
+/*styling for the other event button ends here*/
+
 .event .flex-container .code-rush-1-0-img {
    background-image: url("images/code-rush-1-0.png");
    background-size: contain;
@@ -220,6 +303,20 @@
 .event .flex-container .code-rush-1-2-img {
    background-image: url("images/code-rush-1-2.png");
    background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: white;
+}
+.event .flex-container .google-hashcode-2021 {
+   background-image: url("images/google-hashcode-2021.jpg");
+   background-size: 90% !important;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: white;
+}
+.event .flex-container .geekIknack {
+   background-image: url("images/knack.jpg");
+   background-size: 90% !important;
    background-repeat: no-repeat;
    background-position: center;
    background-color: white;

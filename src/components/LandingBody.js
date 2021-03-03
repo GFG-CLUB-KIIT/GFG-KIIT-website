@@ -42,11 +42,8 @@ class LandingBody extends Component {
                       <div id="event_title">GEEK-I-KNACK</div>
                       <div id="event_desc">
                             <p>Hey Geeks,</p>
-                            <p>Is your phobia of facing interviews intruding your vision of your dream company? not!</p><br></br>
-                            <p>We have Geek-I-Knack planned just for you, a full-fledged placement interview drive to banish your fear and clear the mist before the view of your dream companies FAANG.<br></br>
-                                This event will provide all enthusiastic techies with real-time experience on the procedure of placement drives(fromCoding round to the HR interview) conducted by FAANG.
-                                You will find all the details of the event in the link itself.
-                            </p><br></br>
+                            <p>GFG-KIIT, with other GFG chapters across India, has come up with a super cool innovative event: “Geek-i-Knack”.</p><br></br>
+                            <p>Geek-i-Knack is a 3-day full-fledged Placement Interview-Drive (from Coding round to HR interview), designed just for Computer Science Geeks, to give them an authentic aid for the much-feared company placements, with help of industry experts, which might ultimately help them in achieving their utmost goal: To bag a dream job in FAANG.</p><br></br>
                             <p><b class="event_bold">Use Invitation Code:</b> GFGO21AWG</p>
                           <p class="event_space"><b class="event_bold">DATE :</b> 05-03-2021 to 07-03-2021 </p>
                           <p class="event_space"><b class="event_bold">TIME :</b> 5:00 PM </p>
