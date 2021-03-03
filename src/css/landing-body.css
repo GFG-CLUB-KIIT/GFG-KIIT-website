@@ -397,7 +397,7 @@
  @media screen and (max-width: 400px) {
    #landing_intro_title{
       font-size: 30px;
-      margin-left: 5%;
+      margin-left: 7%;
    }
    #landing_title {
       margin-left: 8%;
@@ -424,5 +424,6 @@
    .LI_context{
       padding-right: 15px;
       padding-left: 5px;
+      text-align: center;
    }
 }
