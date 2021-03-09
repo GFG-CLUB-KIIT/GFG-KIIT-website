@@ -30,7 +30,7 @@ class LandingBody extends Component {
                     </div>
                 </div>
             </div>
-          <h1 id="upcomingEvent">Upcoming Event</h1>
+          <h1 id="upcomingEvent">Recent Event</h1>
           <div id="landing_line_Event"></div>
           <div id="event">
             <div id="event_img">

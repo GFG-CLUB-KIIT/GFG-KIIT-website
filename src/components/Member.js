@@ -21,7 +21,6 @@ import Anshu from '../profile/Anshu.png';
 import DivyanshuShekhar from '../profile/DivyanshuShekhar.png';
 import KumarAnkit from '../profile/KumarAnkit.png';
 import nitishSonthalia from '../profile/NitishSonthalia.png';
-import YashAnand from '../profile/YashAnand.png';
 import RupanshiChawda from '../profile/RupanshiChawda.png';
 import ShashiKiran from '../profile/ShashiKiran.png';
 import NamanGupta from '../profile/NamanGupta.png';
@@ -39,6 +38,7 @@ import SaswataGhosh from '../profile/SaswataGhosh.png';
 import ShwetaThakur from '../profile/ShwetaThakur.jpg';
 import SatyajitMishra from '../profile/SatyajitMishra.jpg';
 import MadhavParikh from '../profile/MadhavParikh.jpg';
+import AkashKumarGautam from '../profile/AkashKumarGautam.jpg';
 import Background from './Background';
 import Footer from './Footer';
 import { Helmet } from 'react-helmet';
@@ -146,6 +146,18 @@ class AboutUs extends Component {
                            </div>
                         </div>
                         <div className="member_name">Abhinav Deep</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${AkashKumarGautam})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/akashkgautam" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/instinctblaze" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/i.n.s.t.i.n.c.t_16/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                </div>
+                           </div>
+                        </div>
+                        <div className="member_name">Akash Kumar Gautam</div>
                     </div>
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${KumarAnkit})`}}>
@@ -399,19 +411,6 @@ class AboutUs extends Component {
                         </div>
                         <div className="member_name">Satyajeet Ramnit</div>
                     </div>
-                    <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${YashAnand})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/yash-anand-6719a81ba" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/yashan0202" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/Yashan0202" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member_name">Yash Anand</div>
-                    </div>
                 </div>
                 <div className="member-box">
                 <div className="member_title">Android Developers</div>
@@ -526,9 +525,9 @@ class AboutUs extends Component {
                         <div className="member_photo" style={{backgroundImage:`url(${AsmitaHobisyashi})`}}>
                             <div className="overlay">
                                 <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/asmita-hobisyashi-8564071a3" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://github.com/crayonpillars" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://www.instagram.com/crayon_pillars/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/in/asmita-hobisyashi-8564071a3" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/crayonpillars" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/crayon_pillars/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -545,20 +544,20 @@ class AboutUs extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="member_name">Sayak Roy</div>
+                        <div className="member_name">Sayak Roy Chowdhury</div>
                     </div>
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${SuryavardhanThangirala})`}}>
                             <div className="overlay">
                                 <div className="flex-container">
                                     <a href="https://www.linkedin.com/in/suryavardhan-thangirala-9800a81a5" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://twitter.com/SuryavardhanT" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/suryathangirala/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://github.com/DoomsMirtz" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/tsu.070/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                                     <a href="https://twitter.com/SuryavardhanT" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div className="member_name">Suryavardhan</div>
+                        <div className="member_name">Suryavardhan Thangirala</div>
                     </div>
                 </div>
                 <div className="member-box">
