@@ -34,7 +34,7 @@ class Navbar extends Component {
       let line3= document.getElementById("line-3");
       
       menuBtn.addEventListener("click",()=>{
-         if(currentState=="menu"){
+         if(currentState==="menu"){
             line1.classList.add("cross-state-1");
             line2Container.classList.add("cross-state-2");
             line2.classList.add("cross-state-2");
@@ -63,7 +63,7 @@ class Navbar extends Component {
       return (
          <nav class="navbar" id="navbar-main">
             <div class="content">
-              <div class="logo"><a href="/"><img className="gfg-logo" src={logo}></img></a></div>
+              <div class="logo"><a href="/"><img className="gfg-logo" src={logo} alt="logo"></img></a></div>
                   <ul class="menu-list">
                   <li><a href="/" className = "nav_home list-item">Home</a></li>
                   <li><a href="/Events" className = "nav_event list-item">Events </a></li>
