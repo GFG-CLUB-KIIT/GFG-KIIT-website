@@ -24,7 +24,7 @@ export default class PastEvents extends Component {
                <section className="gfg-i-knack event">
                   <div className="flex-container">
                      <div className="text-container">
-                        <h4 style={{fontFamily:"Roboto", color:"#aaa"}}>5th March, 2021 - 7th March,2021</h4>
+                        <h4 style={{fontFamily:"Roboto", color:"#aaa"}}>12th March, 2021 - 14th March,2021</h4>
                         <div>
                            <h2>Geek-I-Knack</h2>
                         </div>
