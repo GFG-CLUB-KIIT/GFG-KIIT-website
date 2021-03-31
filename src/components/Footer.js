@@ -1,8 +1,9 @@
 import React from 'react'
 import '../css/footer.css'
-function FooterLanding(props){
-   return ( 
-      <div>
+
+function FooterLanding(props) {
+   return (
+      <div class="parent-element">
          <div className={`footer ${props.bgColor}`}>
             <div class="grid-container">
                <div class="wanna-talk-to-us"><h1>Wanna talk to us?</h1></div>
@@ -27,35 +28,14 @@ function FooterLanding(props){
                         <div class="description1">
                            <p class = "contact strong">Feel free to contact us</p>
                            <br></br>
-                           <p>School of Computer</p>
-                           <p>Engineering, KIIT</p>
-                           <p>University, Bhubaneswar</p>
-                           <p>751024</p>
-                           <p>Email: gfgkiit@gmail.com</p>
-                           <p>Phone: +91 87655 16718</p>
-                           <p>(Taran)</p>
+                           <p>GFG KIIT</p>
                            <br></br>
-                           </div>
-                        <div>
-                           <div class="description3">
-                              <p class = "guideline strong">General Guidelines</p>
-                              <br></br>
-                              <p>Code of Conduct</p>    
-                              <br></br>        
-                              <br></br>        
-                           </div>
-                           <div class="description2">
-                              <p class = "community strong">Community</p>
-                              <br></br>
-                              <p>GFG KIIT</p>
-                              <br></br>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>   
+            </div>
          </div>
-      </div>
 
    )
 }
