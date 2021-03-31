@@ -1,9 +1,9 @@
 /* please add reset styleheet for this webpage */
-
 * {
    margin: 0px;
    padding: 0px;
 }
+
 body {
    background: #fefefe;
 }
@@ -19,13 +19,9 @@ body {
    top: 0;
    left: 0;
    position: absolute;
-
    mix-blend-mode: color;
    z-index: 1;
 }
-/* .landing-clipping-mask {
-   clip-path: polygon(0 0, 100% 26%, 100% 83%, 19% 100%, 0 74%);
-} */
 
 .landing-blurred {
    backdrop-filter: blur(25px);
@@ -39,26 +35,22 @@ body {
 .bgcolor-landing {
    background-color: #12f29b;
 }
-
 .clipping-landing {
    clip-path: polygon(0 0, 100% 26%, 100% 83%, 19% 100%, 0 74%);
 }
-
 /* Styling for Projects page background component */
 .bgcolor-projects {
    background-color: #283cbd;
 }
-
 .clipping-projects {
    clip-path: polygon(0 21%, 100% 10%, 81% 100%, 0 73%);
 }
-
 /* Styling for About Us page background component */
 .bgcolor-aboutUs {
    background-color: #ff6698;
 }
 .clipping-aboutUs {
-   clip-path: polygon(27% 7%, 100% 22%, 88% 100%, 0 59%, 0 19%);  
+   clip-path: polygon(20% 0%, 100% 22%, 88% 100%, 0 59%, 0 19%);
 }
 /* Styling for event page component background component*/
 .bgcolor-events {
@@ -66,4 +58,54 @@ body {
 }
 .clipping-events {
    clip-path: polygon(11% 100%, 0 0, 100% 21%, 100% 68%);
+}
+
+.mobile-view {
+   width: 100vw;
+   height: 60vh;
+   background-size: 400% 400%;
+   animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+   0% {
+      background-position: 0% 50%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 50%;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   /* Styling for Projects page background component */
+   .bgcolor-landing {
+      /* background: linear-gradient(-25deg, #12f29b, #1fc385, #2c946f); */
+      background-color: greenyellow;
+      background-image: linear-gradient(314deg, #2c946f  0%, #1fc385,  #12f29b 74%);
+      background-size: 400% 400%; 
+      animation: gradient 8s ease infinite;
+   }
+   /* Styling for Projects page background component */
+   .bgcolor-projects {
+      /* background: linear-gradient(-25deg, #2435a8, #3469b9, #408ec9); */
+      background: linear-gradient(-25deg, #667eea , #2435a8,  #764ba2);
+      background-size: 400% 400%;
+      animation: gradient 8s ease infinite;
+   }
+   /* Styling for About Us page background component */
+   .bgcolor-aboutUs {
+      /* background: linear-gradient(-25deg, #ff6698, #fc85a4, #f8a3af); */
+      background: linear-gradient(-25deg,  #ffafbd, #fc85a4,   #dfa579);
+      background-size: 400% 400%;
+      animation: gradient 8s ease infinite;
+   }
+   /* Styling for event page component background component*/
+   .bgcolor-events {
+      background: linear-gradient(-25deg, #1590af, #1299ad, #0d474e);
+      background-size: 400% 400%;
+      animation: gradient 8s ease infinite;
+   }
 }

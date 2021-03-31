@@ -60,6 +60,7 @@
       "write-to-us write-to-us footer-info footer-info";
 
    backdrop-filter: blur(25px);
+   -webkit-backdrop-filter: blur(25px);
 }
 .wanna-talk-to-us {
    grid-area: wanna-talk-to-us;
@@ -308,5 +309,10 @@
    #email,
    #message {
       margin: 0.5rem 0;
+   }
+}
+@media only screen and (max-width: 400px) {
+   .description2 {
+      margin-top: 29px;
    }
 }

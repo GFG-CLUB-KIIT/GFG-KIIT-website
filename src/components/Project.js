@@ -11,7 +11,6 @@ import DevanshShaw from '../profile/DevanshShaw.png';
 import SouvikKar from '../profile/SouvikKar.png';
 import Anshu from '../profile/Anshu.png';
 import DivyanshuShekhar from '../profile/DivyanshuShekhar.png';
-import ShivamKumar from '../profile/ShivamKumar.png';
 import geekbot from '../img/geekbot.png';
 import Phython from '../img/phython.png'
 import github from '../img/github.png';
@@ -46,7 +45,11 @@ class Project extends Component {
                     <title>Geeksforgeeks | KIIT - Projects</title>
                 </Helmet>
                 <Background clipType="clipping-projects" overlayColor="bgcolor-projects"></Background>
-                <div id="project_title">Projects</div>
+                <div className="projects_header_slogan">
+                    <div style={{fontWeight: "600", fontSize: "35px"}}>Projects</div><br></br>
+                    From Concept to Creation - Projects are the way to showcase not only what one has learnt, but also what brainstorming one has done with their ideas.
+                    <lable className="projects_header_slogan_hide">Here are the projects our teams have worked on so far.</lable>
+                </div>
                 {/* <!-- CONTENT --> */}
                 <p className = "project">Projects</p>
                 <div className="slogan_project" >
@@ -65,7 +68,7 @@ class Project extends Component {
                     <div class="modal-content1">
                         <div id="popup_top_image1">
                             <div className="cross">
-                                <a href="#" className="list-item" onClick={displayNone1} ><img alt="images" src={cross} className="fa-times"/></a>
+                                <div className="list-item" onClick={displayNone1} ><img alt="images" src={cross} className="fa-times"/></div>
                             </div>
                         </div>
                         <div class="popup_card">
@@ -95,7 +98,7 @@ class Project extends Component {
                     <div class="modal-content3">
                         <div id="popup_top_image2">
                             <div className="cross">
-                                <a href="#" className="list-item" onClick={displayNone3} ><img alt="images" src={cross} className="fa-times"/></a>
+                                <div className="list-item" onClick={displayNone3} ><img alt="images" src={cross} className="fa-times"/></div>
                             </div>
                         </div>
                         <div class="popup_card">
@@ -115,6 +118,7 @@ class Project extends Component {
                                     <a href="https://github.com/akashchouhan16" target="_blank" rel="noopener noreferrer" title="Akash Chouhan"><img alt="images" src={AkashChouhan} class="project_contri_img1" /></a>
                                     <a href="https://github.com/divshekhar/" target="_blank" rel="noopener noreferrer" title="Divyanshu Shekhar"><img alt="images" src={DivyanshuShekhar} class="project_contri_img2" /></a>
                                     <a href="https://github.com/arn4b" target="_blank" rel="noopener noreferrer" title="Arnab Chatterjee"><img alt="images" src={ArnabChatterjee} class="project_contri_img2" /></a>
+                                    <a href="https://github.com/ashishmishra-bit" target="_blank" rel="noopener noreferrer" title="Arnab Chatterjee"><img alt="images" src={AshishKumarMishra} class="project_contri_img2" /></a>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +131,7 @@ class Project extends Component {
                                 <img alt="images" src={css} class="popup_bottom_lang_logo" title="CSS" />
                                 <img alt="images" src={JavaScript} class="popup_bottom_lang_logo" title="JavaScript" />
                             <lable class="popup_bottom_frame">Framework Used:</lable>
-                                <img alt="images" src={react} class="popup_bottom_lang_logo" title="React" />
+                                <img alt="images" src={react} class="popup_bottom_lang_logo reactlogo" title="React" />
                         </div>
                     </div>
                 </div>

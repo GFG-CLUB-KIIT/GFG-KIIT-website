@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import krishMurarka from '../profile/KrishMurarka.png';
 import abhinavPrakash from '../profile/AbhinavPrakash.png';
 import adityaDas from '../profile/AdityaDas.png';
 import AnkitRaj from '../profile/AnkitRaj.png';
 import HarshDwivedi from '../profile/HarshDwivedi.png';
+import AbhinavDeep from '../profile/AbhinavDeep.jpg';
 import Taran from '../profile/Taran.png';
 import SouravDash from '../profile/SouravDash.png';
 import AshwaniSingh from '../profile/AshwaniSingh.png';
@@ -21,7 +21,6 @@ import Anshu from '../profile/Anshu.png';
 import DivyanshuShekhar from '../profile/DivyanshuShekhar.png';
 import KumarAnkit from '../profile/KumarAnkit.png';
 import nitishSonthalia from '../profile/NitishSonthalia.png';
-import YashAnand from '../profile/YashAnand.png';
 import RupanshiChawda from '../profile/RupanshiChawda.png';
 import ShashiKiran from '../profile/ShashiKiran.png';
 import NamanGupta from '../profile/NamanGupta.png';
@@ -36,465 +35,587 @@ import SuryavardhanThangirala from '../profile/SuryavardhanThangirala.png';
 import SayakRoyChowdhury from '../profile/SayakRoyChowdhury.png';
 import SnehilSinhna from '../profile/SnehilSinhna.png';
 import SaswataGhosh from '../profile/SaswataGhosh.png';
-import linkedin from '../img/linkedinColor.png';
-import instagram from '../img/instagramColor.png';
-import twitter from '../img/twitterColor.png';
-import github from '../img/githubWhite.png';
-import gfglogo from '../img/gfglogo.png';
-import '../css/Members.css';
-import '../css/swiper.min.css';
+import ShwetaThakur from '../profile/ShwetaThakur.jpg';
+import SatyajitMishra from '../profile/SatyajitMishra.jpg';
+import MadhavParikh from '../profile/MadhavParikh.jpg';
+import AkashKumarGautam from '../profile/AkashKumarGautam.jpg';
 import Background from './Background';
 import Footer from './Footer';
-import {Helmet} from 'react-helmet';
+import { Helmet } from 'react-helmet';
+import '../css/Members.css';
 
 class AboutUs extends Component {
-render() {
-    return (
-        <div className="parent-element">
+   render() {
+      return (
+         <div className="parent-element">
             {/* <!-- Dynamic Title --> */}
             <Helmet>
-                <title>Geeksforgeeks | KIIT - About Us</title>
+               <title>Geeksforgeeks | KIIT - Members</title>
             </Helmet>
             <Background clipType="clipping-aboutUs" overlayColor="bgcolor-aboutUs"></Background>
-            <div id="aboutUs_title">
-                <lable id="aboutUs_title_right">Members</lable> 
+            <div className="aboutus_header_slogan">
+                <div style={{fontWeight: "600", fontSize: "35px"}}>Members</div><br></br>
+                Individual commitment along with overflowing team spirit--that is what makes a Team work.
+                <lable className="aboutus_header_slogan_hide">Here is our powerhouse working behind the scenes to make every bit of learning a fun and enjoyable experience.</lable>
             </div>
-            <div id="aboutUs_body">
-                <div id="cm_title">
-                    <div class="cm_title_display">Core Member</div>
-                    <div class="cm_title_line"></div>
-                </div>
-                    <div class="aboutUs_row">
-                        <div class="coreMemberCard">
-                            <img alt="images" src={krishMurarka} class="dpcm" />
-                            <div class="namecm">Krish Murarka</div>
-                            <div class="desgcm">
-                                <img alt="images" src={gfglogo} class="cm_gfglogo" />President
-                            </div>
-                            <div class="cm_social">
-                                <a href="https://www.linkedin.com/in/krish-murarka-9865a3122/" title="Linkedin"><img alt="images" src={linkedin} class="cm_logo" /></a>
-                                <a href="https://github.com/krishmurarka" title="Github"><img alt="images" src={github} class="cm_logo" /></a>
-                                <a href="https://www.instagram.com/krish_murarka/" title="Instagram"><img alt="images" src={instagram} class="cm_logo" /></a>
-                                <a href="https://twitter.com/MurarkaKrish" title="Twitter"><img alt="images" src={twitter} class="cm_logo" /></a>
-                            </div>
+            <div className="aboutUsBody">
+                <div className="our_Team_Title">Our Team</div>
+                <div className="aboutUs_slogan">Small team with millions <br/> of creativity</div>
+                <div className="head_members">
+                    <div className="head_member_card">
+                        <div className="head_member_photo" style={{backgroundImage:`url(${krishMurarka})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/krish-murarka-9865a3122/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/krishmurarka" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/krish_murarka/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/MurarkaKrish" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                           </div>
                         </div>
-                        <div class="coreMemberCard">
-                            <img alt="images" src={abhinavPrakash} class="dpcm" />
-                            <div class="namecm">Abhinav Prakash</div>
-                            <div class="desgcm">
-                                <img alt="images" src={gfglogo} class="cm_gfglogo" />Secretary
-                            </div>
-                            <div class="cm_social">
-                                <a href="https://www.linkedin.com/in/itsmeabhinavprakash/" title="Linkedin"><img alt="images" src={linkedin} class="cm_logo" /></a>
-                                <a href="https://github.com/abhinavprkash" title="Github"><img alt="images" src={github} class="cm_logo" /></a>
-                                <a href="https://www.instagram.com/_abhinavprkash_/" title="Instagram"><img alt="images" src={instagram} class="cm_logo" /></a>
-                                <a href="https://twitter.com/abhinaprkash" title="Twitter"><img alt="images" src={twitter} class="cm_logo" /></a>
-                            </div>
-                        </div>
-                        <div class="coreMemberCard">
-                            <img alt="images" src={adityaDas} class="dpcm" />
-                            <div class="namecm">Aditya Das</div>
-                            <div class="desgcm">
-                                <img alt="images" src={gfglogo} class="cm_gfglogo" />Head of Department
-                            </div>
-                            <div class="cm_social">
-                                <a href="https://www.linkedin.com/in/aditya-das-619a5019b/" title="Linkedin"><img alt="images" src={linkedin} class="cm_logo" /></a>
-                                <a href="https://github.com/ThatOneTallKid" title="Github"><img alt="images" src={github} class="cm_logo" /></a>
-                                <a href="https://twitter.com/AdityaD14206128?s=08" title="Twitter"><img alt="images" src={twitter} class="cm_logo" /></a>
+                        <div className="head_member_about">
+                            <div className="head_member_name">Krish Murarka</div>
+                            <div className="head_member_desg">President</div>
+                            <div className="head_member_words">   
+                            Krish Murarka is the Founder and Campus President of GeeksforGeeks - KIIT. He is an undergrad in Computer Science Engineering. He is also the Campus Geek of November - 2020. Krish also loves to code and has mastered C++ and Java. Krish is also a 4* coder on CodeChef. We at GeeksforGeeks - KIIT call him insomniac as he is available almost round the clock!
                             </div>
                         </div>
                     </div>
-                <div id="lead_title">
-                    <div class="lead_title_display">Core Member : Leads </div>
-                    <div class="lead_title_line"></div>
-                </div>
-                    <div class="aboutUs_row">
-                        <div class="coreMemberCard">
-                            <img alt="images" src={AnkitRaj} class="dpcm" />
-                            <div class="namecm">Ankit Raj</div>
-                            <div class="desgcm">
-                                <img alt="images" src={gfglogo} class="cm_gfglogo" />Web Dev. Lead
-                            </div>
-                            <div class="cm_social">
-                                <a href="https://www.linkedin.com/in/ankit-raj-a3405b1b0" title="Linkedin"><img alt="images" src={linkedin} class="cm_logo" /></a>
-                                <a href="https://github.com/AnkitRajCode" title="Github"><img alt="images" src={github} class="cm_logo" /></a>
-                                <a href="https://www.instagram.com/ankit.___.raj/" title="Instagram"><img alt="images" src={instagram} class="cm_logo" /></a>
-                                <a href="https://twitter.com/ankit__raj__?s=08" title="Twitter"><img alt="images" src={twitter} class="cm_logo" /></a>
-                            </div>
+                    <div className="head_member_card">
+                        <div className="head_member_photo photo_abhinav" style={{backgroundImage:`url(${abhinavPrakash})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/itsmeabhinavprakash/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/abhinavprkash" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/_abhinavprkash_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/abhinaprkash" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                           </div>
                         </div>
-                        <div class="coreMemberCard">
-                            <img alt="images" src={HarshDwivedi} class="dpcm" />
-                            <div class="namecm">Harsh Dwivedi</div>
-                            <div class="desgcm">
-                                <img alt="images" src={gfglogo} class="cm_gfglogo" />Competitive Programming Lead
-                            </div>
-                            <div class="cm_social">
-                                <a href="https://www.linkedin.com/in/harsh-dwivedi-18224b196/" title="Linkedin"><img alt="images" src={linkedin} class="cm_logo" /></a>
-                                <a href="https://github.com/HarshCodes-07" title="Github"><img alt="images" src={github} class="cm_logo" /></a>
-                                <a href="https://www.instagram.com/_heisenberg.___/" title="Instagram"><img alt="images" src={instagram} class="cm_logo" /></a>
-                            </div>
-                        </div>
-                        <div class="coreMemberCard">
-                            <img alt="images" src={Taran} class="dpcm" />
-                            <div class="namecm">Taranpreet Singh Chabbra</div>
-                            <div class="desgcm">
-                                <img alt="images" src={gfglogo} class="cm_gfglogo" />Android Dev. Lead
-                            </div>
-                            <div class="cm_social">
-                                <a href="https://www.linkedin.com/in/taranpreet-singh-chabbra-27517918a/" title="Linkedin"><img alt="images" src={linkedin} class="cm_logo" /></a>
-                                <a href="https://github.com/singhtaran1005" title="Github"><img alt="images" src={github} class="cm_logo" /></a>
-                                <a href="https://www.instagram.com/taran_3010/" title="Instagram"><img alt="images" src={instagram} class="cm_logo" /></a>
-                                <a href="https://twitter.com/Taran17809555" title="Twitter"><img alt="images" src={twitter} class="cm_logo" /></a>
-                            </div>
-                        </div>
-                        <div class="coreMemberCard">
-                            <img alt="images" src={SouravDash} class="dpcm" />
-                            <div class="namecm">Sourav Dash</div>
-                            <div class="desgcm">
-                                <img alt="images" src={gfglogo} class="cm_gfglogo" />Ux-UI Lead
-                            </div>
-                            <div class="cm_social">
-                                <a href="https://www.linkedin.com/in/srv-uxd/" title="Linkedin"><img alt="images" src={linkedin} class="cm_logo" /></a>
-                                <a href="https://github.com/kingsrv18" title="Github"><img alt="images" src={github} class="cm_logo" /></a>
-                                <a href="https://www.instagram.com/srv_18/" title="Instagram"><img alt="images" src={instagram} class="cm_logo" /></a>
-                                <a href="https://twitter.com/theSRV18" title="Twitter"><img alt="images" src={twitter} class="cm_logo" /></a>
-                            </div>
-                        </div>
-                        <div class="coreMemberCard">
-                            <img alt="images" src={AshwaniSingh} class="dpcm" />
-                            <div class="namecm">Ashwani Singh</div>
-                            <div class="desgcm">
-                                <img alt="images" src={gfglogo} class="cm_gfglogo" />Content Writing Lead
-                            </div>
-                            <div class="cm_social">
-                                <a href="https://www.linkedin.com/in/ashwani-singh-542b421b4" title="Linkedin"><img alt="images" src={linkedin} class="cm_logo" /></a>
-                                <a href="https://github.com/darthAlgo" title="Github"><img alt="images" src={github} class="cm_logo" /></a>
-                                <a href="https://www.instagram.com/_ashwani__singh/" title="Instagram"><img alt="images" src={instagram} class="cm_logo" /></a>
-                                <a href="https://twitter.com/___Ashwani__" title="Twitter"><img alt="images" src={twitter} class="cm_logo" /></a>
-                            </div>
-                        </div>
-                        <div class="coreMemberCard">
-                            <img alt="images" src={VeerSharma} class="dpcm" />
-                            <div class="namecm">Veer Sharma</div>
-                            <div class="desgcm">
-                                <img alt="images" src={gfglogo} class="cm_gfglogo" />Marketing Lead
-                            </div>
-                            <div class="cm_social">
-                                <a href="https://www.linkedin.com/in/veer-sharma-0403631b9" title="Linkedin"><img alt="images" src={linkedin} class="cm_logo" /></a>
-                                <a href="https://github.com/galahadveer" title="Github"><img alt="images" src={github} class="cm_logo" /></a>
-                                <a href="https://www.instagram.com/galahadveer/" title="Instagram"><img alt="images" src={instagram} class="cm_logo" /></a>
-                                <a href="https://mobile.twitter.com/VeerSha76890926" title="Twitter"><img alt="images" src={twitter} class="cm_logo" /></a>
+                        <div className="inverse_aboutus_abhinav">
+                            <div className="head_member_name">Abhinav Prakash</div>
+                            <div className="head_member_desg">Secretary</div>
+                            <div className="head_member_words">   
+                            Abhinav Prakash is the co-leader at GeeksforGeeks - KIIT. He can be found coding or developing most of his time. Abhinav also organizes the events for GeeksforGeeks - KIIT. His passion for coding dates back to when he was in 8th class when he started coding. He has also done a decent amount of projects and contributions. He is also a 4 star coder at CodeChef.
                             </div>
                         </div>
                     </div>
-                <div class="member_title_display">Members : Web Developers & Ux-UI </div>
-                    <Swiper slidesPerView={4} className="swiper-container">
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={AkashChouhan} className="dp_cm_member"/>
-                                <div className="name_member">Akash Chouhan</div>
-                                <div className="desg_member">Web Developer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://in.linkedin.com/in/akashchouhan16" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/akashchouhan16" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/akashchouhan16/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/Akash_Chouhan_" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
+                    <div className="head_member_card">
+                        <div className="head_member_photo" style={{backgroundImage:`url(${adityaDas})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/aditya-das-619a5019b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/ThatOneTallKid" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://twitter.com/AdityaD14206128?s=08" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                 </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={Anshu} className="dp_cm_member"/>
-                                <div className="name_member">Anshu Mohanta</div>
-                                <div className="desg_member">Web Developer & Ux-Ui</div><br/>
-                                <div className="cm_social">
-                                    <a href="www.linkedin.com/in/bitraylee" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/bitraylee" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/anshu.draw/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/bit_raylee" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={ArnabChatterjee} className="dp_cm_member"/>
-                                <div className="name_member">Arnab Chatterjee</div>
-                                <div className="desg_member">Web Developer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/arnab-chatterjee-3944341a0/" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/arn4b" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/_arn4b_/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/cyanide_arnab" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={AshishKumarMishra} className="dp_cm_member"/>
-                                <div className="name_member">Ashish kumar Mishra</div>
-                                <div className="desg_member">Ux-Ui</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/ashish-kumar-mishra-91366b193" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/ashishmishra-bit" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/a_s_h_i_s_h_mishra" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={DevanshShaw} className="dp_cm_member"/>
-                                <div className="name_member">Devansh Shaw</div>
-                                <div className="desg_member">Web Developer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/devansh-shaw-b26a56194" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/Devansh2000Shaw" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://instagram.com/shaw_devansh/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/shaw_devansh/" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={RiteshKumar} className="dp_cm_member"/>
-                                <div className="name_member">Ritesh Kumar</div>
-                                <div className="desg_member">Ux-Ui</div><br/>
-                                <div className="cm_social">
-                                    <a href="www.linkedin.com/in/ritesh-kumar0" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/wordssaysalot" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/wordssaysalot/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/dewdropxD" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={SatyajeetRamnit} className="dp_cm_member"/>
-                                <div className="name_member">Satyajeet Ramnit</div>
-                                <div className="desg_member">Ux-Ui</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/satyajeet-ramnit-2708" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/satyajeetramnit" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/satyajeet_ramnit" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/RamnitSatyajeet?s=08" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={SouvikKar} className="dp_cm_member"/>
-                                <div className="name_member">Souvik Kar Mahapatra</div>
-                                <div className="desg_member">Web Developer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/souvik-kar-mahapatra-b7652b1b7/" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/DarthCucumber" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/souvikinator/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/DarthCucumber" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={YashAnand} className="dp_cm_member"/>
-                                <div className="name_member">Yash Anand</div>
-                                <div className="desg_member">Ux-Ui</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/yash-anand-6719a81ba" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/yashan0202" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/Yashan0202" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                    </Swiper>
+                           </div>
+                        </div>
+                        <div className="head_member_about">
+                            <div className="head_member_name">Aditya Das</div>
+                            <div className="head_member_desg">Head of Development</div>
+                            <div className="head_member_words">   
+                            Aditya is one of the multi-talented persons in our club. Facing difficulty and in any field, he is always eager to solve. His passion for coding is reflected by the number of skills he acquired. Aditya has done a handful of projects including one of the famous KIIT Archives. He is also behind the Geek Bot which is being used in our Discord Server. Aditya is also the flutter lead at GeeksforGeeks - KIIT.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="member-box">
+                <div className="member_title">Competitive Programmers</div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${HarshDwivedi})`}}>
+                           <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/harsh-dwivedi-18224b196/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/HarshCodes-07" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/_heisenberg.___/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
 
-                <div class="member_title_display">Members : Competitive Programming </div>
-                    <Swiper slidesPerView={4} className="swiper-container">
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={KumarAnkit} className="dp_cm_member"/>
-                                <div className="name_member">Kumar Ankit</div>
-                                <div className="desg_member">Competitive Programmer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/kumar-ankit-830512195/" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/Masters-Akt" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/masters_akt/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/KumarAn80390085" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
                                 </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={LalitKumar} className="dp_cm_member"/>
-                                <div className="name_member">Lalit Kumar</div>
-                                <div className="desg_member">Competitive Programmer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/kumar-ankit-830512195/" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/lalitkumar-123" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/lalitkumar_123_/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/ALALIT12" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
+                           </div>
+                        </div>
+                        <div className="member_name">Harsh Dwivedi</div>
+                        <div className="member-position">Lead</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${AbhinavDeep})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://github.com/abhinav-deep" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/abhinav_deep/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/abhinavdeep0209" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                 </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={NamanGupta} className="dp_cm_member"/>
-                                <div className="name_member">Naman Gupta</div>
-                                <div className="desg_member">Competitive Programmer</div><br/>
-                                <div className="cm_social">
-                                    <a href="linkedin.com/in/naman-gupta-1025a8197/" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/namancoder" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/namanitis/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/HunterAsIAm" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
+                           </div>
+                        </div>
+                        <div className="member_name">Abhinav Deep</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${AkashKumarGautam})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/akashkgautam" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/instinctblaze" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/i.n.s.t.i.n.c.t_16/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                                 </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={Nittishna} className="dp_cm_member"/>
-                                <div className="name_member">Nittishna</div>
-                                <div className="desg_member">Competitive Programmer</div><br/>
-                                <div className="cm_social">
-                                    <a href="www.linkedin.com/in/nittishna-dhar-9952831b9" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/Xyandraa9" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/nit_tflix/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/NitTflix" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
+                           </div>
+                        </div>
+                        <div className="member_name">Akash Kumar Gautam</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${KumarAnkit})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/kumar-ankit-830512195/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/Masters-Akt" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/masters_akt/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/KumarAn80390085" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                 </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={RohitPradhan} className="dp_cm_member"/>
-                                <div className="name_member">Rohit Pradhan</div>
-                                <div className="desg_member">Competitive Programmer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/rohit-pradhan-a085a3185/" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/Rohit-786" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/rohit.p768/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/RohitPr08263383" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
+                           </div>
+                        </div>
+                        <div className="member_name">Kumar Ankit</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${LalitKumar})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/a-lalit-2214031b0/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/lalitkumar-123" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/lalitkumar_123_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/ALALIT12" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                 </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={SaswataGhosh} className="dp_cm_member"/>
-                                <div className="name_member">Saswata Ghosh</div>
-                                <div className="desg_member">Competitive Programmer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/shashi-kiran-8802601b7/" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/GeekGrave" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/_darthgrave_/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/ShashiK45454010" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
+                            </div>
+                        </div>
+                        <div className="member_name">Lalit Kumar</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${NamanGupta})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="linkedin.com/in/naman-gupta-1025a8197/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/namancoder" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/namanitis/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/HunterAsIAm" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                 </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={ShashiKiran} className="dp_cm_member"/>
-                                <div className="name_member">Shashi Kiran</div>
-                                <div className="desg_member">Competitive Programmer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/saswata-ghosh-05bb83170/" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/Shaswat-2203" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/shaswat_2203/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/Saswata88950495" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
+                            </div>
+                        </div>
+                        <div className="member_name">Naman Gupta</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${Nittishna})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="www.linkedin.com/in/nittishna-dhar-9952831b9" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/Xyandraa9" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/nit_tflix/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/NitTflix" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                 </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={ShivamKumar} className="dp_cm_member"/>
-                                <div className="name_member">Shivam Kumar</div>
-                                <div className="desg_member">Competitive Programmer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/shivam-kumar-6391281b4/" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/shivam-kumar123" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/shivam_9137/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/shivamk03033294" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
+                            </div>
+                        </div>
+                        <div className="member_name">Nittishna</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${RohitPradhan})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/rohit-pradhan-a085a3185/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/Rohit-786" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/rohit.p768/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/RohitPr08263383" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                 </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={SnehilSinhna} className="dp_cm_member"/>
-                                <div className="name_member">Snehil Sinhna</div>
-                                <div className="desg_member">Competitive Programmer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/snehil-sinha" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/Lord-Lava" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
+                            </div>
+                        </div>
+                        <div className="member_name">Rohit Pradhan</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${SaswataGhosh})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/saswata-ghosh-05bb83170/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/Shaswat-2203" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/shaswat_2203/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/Saswata88950495" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                 </div>
-                        </SwiperSlide>
-                    </Swiper>
-                
-                    <div class="member_title_display">Members : Android Developers  </div>
-                    <Swiper slidesPerView={4} className="swiper-container">
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={AbhisekSamantaray} className="dp_cm_member"/>
-                                <div className="name_member">Abhisek Samantaray</div>
-                                <div className="desg_member">Android Developer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/abhisek-samantaray-989555195/" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/abhisekCodes" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/_programmerhub_/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/Abhisek33295513" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
+                            </div>
+                        </div>
+                        <div className="member_name">Saswata Ghosh</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${ShashiKiran})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/shashi-kiran-8802601b7/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/GeekGrave" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/_darthgrave_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/ShashiK45454010" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                 </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={AlokKumar} className="dp_cm_member"/>
-                                <div className="name_member">Alok Kumar Patel</div>
-                                <div className="desg_member">Android Developer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://in.linkedin.com/in/1--alok" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/1-alok" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/4_alok/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/4__alok" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
+                            </div>
+                        </div>
+                        <div className="member_name">Shashi Kiran</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${ShivamKumar})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/shivam-kumar-6391281b4/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/shivam-kumar123" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/shivam_9137/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/shivamk03033294" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                 </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={DivyanshuShekhar} className="dp_cm_member"/>
-                                <div className="name_member">Divyanshu Shekhar</div>
-                                <div className="desg_member">Android Developer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://in.linkedin.com/in/divyanshu-shekhar-a8a04a162" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/divshekhar/" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://instagram.com/dshekhar17" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/dshekhar17" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
+                            </div>
+                        </div>
+                        <div className="member_name">Shivam Kumar</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${SnehilSinhna})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/snehil-sinha" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/Lord-Lava" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={nitishSonthalia} className="dp_cm_member"/>
-                                <div className="name_member">Nitish Kumar Sonthalia</div>
-                                <div className="desg_member">Android Developer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/nitish-kumar-sonthalia-4713a8193/" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/nks102000" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/nitish_rider_1110/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/NitishK68693721" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={RupanshiChawda} className="dp_cm_member"/>
-                                <div className="name_member">Rupanshi Chawda</div>
-                                <div className="desg_member">Android Developer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/rupanshi-chawda-a17372193/" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/rupanshi-chawda/" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                    </Swiper>
-                
-                <div class="member_title_display">Members : Content Writing & Marketing </div>
-                    <Swiper slidesPerView={4} className="swiper-container">
-                        
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={AdyashaSatpathy} className="dp_cm_member"/>
-                                <div className="name_member">Adyasha Satpathy</div>
-                                <div className="desg_member">Content Writer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/adyasha-satpathy-040b571a7" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/Adyasha600" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/_.e._n_i_g_m_a._/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/AdyashaSatpath4" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={AsmitaHobisyashi} className="dp_cm_member"/>
-                                <div className="name_member">Asmita Hobisyashi</div>
-                                <div className="desg_member">Content Writer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/asmita-hobisyashi-8564071a3" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/crayonpillars" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/crayon_pillars/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={SayakRoyChowdhury} className="dp_cm_member"/>
-                                <div className="name_member">Sayak Roy Chowdhury</div>
-                                <div className="desg_member">Content Writer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/sayak-roy-chowdhury-197bb819b/" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://github.com/Sayak11" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/its_me_sayakroychowdhury/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/itsSRC3" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img alt="images" src={SuryavardhanThangirala} className="dp_cm_member"/>
-                                <div className="name_member">Suryavardhan Thangirala</div>
-                                <div className="desg_member">Content Writer</div><br/>
-                                <div className="cm_social">
-                                    <a href="https://www.linkedin.com/in/suryavardhan-thangirala-9800a81a5" title="Linkedin"><img alt="images" src={linkedin} className="cm_logo1" /></a>
-                                    <a href="https://twitter.com/SuryavardhanT" title="Github"><img alt="images" src={github} className="cm_logo" /></a>
-                                    <a href="https://www.instagram.com/suryathangirala/" title="Instagram"><img alt="images" src={instagram} className="cm_logo" /></a>
-                                    <a href="https://twitter.com/SuryavardhanT" title="Twitter"><img alt="images" src={twitter} className="cm_logo" /></a>
-                                </div>
-                        </SwiperSlide>
-                    </Swiper>
+                            </div>
+                        </div>
+                        <div className="member_name">Snehil Sinhna</div>
+                    </div>
                 </div>
+                <div className="member-box">
+                    <div className="member_title">Web Developers</div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${AnkitRaj})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/ankit-raj-a3405b1b0" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/AnkitRajCode" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://instagram.com/ankit_r.a.j?igshid=895xw0qgqmx2" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://ankitraj.netlify.app" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Ankit Raj</div>
+                        <div>Lead</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${AkashChouhan})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://in.linkedin.com/in/akashchouhan16" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/akashchouhan16" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/akashchouhan16/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/Akash_Chouhan_" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Akash Chouhan</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${ArnabChatterjee})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/arnab-chatterjee-3944341a0/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/arn4b" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/_arn4b_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/cyanide_arnab" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Arnab Chatterjee</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${DevanshShaw})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/devansh-shaw-b26a56194" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/Devansh2000Shaw" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://instagram.com/shaw_devansh/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/shaw_devansh/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Devansh Shaw</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${SouvikKar})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/souvik-kar-mahapatra-b7652b1b7/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/DarthCucumber" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/souvikinator/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/DarthCucumber" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Souvik Mahapatra</div>
+                    </div>
+                </div>
+                <div className="member-box">
+                <div className="member_title">UX-UI</div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${SouravDash})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/srv-uxd/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/kingsrv18" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/srv_18/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/theSRV18" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Sourav Dash</div>
+                        <div>Lead</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${Anshu})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="www.linkedin.com/in/bitraylee" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/bitraylee" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/anshu.draw/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/bit_raylee" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Anshu Mohanta</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${AshishKumarMishra})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/ashish-kumar-mishra-91366b193" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/ashishmishra-bit" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/a_s_h_i_s_h_mishra" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Ashish Mishra</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${RiteshKumar})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="www.linkedin.com/in/ritesh-kumar0" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/wordssaysalot" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/wordssaysalot/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/dewdropxD" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Ritesh Kumar</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${SatyajeetRamnit})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/satyajeet-ramnit-2708" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/satyajeetramnit" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/satyajeet_ramnit" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/RamnitSatyajeet?s=08" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Satyajeet Ramnit</div>
+                    </div>
+                </div>
+                <div className="member-box">
+                <div className="member_title">Android Developers</div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${Taran})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/taranpreet-singh-chabbra-27517918a/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/singhtaran1005" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/taran_3010/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/Taran17809555" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Taranpreet Singh</div>
+                        <div>Lead</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${AbhisekSamantaray})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/abhisek-samantaray-989555195/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/abhisekCodes" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/_programmerhub_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/Abhisek33295513" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Abhisek Samantaray</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${AlokKumar})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://in.linkedin.com/in/1--alok" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/1-alok" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/4_alok/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/4__alok" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Alok Kumar</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${DivyanshuShekhar})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://in.linkedin.com/in/divyanshu-shekhar-a8a04a162" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/divshekhar/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://instagram.com/dshekhar17" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/dshekhar17" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Divyanshu Shekhar</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${nitishSonthalia})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/nitish-kumar-sonthalia-4713a8193/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/nks102000" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/nitish_rider_1110/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/NitishK68693721" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Nitish Sonthalia</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${RupanshiChawda})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/rupanshi-chawda-a17372193/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/rupanshi-chawda/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Rupanshi Chawda</div>
+                    </div>
+                </div>
+                <div className="member-box">
+                <div className="member_title">Content Writers</div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${AshwaniSingh})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/ashwani-singh-542b421b4" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/darthAlgo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/_ashwani__singh/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/___Ashwani__" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Ashwani Singh</div>
+                        <div>Lead</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${AdyashaSatpathy})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/adyasha-satpathy-040b571a7" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/Adyasha600" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/_.e._n_i_g_m_a._/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/AdyashaSatpath4" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Adyasha Satpathy</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${AsmitaHobisyashi})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/asmita-hobisyashi-8564071a3" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/crayonpillars" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/crayon_pillars/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Asmita Hobisyashi</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${SayakRoyChowdhury})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/sayak-roy-chowdhury-197bb819b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/Sayak11" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/its_me_sayakroychowdhury/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/itsSRC3" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Sayak Roy Chowdhury</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${SuryavardhanThangirala})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/suryavardhan-thangirala-9800a81a5" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/DoomsMirtz" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/tsu.070/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/SuryavardhanT" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Suryavardhan Thangirala</div>
+                    </div>
+                </div>
+                <div className="member-box">
+                <div className="member_title">Marketing</div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${VeerSharma})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/veer-sharma-0403631b9" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/galahadveer" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://twitter.com/VeerSha76890926" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Veer Sharma</div>
+                        <div>Lead</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${MadhavParikh})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/madhav-parikh-4a37831a5" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/Maddy-Parikh" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/_.maddy_parikh._/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/ParikhMadhav" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Madhav Parikh</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${SatyajitMishra})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="www.linkedin.com/in/smish01" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/smish-hash" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/smish_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/smish__" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Satyajit Mishra</div>
+                    </div>
+                    <div className="member">
+                        <div className="member_photo" style={{backgroundImage:`url(${ShwetaThakur})`}}>
+                            <div className="overlay">
+                                <div className="flex-container">
+                                    <a href="https://www.linkedin.com/in/shweta-thakur-131489207" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/shwets3004" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/shwets._/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/shwetat40286034" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member_name">Shweta thakur</div>
+                    </div>
+                </div>
+            </div>
             <Footer bgColor="footer-aboutUs"></Footer>
         </div>
        )

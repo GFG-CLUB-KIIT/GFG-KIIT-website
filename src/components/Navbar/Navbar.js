@@ -3,95 +3,81 @@ import logo from './resources/logo-3.svg';
 import './navbar.css';
 
 class Navbar extends Component {
-
    componentDidMount(){
-      let navbar= document.getElementById("navbar");
-      let footer= document.querySelector(".footer");
-      let burgerMenu=document.getElementById("burger-menu");
-
-      let navbarItems= document.querySelectorAll("nav ul li a");
-      window.onscroll = () => {
-         let vpwidth=window.innerWidth;
-         let gfglogo= document.getElementById("nav_gfglogo");
-
-         if(window.scrollY > 50 && footer.getBoundingClientRect().top>1){
+      const body = document.querySelector("body");
+      const navbar = document.getElementById("navbar-main");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.getElementById("burger-menu");
+   
+      const logo= document.querySelector(".gfg-logo");
+      // var listItem=menu.querySelectorAll(".list-item");
+      window.onscroll = ()=>{
+         if (window.scrollY > 20){
             navbar.classList.add("sticky");
-            if(vpwidth<500){
-               gfglogo.classList.remove("makeBigger");
-               gfglogo.classList.add("makeSmaller");
-               for(let i=0;i< navbarItems.length; i++)
-                  navbarItems[i].style.color="#fefefe";
-               
-            }
-            else{
-               for(let i=0;i< navbarItems.length; i++)
-                  navbarItems[i].style.color="#333";
-            }
-            burgerMenu.style.color="#333";
-
-            
-         }
-         else if(footer.getBoundingClientRect().top<1){
-            navbar.classList.remove("sticky");
-            burgerMenu.style.color="#fefefe";
-            for(let i=0;i< navbarItems.length; i++)
-               navbarItems[i].style.color="#fefefe";
+            logo.classList.add("make-smaller");
+            // listItem.style.color="#fefefe";
          }
          else{
             navbar.classList.remove("sticky");
-            if(vpwidth<500){
-               gfglogo.classList.remove("makeSmaller");
-               gfglogo.classList.add("makeBigger");
-            }
-            else{
-               for(let i=0;i< navbarItems.length; i++)
-                  navbarItems[i].style.color="#333";
-            }
-            burgerMenu.style.color="#333";
+            logo.classList.remove("make-smaller");
+            // listItem.style.color="#343434";
+
+
          }
-         
       }
 
-      let navCheck= document.getElementById("nav_check");
-      navCheck.addEventListener("click", ()=>{
-         let burger=document.getElementById("burger-menu");
-         if(burger.classList.contains("fa-bars")===true){
-            if(footer.getBoundingClientRect().top<1){
-               burger.style.color="#fefefe";
-            }
-            else
-               burger.style.color="#333";
-               burger.classList.remove("fa-bars");
-               burger.classList.add("fa-times");
+      //Animation for the menu btn
+      var currentState="menu";
+      let line1= document.getElementById("line-1");
+      let line2= document.getElementById("line-2");
+      let line2Container=document.getElementById("line-2-container");
+      let line3= document.getElementById("line-3");
+      
+      menuBtn.addEventListener("click",()=>{
+         if(currentState==="menu"){
+            line1.classList.add("cross-state-1");
+            line2Container.classList.add("cross-state-2");
+            line2.classList.add("cross-state-2");
+            line3.classList.add("cross-state-3");
+            
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabledScroll");
+            currentState="cross"
          }
-         else if(burger.classList.contains("fa-times")){
-            if(footer.getBoundingClientRect().top<1){
-               burger.style.color="#fefefe";
-            }
-            else
-               burger.style.color="#333";
-               burger.classList.remove("fa-times");
-             burger.classList.add("fa-bars");
+         else{
+            line1.classList.remove("cross-state-1");
+            line2Container.classList.remove("cross-state-2");
+            line2.classList.remove("cross-state-2");
+            line3.classList.remove("cross-state-3");
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            body.classList.remove("disabledScroll");
+            currentState="menu";
          }
+      
       });
-   } 
+
+   }
    render() {
       return (
-         <nav id="navbar"  >
-            <input type="checkbox" id = "nav_check" />
-            <label className = "logo"><a href="/"><img alt="images" src = {logo} id = "nav_gfglogo" /></a></label>
-            <ul>
-               <li><a href="/" className = "nav_home">Home</a></li>
-               <li><a href="/Events" className = "nav_event">Events </a></li>
-               <li><a href="/Projects" className = "nav_projects">Projects </a></li>
-               <li><a href="/Member" className= "nav_about">Members </a></li>
-            </ul>
-            <label for = "nav_check" className="nav_checkbtn" >
-               {/* <span class="material-icons" id="burger-menu">
-                  menu
-               </span> */}
-               <i class="fas fa-bars" id="burger-menu"></i>
-            </label>
+         <nav class="navbar" id="navbar-main">
+            <div class="content">
+              <div class="logo"><a href="/"><img className="gfg-logo" src={logo} alt="logo"></img></a></div>
+                  <ul class="menu-list">
+                  <li><a href="/" className = "nav_home list-item">Home</a></li>
+                  <li><a href="/Events" className = "nav_event list-item">Events </a></li>
+                  <li><a href="/Projects" className = "nav_projects list-item">Projects </a></li>
+                  <li><a href="/Member" className= "nav_about list-item">Members </a></li>
+               </ul>
+               <div class="burger-menu" id="burger-menu">
+                  <div class="line-1" id="line-1"></div>
+                  <div class="line-2-container" id="line-2-container">
+                     <div class="line-2" id="line-2"></div>
+                  </div>
+                  <div class="line-3" id="line-3"></div>
+               </div>
+            </div>
          </nav>
       )
    }

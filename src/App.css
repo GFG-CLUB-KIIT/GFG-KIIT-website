@@ -1,3 +1,6 @@
+.mainBody{
+  overflow-x: hidden;
+}
 .main_title_error{
   font-size: 80px;
   font-weight: 700;

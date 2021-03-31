@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto&display=swap");
-#Events_title{
-   width: 400px;
-   float: left!important;
-   color: white;
+#Events_title {
+   float: left !important;
+   color: #fefefe;
    margin-left: 15%;
-   margin-top: -300px;
-   position:absolute;
-}
-#Events_title_right{
-   font-size: 40px;
-   font-weight: 500;
-   font-family: sans-serif;
-   letter-spacing: 1.5px;
+   position: absolute;
+   width: 515px;
+   height: 190px;
+   top: 40%;
+   font-size: 30px;
+   font-family: raleway;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 37px;
 }
 #event-slider-main
    .slick-slider
@@ -57,6 +57,21 @@
    .flex-container
    .dev-cast-ep-2-img {
    background-image: url("images/shashank-pathak-events.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: white;
+}
+#event-slider-main
+   .slick-slider
+   .slick-list
+   .slick-track
+   .slick-slide
+   div
+   section
+   .flex-container
+   .dev-cast-ep-3-img {
+   background-image: url("images/samridhi-mehta.jpg");
    background-size: contain;
    background-repeat: no-repeat;
    background-position: center;
@@ -203,6 +218,74 @@
 }
 /*styling for the youtube button ends here*/
 
+/*styling for the other event button*/
+.event .flex-container .otherEvent-btn {
+   border: none;
+   background-color: #eee;
+   justify-content: center;
+   width: 200px;
+   height: 50px;
+   border-radius: 5px;
+   transition: 0.5s ease-in-out;
+}
+.event .flex-container .otherEvent-btn a {
+   display: flex;
+   align-items: center;
+   color: #333;
+   background-color: #eee;
+   justify-content: center;
+   width: 200px;
+   height: 50px;
+   border-radius: 5px;
+   transition: 0.5s ease-in-out;
+   text-decoration: none;
+   font-weight: 600 !important;
+}
+.event .flex-container .otherEvent-btn a .hover-bg {
+   position: absolute;
+   background-color: #4286f5;
+   width: 0;
+   height: inherit;
+   z-index: 0;
+   transition: 0.5s ease-in-out;
+}
+
+.event .flex-container .otherEvent-btn:hover a .otherEvent-icon {
+   color: #fefefe;
+   transition: 0.5s ease-in-out;
+}
+.event .flex-container .otherEvent-btn:hover {
+   -webkit-box-shadow: 0px 0px 20px 0px #4286f5;
+   -moz-box-shadow: 0px 0px 20px 0px #4286f5;
+   box-shadow: 0px 0px 20px 0px #4286f5;
+
+   transform: translateX(10px);
+
+   transition: all 0.6s ease-in-out;
+}
+
+.event .flex-container .otherEvent-btn a h5 {
+   padding: 5px;
+   z-index: 1;
+   transition: 0.5s ease-in-out;
+}
+.event .flex-container .otherEvent-btn a .otherEvent-icon {
+   padding: 5px;
+   z-index: 1;
+   transition: 0.5s ease-in-out;
+}
+
+.event .flex-container .otherEvent-btn:hover a .hover-bg {
+   width: inherit;
+   transition: 0.5s ease-in-out;
+   border-radius: 5px;
+}
+.event .flex-container .otherEvent-btn:hover a h5 {
+   color: #fefefe;
+   transition: 0.5s ease-in-out;
+}
+/*styling for the other event button ends here*/
+
 .event .flex-container .code-rush-1-0-img {
    background-image: url("images/code-rush-1-0.png");
    background-size: contain;
@@ -224,8 +307,32 @@
    background-position: center;
    background-color: white;
 }
+.event .flex-container .google-hashcode-2021 {
+   background-image: url("images/google-hashcode-2021.jpg");
+   background-size: 90% !important;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: white;
+}
+.event .flex-container .geekIknack {
+   background-image: url("images/knack.png");
+   background-size: 90% !important;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: white;
+}
 
 @media only screen and (max-width: 600px) {
+   #Events_title{
+      top:20%;
+      font-size: 21px;
+      width: 260px;
+      height: 200px;
+      margin-left: 10%;
+      padding: 18px;
+      line-height: 25px;
+      font-weight: 400;
+   }
    #event-slider-main
       .slick-slider
       .slick-list
@@ -237,7 +344,7 @@
       .text-container {
       margin: 0 10%;
       width: 80%;
-      height: 50vh;
+      height: 60vh;
    }
    #event-slider-main
       .slick-slider
