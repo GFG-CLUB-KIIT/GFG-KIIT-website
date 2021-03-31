@@ -33,7 +33,7 @@ window.onload = function () {
     };
 
     //FIXME: hide the form endpoint
-    xhr.open("POST", "https://formspree.io/f/mvovwyyr");
+    xhr.open("POST", "https://formspree.io/f/moqyagbz");
 
     // set `Content-Type` header
     xhr.setRequestHeader("Content-Type", "application/json");
