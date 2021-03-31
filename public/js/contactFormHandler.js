@@ -26,13 +26,13 @@ window.onload = function () {
         const response = JSON.parse(xhr.responseText);
         if(response.ok===true){
             alert("form submitted successfully!!");
+            contact_form.reset();
         }else{
             alert("Oops! error occured while submtting the form");
         }
       }
     };
 
-    //FIXME: hide the form endpoint
     xhr.open("POST", "https://formspree.io/f/moqyagbz");
 
     // set `Content-Type` header
