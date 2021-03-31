@@ -7,10 +7,9 @@ function FooterLanding(props){
             <div class="grid-container">
                <div class="wanna-talk-to-us"><h1>Wanna talk to us?</h1></div>
                   <div class="write-to-us">
-                     <form id="contact-us" action="#">
+                     <form id="contact-us">
                         <input type="email" id="email" name="email" placeholder="Email"></input>
                         <textarea type="text" id="message" name="messsage" placeholder="Start typing!"></textarea>
-                        {/* TODO: style the button */}
                         <div className="send-btn-container"><input type="submit" value="Send" className="send"></input></div>
                      </form>
                   </div>
