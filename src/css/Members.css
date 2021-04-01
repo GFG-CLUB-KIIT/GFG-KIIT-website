@@ -11,7 +11,7 @@ body {
    position: absolute;
    width: 515px;
    height: 190px;
-   top: 170px;
+   top: 200px;
    font-size: 30px;
    font-family: raleway;
    font-style: normal;
@@ -257,11 +257,11 @@ body {
 }
 @media screen and (max-width: 500px) {
    .aboutus_header_slogan {
-      top: 130px;
+      top: 100px;
       font-size: 21px;
       width: 260px;
       height: 200px;
-      margin-left: 13%;
+      margin-left: 18%;
       padding: 18px;
       line-height: 25px;
       font-weight: 400;
@@ -322,8 +322,5 @@ body {
    .member_title {
       font-size: 28px;
       text-align: center;
-   }
-   .aboutus_header_slogan_hide{
-      display: none;
    }
 }
