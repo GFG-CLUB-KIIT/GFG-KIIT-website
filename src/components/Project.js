@@ -68,7 +68,7 @@ class Project extends Component {
                     <div class="modal-content1">
                         <div id="popup_top_image1">
                             <div className="cross">
-                                <a href="#" className="list-item" onClick={displayNone1} ><img alt="images" src={cross} className="fa-times"/></a>
+                                <div className="list-item" onClick={displayNone1} ><img alt="images" src={cross} className="fa-times"/></div>
                             </div>
                         </div>
                         <div class="popup_card">
@@ -98,7 +98,7 @@ class Project extends Component {
                     <div class="modal-content3">
                         <div id="popup_top_image2">
                             <div className="cross">
-                                <a href="#" className="list-item" onClick={displayNone3} ><img alt="images" src={cross} className="fa-times"/></a>
+                                <div className="list-item" onClick={displayNone3} ><img alt="images" src={cross} className="fa-times"/></div>
                             </div>
                         </div>
                         <div class="popup_card">

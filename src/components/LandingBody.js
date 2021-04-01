@@ -30,7 +30,7 @@ class LandingBody extends Component {
                     </div>
                 </div>
             </div>
-          <h1 id="upcomingEvent">Recent Event</h1>
+          <h1 id="upcomingEvent">Upcoming Event</h1>
           <div id="landing_line_Event"></div>
           <div id="event">
             <div id="event_img">
@@ -45,7 +45,7 @@ class LandingBody extends Component {
                             <p>GFG-KIIT, with other GFG chapters across India, has come up with a super cool innovative event: “Geek-i-Knack”.</p><br></br>
                             <p>Geek-i-Knack is a 3-day full-fledged Placement Interview-Drive (from Coding round to HR interview), designed just for Computer Science Geeks, to give them an authentic aid for the much-feared company placements, with help of industry experts, which might ultimately help them in achieving their utmost goal: To bag a dream job in FAANG.</p><br></br>
                             <p><b class="event_bold">Use Invitation Code:</b> GFGO21AWG</p>
-                          <p class="event_space"><b class="event_bold">DATE :</b> 05-03-2021 to 07-03-2021 </p>
+                          <p class="event_space"><b class="event_bold">DATE :</b> 12-03-2021 to 14-03-2021 </p>
                           <p class="event_space"><b class="event_bold">TIME :</b> 5:00 PM </p>
                       </div>
                   </div>

@@ -568,7 +568,6 @@ class AboutUs extends Component {
                                 <div className="flex-container">
                                     <a href="https://www.linkedin.com/in/veer-sharma-0403631b9" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                                     <a href="https://github.com/galahadveer" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/galahadveer/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                                     <a href="https://twitter.com/VeerSha76890926" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                 </div>
                             </div>
