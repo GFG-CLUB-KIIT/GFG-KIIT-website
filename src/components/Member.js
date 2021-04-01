@@ -324,7 +324,7 @@ class AboutUs extends Component {
                                     <a href="https://www.linkedin.com/in/devansh-shaw-b26a56194" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                                     <a href="https://github.com/Devansh2000Shaw" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                     <a href="https://instagram.com/shaw_devansh/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/shaw_devansh/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://final-project-2d4ae.web.app" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -337,7 +337,7 @@ class AboutUs extends Component {
                                     <a href="https://www.linkedin.com/in/souvik-kar-mahapatra-b7652b1b7/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                                     <a href="https://github.com/DarthCucumber" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                     <a href="https://www.instagram.com/souvikinator/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/DarthCucumber" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                    <a href="http://souvikinator.netlify.app/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i></a>
                                 </div>
                             </div>
                         </div>
