@@ -272,7 +272,7 @@ class AboutUs extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="member_name">Snehil Sinhna</div>
+                        <div className="member_name">Snehil Sinha</div>
                     </div>
                 </div>
                 <div className="member-box">
