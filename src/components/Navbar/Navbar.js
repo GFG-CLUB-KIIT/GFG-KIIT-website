@@ -69,6 +69,7 @@ class Navbar extends Component {
                   <li><a href="/Events" className = "nav_event list-item">Events </a></li>
                   <li><a href="/Projects" className = "nav_projects list-item">Projects </a></li>
                   <li><a href="/Member" className= "nav_about list-item">Members </a></li>
+                  <li><a href="#" className= "nav_about list-item">UI / UX hackathon </a></li>
                </ul>
                <div class="burger-menu" id="burger-menu">
                   <div class="line-1" id="line-1"></div>
