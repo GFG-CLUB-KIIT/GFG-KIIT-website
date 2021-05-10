@@ -383,7 +383,7 @@ class AboutUs extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="member_name">Ashish Mishra</div>
+                        <div className="member_name">Ashish Kumar Mishra</div>
                     </div>
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${RiteshKumar})`}}>
