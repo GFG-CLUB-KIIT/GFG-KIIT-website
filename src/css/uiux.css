@@ -1,0 +1,80 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "pt sans";
+    overflow-x: hidden;
+ }
+ .background{
+    background: url(../img/uiux/background.png);
+    color: white;
+    padding: 30px;
+ }
+.hand{
+position: absolute;
+height:200px;
+left: 75.86%;
+right: 1.25%;
+top: 26.54%;
+bottom: 95.23%;
+transform: rotate(17.27deg);
+}
+.head{
+    position: absolute;
+    width: 597.61px;
+    height: 68.83px;
+    left: 422.55px;
+    top: 273px;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50.3724px;
+    line-height: 69px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #3EC960;
+}
+.subhead{
+    position: absolute;
+width: 754.7px;
+height: 110.13px;
+left: 344px;
+top: 357.22px;
+
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 40.4884px;
+line-height: 55px;
+text-align: center;
+
+color: #000000;
+}
+.btn{
+position: absolute;
+width: 251.03px;
+height: 55.06px;
+left: 595px;
+top: 524px;
+
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 35.49px;
+line-height: 48px;
+text-align: center;
+border: none;
+background: #3EC960;
+border-radius: 8.09769px;
+color: #FFFFFF;
+}
+.design{
+    position: absolute;
+    z-index: -1;
+    top: 87%;
+    left: 8%;
+    height: 300px;
+    transform: rotate(15.06deg);
+}
