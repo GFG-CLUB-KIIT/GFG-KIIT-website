@@ -575,7 +575,7 @@ class AboutUs extends Component {
                         <div className="member_name">Veer Sharma</div>
                         <div>Lead</div>
                     </div>
-                    {/* <div className="member">
+                    <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${MadhavParikh})`}}>
                             <div className="overlay">
                                 <div className="flex-container">
@@ -587,7 +587,7 @@ class AboutUs extends Component {
                             </div>
                         </div>
                         <div className="member_name">Madhav Parikh</div>
-                    </div> */}
+                    </div>
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${SatyajitMishra})`}}>
                             <div className="overlay">
