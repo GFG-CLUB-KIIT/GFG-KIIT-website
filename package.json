@@ -14,7 +14,7 @@
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "react-script-tag": "^1.1.2",
-    "react-scripts": "4.0.1",
+    "react-scripts": "^4.0.1",
     "react-slick": "^0.27.13",
     "slick-carousel": "^1.8.1",
     "swiper": "^6.4.5",
