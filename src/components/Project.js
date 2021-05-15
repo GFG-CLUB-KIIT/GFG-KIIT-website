@@ -6,7 +6,7 @@ import AnkitRaj from '../profile/AnkitRaj.png';
 import SouravDash from '../profile/SouravDash.png';
 import ArnabChatterjee from '../profile/ArnabChatterjee.png';
 import AkashChouhan from '../profile/AkashChouhan.png';
-import AshishKumarMishra from '../profile/AshishKumarMishra.png';
+import AshishKumarMishra from '../profile/AshishKumarMishra.jpg';
 import DevanshShaw from '../profile/DevanshShaw.png';
 import SouvikKar from '../profile/SouvikKar.png';
 import Anshu from '../profile/Anshu.png';
