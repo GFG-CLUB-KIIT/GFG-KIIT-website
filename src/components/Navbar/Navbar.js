@@ -65,12 +65,12 @@ class Navbar extends Component {
             <div class="content">
               <div class="logo"><a href="/"><img className="gfg-logo" src={logo} alt="logo"></img></a></div>
                   <ul class="menu-list">
-                  <li><a href="/" className = "nav_home list-item">Home</a></li>
-                  <li><a href="/Events" className = "nav_event list-item">Events </a></li>
-                  <li><a href="/Projects" className = "nav_projects list-item">Projects </a></li>
-                  <li><a href="/Member" className= "nav_about list-item">Members </a></li>
-                  <li><a href="/uiUxHackathon" className= "nav_about list-item">UI / UX hackathon </a></li>
-               </ul>
+                     <li><a href="/" className = "nav_home list-item">Home</a></li>
+                     <li><a href="/Events" className = "nav_event list-item">Events </a></li>
+                     <li><a href="/Projects" className = "nav_projects list-item">Projects </a></li>
+                     <li><a href="/Member" className= "nav_about list-item">Members </a></li>
+                     
+                  </ul>
                <div class="burger-menu" id="burger-menu">
                   <div class="line-1" id="line-1"></div>
                   <div class="line-2-container" id="line-2-container">

@@ -11,7 +11,7 @@ import AshwaniSingh from '../profile/AshwaniSingh.png';
 import VeerSharma from '../profile/VeerSharma.png';
 import ArnabChatterjee from '../profile/ArnabChatterjee.png';
 import AkashChouhan from '../profile/AkashChouhan.png';
-import AshishKumarMishra from '../profile/AshishKumarMishra.png';
+import AshishKumarMishra from '../profile/AshishKumarMishra.jpg';
 import DevanshShaw from '../profile/DevanshShaw.png';
 import RiteshKumar from '../profile/RiteshKumar.png';
 import SouvikKar from '../profile/SouvikKar.png';
@@ -587,7 +587,7 @@ class AboutUs extends Component {
                             </div>
                         </div>
                         <div className="member_name">Madhav Parikh</div>
-                    </div>
+                    </div> 
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${SatyajitMishra})`}}>
                             <div className="overlay">
@@ -601,7 +601,7 @@ class AboutUs extends Component {
                         </div>
                         <div className="member_name">Satyajit Mishra</div>
                     </div>
-                    <div className="member">
+                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${ShwetaThakur})`}}>
                             <div className="overlay">
                                 <div className="flex-container">
