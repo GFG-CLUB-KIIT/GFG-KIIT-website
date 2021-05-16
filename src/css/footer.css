@@ -144,7 +144,7 @@
    font-size: 1rem;
    color: #fefefe;
    background-color: rgba(255, 255, 255, 0.2);
-
+   margin-right:8%;
    border-style: none;
    border-radius: 20px;
    transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
@@ -257,7 +257,7 @@
    }
    #email,
    #message {
-      margin: 0.5vw 0;
+      margin: 0.4vw 0;
    }
 
    .description1 {
@@ -301,14 +301,16 @@
       padding-top: 20%;
       margin: 1rem;
       justify-content: flex-start;
-      margin-left: 20%;
+      margin-left: 17%;
    }
    .write-to-us {
       justify-content: center;
    }
-   #email,
+   #email{
+      margin: 0.5rem -0.35rem;
+   }
    #message {
-      margin: 0.5rem 0;
+      margin: 0.5rem -0.5rem;
    }
 }
 @media only screen and (max-width: 400px) {
