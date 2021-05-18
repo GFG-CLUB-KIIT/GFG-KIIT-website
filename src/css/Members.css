@@ -1,326 +1,531 @@
 body {
-   margin: 0px;
-   padding: 0px;
-   font-family: "pt sans";
-   overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-family: "pt sans";
+  overflow-x: hidden;
 }
 .aboutus_header_slogan {
-   float: left !important;
-   color: white;
-   margin-left: 50%;
-   position: absolute;
-   width: 515px;
-   height: 190px;
-   top: 200px;
-   font-size: 30px;
-   font-family: raleway;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 37px;
+  float: left !important;
+  color: white;
+  margin-left: 50%;
+  position: absolute;
+  width: 515px;
+  height: 190px;
+  top: 200px;
+  font-size: 30px;
+  font-family: raleway;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
 }
 
 .aboutUsBody {
-   width: 80%;
-   padding: 50px 10%;
+  width: 80%;
+  padding: 50px 10%;
 }
 
 .our_Team_Title {
-   text-align: center;
-   font-size: 3rem;
-   font-weight: 900;
-   letter-spacing: 1px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 
 .aboutUs_slogan {
-   text-align: center;
-   font-size: 3rem;
-   font-weight: 200;
-   font-family: "Raleway", sans-serif;
-   letter-spacing: 1px;
-   margin: 30px 0px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+  margin: 30px 0px;
 }
 
 .head_members {
-   margin-bottom: 150px;
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: space-around;
-   float: left;
+  margin-bottom: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  float: left;
 }
 
 .head_member_card {
-   width: 90%;
-   height: 290px;
-   padding-top: 50px;
+  width: 90%;
+  height: 290px;
+  padding-top: 50px;
 }
 
 .head_member_photo,
 .member_photo {
-   width: 220px;
-   height: 220px;
-   float: right;
-   background-size: cover;
-   background-repeat: no-repeat;
-   border-radius: 10px;
-   margin-bottom: 20px;
+  width: 220px;
+  height: 220px;
+  float: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 .head_member_photo {
-   margin-top: 30px;
+  margin-top: 30px;
 }
 .head_member_photo img,
 .member_photo img {
-   width: 100%;
-   height: 100%;
-   border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .photo_abhinav {
-   float: left;
+  float: left;
 }
 
 .inverse_aboutus_abhinav {
-   text-align: right;
-   float: right;
-   width: 60%;
+  text-align: right;
+  float: right;
+  width: 60%;
 }
 
 .head_member_about {
-   float: left;
-   width: 60%;
+  float: left;
+  width: 60%;
 }
 
 .head_member_name {
-   font-size: 2.5rem;
-   font-weight: 500;
-   margin-top: 15px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 15px;
 }
 
 .head_member_desg {
-   font-size: 1.5rem;
-   font-family: "Raleway", sans-serif;
-   margin-top: 5px;
-   font-weight: 400;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  margin-top: 5px;
+  font-weight: 400;
 }
 
 .head_member_words {
-   font-size: 1.2rem;
-   margin-top: 10px;
-   font-weight: 100;
-   line-height: 25px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 100;
+  line-height: 25px;
 }
 
 .member-box {
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: space-around;
-   float: left;
-   margin-bottom: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  float: left;
+  margin-bottom: 150px;
 }
 
 .member_title {
-   width: 100%;
-   font-family: Raleway;
-   font-style: normal;
-   font-weight: 600;
-   font-size: 48px;
+  width: 100%;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
 }
 
 .member {
-   width: 250px;
-   height: 270px;
-   margin-top: 40px;
-   padding: 10px;
-   display: grid;
-   place-items: center;
+  width: 250px;
+  height: 270px;
+  margin-top: 40px;
+  padding: 10px;
+  display: grid;
+  place-items: center;
 }
 
 .head_member_photo .overlay .flex-container,
 .member_photo .overlay .flex-container {
-   width: inherit;
-   height: inherit;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
-   border-radius: 10px;
-   backdrop-filter: saturate(0%);
-   -webkit-backdrop-filter: saturate(0%);
-   background-color: rgba(0, 0, 0, 0.5);
-   transition: all 0.3s ease-in-out;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  backdrop-filter: saturate(0%);
+  -webkit-backdrop-filter: saturate(0%);
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
 }
 
 .head_member_photo .overlay .flex-container i,
 .member_photo .overlay .flex-container i {
-   padding: 10px;
-   font-size: 2rem;
-   color: #fefefe;
-   transition: 0.3s ease-in-out;
+  padding: 10px;
+  font-size: 2rem;
+  color: #fefefe;
+  transition: 0.3s ease-in-out;
 }
 
 .head_member_photo .overlay .flex-container i:hover,
 .member_photo .overlay .flex-container i:hover {
-   margin-bottom: 10px;
-   transition: 0.2s ease-in-out;
-   cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .head_member_photo .overlay .flex-container i:hover,
 .member_photo .overlay .flex-container .fa-instagram:hover {
-   color: #e1306c;
+  color: #e1306c;
 }
 
 .head_member_photo .overlay .flex-container .fa-github:hover,
 .member_photo .overlay .flex-container .fa-github:hover {
-   color: #d3d3d3;
+  color: #d3d3d3;
 }
 
 .head_member_photo .overlay .flex-container .fa-linkedin:hover,
 .member_photo .overlay .flex-container .fa-linkedin:hover {
-   color: #29b6f6;
+  color: #29b6f6;
 }
 
 .head_member_photo .overlay .flex-container .fa-twitter:hover,
 .member_photo .overlay .flex-container .fa-twitter:hover {
-   color: #00acee;
+  color: #00acee;
 }
 
 .head_member_photo .overlay,
 .member_photo .overlay {
-   position: absolute;
-   z-index: 2;
-   width: inherit;
-   height: inherit;
-   display: none;
-   opacity: 0;
-   transition: 0.2s ease-in-out;
+  position: absolute;
+  z-index: 2;
+  width: inherit;
+  height: inherit;
+  display: none;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
 }
 
 .head_member_photo:hover > .overlay,
 .member_photo:hover > .overlay {
-   display: block;
-   opacity: 1;
-   transition: 0.2s ease-in-out;
+  display: block;
+  opacity: 1;
+  transition: 0.2s ease-in-out;
 }
 .member_name {
-   width: 100%;
-   text-align: center;
-   font-size: 25px;
-   font-weight: 500;
-   color: #121212;
-   padding-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  color: #121212;
+  padding-bottom: 5px;
 }
 
 .member-position {
-   width: 100%;
-   text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 @media screen and (max-width: 870px) {
-   .aboutUsBody {
-      width: 100%;
-      padding: 50px 5%;
-   }
-   .head_member_card {
-      width: 300px;
-      height: 550px;
-      margin-left: 5%;
-      padding: 20px 5px 20px 5px;
-   }
-   .head_member_photo {
-      float: left;
-      margin-left: 40px;
-   }
-   .head_member_about,
-   .inverse_aboutus_abhinav {
-      text-align: center;
-      float: left;
-      width: 100%;
-   }
-   .head_member_words {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      text-align: left;
-   }
-   .member-box {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
-   .member {
-      margin: 10px;
-   }
-   .member_title {
-      font-size: 28px;
-      text-align: center;
-   }
+  .aboutUsBody {
+    width: 100%;
+    padding: 50px 5%;
+  }
+  div .our_Team_Title {
+    margin-right: 42px;
+  }
+  div .aboutUs_slogan {
+    margin-right: 48px;
+  }
+  .head_member_card {
+    width: 300px;
+    height: 550px;
+    padding: 20px 5px 20px 5px;
+  }
+  .head_member_photo {
+    float: left;
+    margin-left: 40px;
+  }
+  .head_member_about,
+  .inverse_aboutus_abhinav {
+    text-align: center;
+    float: left;
+    width: 100%;
+  }
+  div .head_member_photo {
+    margin-top: 20px;
+  }
+  .head_member_words {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: left;
+  }
+  div .head_members {
+    margin-right: 60px;
+  }
+  .member_title {
+    margin-right: 5rem;
+  }
+  .member-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .member {
+    margin-left: 10px;
+  }
+  div .member {
+    margin-right: 60px;
+    margin-left: 2px;
+  }
+  .member_title {
+    font-size: 28px;
+    text-align: center;
+  }
 }
-@media screen and (max-width: 500px) {
-   .aboutus_header_slogan {
-      top: 100px;
-      font-size: 21px;
-      width: 260px;
-      height: 200px;
-      margin-left: 18%;
-      padding: 18px;
-      line-height: 25px;
-      font-weight: 400;
-   }
+@media screen and (max-width: 600px) {
+  .aboutus_header_slogan {
+    top: 100px;
+    font-size: 21px;
+    width: 260px;
+    height: 200px;
+    margin-left: 18%;
+    padding: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
 
-   .aboutUsBody {
-      width: 100%;
-      padding: 0 !important;
-   }
+  div .our_Team_Title {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  div .aboutUs_slogan {
+    margin-right: 18px;
+    margin-left: 18px;
+  }
 
-   .head_member_card {
-      width: 300px;
-      height: 700px;
-      margin-left: 5%;
-      padding: 20px 5px 20px 5px;
-   }
+  .aboutUsBody {
+    width: 100%;
+    padding: 0 !important;
+  }
 
-   .head_member_photo {
-      float: left;
-      margin-left: 40px;
-   }
+  .head_member_card {
+    width: 300px;
+    height: 700px;
+    margin-left: 10%;
+    padding: 20px 5px 20px 5px;
+  }
 
-   .head_member_about,
-   .inverse_aboutus_abhinav {
-      text-align: center;
-      float: left;
-      width: 100%;
-   }
+  .head_member_photo {
+    float: left;
+    margin-left: 52px;
+  }
 
-   .head_member_words {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      text-align: center;
-   }
+  .head_member_about,
+  .inverse_aboutus_abhinav {
+    text-align: center;
+    float: left;
+    margin-left: 12px;
+    width: 100%;
+  }
 
-   .member-box {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
+  .head_member_words {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+  }
 
-   .member {
-      width: 100%;
-      height: 100%;
-      display: grid;
-      place-items: center;
-   }
+  .member_title {
+    margin-right: 0rem;
+  }
 
-   .member_name {
-      height: 40px;
-   }
+  .member-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-   .member_position {
-      height: 20px;
-   }
+  .member {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
 
-   .member_title {
-      font-size: 28px;
-      text-align: center;
-   }
+  div .member {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .member_name {
+    height: 40px;
+  }
+
+  .member_position {
+    height: 20px;
+  }
+
+  .member_title {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .aboutus_header_slogan {
+    top: 100px;
+    font-size: 21px;
+    width: 260px;
+    height: 200px;
+    margin-left: 18%;
+    padding: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  .aboutUsBody {
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  div .our_Team_Title {
+    margin-right: 18px;
+    margin-left: 18px;
+  }
+  div .aboutUs_slogan {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+
+  .head_member_card {
+    width: 300px;
+    height: 700px;
+    margin-left: 8%;
+    padding: 20px 5px 20px 5px;
+  }
+
+  .head_member_photo {
+    float: left;
+    margin-left: 44px;
+  }
+
+  .head_member_about,
+  .inverse_aboutus_abhinav {
+    text-align: center;
+    float: left;
+    margin-left: 12px;
+    width: 100%;
+  }
+
+  .head_member_words {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .member-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .member {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  div .member {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .member_name {
+    height: 40px;
+  }
+
+  .member_position {
+    height: 20px;
+  }
+
+  .member_title {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .aboutus_header_slogan {
+    top: 100px;
+    font-size: 21px;
+    width: 260px;
+    height: 200px;
+    margin-left: 18%;
+    padding: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  .aboutUsBody {
+    width: 100%;
+    padding: 0 !important;
+    margin-top: 40px;
+  }
+
+  .head_member_card {
+    width: 300px;
+    height: 700px;
+    margin-left: 2px;
+    padding: 20px 5px 20px 5px;
+  }
+
+  .head_member_photo {
+    float: left;
+    margin-left: 45px;
+  }
+
+  .head_member_about,
+  .inverse_aboutus_abhinav {
+    text-align: center;
+    float: left;
+    margin-left: 6px;
+    width: 100%;
+  }
+
+  .head_member_words {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .member-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .member {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .member_name {
+    height: 40px;
+  }
+
+  .member_position {
+    height: 20px;
+  }
+
+  .member_title {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 300px) {
+  .aboutUsBody {
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .head_member_card {
+    width: 300px;
+    height: 700px;
+    margin-left: 2px;
+    padding: 20px 5px 20px 5px;
+  }
 }
