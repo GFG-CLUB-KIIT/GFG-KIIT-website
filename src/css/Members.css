@@ -460,6 +460,7 @@ body {
   .aboutUsBody {
     width: 100%;
     padding: 0 !important;
+    margin-top: 40px;
   }
 
   .head_member_card {
