@@ -24,7 +24,7 @@ import nitishSonthalia from '../profile/NitishSonthalia.png';
 import RupanshiChawda from '../profile/RupanshiChawda.png';
 import ShashiKiran from '../profile/ShashiKiran.png';
 import NamanGupta from '../profile/NamanGupta.png';
-import LalitKumar from '../profile/LalitKumar.png';
+import LalitKumar from '../profile/ALalit.png';
 import Nittishna from '../profile/Nittishna.png';
 import AsmitaHobisyashi from '../profile/AsmitaHobisyashi.png';
 import AdyashaSatpathy from '../profile/AdyashaSatpathy.png';
@@ -183,7 +183,7 @@ class AboutUs extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="member_name">Lalit Kumar</div>
+                        <div className="member_name">A Lalit</div>
                     </div>
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${NamanGupta})`}}>
