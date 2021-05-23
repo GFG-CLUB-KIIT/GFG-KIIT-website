@@ -306,11 +306,11 @@
   #landing_title {
     margin-left: 25%;
   }
-  #landing_title #landing_title_right1{
-     margin-right: 35%;;
+  .mainBody .navbar + .parent-element #landing_title #landing_title_right1{
+     margin-right: 45%;;
   }
-  #landing_title #landing_title_right2{
-     margin-right: 35%;;
+  .mainBody .navbar + .parent-element #landing_title #landing_title_right2{
+     margin-right: 45%;;
   }
   /* #landing_intro_title {
     margin-left: 8%;
@@ -433,11 +433,17 @@
     margin-left: 6%;
   }
   #landing_title {
-    margin-left: 18%;
-    margin-top: -250px;
+    margin-left: 12%;
+    margin-top: -210px;
   }
   #landing_title_right1 {
     font-size: 38px;
+  }
+  #landing_title_right2 {
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
   }
   #upcomingEvent {
     margin-left: 6%;
