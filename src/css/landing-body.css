@@ -306,15 +306,6 @@
   #landing_title {
     margin-left: 25%;
   }
-  .mainBody .navbar + .parent-element #landing_title #landing_title_right1{
-     margin-right: 45%;;
-  }
-  .mainBody .navbar + .parent-element #landing_title #landing_title_right2{
-     margin-right: 45%;;
-  }
-  /* #landing_intro_title {
-    margin-left: 8%;
-  } */
   #upcomingEvent {
     margin-left: 12%;
   }
@@ -434,7 +425,7 @@
   }
   #landing_title {
     margin-left: 12%;
-    margin-top: -210px;
+    margin-top: -330px;
   }
   #landing_title_right1 {
     font-size: 38px;
