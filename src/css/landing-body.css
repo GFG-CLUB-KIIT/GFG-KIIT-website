@@ -284,12 +284,33 @@
   #landing_intro_line {
     display: none;
   }
+  .project_desc{
+     text-align: left;
+     line-height:1.6;
+  }
+  #register_button{
+     margin-right:27%;
+  }
+  .LI_content .LI_context{
+     text-align: left;
+     font-size:0.8em;
+     line-height:1.8;
+  }
+  .send{
+     margin-left:9%;
+  }
   #upcomingEvent,
   #landing_intro_title {
     width: 100%;
   }
   #landing_title {
     margin-left: 25%;
+  }
+  #landing_title #landing_title_right1{
+     margin-right: 35%;;
+  }
+  #landing_title #landing_title_right2{
+     margin-right: 35%;;
   }
   /* #landing_intro_title {
     margin-left: 8%;
