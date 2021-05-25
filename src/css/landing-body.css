@@ -288,8 +288,8 @@
      text-align: left;
      line-height:1.6;
   }
-  #register_button{
-     margin-right:27%;
+  a[href = "https://practice.geeksforgeeks.org/courses/geek-I-knack"]{
+    margin-left:27%;
   }
   .LI_content .LI_context{
      text-align: left;
@@ -426,7 +426,6 @@
   #landing_title {
     margin-left: 12%;
     margin-top: -330px;
-    
   }
   #landing_title_right1 {
     font-size: 38px;
