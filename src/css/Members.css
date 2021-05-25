@@ -363,7 +363,7 @@ body {
 }
 @media screen and (max-width: 400px) {
   .aboutus_header_slogan {
-    top: 100px;
+    top: 50px;
     font-size: 21px;
     width: 260px;
     height: 200px;
@@ -371,6 +371,10 @@ body {
     padding: 18px;
     line-height: 25px;
     font-weight: 400;
+  }
+
+  .aboutus_header_slogan div{
+    margin-left:18%;
   }
 
   .aboutUsBody {
