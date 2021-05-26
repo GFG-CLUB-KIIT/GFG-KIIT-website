@@ -105,6 +105,8 @@
     .image1 {
         margin-left: calc(50% - 200px);
         align-items: center;
+        margin-left:2%;
+        width:344px;
     }
 
     .image2 {
@@ -116,6 +118,8 @@
         margin-left: calc(50% - 200px);
         text-align: center;
         margin-top: 10px;
+        margin-left:2%;
+        width:344px;
     }
 
     .image4 {
@@ -351,6 +355,9 @@ p {
     .modal-content3,
     .modal-content1{
         height: 600px!important;
+    }
+    .project{
+        font-weight: 600;
     }
     a[href="https://practice.geeksforgeeks.org/courses/geek-I-knack"]{
         margin-right:30%;
