@@ -293,7 +293,11 @@
   }
   .LI_content .LI_context{
      text-align: left;
-     font-size:0.8em;
+     /* font-size:0.8em; */
+     font-size: 100%;
+     font-weight:500;
+     /* font: inherit; */
+     padding-left:4%;
      line-height:1.8;
   }
   .send{
@@ -308,6 +312,8 @@
   }
   #upcomingEvent {
     margin-left: 12%;
+    font-size: 30px;
+    padding-left: 13%;
   }
   #event_title {
     margin-top: 15px;
@@ -453,6 +459,7 @@
   }
   #event_title {
     margin-top: 0px;
+    font-size: 30px;
   }
   .LI_context {
     padding-right: 15px;
