@@ -352,6 +352,9 @@ p {
     .modal-content1{
         height: 600px!important;
     }
+    a[href="https://practice.geeksforgeeks.org/courses/geek-I-knack"]{
+        margin-right:30%;
+    }
     .popup_bottom_frame{
         margin-left: 20px;
         margin-top: 10px;

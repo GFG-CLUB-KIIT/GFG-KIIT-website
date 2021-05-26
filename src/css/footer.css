@@ -137,6 +137,17 @@
   place-items: center;
 }
 .send {
+   width: 50%;
+   height: 2.5rem;
+   font-weight: 100;
+   font-family: var(--heading-font);
+   font-size: 1rem;
+   color: #fefefe;
+   background-color: rgba(255, 255, 255, 0.2);
+   margin-right:8%;
+   border-style: none;
+   border-radius: 20px;
+   transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   width: 50%;
   height: 2.5rem;
   font-weight: 100;
@@ -240,6 +251,78 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (max-width: 600px) {
+   .grid-container {
+      grid-template-rows: minmax(minmax(100px, 10vh), 200px) 1fr 1fr 1fr;
+      grid-template-areas:
+         "wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us"
+         "write-to-us write-to-us write-to-us write-to-us"
+         "links links links links"
+         "footer-info footer-info footer-info footer-info";
+   }
+   .wanna-talk-to-us {
+      padding-top: 100px;
+      margin: 1rem;
+   }
+   .write-to-us {
+      justify-content: center;
+   }
+   #email,
+   #message {
+      margin: 0.4vw 0;
+   }
+
+   .description1 {
+      float: right;
+      margin-right: 2vw;
+      margin-left: 0;
+      text-align: right;
+      font-family: var(--paragragh-font);
+      line-height: 2.2ch;
+      width: 250px;
+      margin-top: 30px;
+   }
+   .description2 {
+      float: right;
+      margin-right: 2vw;
+      text-align: right;
+      font-family: var(--paragragh-font);
+      line-height: 2.2ch;
+      width: 100px;
+   }
+   .description3 {
+      float: right;
+      margin-right: 2vw;
+      text-align: right;
+      font-family: var(--paragragh-font);
+      line-height: 2.2ch;
+      width: 200px;
+      margin-top: 30px;
+   }
+}
+@media only screen and (max-width: 800px) {
+   .grid-container {
+      grid-template-rows: minmax(minmax(100px, 10vh), 200px) 1fr 1fr 1fr;
+      grid-template-areas:
+         "wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us wanna-talk-to-us"
+         "write-to-us write-to-us write-to-us write-to-us"
+         "links links links links"
+         "footer-info footer-info footer-info footer-info";
+   }
+   .wanna-talk-to-us {
+      padding-top: 20%;
+      margin: 1rem;
+      justify-content: flex-start;
+      margin-left: 17%;
+   }
+   .write-to-us {
+      justify-content: center;
+   }
+   #email{
+      margin: 0.5rem -0.35rem;
+   }
+   #message {
+      margin: 0.5rem -0.5rem;
+   }
   .grid-container {
     grid-template-rows: minmax(minmax(100px, 10vh), 200px) 1fr 1fr 1fr;
     grid-template-areas:

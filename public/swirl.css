@@ -62,7 +62,7 @@ body {
 
 .mobile-view {
    width: 100vw;
-   height: 60vh;
+   height: 70vh;
    background-size: 400% 400%;
    animation: gradient 8s ease infinite;
 }

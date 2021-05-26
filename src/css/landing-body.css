@@ -284,6 +284,21 @@
   #landing_intro_line {
     display: none;
   }
+  .project_desc{
+     text-align: left;
+     line-height:1.6;
+  }
+  a[href = "https://practice.geeksforgeeks.org/courses/geek-I-knack"]{
+    margin-left:27%;
+  }
+  .LI_content .LI_context{
+     text-align: left;
+     font-size:0.8em;
+     line-height:1.8;
+  }
+  .send{
+     margin-left:9%;
+  }
   #upcomingEvent,
   #landing_intro_title {
     width: 100%;
@@ -291,9 +306,6 @@
   #landing_title {
     margin-left: 25%;
   }
-  /* #landing_intro_title {
-    margin-left: 8%;
-  } */
   #upcomingEvent {
     margin-left: 12%;
   }
@@ -412,11 +424,17 @@
     margin-left: 6%;
   }
   #landing_title {
-    margin-left: 18%;
-    margin-top: -250px;
+    margin-left: 12%;
+    margin-top: -330px;
   }
   #landing_title_right1 {
     font-size: 38px;
+  }
+  #landing_title_right2 {
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
   }
   #upcomingEvent {
     margin-left: 6%;
