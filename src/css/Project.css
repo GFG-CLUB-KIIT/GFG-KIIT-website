@@ -1,375 +1,376 @@
 .project {
-    margin-left: 13%;
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+  margin-left: 13%;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
-.projects_header_slogan{
-    float: left !important;
-   color: white;
-   margin-left: 46%;
-   position: absolute;
-   width: 515px;
-   height: 190px;
-   top: 200px;
-   font-size: 30px;
-   font-family: raleway;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 37px;
+.projects_header_slogan {
+  float: left !important;
+  color: white;
+  margin-left: 46%;
+  position: absolute;
+  width: 515px;
+  height: 190px;
+  top: 200px;
+  font-size: 30px;
+  font-family: raleway;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
 }
-#project_title{
-    width: 400px;
-    float: left!important;
-    color: white;
-    margin-top: -350px;
-    margin-left: 10%;
-    position:absolute;
-    font-size: 40px;
-    font-weight: 500;
-    font-family: sans-serif;
-    letter-spacing: 1.5px;
+#project_title {
+  width: 400px;
+  float: left !important;
+  margin-top: -350px;
+  margin-left: 10%;
+  position: absolute;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
 }
 
 .image1 {
-    float: left;
-    width: 400px;
-    height: 300px;
-    margin-top: 10px;
-    margin-left: 10%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    transition: 1s;
-    z-index: 1;
-    position: relative;
+  float: left;
+  width: 400px;
+  height: 300px;
+  margin-top: 10px;
+  margin-left: 10%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  transition: 1s;
+  z-index: 1;
+  position: relative;
 }
 
 .image1 img:hover {
-    filter: grayscale(100%);
-    transform: scale(1.05);
+  filter: grayscale(100%);
+  transform: scale(1.05);
 }
 
 .image2 {
-    float: left;
-    width: 400px;
-    height: 300px;
-    margin-left: 10%;
-    border-radius: 10px;
-    margin-bottom: 7%;
-    transition: 1s;
-    z-index: 1;
-    position: relative;
+  float: left;
+  width: 400px;
+  height: 300px;
+  margin-left: 10%;
+  border-radius: 10px;
+  margin-bottom: 7%;
+  transition: 1s;
+  z-index: 1;
+  position: relative;
 }
 
 .image2 img:hover {
-    filter: grayscale(100%);
-    transform: scale(1.05);
+  filter: grayscale(100%);
+  transform: scale(1.05);
 }
 
 .image3 {
-    float: left;
-    width: 400px;
-    height: 300px;
-    margin-top: -8%;
-    margin-left: 10%;
-    margin-bottom: 5%;
-    border-radius: 10px;
-    transition: 1s;
-    z-index: 1;
-    position: relative;
+  float: left;
+  width: 400px;
+  height: 300px;
+  margin-top: -8%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  transition: 1s;
+  z-index: 1;
+  position: relative;
 }
 
 .image3 img:hover {
-    filter: grayscale(100%);
-    transform: scale(1.05);
+  filter: grayscale(100%);
+  transform: scale(1.05);
 }
 
 .image4 {
-    float: left;
-    margin-top: -15%;
-    width: 400px;
-    height: 300px;
-    margin-left: 10%;
-    border-radius: 10px;
-    transition: 1s;
-    z-index: 1;
-    position: relative;
+  float: left;
+  margin-top: -15%;
+  width: 400px;
+  height: 300px;
+  margin-left: 10%;
+  border-radius: 10px;
+  transition: 1s;
+  z-index: 1;
+  position: relative;
 }
 
 .image4 img:hover {
-    filter: grayscale(100%);
-    transform: scale(1.05);
+  filter: grayscale(100%);
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1100px) {
-    .image1 {
-        margin-left: calc(50% - 200px);
-        align-items: center;
-        margin-left:2%;
-        width:344px;
-    }
+  .image1 {
+    margin-left: calc(50% - 200px);
+    align-items: center;
+    margin-left: 2%;
+    width: 344px;
+  }
 
-    .image2 {
-        margin-left: calc(50% - 200px);
-        text-align: center;
-    }
+  .image2 {
+    margin-left: calc(50% - 200px);
+    text-align: center;
+  }
 
-    .image3 {
-        margin-left: calc(50% - 200px);
-        text-align: center;
-        margin-top: 10px;
-        margin-left:2%;
-        width:344px;
-    }
+  .image3 {
+    margin-left: calc(50% - 200px);
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 2%;
+    width: 344px;
+  }
 
-    .image4 {
-        margin-left: calc(50% - 200px);
-        text-align: center;
-        margin-top: 0px;
-        margin-bottom: 7%;
-    }
+  .image4 {
+    margin-left: calc(50% - 200px);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 7%;
+  }
 }
 
 /* STYLING PART OF POPUP */
 p {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 
 .bg-modal1,
 .bg-modal2,
 .bg-modal3,
 .bg-modal4 {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.747);
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    z-index: 250;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.747);
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 250;
 }
 
 .modal-content1,
 .modal-content2,
 .modal-content3,
 .modal-content4 {
-    width: 550px;
-    height: 500px;
-    color: black;
-    border-radius: 10px;
-    position: relative;
-    animation: slog 0.4s 1;
-    background-color: white;
+  width: 550px;
+  height: 500px;
+  color: black;
+  border-radius: 10px;
+  position: relative;
+  animation: slog 0.4s 1;
+  /* background-color: white; */
 }
 
 @keyframes slog {
-    0% {
-        height: 0px;
-        width: 0px;
-    }
+  0% {
+    height: 0px;
+    width: 0px;
+  }
 
-    100% {
-        width: 550px;
-        height: 550px;
-    }
+  100% {
+    width: 550px;
+    height: 550px;
+  }
 }
 
 .cross {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: rgb(184, 179, 179);
-    text-align: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /* color: white; */
+  text-decoration: none;
+  list-style-type: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(184, 179, 179);
+  text-align: center;
 }
 
 .fa-times {
-    color: white;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    margin-top: 5px;
+  /* color: white; */
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-top: 5px;
 }
 
-.slogan_project{
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    font-weight: 700;
-    margin-left: 13%;
+.slogan_project {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  margin-left: 13%;
+  /* color: white; */
 }
-.project_popup_detail{
-    font-size: 18px;
-    font-weight: 200;
-    margin-bottom: 10px;
+.project_popup_detail {
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 10px;
 }
-#popup_top_image1{
-    width: 100%;
-    height: 200px;
-    background-image: url(../img/geekbot_dark.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px 10px 0px 0px;
+#popup_top_image1 {
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/geekbot_dark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
 }
-#popup_top_image2{
-    width: 100%;
-    height: 200px;
-    background-image: url(../img/GFGKIITWebsitePoster.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px 10px 0px 0px;
+#popup_top_image2 {
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/GFGKIITWebsitePoster.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
 }
-.popup_card{
-    width: 180px;
-    height: 170px;
-    border-radius: 5px;
-    position: absolute;
+.popup_card {
+  width: 180px;
+  height: 170px;
+  border-radius: 5px;
+  position: absolute;
+  top: 130px;
+  left: 40px;
+  box-shadow: 2px 2px 6px #898989;
+  background-color: white;
+  padding: 10px;
+}
+#popup_card_github {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+#popup_card_project_link {
+  float: left;
+  text-decoration: none;
+  padding: 7px 20px;
+  color: white;
+  background-color: black;
+  margin-left: 15px;
+}
+#popup_card_project_title {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 15px 0px 10px 0px;
+  float: left;
+}
+#popup_card_project_contributor {
+  float: left;
+}
+#popup_card_project_contributor_title {
+  font-size: 15px;
+  color: #808080;
+}
+.project_contri_img1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.project_contri_img2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.popup_card_bottom {
+  float: left;
+  margin-top: 10px;
+}
+.popup_card_bottom_lang {
+  font-size: 18px;
+  font-weight: 500;
+  float: left;
+}
+.popup_card_bottom_lang_logo {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.popup-context {
+  margin-top: 120px;
+  padding: 25px 20px 8px 20px;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  font-weight: 100 !important;
+}
+.popup_bottom {
+  float: left;
+  margin-top: 10px;
+}
+.popup_bottom_lang {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 20px;
+  float: left;
+}
+.popup_bottom_lang_logo {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  float: left;
+}
+.popup_bottom_frame {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 50px;
+  float: left;
+}
+
+@media screen and (max-width: 800px) {
+  .projects_header_slogan {
     top: 130px;
-    left: 40px;
-    box-shadow: 2px 2px 6px #898989;
-    background-color: white;
-    padding: 10px;
+    font-size: 21px;
+    width: 260px;
+    height: 200px;
+    margin-left: 7%;
+    padding: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  .popup_card {
+    width: 200px;
+    height: 190px;
+  }
+  .modal-content3,
+  .modal-content1 {
+    height: 520px !important;
+  }
 }
-#popup_card_github{
-    width: 30px;
-    height: 30px;
-    float: left;
-}
-#popup_card_project_link{
-    float: left;
-    text-decoration: none;
-    padding: 7px 20px;
-    color: white;
-    background-color: black;
-    margin-left: 15px;
-}
-#popup_card_project_title{
-    font-size: 25px;
+@media screen and (max-width: 400px) {
+  #project_title {
+    display: none;
+  }
+  .modal-content3,
+  .modal-content1 {
+    height: 600px !important;
+  }
+  .project {
     font-weight: 600;
-    padding:15px 0px 10px 0px;
-    float: left;
-}
-#popup_card_project_contributor{
-    float: left;
-}
-#popup_card_project_contributor_title{
-    font-size: 15px;
-    color: 	#808080;
-}
-.project_contri_img1{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-top: 10px;
-}
-.project_contri_img2{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: 5px;
-    margin-top: 10px;
-}
-.popup_card_bottom{
-    float: left;
-    margin-top: 10px;
-}
-.popup_card_bottom_lang{
-    font-size: 18px;
-    font-weight: 500;
-    float: left;
-}
-.popup_card_bottom_lang_logo{
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-.popup-context{
-    margin-top: 120px;
-    padding: 25px 20px 8px 20px;
-    font-size: 1rem;
-    line-height:1.1rem;
-    font-weight: 100!important;
-}
-.popup_bottom{
-    float: left;
-    margin-top: 10px;
-}
-.popup_bottom_lang{
-    font-size: 18px;
-    font-weight: 600;
+  }
+  a[href="https://practice.geeksforgeeks.org/courses/geek-I-knack"]
+  {
+    margin-right: 30%;
+  }
+  .popup_bottom_frame {
     margin-left: 20px;
-    float: left;
-}
-.popup_bottom_lang_logo{
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    margin-left: 10px;
-    float: left;
-}
-.popup_bottom_frame{
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: 50px;
-    float: left;
-}
-
-@media screen and (max-width: 800px){
-    .projects_header_slogan{
-        top:130px;
-        font-size: 21px;
-        width: 260px;
-        height: 200px;
-        margin-left: 7%;
-        padding: 18px;
-        line-height: 25px;
-        font-weight: 400;
-    }
-    .popup_card{
-        width: 200px;
-        height: 190px;
-    }
-    .modal-content3,
-    .modal-content1{
-        height: 520px!important;
-    }
-}
-@media screen and (max-width: 400px){
-    #project_title{
-        display: none;
-    }
-    .modal-content3,
-    .modal-content1{
-        height: 600px!important;
-    }
-    .project{
-        font-weight: 600;
-    }
-    a[href="https://practice.geeksforgeeks.org/courses/geek-I-knack"]{
-        margin-right:30%;
-    }
-    .popup_bottom_frame{
-        margin-left: 20px;
-        margin-top: 10px;
-    }
-    .reactlogo{
-        margin-top: 10px;
-    }
-    .projects_header_slogan_hide{
-        display: none;
-    }
+    margin-top: 10px;
+  }
+  .reactlogo {
+    margin-top: 10px;
+  }
+  .projects_header_slogan_hide {
+    display: none;
+  }
 }

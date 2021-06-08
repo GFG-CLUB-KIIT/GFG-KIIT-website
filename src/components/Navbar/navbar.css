@@ -32,11 +32,12 @@
 .navbar .content .menu-list li a {
   font-family: "montserrat";
   font-weight: 700;
-  color: #343434;
+  color: #707070;
 }
 .sticky {
   padding: 10px 0;
   background-color: white;
+
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
 .sticky > .content li a {
@@ -48,7 +49,8 @@
   justify-content: space-between;
 }
 .navbar .logo a {
-  color: #fff;
+  /* color: #fff;
+  color: #222222; */
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
@@ -60,7 +62,8 @@
   list-style: none;
 }
 .menu-list li a {
-  color: #fff;
+  /* color: #fff;
+  color: #222222; */
   font-size: 18px;
   font-weight: 600;
   margin-left: 35px;
@@ -121,6 +124,7 @@
   height: 2px;
 
   background-color: #fefefe;
+
   margin: 3px 0;
 
   transition: 0.3s ease-in-out;
@@ -132,7 +136,7 @@
 }
 .navbar .content .burger-menu:hover {
   border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
 
   transition: 0.3s ease-in-out;
 }
@@ -209,5 +213,77 @@
   }
   .sticky > .content li a {
     color: white !important;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 33px;
+  height: 16px;
+  top: 1.75px;
+  left: 33px;
+  margin-right: 1.5rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0d2b25;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 13.75px;
+  left: 1.75px;
+  top: 1.25px;
+  bottom: 1px;
+  background-color: WHITE;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+input:checked + .slider {
+  background-color: #b0b0b0;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #b0b0b0;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

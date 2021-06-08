@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './resources/logo-3.svg';
 import './navbar.css';
+import { Toggle } from '../ToggleSwitch'
 
 class Navbar extends Component {
    componentDidMount(){
@@ -69,6 +70,9 @@ class Navbar extends Component {
                      <li><a href="/Events" className = "nav_event list-item">Events </a></li>
                      <li><a href="/Projects" className = "nav_projects list-item">Projects </a></li>
                      <li><a href="/Member" className= "nav_about list-item">Members </a></li>
+                     {/* <li>/></li> */}
+                     <Toggle />
+                     {/* <li> <label class="switch"><input type="checkbox"></input><span class="slider round"></span></label></li> */}
                      
                   </ul>
                <div class="burger-menu" id="burger-menu">

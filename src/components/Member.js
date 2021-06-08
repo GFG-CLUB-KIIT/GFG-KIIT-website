@@ -289,7 +289,7 @@ class AboutUs extends Component {
                             </div>
                         </div>
                         <div className="member_name">Ankit Raj</div>
-                        <div>Lead</div>
+                        <div className="member-position">Lead</div>
                     </div>
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${AkashChouhan})`}}>
@@ -358,7 +358,7 @@ class AboutUs extends Component {
                             </div>
                         </div>
                         <div className="member_name">Sourav Dash</div>
-                        <div>Lead</div>
+                        <div className="member-position">Lead</div>
                     </div>
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${Anshu})`}}>
@@ -426,7 +426,7 @@ class AboutUs extends Component {
                             </div>
                         </div>
                         <div className="member_name">Taranpreet Singh</div>
-                        <div>Lead</div>
+                        <div className="member-position">Lead</div>
                     </div>
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${AbhisekSamantaray})`}}>
@@ -506,7 +506,7 @@ class AboutUs extends Component {
                             </div>
                         </div>
                         <div className="member_name">Ashwani Singh</div>
-                        <div>Lead</div>
+                        <div className="member-position">Lead</div>
                     </div>
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${AdyashaSatpathy})`}}>
@@ -573,7 +573,7 @@ class AboutUs extends Component {
                             </div>
                         </div>
                         <div className="member_name">Veer Sharma</div>
-                        <div>Lead</div>
+                        <div className="member-position">Lead</div>
                     </div>
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${MadhavParikh})`}}>
