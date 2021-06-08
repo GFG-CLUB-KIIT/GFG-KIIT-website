@@ -56,27 +56,31 @@ class LandingBody extends Component {
           <h1 id="landingProjectsDisplay">Projects</h1>
           <div id="landing_line_Project"></div>
           <div id="projects">
-              <a href="/Projects" class="project_card">
+          <div class="project_card">
+                  <a href="/projects" class="project_card">
                   <div class="project_img">
-                      <div id="project_img_display1"></div>
+                    <div id="project_img_display1"></div>
                   </div>
+                  </a>
                   <div class="project_title">The Geek Bot</div>
                   <div class="project_desc">
-                    Our App-Dev Team started working on their 1st project, the Geek Bot. 
+                  Our App-Dev Team started working on their 1st project, the Geek Bot. 
                     It possesses a programmer’s search feature that enables the users to search various programming concepts. 
                     Besides, it even returns the list of all ongoing coding events all around the world. 
                   </div>
-              </a>
-              <a href="/projects" class="project_card">
+              </div>
+              <div class="project_card">
+                  <a href="/projects" class="project_card">
                   <div class="project_img">
                     <div id="project_img_display2"></div>
                   </div>
+                  </a>
                   <div class="project_title">GFG KIIT Website</div>
                   <div class="project_desc">
                   Our Web-Dev Team started working on their 1st project, Geeksforgeeks KIIT Student Club Website. 
                   It possesses a programmer’s search feature that enables the users to search various programming concepts. 
                   </div>
-              </a>
+              </div>
               {/* <a href="/projects" class="project_card">
                   <div class="project_img">
                     <div id="project_img_display3"></div>

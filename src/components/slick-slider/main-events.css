@@ -113,7 +113,6 @@
   .img-container {
   width: 50%;
   height: 100vh;
-  background-color: #fff;
   background-size: cover;
 }
 
@@ -126,6 +125,7 @@
   section
   .flex-container
   .two {
+  background-color: #222222;
   background-image: url("images/google-hashcode-2021.jpg");
 }
 #event-slider-main
@@ -137,6 +137,7 @@
   section
   .flex-container
   .three {
+  background-color: #222222;
   background-image: url("images/google-hashcode-2021.jpg");
 }
 
@@ -152,6 +153,7 @@
     div
     section
     .flex-container {
+    background-color: #222222;
     flex-direction: column;
   }
 
@@ -165,6 +167,7 @@
     .flex-container
     .img-container {
     width: 100%;
+    background-color: #222222;
     height: 50vh;
   }
 
@@ -208,11 +211,11 @@
 
   #event-slider-main .slick-slider .slick-next::before,
   #event-slider-main .slick-slider .slick-prev::before {
-    /* background-color: #fff; */
+    background-color: #fff;
     transform: translate(0, 0) !important;
     top: 20vh !important;
     background-color: #fefefe;
-    color: #333 !important;
+    /* color: #333 !important; */
   }
   #event-slider-main .slick-slider .slick-prev::before:hover,
   #event-slider-main .slick-slider .slick-next::before:hover {
