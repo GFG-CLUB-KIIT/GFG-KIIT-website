@@ -376,7 +376,7 @@ p {
 }
 
 /* ThemeIcon CSS */
-.themeIcon{
+#themeIcon{
   /* margin-left: 1rem; */
   margin-top: -0.2rem;
   cursor: pointer;

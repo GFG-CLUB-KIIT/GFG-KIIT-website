@@ -5,18 +5,19 @@ import { lightTheme, darkTheme } from "../components/Themes";
 import { GlobalStyles } from "../components/Global";
 
 export const Toggle = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(localStorage.getItem("myGfgTheme")? localStorage.getItem("myGfgTheme"):"light");
   
 
   const toggleTheme = () => {
-    setTheme(x)
-    if (theme === "light") {
+    setTheme(x) 
+    if (theme === "light") { 
       localStorage.setItem("myGfgTheme","dark")
-      setTheme("dark");
+      setTheme("dark"); 
     } else   {
       localStorage.setItem("myGfgTheme","light")
       setTheme("light");
     }
+    
     
   };
   
@@ -25,13 +26,13 @@ export const Toggle = () => {
 
   return (
     // <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-    <ThemeProvider theme={x=="light"? lightTheme:darkTheme}>
+    <ThemeProvider theme={x==="light"? lightTheme:darkTheme}>
       <>
         <GlobalStyles />
-        <label class="switch">
+        <label className="switch">
           {/* <input type="checkbox" onClick={toggleTheme}></input>
           <span class="slider round"></span> */}
-          <box-icon type='solid' color ={x==='dark'?'#e9e9e2':'#060606'} onClick={toggleTheme}  name={x=='dark'?'sun':'moon'} class="themeIcon"></box-icon>
+          <box-icon type='solid' color ={x==='dark'?'#e9e9e2':'#060606'} onClick={toggleTheme}  name={x==='dark'?'sun':'moon'} id="themeIcon"></box-icon>
         </label>
         
 
