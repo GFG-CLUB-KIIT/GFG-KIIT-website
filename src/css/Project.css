@@ -374,3 +374,10 @@ p {
     display: none;
   }
 }
+
+/* ThemeIcon CSS */
+.themeIcon{
+  /* margin-left: 1rem; */
+  margin-top: -0.2rem;
+  cursor: pointer;
+}
