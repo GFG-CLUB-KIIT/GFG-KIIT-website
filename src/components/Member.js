@@ -74,10 +74,10 @@ class AboutUs extends Component {
                            </div>
                         </div>
                         <div className="head_member_about">
-                            <div className="head_member_name">Krish Murarka</div>
+                            <div className="head_member_name">Ashish Kumar Mishra</div>
                             <div className="head_member_desg">President</div>
                             <div className="head_member_words">   
-                            Krish Murarka is the Founder and Campus President of GeeksforGeeks - KIIT. He is an undergrad in Computer Science Engineering. He is also the Campus Geek of November - 2020. Krish also loves to code and has mastered C++ and Java. Krish is also a 4* coder on CodeChef. We at GeeksforGeeks - KIIT call him insomniac as he is available almost round the clock!
+                            Ashish Kumar Mishra is the Campus President of GeeksforGeeks - KIIT. He is an undergrad in Computer Science Engineering. He is also the Campus Geek of November - 2020. Krish also loves to code and has mastered C++ and Java. Krish is also a 4* coder on CodeChef. We at GeeksforGeeks - KIIT call him insomniac as he is available almost round the clock!
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@ class AboutUs extends Component {
                            </div>
                         </div>
                         <div className="inverse_aboutus_abhinav">
-                            <div className="head_member_name">Abhinav Prakash</div>
+                            <div className="head_member_name">Akash Kumar Gautam</div>
                             <div className="head_member_desg">Secretary</div>
                             <div className="head_member_words">   
                             Abhinav Prakash is the co-leader at GeeksforGeeks - KIIT. He can be found coding or developing most of his time. Abhinav also organizes the events for GeeksforGeeks - KIIT. His passion for coding dates back to when he was in 8th class when he started coding. He has also done a decent amount of projects and contributions. He is also a 4 star coder at CodeChef.
@@ -159,32 +159,8 @@ class AboutUs extends Component {
                         </div>
                         <div className="member_name">Akash Kumar Gautam</div>
                     </div>
-                    <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${KumarAnkit})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/kumar-ankit-830512195/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/Masters-Akt" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/masters_akt/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/KumarAn80390085" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                           </div>
-                        </div>
-                        <div className="member_name">Kumar Ankit</div>
-                    </div>
-                    <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${LalitKumar})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/a-lalit-2214031b0/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/lalitkumar-123" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/lalitkumar_123_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/ALALIT12" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member_name">A Lalit</div>
-                    </div>
+
+
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${NamanGupta})`}}>
                             <div className="overlay">
@@ -224,19 +200,7 @@ class AboutUs extends Component {
                         </div>
                         <div className="member_name">Rohit Pradhan</div>
                     </div>
-                    <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${SaswataGhosh})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/saswata-ghosh-05bb83170/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/Shaswat-2203" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/shaswat_2203/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/Saswata88950495" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member_name">Saswata Ghosh</div>
-                    </div>
+
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${ShashiKiran})`}}>
                             <div className="overlay">
@@ -304,19 +268,7 @@ class AboutUs extends Component {
                         </div>
                         <div className="member_name">Akash Chouhan</div>
                     </div>
-                    <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${ArnabChatterjee})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/arnab-chatterjee-3944341a0/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/arn4b" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/_arn4b_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/cyanide_arnab" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member_name">Arnab Chatterjee</div>
-                    </div>
+
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${DevanshShaw})`}}>
                             <div className="overlay">
@@ -330,19 +282,7 @@ class AboutUs extends Component {
                         </div>
                         <div className="member_name">Devansh Shaw</div>
                     </div>
-                    <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${SouvikKar})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/souvik-kar-mahapatra-b7652b1b7/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/DarthCucumber" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/souvikinator/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="http://souvikinator.netlify.app/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member_name">Souvik Mahapatra</div>
-                    </div>
+
                 </div>
                 <div className="member-box">
                 <div className="member_title">UX-UI</div>
@@ -398,19 +338,7 @@ class AboutUs extends Component {
                         </div>
                         <div className="member_name">Ritesh Kumar</div>
                     </div>
-                    <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${SatyajeetRamnit})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/satyajeet-ramnit-2708" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/satyajeetramnit" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/satyajeet_ramnit" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/RamnitSatyajeet?s=08" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member_name">Satyajeet Ramnit</div>
-                    </div>
+
                 </div>
                 <div className="member-box">
                 <div className="member_title">Android Developers</div>
@@ -441,45 +369,9 @@ class AboutUs extends Component {
                         </div>
                         <div className="member_name">Abhisek Samantaray</div>
                     </div>
-                    <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${AlokKumar})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://in.linkedin.com/in/1--alok" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/1-alok" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/4_alok/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/4__alok" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member_name">Alok Kumar</div>
-                    </div>
-                    <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${DivyanshuShekhar})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://in.linkedin.com/in/divyanshu-shekhar-a8a04a162" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/divshekhar/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://instagram.com/dshekhar17" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/dshekhar17" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member_name">Divyanshu Shekhar</div>
-                    </div>
-                    <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${nitishSonthalia})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/nitish-kumar-sonthalia-4713a8193/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/nks102000" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/nitish_rider_1110/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/NitishK68693721" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member_name">Nitish Sonthalia</div>
-                    </div>
+
+
+
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${RupanshiChawda})`}}>
                             <div className="overlay">
@@ -508,19 +400,7 @@ class AboutUs extends Component {
                         <div className="member_name">Ashwani Singh</div>
                         <div className="member-position">Lead</div>
                     </div>
-                    <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${AdyashaSatpathy})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/adyasha-satpathy-040b571a7" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/Adyasha600" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/_.e._n_i_g_m_a._/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/AdyashaSatpath4" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member_name">Adyasha Satpathy</div>
-                    </div>
+
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${AsmitaHobisyashi})`}}>
                             <div className="overlay">
@@ -575,45 +455,8 @@ class AboutUs extends Component {
                         <div className="member_name">Veer Sharma</div>
                         <div className="member-position">Lead</div>
                     </div>
-                    <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${MadhavParikh})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/madhav-parikh-4a37831a5" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/Maddy-Parikh" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/_.maddy_parikh._/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/ParikhMadhav" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member_name">Madhav Parikh</div>
-                    </div> 
-                    <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${SatyajitMishra})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="www.linkedin.com/in/smish01" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/smish-hash" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/smish_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/smish__" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member_name">Satyajit Mishra</div>
-                    </div>
-                     <div className="member">
-                        <div className="member_photo" style={{backgroundImage:`url(${ShwetaThakur})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/shweta-thakur-131489207" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/shwets3004" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/shwets._/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/shwetat40286034" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member_name">Shweta thakur</div>
-                    </div>
+
+
                 </div>
             </div>
             <Footer bgColor="footer-aboutUs"></Footer>
