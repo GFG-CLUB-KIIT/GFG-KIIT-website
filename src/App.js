@@ -5,7 +5,7 @@ import Events from './components/Events';
 import Project from './components/Project';
 import Member from './components/Member';
 
-import './App.css';
+import './App.css'; 
 import {BrowserRouter, Route , Switch } from 'react-router-dom';
 
 class App extends React.Component {

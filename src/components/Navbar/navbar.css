@@ -214,6 +214,19 @@
   .sticky > .content li a {
     color: white !important;
   }
+
+  /* Navbar Icon */
+  .switch{
+    margin-top: 1rem; 
+    margin-left: -5rem;
+  }
+  .switch box-icon{
+    width: 74px;
+    height: 74px;
+
+  }
+
+ 
 }
 
 .switch {
