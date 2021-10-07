@@ -54,7 +54,7 @@ class AboutUs extends Component {
             </Helmet>
             <Background clipType="clipping-aboutUs" overlayColor="bgcolor-aboutUs"></Background>
             <div className="aboutus_header_slogan">
-                <div style={{fontWeight: "600", fontSize: "34px"}}>Members</div><br></br>
+                <div style={{fontWeight: "600", fontSize: "36px"}}>Members</div><br></br>
                 Individual commitment along with overflowing team spirit--that is what makes a Team work.
                 <lable className="aboutus_header_slogan_hide">Here is our powerhouse working behind the scenes to make every bit of learning a fun and enjoyable experience.</lable>
             </div>
