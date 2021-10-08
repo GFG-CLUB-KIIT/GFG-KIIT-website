@@ -153,7 +153,7 @@
     div
     section
     .flex-container {
-    background-color: #222222;
+    background-color: #ffffff;
     flex-direction: column;
   }
 
@@ -167,7 +167,7 @@
     .flex-container
     .img-container {
     width: 100%;
-    background-color: #222222;
+    background-color: #ffffff;
     height: 50vh;
   }
 
