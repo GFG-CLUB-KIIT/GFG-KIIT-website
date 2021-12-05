@@ -34,15 +34,30 @@
   font-weight: 700;
   color: #707070;
 }
-.sticky {
-  padding: 10px 0;
-  background-color: white;
 
+.darknav > .content li a {
+  color: white !important;
+} 
+
+.darknav
+{
+  padding: 10px 0;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  background-color: #222222;
 }
-.sticky > .content li a {
+
+.lightnav > .content li a
+{
   color: black !important;
 }
+
+.lightnav
+{
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
 .navbar .content {
   display: flex;
   align-items: center;

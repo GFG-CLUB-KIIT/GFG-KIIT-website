@@ -14,16 +14,14 @@ class Navbar extends Component {
       // var listItem=menu.querySelectorAll(".list-item");
       window.onscroll = ()=>{
          if (window.scrollY > 20){
-            navbar.classList.add("sticky");
+            // navbar.classList.add("sticky");
             logo.classList.add("make-smaller");
             // listItem.style.color="#fefefe";
          }
          else{
-            navbar.classList.remove("sticky");
+            // navbar.classList.remove("sticky");
             logo.classList.remove("make-smaller");
             // listItem.style.color="#343434";
-
-
          }
       }
 

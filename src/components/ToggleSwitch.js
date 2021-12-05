@@ -6,19 +6,22 @@ import { GlobalStyles } from "../components/Global";
 
 export const Toggle = () => {
   const [theme, setTheme] = useState(localStorage.getItem("myGfgTheme")? localStorage.getItem("myGfgTheme"):"light");
-  
+  const navbar = document.getElementById("navbar-main");
 
   const toggleTheme = () => {
     setTheme(x) 
     if (theme === "light") { 
       localStorage.setItem("myGfgTheme","dark")
       setTheme("dark"); 
-    } else   {
+      navbar.classList.add("darknav");
+      navbar.classList.remove("lightnav");
+    }
+    else   {
       localStorage.setItem("myGfgTheme","light")
       setTheme("light");
-    }
-    
-    
+      navbar.classList.add("lightnav");
+      navbar.classList.remove("darknav");
+    }  
   };
   
 
