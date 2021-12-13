@@ -1,0 +1,32 @@
+.webAccord{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    
+}
+@media only screen and (max-width: 786px) {
+    .webAccord{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 95%;
+    }
+}
+.allMembers{
+    margin-left: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 510px;
+    width: 800px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+@media only screen and (max-width: 786px) {
+    .allMembers{
+        margin-top: 1rem;
+        width: 400px;
+    }
+}
+.allMembers::-webkit-scrollbar {
+    display: none;
+  }

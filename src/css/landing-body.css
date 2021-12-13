@@ -3,6 +3,7 @@
   width: 100%;
   float: left;
 }
+
 #landing_intro_title {
   margin-left: 8%;
   width: 35%;
@@ -14,6 +15,7 @@
   position: relative;
   float: left;
 }
+
 #landing_intro_line {
   float: left;
   position: relative;
@@ -22,10 +24,12 @@
   background-color: rgb(44, 43, 43);
   height: 1px;
 }
+
 .LI_content {
   width: 100%;
   float: left;
 }
+
 .LI_image {
   float: left;
   width: 42%;
@@ -36,6 +40,7 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .LI_context {
   float: left;
   width: 43%;
@@ -49,6 +54,7 @@
   text-align: right;
   border-right: 2px solid;
 }
+
 /*EVENT*/
 #upcomingEvent {
   margin-left: 8%;
@@ -61,6 +67,7 @@
   position: relative;
   float: left;
 }
+
 #landing_line_Event {
   float: left;
   position: relative;
@@ -69,6 +76,7 @@
   background-color: rgb(44, 43, 43);
   height: 1px;
 }
+
 #landing_title {
   width: 400px;
   float: left !important;
@@ -78,27 +86,32 @@
   position: absolute;
   letter-spacing: 2px;
 }
+
 #landing_title_right1 {
   font-size: 40px;
   font-weight: 500;
   font-family: sans-serif;
   letter-spacing: 1.5px;
 }
+
 #landing_title_right2 {
   font-size: 20px;
   margin-left: 5px;
 }
+
 #event {
   float: left;
   width: 90%;
   margin-left: 5%;
   overflow-x: hidden;
 }
+
 #event_img {
   padding: 3% 0% 5% 4%;
-  width: 46%;
+  width: 90%;
   float: left;
 }
+
 #event_img_display {
   width: 100%;
   height: 350px;
@@ -108,21 +121,24 @@
   background-size: contain;
   border-radius: 6px;
 }
+
 .cast_green {
   color: rgb(74, 246, 134);
 }
+
 #event_context {
   width: 44%;
   float: left;
-  padding: 3% 4% 5% 2%;
   text-align: right;
 }
+
 #event_content {
   float: left;
   width: 100%;
   border-right: 2px solid;
   padding-right: 10px;
 }
+
 #event_title {
   font-size: 35px;
   float: right;
@@ -130,6 +146,7 @@
   padding-right: 15px;
   font-weight: 600;
 }
+
 #event_desc {
   font-size: 18px;
   padding-right: 15px;
@@ -137,31 +154,39 @@
   float: right;
   line-height: 1.5rem;
 }
+
 .event_space {
   padding-top: 8px !important;
 }
+
 .event_bold {
   font-weight: 800;
 }
+
 #register_button {
-  margin-top: 3rem;
-  text-decoration: none;
-  padding: 12px 15px;
-  font-size: 17px;
-  background-color: #ffc107;
-  border-radius: 20px;
-  text-align: center;
-  color: black;
-  font-weight: 600;
-  float: right;
-  transition: 0.6s ease;
-  z-index: 3;
-  position: relative;
+  margin-top: -11.6rem;
+    margin-right: -24rem;
+    text-decoration: none;
+    padding: 15px 52px;
+    font-size: 21px;
+    background-color: #5fc7a6;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    float: right;
+    transition: 0.6s ease;
+    z-index: 3;
+    position: relative;
+    border-radius: 50px;
+
 }
+
 #register_button:hover {
-  background-color: #eeb200;
+  background-color: #11db9b;
   box-shadow: 4px 4px 8px gray;
 }
+
 #watch_now_button {
   margin-top: 3rem;
   text-decoration: none;
@@ -176,10 +201,12 @@
   z-index: 3;
   position: relative;
 }
+
 #watch_now_button:hover {
   background-color: #ff0000;
   box-shadow: 4px 4px 8px gray;
 }
+
 /*projects*/
 #landingProjectsDisplay {
   margin-left: 7%;
@@ -192,6 +219,7 @@
   position: relative;
   float: left;
 }
+
 #landing_line_Project {
   float: left;
   position: relative;
@@ -201,12 +229,14 @@
 
   height: 1.5px;
 }
+
 #projects {
   width: 100%;
   margin-top: 40px;
   float: left;
   overflow-x: hidden;
 }
+
 .project_card {
   float: left;
   width: 300px;
@@ -216,9 +246,11 @@
   z-index: 3;
   position: relative;
 }
+
 .project_img {
   width: 100%;
 }
+
 #project_img_display1 {
   width: 100%;
   height: 180px;
@@ -238,6 +270,7 @@
   background-size: cover;
   border-radius: 6px;
 }
+
 #project_img_display3 {
   width: 100%;
   height: 180px;
@@ -247,6 +280,7 @@
   background-size: cover;
   border-radius: 6px;
 }
+
 .project_title {
   width: 100%;
   text-align: center;
@@ -256,6 +290,7 @@
   letter-spacing: 1px;
   padding-top: 15px;
 }
+
 .project_desc {
   float: left;
   font-weight: 500;
@@ -278,19 +313,22 @@
 }
 
 @media screen and (max-width: 730px) {
+
   #landing_line_Event,
   #landing_line_Project,
   #landing_intro_line {
     display: none;
   }
+
   .project_desc {
     text-align: left;
     line-height: 1.6;
   }
-  a[href = "https://practice.geeksforgeeks.org/courses/geek-I-knack"]
-  {
+
+  a[href="https://practice.geeksforgeeks.org/courses/geek-I-knack"] {
     margin-left: 27%;
   }
+
   .LI_content .LI_context {
     text-align: left;
     /* font-size:0.8em; */
@@ -300,39 +338,48 @@
     padding-left: 4%;
     line-height: 1.8;
   }
+
   .send {
     margin-left: 9%;
   }
+
   #upcomingEvent,
   #landing_intro_title {
     width: 100%;
   }
+
   #landing_title {
     margin-left: 25%;
   }
+
   #upcomingEvent {
     margin-left: 12%;
     font-size: 30px;
     padding-left: 13%;
   }
+
   #event_title {
     margin-top: 15px;
   }
+
   #event_img,
   .LI_image {
     width: 92%;
     margin-left: auto;
     padding: 5% 4% 0% 4%;
   }
+
   #event_context,
   .LI_context {
     width: 96%;
     padding: 0%;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
+
   #event_button {
     margin-top: 1rem;
   }
+
   .project_card {
     margin-left: 20%;
     margin-bottom: 90px;
@@ -348,10 +395,12 @@
   overflow: hidden;
   font-family: "Montserrat";
 }
+
 .landing-scroll-branding .scroll {
   width: 100%;
   display: flex;
 }
+
 .landing-scroll-branding .scroll {
   animation-play-state: paused;
 }
@@ -366,16 +415,20 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(112, 112, 112, 0.75);
 }
+
 .landing-scroll-branding .scroll div span {
   padding-left: 10px;
 }
+
 .landing-scroll-branding .scroll .filled {
   color: rgba(112, 112, 112, 0.75);
 }
+
 .landing-scroll-branding .org div {
   animation: animate 80s linear infinite;
   animation-delay: -80s;
 }
+
 .landing-scroll-branding .org div:nth-child(2) {
   animation: animate2 80s linear infinite;
   animation-delay: -40s;
@@ -395,14 +448,17 @@
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
+
 @keyframes animate2 {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-200%);
   }
@@ -412,91 +468,113 @@
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(100%);
   }
 }
+
 @keyframes animate-alt2 {
   0% {
     transform: translateX(-200%);
   }
+
   100% {
     transform: translateX(0%);
   }
 }
+
 @media screen and (max-width: 400px) {
   #landing_intro_title {
     font-size: 30px;
     margin-left: 6%;
   }
+
   #landing_title {
     margin-left: 12%;
     margin-top: -330px;
   }
+
   #landing_title_right1 {
     font-size: 38px;
   }
+
   #landing_title_right2 {
     clear: both;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
   }
+
   #upcomingEvent {
     margin-left: 6%;
   }
+
   .project_card {
     margin-left: 8%;
   }
+
   .LI_image {
     height: 200px;
     margin-left: 0px;
   }
+
   #event_img_display {
     height: 250px;
     margin-bottom: 20px;
     background-position: center;
   }
+
   #event_title {
     margin-top: 0px;
     font-size: 30px;
   }
+
   .LI_context {
     padding-right: 15px;
     padding-left: 5px;
     text-align: center;
   }
 }
+
 @media screen and (max-width: 320px) {
   #landing_intro_title {
     font-size: 30px;
     margin-left: 6%;
   }
+
   #landing_title {
     margin-left: 18%;
     margin-top: -250px;
   }
+
   #landing_title_right1 {
     font-size: 38px;
   }
+
   #upcomingEvent {
     margin-left: 0.5%;
   }
+
   .project_card {
     margin-left: 3%;
   }
+
   .LI_image {
     height: 200px;
     margin-left: 0px;
   }
+
   #event_img_display {
     height: 250px;
     margin-bottom: 20px;
     background-position: center;
   }
+
   #event_title {
     margin-top: 0px;
   }
+
   .LI_context {
     padding-right: 15px;
     padding-left: 5px;

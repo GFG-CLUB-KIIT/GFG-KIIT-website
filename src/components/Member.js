@@ -43,6 +43,7 @@ import Background from './Background';
 import Footer from './Footer';
 import { Helmet } from 'react-helmet';
 import '../css/Members.css';
+import SelfAcc from './Accordation/SelfAcc';
 
 class AboutUs extends Component {
    render() {
@@ -61,7 +62,7 @@ class AboutUs extends Component {
             <div className="aboutUsBody">
                 <div className="our_Team_Title">Our Team</div>
                 <div className="aboutUs_slogan">Small team with millions <br/> of creativity</div>
-                <div className="head_members">
+                {/* <div className="head_members">
                     <div className="head_member_card">
                         <div className="head_member_photo" style={{backgroundImage:`url(${krishMurarka})`}}>
                             <div className="overlay">
@@ -454,10 +455,11 @@ class AboutUs extends Component {
                         </div>
                         <div className="member_name">Veer Sharma</div>
                         <div className="member-position">Lead</div>
-                    </div>
+                    </div> */}
 
 
-                </div>
+                {/* </div> */}
+                <SelfAcc/>
             </div>
             <Footer bgColor="footer-aboutUs"></Footer>
         </div>
