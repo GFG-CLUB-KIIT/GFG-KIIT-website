@@ -1,0 +1,142 @@
+/* Card */
+
+.card {
+    height: 510px;
+    width: 310px;
+    border-radius: 20px;
+  
+    /* position: absolute; */
+    background: #f7f7f7;
+    border-radius: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 2px solid #fafafa;
+  }
+  
+  .card:hover{
+    border: 2px solid #12B6EB;
+  }
+  
+  
+  .circleBorder {
+    height: 200px;
+    width: 200px;
+    /* left: 107px; */
+    /* top: 57px; */
+    border-radius: 50%;
+  
+  
+    /* position: absolute; */
+    /* left: 20.27%; */
+    /* right: 20.27%; */
+    /* top: 7.11%; */
+    /* bottom: 53.74%; */
+    /* background: linear-gradient(27.27deg, #2EA35D 15.07%, rgba(82, 211, 190, 0.47) 81.84%); */
+    border: 5px dashed #12B6EB;
+    border: 3px dashed #2EA35D;
+
+    box-sizing: border-box;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+
+  }
+  .card:hover .circleBorder{
+    /* animation: rotate 60s linear infinite; */
+
+  }
+
+  @keyframes rotate {
+    0%{
+      transform: rotate(360deg);
+    }
+    100%{
+      transform: rotate(0deg);
+
+    }
+  }
+  
+  .cardImage {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #c0ce73;
+   
+  }
+  
+  .cardName {
+    font-family: Poppins;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 63px;
+    letter-spacing: 0em;
+    text-align: center;
+  
+    color: #000000;
+  
+    margin-top: 1.5rem;
+  
+  
+  }
+  
+  .cardTitle {
+  
+  
+    color: #878787;
+    width: 70%;
+      text-align: center;
+  
+  }
+  
+  .cardSmallTitles {
+    display: flex;
+position: absolute;
+    width: 150px;
+    justify-content: space-around;
+    margin-top: 440px;
+  }
+  .cardSmallTitles box-icon{
+    
+    cursor: pointer;
+  }
+  
+  .cardSmallTitle {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  
+    color: #FEFEFE;
+  
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    padding: 0px 5px;
+  
+  }
+  
+  .cardSocial{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    
+    
+  }
+  
+  .title1{
+    background: #F85E5E;
+  }
+  .title2{
+    background-color: rgb(236, 78, 228);
+  }

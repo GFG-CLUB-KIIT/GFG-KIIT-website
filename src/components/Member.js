@@ -2,52 +2,18 @@ import React, { Component } from 'react';
 import krishMurarka from '../profile/KrishMurarka.png';
 import abhinavPrakash from '../profile/AbhinavPrakash.png';
 import adityaDas from '../profile/AdityaDas.png';
-import AnkitRaj from '../profile/AnkitRaj.png';
-import HarshDwivedi from '../profile/HarshDwivedi.png';
-import AbhinavDeep from '../profile/AbhinavDeep.jpg';
-import Taran from '../profile/Taran.png';
-import SouravDash from '../profile/SouravDash.png';
-import AshwaniSingh from '../profile/AshwaniSingh.png';
-import VeerSharma from '../profile/VeerSharma.png';
-import ArnabChatterjee from '../profile/ArnabChatterjee.png';
-import AkashChouhan from '../profile/AkashChouhan.png';
-import AshishKumarMishra from '../profile/AshishKumarMishra.jpg';
-import DevanshShaw from '../profile/DevanshShaw.png';
-import RiteshKumar from '../profile/RiteshKumar.png';
-import SouvikKar from '../profile/SouvikKar.png';
-import AbhisekSamantaray from '../profile/AbhisekSamantaray.png';
-import AlokKumar from '../profile/AlokKumar.png';
-import Anshu from '../profile/Anshu.png';
-import DivyanshuShekhar from '../profile/DivyanshuShekhar.png';
-import KumarAnkit from '../profile/KumarAnkit.png';
-import nitishSonthalia from '../profile/NitishSonthalia.png';
-import RupanshiChawda from '../profile/RupanshiChawda.png';
-import ShashiKiran from '../profile/ShashiKiran.png';
-import NamanGupta from '../profile/NamanGupta.png';
-import LalitKumar from '../profile/ALalit.png';
-import Nittishna from '../profile/Nittishna.png';
-import AsmitaHobisyashi from '../profile/AsmitaHobisyashi.png';
-import AdyashaSatpathy from '../profile/AdyashaSatpathy.png';
-import ShivamKumar from '../profile/ShivamKumar.png';
-import RohitPradhan from '../profile/RohitPradhan.png';
-import SatyajeetRamnit from '../profile/SatyajeetRamnit.jpg';
-import SuryavardhanThangirala from '../profile/SuryavardhanThangirala.png';
-import SayakRoyChowdhury from '../profile/SayakRoyChowdhury.png';
-import SnehilSinhna from '../profile/SnehilSinhna.png';
-import SaswataGhosh from '../profile/SaswataGhosh.png';
-import ShwetaThakur from '../profile/ShwetaThakur.jpg';
-import SatyajitMishra from '../profile/SatyajitMishra.jpg';
-import MadhavParikh from '../profile/MadhavParikh.jpg';
-import AkashKumarGautam from '../profile/AkashKumarGautam.jpg';
+
 import Background from './Background';
 import Footer from './Footer';
 import { Helmet } from 'react-helmet';
 import '../css/Members.css';
+import SelfAcc from './Accordation/SelfAcc';
 
 class AboutUs extends Component {
    render() {
       return (
-         <div className="parent-element">
+          <>
+         <div className="parent-element flex flex-col justify-center items-center">
             {/* <!-- Dynamic Title --> */}
             <Helmet>
                <title>Geeksforgeeks | KIIT - Members</title>
@@ -57,12 +23,12 @@ class AboutUs extends Component {
                 <div style={{fontWeight: "600", fontSize: "36px"}}>Members</div><br></br>
                 Individual commitment along with overflowing team spirit--that is what makes a Team work.
                 <lable className="aboutus_header_slogan_hide">Here is our powerhouse working behind the scenes to make every bit of learning a fun and enjoyable experience.</lable>
-            </div>
-            <div className="aboutUsBody">
+            </div> 
+            <div className="aboutUsBody" style={{width:"100vw"}} >
                 <div className="our_Team_Title">Our Team</div>
                 <div className="aboutUs_slogan">Small team with millions <br/> of creativity</div>
-                <div className="head_members">
-                    <div className="head_member_card">
+                {/* <div className="head_members">
+                  <div className="head_member_card">
                         <div className="head_member_photo" style={{backgroundImage:`url(${krishMurarka})`}}>
                             <div className="overlay">
                                 <div className="flex-container">
@@ -72,8 +38,8 @@ class AboutUs extends Component {
                                     <a href="https://twitter.com/MurarkaKrish" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                 </div>
                            </div>
-                        </div>
-                        <div className="head_member_about">
+                        </div> */}
+                        {/* <div className="head_member_about">
                             <div className="head_member_name">Ashish Kumar Mishra</div>
                             <div className="head_member_desg">President</div>
                             <div className="head_member_words">   
@@ -118,8 +84,8 @@ class AboutUs extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="member-box">
+                </div> */}
+               {/* <div className="member-box">
                 <div className="member_title">Competitive Programmers</div>
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${HarshDwivedi})`}}>
@@ -454,13 +420,20 @@ class AboutUs extends Component {
                         </div>
                         <div className="member_name">Veer Sharma</div>
                         <div className="member-position">Lead</div>
-                    </div>
+                    </div> 
 
 
-                </div>
+                {/* </div> */}
+                
             </div>
-            <Footer bgColor="footer-aboutUs"></Footer>
+            
+        
+        
+        <SelfAcc/>
         </div>
+        
+        <Footer bgColor="footer-aboutUs"></Footer>
+        </>
        )
     }
 }

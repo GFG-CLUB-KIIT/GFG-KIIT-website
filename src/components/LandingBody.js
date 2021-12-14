@@ -3,6 +3,7 @@ import '../css/landing-body.css';
 import Background from './Background';
 import Footer from './Footer';
 import {Helmet} from 'react-helmet';
+import upcomingEvent from '../img/upcomingEvent.jpg'
 
 class LandingBody extends Component {
    render() {
@@ -34,22 +35,15 @@ class LandingBody extends Component {
           <div id="landing_line_Event"></div>
           <div id="event">
             <div id="event_img">
-                <div id="event_img_display"></div>
+            <img src={upcomingEvent} />
             </div>
               <div id="event_context">
                   <div id="event_content">
                       {/* <div id="event_title">Dev<lable className="cast_green">Cast</lable> E03</div> */}
-                      <div id="event_title">GEEK-I-KNACK</div>
-                      <div id="event_desc">
-                            <p>Hey Geeks,</p>
-                            <p>GFG-KIIT, with other GFG chapters across India, has come up with a super cool innovative event: “Geek-i-Knack”.</p><br></br>
-                            <p>Geek-i-Knack is a 3-day full-fledged Placement Interview-Drive (from Coding round to HR interview), designed just for Computer Science Geeks, to give them an authentic aid for the much-feared company placements, with help of industry experts, which might ultimately help them in achieving their utmost goal: To bag a dream job in FAANG.</p><br></br>
-                            <p><b class="event_bold">Use Invitation Code:</b> GFGO21AWG</p>
-                          <p class="event_space"><b class="event_bold">DATE :</b> 12-03-2021 to 14-03-2021 </p>
-                          <p class="event_space"><b class="event_bold">TIME :</b> 5:00 PM </p>
-                      </div>
+                      
                   </div>
-                  <a href="https://practice.geeksforgeeks.org/courses/geek-I-knack" id="register_button" target="_blank" rel="noopener noreferrer">Register Now</a>
+                  
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5EUJt-7O_KYdyc5MfmMVp7HWmWuHmg9bjhOA0pskhPaUwEQ/viewform" id="register_button" target="_blank" rel="noopener noreferrer">Register Now</a>
                   {/* <a href="/RegistrationForm" id="watch_now_button">Watch Now</a> */}
               </div>
           </div>
