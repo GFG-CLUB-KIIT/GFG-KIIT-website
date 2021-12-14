@@ -3,8 +3,9 @@ import React from "react";
 import SmallCard from "./SmallCard";
 import "./Part.css";
 import { motion } from "framer-motion";
+import memberDetails from "../memberDetails";
 
-const Part = ({ lead, member }) => {
+const Part = ({ lead,domain, member }) => {
 
   return (
     <div className="webAccord">
@@ -20,7 +21,7 @@ const Part = ({ lead, member }) => {
           delay: 0,
         }}
       >
-        <Card name={lead} />
+        <Card name={lead} domain={domain} />
       </motion.div>
 
       <motion.div
@@ -35,9 +36,12 @@ const Part = ({ lead, member }) => {
           delay: 0.2,
         }}
       >
-        {member?member.map((e) => {
-          return <SmallCard name={e} />;
-        }):""}
+        {/* {member?member.map((e) => {
+          return <SmallCard name={e.name} image={e.urlImage} />;
+        }):""} */}
+        {member.map((user)=>{
+          return <SmallCard name={user.name}  urlImage={user.urlImage} />;
+        })}
       </motion.div>
     </div>
   );

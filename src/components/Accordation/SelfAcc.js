@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./SelfAcc.css";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import Card from "./Card";
 import Part from "./Part";
-// import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-// import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import ShashiKiran from '../../profile/ShashiKiran.png';
 
 const SelfAcc = () => {
   const [count, setCount] = useState(0);
@@ -60,19 +59,37 @@ const SelfAcc = () => {
         }}
       >
         <div className="title rounded-2xl ">
-          <div className="titleName font-bold">Competitive Programming</div>
+          <div className="titleName font-bold">Web Devlopment</div>
           <div
             className="accordIcon cursor-pointer  "
             onClick={() => setAccVal("one", !allAcc.one)}
           >
             {" "}
-            {allAcc.one ? <box-icon name='chevron-down'></box-icon> : <box-icon name='chevron-up'></box-icon>}
+            {allAcc.one ? (
+              <box-icon name="chevron-up"></box-icon>
+            ) : (
+              <box-icon name="chevron-down"></box-icon>
+            )}
           </div>
         </div>
 
         {allAcc.one ? (
           <motion.div className="details">
-            <Part lead="Anubhab Swain" member={["Abhinav Deep","Abhinav Prakash","Piyush","Shreshtha Kochgaway","Abhishek K.","Aditya Anand","Devesh","Eshaan","Himanshu","Hritesh","Naman Gupta","Ritesh","Rohit Pradhan","Saksham","Sejal","Shashi","Shivam","Subhadeep","Snehil Sinha","Nittishna Dhar"]} />
+            <Part
+              lead="Om Prakash"
+              domain="Web Development lead"
+              member={[
+                {name:"Akash Gautum",urlImage:""},
+                {name:"Aman Singh",urlImage:""},
+                {name:"Ankit Raj",urlImage:""},
+                {name:"Anupam Karmakar",urlImage:""},
+                {name:"Nilabja Saniyal ",urlImage:""},
+                {name:"Tamoghno Deb",urlImage:""},
+                {name:"Sourav Dash",urlImage:""},
+                {name:"Devansh",urlImage:""},
+              ]}
+            />
+            
           </motion.div>
         ) : (
           ""
@@ -81,7 +98,7 @@ const SelfAcc = () => {
 
       {/* Accord 2 */}
       <motion.div
-        className="accord accord2"
+        className="accord accord3"
         animate={{
           marginTop: "1rem",
         }}
@@ -89,28 +106,45 @@ const SelfAcc = () => {
           marginTop: "-100vh",
         }}
         transition={{
-          delay: 0.4,
+          delay: 0.2,
         }}
       >
         <div className="title rounded-2xl">
-          <div className="titleName font-bold">Web Devlopment</div>
+          <div className="titleName font-bold">Android Development</div>
           <div
             className="accordIcon cursor-pointer"
-            onClick={() => setAccVal("two", !allAcc.two)}
+            onClick={() => setAccVal("four", !allAcc.four)}
           >
             {" "}
-            {allAcc.two ? <box-icon name='chevron-down'></box-icon> : <box-icon name='chevron-up'></box-icon>}
+            {allAcc.four ? (
+              <box-icon name="chevron-up"></box-icon>
+            ) : (
+              <box-icon name="chevron-down"></box-icon>
+            )}
           </div>
         </div>
 
-        {allAcc.two ? (
+        {allAcc.four ? (
           <motion.div className="details">
-            <Part lead="Om Prakash" member={["Akash Gautum","Aman Singh","Ankit Raj","Anupam Karmakar","Nilabja Saniyal ","Tamoghno Deb","Sourav Dash","Devansh"]} />
+            <Part
+              lead="Taranpreet Singh"
+              domain="Android Development lead"
+              member={[
+                {name:"Sumit Kumar",urlImage:""},
+                {name:"Soumik",urlImage:""},
+                {name:"Rupanshi",urlImage:""},
+                {name:"Mughda Hazra",urlImage:""},
+                {name:"Avik Rankan Das",urlImage:""},
+                {name:"Abhishek Dutt",urlImage:""},
+                {name:"Shishir",urlImage:""},
+              ]}
+            />
           </motion.div>
         ) : (
           ""
         )}
       </motion.div>
+      
 
       {/* Accord 3 */}
       <motion.div
@@ -132,13 +166,29 @@ const SelfAcc = () => {
             onClick={() => setAccVal("three", !allAcc.three)}
           >
             {" "}
-            {allAcc.three ? <box-icon name='chevron-down'></box-icon> : <box-icon name='chevron-up'></box-icon>}
+            {allAcc.three ? (
+              <box-icon name="chevron-up"></box-icon>
+            ) : (
+              <box-icon name="chevron-down"></box-icon>
+            )}
           </div>
         </div>
 
         {allAcc.three ? (
           <motion.div className="details">
-            <Part lead="Shashwat Srijan" member={["Arpit Sahu","Pranjal ","Sanskar","Yash","Anshu Mohanta","Ashish Kumar Mishra","Ritesh Kumar"]} />
+            <Part
+              lead="Shashwat Srijan"
+              domain="UI-UX lead"
+              member={[
+                { name: "Arpit Sahu", urlImage: "" },
+                { name: "Pranjal ", urlImage: "" },
+                { name: "Sanskar", urlImage: "" },
+                { name: "Yash", urlImage: "" },
+                { name: "Anshu Mohanta", urlImage: "" },
+                { name: "Ashish Kumar Mishra", urlImage: "" },
+                { name: "Ritesh Kumar", urlImage: "" },
+              ]}
+            />
           </motion.div>
         ) : (
           ""
@@ -147,7 +197,7 @@ const SelfAcc = () => {
 
       {/* Accord 4    */}
       <motion.div
-        className="accord accord3"
+        className="accord accord2"
         animate={{
           marginTop: "1rem",
         }}
@@ -155,23 +205,53 @@ const SelfAcc = () => {
           marginTop: "-100vh",
         }}
         transition={{
-          delay: 0.2,
+          delay: 0.4,
         }}
       >
         <div className="title rounded-2xl">
-          <div className="titleName font-bold">Android Development</div>
+          <div className="titleName font-bold">Competitive Programming</div>
           <div
             className="accordIcon cursor-pointer"
-            onClick={() => setAccVal("four", !allAcc.four)}
+            onClick={() => setAccVal("two", !allAcc.two)}
           >
             {" "}
-            {allAcc.four ? <box-icon name='chevron-down'></box-icon> : <box-icon name='chevron-up'></box-icon>}
+            {allAcc.two ? (
+              <box-icon name="chevron-up"></box-icon>
+            ) : (
+              <box-icon name="chevron-down"></box-icon>
+            )}
           </div>
         </div>
 
-        {allAcc.four ? (
+        {allAcc.two ? (
           <motion.div className="details">
-            <Part lead="Taranpreet Singh" member={["Sumit Kumar","Soumik","Rupanshi","Mughda Hazra","Avik Rankan Das","Abhishek Dutt","Shishir"]} />
+            <Part
+              lead="Anubhab Swain"
+              domain="Competitive Programming Lead"
+              member={[
+                { name: "Abhinav Deep", urlImage: {ShashiKiran} },
+                { name: "Abhinav Prakash", urlImage: "" },
+                { name: "Piyush", urlImage: "" },
+                { name: "Shreshtha Kochgaway", urlImage: "" },
+                { name: "Abhishek K.", urlImage: "" },
+                { name: "Aditya Anand", urlImage: "" },
+                { name: "Devesh", urlImage: "" },
+                { name: "Eshaan", urlImage: "" },
+                { name: "Himanshu", urlImage: "" },
+                { name: "Hritesh", urlImage: "" },
+                { name: "Naman Gupta", urlImage: "" },
+                { name: "Ritesh", urlImage: "" },
+                { name: "Rohit Pradhan", urlImage: "" },
+                { name: "Saksham", urlImage: "" },
+                { name: "Sejal", urlImage: "" },
+                { name: "Shashi", urlImage: "" },
+                { name: "Shivam", urlImage: "" },
+                { name: "Subhadeep", urlImage: "" },
+                { name: "Snehil Sinha", urlImage: "" },
+                { name: "Nittishna Dhar", urlImage: "" },
+              ]}
+            />
+            
           </motion.div>
         ) : (
           ""
@@ -198,13 +278,28 @@ const SelfAcc = () => {
             onClick={() => setAccVal("five", !allAcc.five)}
           >
             {" "}
-            {allAcc.five ? <box-icon name='chevron-down'></box-icon> : <box-icon name='chevron-up'></box-icon>}
+            {allAcc.five ? (
+              <box-icon name="chevron-up"></box-icon>
+            ) : (
+              <box-icon name="chevron-down"></box-icon>
+            )}
           </div>
         </div>
 
         {allAcc.five ? (
           <motion.div className="details">
-            <Part lead="Jyotsna Singh " member={["Abir Mishra","Ashwani","Asmita Hobisyashi","Maan Singh","Sayak","Surya"]} />
+            <Part
+              lead="Jyotsna Singh "
+              domain="Content Writer Lead"
+              member={[
+                {name:"Abir Mishra",urlImage:""},
+                {name:"Ashwani",urlImage:""},
+                {name:"Asmita Hobisyashi",urlImage:""},
+                {name:"Maan Singh",urlImage:""},
+                {name:"Sayak",urlImage:""},
+                {name:"Surya",urlImage:""},
+              ]}
+            />
           </motion.div>
         ) : (
           ""
@@ -231,13 +326,27 @@ const SelfAcc = () => {
             onClick={() => setAccVal("six", !allAcc.six)}
           >
             {" "}
-            {allAcc.six ? <box-icon name='chevron-down'></box-icon> : <box-icon name='chevron-up'></box-icon>}
+            {allAcc.six ? (
+              <box-icon name="chevron-up"></box-icon>
+            ) : (
+              <box-icon name="chevron-down"></box-icon>
+            )}
           </div>
         </div>
 
         {allAcc.six ? (
           <motion.div className="details">
-            <Part lead="Sneha Priyangi " member={["Akansha","Aryan Kumar","Pratyush ","Rupabarna","Samar"]} />
+            <Part
+              lead="Sneha Priyangi "
+              domain="Marketing Lead"
+              member={[
+                {name:"Akansha",urlImage:""},
+                {name:"Aryan Kumar",urlImage:""},
+                {name:"Pratyush ",urlImage:""},
+                {name:"Rupabarna",urlImage:""},
+                {name:"Samar",urlImage:""},
+              ]}
+            />
           </motion.div>
         ) : (
           ""
@@ -264,13 +373,33 @@ const SelfAcc = () => {
             onClick={() => setAccVal("seven", !allAcc.seven)}
           >
             {" "}
-            {allAcc.seven ? <box-icon name='chevron-down'></box-icon> : <box-icon name='chevron-up'></box-icon>}
+            {allAcc.seven ? (
+              <box-icon name="chevron-up"></box-icon>
+            ) : (
+              <box-icon name="chevron-down"></box-icon>
+            )}
           </div>
         </div>
 
         {allAcc.seven ? (
           <motion.div className="details">
-            <Part lead="Nittishna " member={["Akansha","Asmita Hobisyachi","Ishika ","Jyotsna Singh","Maddhuja Sen","Mughda Hazra","Rimsha Aiman","Rupabarna","Rupanshi","Sejal","Sneha Priyangi"]} />
+            <Part
+              lead="Nittishna "
+              domain="Women-in-tech Lead"
+              member={[
+                {name:"Akansha",urlImage:""},
+                {name:"Asmita Hobisyachi",urlImage:""},
+                {name:"Ishika ",urlImage:""},
+                {name:"Jyotsna Singh",urlImage:""},
+                {name:"Maddhuja Sen",urlImage:""},
+                {name:"Mughda Hazra",urlImage:""},
+                {name:"Rimsha Aiman",urlImage:""},
+                {name:"Rupabarna",urlImage:""},
+                {name:"Rupanshi",urlImage:""},
+                {name:"Sejal",urlImage:""},
+                {name:"Sneha Priyangi",urlImage:""},
+              ]}
+            />
           </motion.div>
         ) : (
           ""

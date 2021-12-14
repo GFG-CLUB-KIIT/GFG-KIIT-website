@@ -100,8 +100,14 @@
   
   .cardSmallTitles {
     display: flex;
-    margin-top: 2rem;
-    margin-left: -98px;
+position: absolute;
+    width: 150px;
+    justify-content: space-around;
+    margin-top: 440px;
+  }
+  .cardSmallTitles box-icon{
+    
+    cursor: pointer;
   }
   
   .cardSmallTitle {

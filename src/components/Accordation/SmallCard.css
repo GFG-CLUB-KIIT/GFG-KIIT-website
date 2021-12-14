@@ -1,7 +1,7 @@
 .smallCard {
     width: 10rem;
     height: 12rem;
-    background-image: url('../../img/image.jpg');
+    
     background-size: cover;
     background-position: center;
     border-radius: 10px;

@@ -6,19 +6,26 @@ import { motion } from "framer-motion";
 // import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // import TwitterIcon from "@mui/icons-material/Twitter";
 // import FacebookIcon from "@mui/icons-material/Facebook";
+import memberDetails from "../memberDetails";
 
-
-const SmallCard = ({name}) => {
-
-  const [icon, setIcon] = useState(0)
+const SmallCard = ({ name, urlImage }) => {
+  const [icon, setIcon] = useState(0);
 
   return (
-    <div className="smallCard"
-    
+    <div
+      className="smallCard"
+      style={{
+
+        backgroundImage: `url(${
+          urlImage
+            ? urlImage
+            : "https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+        })`,
+      }}
     >
       <div
         className="socialDetails"
-        
+
         // initial={{
         //   scale :3,
         //   opacity:0
@@ -27,7 +34,7 @@ const SmallCard = ({name}) => {
         //   opacity: 2.2,
         //   scale: 1.2 ,
         //   padding:4
-          
+
         // }}
         // transition={{
         //   type: "spring",
@@ -41,17 +48,18 @@ const SmallCard = ({name}) => {
         </div>
         <div className="smallCardSocial">
           <a>
-            {/* <GitHubIcon className="smallCardIcon githubIcon" sx={{ fontSize: 30 }} /> */}
+            <box-icon type="logo" name="github" className="smallCardIcon githubIcon" ></box-icon>
+
+            {/* <GitHubIcon  sx={{ fontSize: 30 }} /> */}
           </a>
 
           <a>
+          <box-icon name='instagram' type='logo' className="smallCardIcon instaIcon" ></box-icon>
             {/* <InstagramIcon className="smallCardIcon instaIcon" sx={{ fontSize: 30 }} /> */}
           </a>
           <a>
+          <box-icon name='twitter' type='logo' className="smallCardIcon linkedIcon" ></box-icon>
             {/* <LinkedInIcon className="smallCardIcon linkedIcon" sx={{ fontSize: 30 }} /> */}
-          </a>
-          <a>
-            {/* <TwitterIcon className="smallCardIcon twitterIcon" sx={{ fontSize: 30 }} /> */}
           </a>
           
         </div>
