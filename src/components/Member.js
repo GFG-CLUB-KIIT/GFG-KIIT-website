@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import krishMurarka from '../profile/KrishMurarka.png';
-import abhinavPrakash from '../profile/AbhinavPrakash.png';
+import NittishnaDhar from '../profile/NittishnaDhar.jpeg';
+import RimshaAiman from '../profile/RimshaAiman.png';
 import adityaDas from '../profile/AdityaDas.png';
 
 import Background from './Background';
@@ -10,82 +10,82 @@ import '../css/Members.css';
 import SelfAcc from './Accordation/SelfAcc';
 
 class AboutUs extends Component {
-   render() {
-      return (
-          <>
-         <div className="parent-element flex flex-col justify-center items-center">
-            {/* <!-- Dynamic Title --> */}
-            <Helmet>
-               <title>Geeksforgeeks | KIIT - Members</title>
-            </Helmet>
-            <Background clipType="clipping-aboutUs" overlayColor="bgcolor-aboutUs"></Background>
-            <div className="aboutus_header_slogan">
-                <div style={{fontWeight: "600", fontSize: "36px"}}>Members</div><br></br>
-                Individual commitment along with overflowing team spirit--that is what makes a Team work.
-                <lable className="aboutus_header_slogan_hide">Here is our powerhouse working behind the scenes to make every bit of learning a fun and enjoyable experience.</lable>
-            </div> 
-            <div className="aboutUsBody" style={{width:"100vw"}} >
-                <div className="our_Team_Title">Our Team</div>
-                <div className="aboutUs_slogan">Small team with millions <br/> of creativity</div>
-                {/* <div className="head_members">
-                  <div className="head_member_card">
-                        <div className="head_member_photo" style={{backgroundImage:`url(${krishMurarka})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/krish-murarka-9865a3122/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/krishmurarka" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/krish_murarka/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/MurarkaKrish" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                                </div>
-                           </div>
-                        </div> */}
-                        {/* <div className="head_member_about">
-                            <div className="head_member_name">Ashish Kumar Mishra</div>
-                            <div className="head_member_desg">President</div>
-                            <div className="head_member_words">   
-                            Ashish Kumar Mishra is the Campus President of GeeksforGeeks - KIIT. He is an undergrad in Computer Science Engineering. He is also the Campus Geek of November - 2020. Krish also loves to code and has mastered C++ and Java. Krish is also a 4* coder on CodeChef. We at GeeksforGeeks - KIIT call him insomniac as he is available almost round the clock!
-                            </div>
-                        </div>
+    render() {
+        return (
+            <>
+                <div className="parent-element flex flex-col justify-center items-center">
+                    {/* <!-- Dynamic Title --> */}
+                    <Helmet>
+                        <title>Geeksforgeeks | KIIT - Members</title>
+                    </Helmet>
+                    <Background clipType="clipping-aboutUs" overlayColor="bgcolor-aboutUs"></Background>
+                    <div className="aboutus_header_slogan">
+                        <div style={{ fontWeight: "600", fontSize: "36px" }}>Members</div><br></br>
+                        Individual commitment along with overflowing team spirit--that is what makes a Team work.
+                        <lable className="aboutus_header_slogan_hide">Here is our powerhouse working behind the scenes to make every bit of learning a fun and enjoyable experience.</lable>
                     </div>
-                    <div className="head_member_card">
-                        <div className="head_member_photo photo_abhinav" style={{backgroundImage:`url(${abhinavPrakash})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/itsmeabhinavprakash/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/abhinavprkash" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.instagram.com/_abhinavprkash_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/abhinaprkash" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <div className="aboutUsBody" style={{ width: "100vw" }} >
+                        <div className="our_Team_Title">Our Team</div>
+                        <div className="aboutUs_slogan">Small team with millions <br /> of creativity</div>
+                        <div className="head_members">
+                            <div className="head_member_card">
+                                <div className="head_member_photo" style={{ backgroundImage: `url(${NittishnaDhar})` }}>
+                                    <div className="overlay">
+                                        <div className="flex-container">
+                                            <a href="https://www.linkedin.com/in/nittishna-dhar-9952831b9/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://github.com/krishmurarka" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                            <a href="https://www.instagram.com/krish_murarka/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://twitter.com/MurarkaKrish" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
-                           </div>
-                        </div>
-                        <div className="inverse_aboutus_abhinav">
-                            <div className="head_member_name">Akash Kumar Gautam</div>
-                            <div className="head_member_desg">Secretary</div>
-                            <div className="head_member_words">   
-                            Abhinav Prakash is the co-leader at GeeksforGeeks - KIIT. He can be found coding or developing most of his time. Abhinav also organizes the events for GeeksforGeeks - KIIT. His passion for coding dates back to when he was in 8th class when he started coding. He has also done a decent amount of projects and contributions. He is also a 4 star coder at CodeChef.
-                            </div>
-                        </div>
-                    </div>
-                    <div className="head_member_card">
-                        <div className="head_member_photo" style={{backgroundImage:`url(${adityaDas})`}}>
-                            <div className="overlay">
-                                <div className="flex-container">
-                                    <a href="https://www.linkedin.com/in/aditya-das-619a5019b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/ThatOneTallKid" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    <a href="https://twitter.com/AdityaD14206128?s=08" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                <div className="head_member_about">
+                                    <div className="head_member_name">Nittishna Dhar</div>
+                                    <div className="head_member_desg">President</div>
+                                    <div className="head_member_words">
+                                        Nittishna Dhar is the Campus President of GeeksforGeeks - KIIT. She is a Computer Science Engineering undergrad. She is also a Google WE'21 scholar and a runner-up in the MLSA Greenhack competition. She spends her free time singing and playing the guitar. She is continually seeking ways to improve herself and advocates for gender equality in the tech business.
+                                    </div>
                                 </div>
-                           </div>
-                        </div>
-                        <div className="head_member_about">
-                            <div className="head_member_name">Aditya Das</div>
-                            <div className="head_member_desg">Head of Development</div>
-                            <div className="head_member_words">   
-                            Aditya is one of the multi-talented persons in our club. Facing difficulty and in any field, he is always eager to solve. His passion for coding is reflected by the number of skills he acquired. Aditya has done a handful of projects including one of the famous KIIT Archives. He is also behind the Geek Bot which is being used in our Discord Server. Aditya is also the flutter lead at GeeksforGeeks - KIIT.
                             </div>
+                            <div className="head_member_card">
+                                <div className="head_member_photo photo_abhinav" style={{ backgroundImage: `url(${RimshaAiman})` }}>
+                                    <div className="overlay">
+                                        <div className="flex-container">
+                                            <a href="https://www.linkedin.com/in/rimsha-aiman-926b481b5/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://github.com/abhinavprkash" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                            <a href="https://www.instagram.com/_abhinavprkash_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://twitter.com/abhinaprkash" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="inverse_aboutus_abhinav">
+                                    <div className="head_member_name">Rimsha Aiman</div>
+                                    <div className="head_member_desg">Secretary</div>
+                                    <div className="head_member_words">
+                                        Rimsha Aiman is the secretory of GeeksforGeeks-KIIT.  She is currently pursuing her bachelor's in Computer Science.  Machine learning is something she is passionate about and would choose ML models over Victoria's secrets anyday.
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <div className="head_member_card">
+                                <div className="head_member_photo" style={{ backgroundImage: `url(${adityaDas})` }}>
+                                    <div className="overlay">
+                                        <div className="flex-container">
+                                            <a href="https://www.linkedin.com/in/aditya-das-619a5019b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://github.com/ThatOneTallKid" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                            <a href="https://twitter.com/AdityaD14206128?s=08" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="head_member_about">
+                                    <div className="head_member_name">Aditya Das</div>
+                                    <div className="head_member_desg">Head of Development</div>
+                                    <div className="head_member_words">
+                                        Aditya is one of the multi-talented persons in our club. Facing difficulty and in any field, he is always eager to solve. His passion for coding is reflected by the number of skills he acquired. Aditya has done a handful of projects including one of the famous KIIT Archives. He is also behind the Geek Bot which is being used in our Discord Server. Aditya is also the flutter lead at GeeksforGeeks - KIIT.
+                                    </div>
+                                </div>
+                            </div> */}
                         </div>
-                    </div>
-                </div> */}
-               {/* <div className="member-box">
+                        {/* <div className="member-box">
                 <div className="member_title">Competitive Programmers</div>
                     <div className="member">
                         <div className="member_photo" style={{backgroundImage:`url(${HarshDwivedi})`}}>
@@ -424,17 +424,17 @@ class AboutUs extends Component {
 
 
                 {/* </div> */}
-                
-            </div>
-            
-        
-        
-        <SelfAcc/>
-        </div>
-        
-        <Footer bgColor="footer-aboutUs"></Footer>
-        </>
-       )
+
+                    </div>
+
+
+
+                    <SelfAcc />
+                </div>
+
+                <Footer bgColor="footer-aboutUs"></Footer>
+            </>
+        )
     }
 }
 export default AboutUs;

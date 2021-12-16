@@ -55,7 +55,7 @@
 
   }
 
-  @keyframes rotate {
+  /* @keyframes rotate {
     0%{
       transform: rotate(360deg);
     }
@@ -63,14 +63,12 @@
       transform: rotate(0deg);
 
     }
-  }
+  } */
   
   .cardImage {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background-color: #c0ce73;
-   
   }
   
   .cardName {

@@ -7,27 +7,17 @@ import './Card.css'
 // import FacebookIcon from '@mui/icons-material/Facebook';
 import { motion } from "framer-motion";
 
-const Card = (props) => {
+const Card = ({name, leadImageUrl, domain}) => {
   return (
     <div 
       className="card"
       
     >
-      <motion.div className="circleBorder"
-        animate={{
-          rotate:360,
-
-        }}
-        transition={{
-          duration:100,
-          yoyo:Infinity
-        }}
-
-      >
-        <div className="cardImage"></div>
-      </motion.div>
-      <div className="cardName">{props.name}</div>
-      <div className="cardTitle">{props.domain}</div>
+      <div className="circleBorder">
+        <div className="cardImage" style={{backgroundImage: `url(${leadImageUrl  ? leadImageUrl : "https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"})`, backgroundRepeat: "no-repeat", backgroundSize: "cover"}}></div>
+      </div>
+      <div className="cardName">{name}</div>
+      <div className="cardTitle">{domain}</div>
       <div className="cardSocial">
         <a>
           {/* <GitHubIcon/> */}

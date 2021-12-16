@@ -4,6 +4,44 @@ import { motion } from "framer-motion";
 import Card from "./Card";
 import Part from "./Part";
 import ShashiKiran from '../../profile/ShashiKiran.png';
+import TamoghnoBakshi from '../../profile/TamoghnoBakshi.jpg';
+import AnkitRaj from '../../profile/AnkitRaj.png';
+import SouravDash from '../../profile/SouravDash.png';
+import DevanshShaw from '../../profile/DevanshShaw.png';
+import AshishKumarMishra from '../../profile/AshishKumarMishra.png';
+import AvikRanjan from '../../profile/AvikRanjan.png';
+import SumitKumar from '../../profile/SumitKumar.jpg';
+import Soumik from '../../profile/Soumik.jpg';
+import RupanshiChawda from '../../profile/RupanshiChawda.png';
+import Shishir from '../../profile/Shishir.jpg';
+import Pranjal from '../../profile/Pranjal.jpg';
+import Sanskar from '../../profile/Sanskar.png';
+import Yash from '../../profile/Yash.jpeg';
+import Anshu from '../../profile/Anshu.png';
+import RiteshKumar from '../../profile/RiteshKumar.png';
+import AbhinavDeep from '../../profile/AbhinavDeep.jpg';
+import AbhinavPrakash from '../../profile/AbhinavPrakash.jpg';
+import ShreshthaKochgaway from '../../profile/ShreshthaKochgaway.png';
+import Hritesh from '../../profile/Hritesh.jpg';
+import NamanGupta from '../../profile/NamanGupta.png';
+import RohitPradhan from '../../profile/RohitPradhan.png';
+import Shivam from '../../profile/Shivam.jpg';
+import SnehilSinha from '../../profile/SnehilSinha.jpg';
+import NittishnaDhar from '../../profile/NittishnaDhar.jpeg';
+import AbirMishra from '../../profile/AbirMishra.jpg';
+import Ashwani from '../../profile/AshwaniSingh.png';
+import AsmitaHobisyashi from '../../profile/AsmitaHobisyashi.jpg';
+import Sayak from '../../profile/SayakRoyChowdhury.png';
+import Surya from '../../profile/SuryavardhanThangirala.png';
+import Pratyush from '../../profile/Pratyush.jpg';
+import Rupabarna from '../../profile/Rupabarna.jpg';
+import SnehaPriyangi from '../../profile/SnehaPriyangi.jpg';
+import JyotsnaSingh from '../../profile/JyotsnaSingh.jpg';
+import TaranpreetSingh from '../../profile/TaranpreetSinghChabbra.jpg';
+import OmPrakash from '../../profile/OmPrakash.jpg';
+import ShashwatSrijan from '../../profile/ShashwatSrijan.jpeg';
+import AnubhabSwain from '../../profile/AnubhabSwain.jpeg';
+import RimshaAiman from '../../profile/RimshaAiman.png';
 
 const SelfAcc = () => {
   const [count, setCount] = useState(0);
@@ -77,16 +115,17 @@ const SelfAcc = () => {
           <motion.div className="details">
             <Part
               lead="Om Prakash"
+              leadImageUrl={OmPrakash}
               domain="Web Development lead"
               member={[
-                {name:"Akash Gautum",urlImage:""},
                 {name:"Aman Singh",urlImage:""},
-                {name:"Ankit Raj",urlImage:""},
+                {name:"Ankit Raj",urlImage: AnkitRaj},
                 {name:"Anupam Karmakar",urlImage:""},
                 {name:"Nilabja Saniyal ",urlImage:""},
-                {name:"Tamoghno Deb",urlImage:""},
-                {name:"Sourav Dash",urlImage:""},
-                {name:"Devansh",urlImage:""},
+                {name:"Tamoghno Bakshi",urlImage: TamoghnoBakshi},
+                {name:"Sourav Dash",urlImage: SouravDash},
+                {name:"Devansh",urlImage: DevanshShaw},
+                { name: "Ashish Kumar Mishra", urlImage: AshishKumarMishra },
               ]}
             />
             
@@ -128,15 +167,16 @@ const SelfAcc = () => {
           <motion.div className="details">
             <Part
               lead="Taranpreet Singh"
+              leadImageUrl={TaranpreetSingh}
               domain="Android Development lead"
               member={[
-                {name:"Sumit Kumar",urlImage:""},
-                {name:"Soumik",urlImage:""},
-                {name:"Rupanshi",urlImage:""},
+                {name:"Sumit Kumar",urlImage: SumitKumar},
+                {name:"Soumik",urlImage: Soumik},
+                {name:"Rupanshi",urlImage: RupanshiChawda},
                 {name:"Mughda Hazra",urlImage:""},
-                {name:"Avik Rankan Das",urlImage:""},
+                {name:"Avik Ranjan Das",urlImage: AvikRanjan},
                 {name:"Abhishek Dutt",urlImage:""},
-                {name:"Shishir",urlImage:""},
+                {name:"Shishir",urlImage: Shishir},
               ]}
             />
           </motion.div>
@@ -178,15 +218,15 @@ const SelfAcc = () => {
           <motion.div className="details">
             <Part
               lead="Shashwat Srijan"
+              leadImageUrl={ShashwatSrijan}
               domain="UI-UX lead"
               member={[
                 { name: "Arpit Sahu", urlImage: "" },
-                { name: "Pranjal ", urlImage: "" },
-                { name: "Sanskar", urlImage: "" },
-                { name: "Yash", urlImage: "" },
-                { name: "Anshu Mohanta", urlImage: "" },
-                { name: "Ashish Kumar Mishra", urlImage: "" },
-                { name: "Ritesh Kumar", urlImage: "" },
+                { name: "Pranjal ", urlImage: Pranjal },
+                { name: "Sanskar", urlImage: Sanskar },
+                { name: "Yash", urlImage: Yash },
+                { name: "Anshu Mohanta", urlImage: Anshu },
+                { name: "Ritesh Kumar", urlImage: RiteshKumar },
               ]}
             />
           </motion.div>
@@ -227,28 +267,29 @@ const SelfAcc = () => {
           <motion.div className="details">
             <Part
               lead="Anubhab Swain"
+              leadImageUrl={AnubhabSwain}
               domain="Competitive Programming Lead"
               member={[
-                { name: "Abhinav Deep", urlImage: {ShashiKiran} },
-                { name: "Abhinav Prakash", urlImage: "" },
+                { name: "Abhinav Deep", urlImage: AbhinavDeep },
+                { name: "Abhinav Prakash", urlImage: AbhinavPrakash },
                 { name: "Piyush", urlImage: "" },
-                { name: "Shreshtha Kochgaway", urlImage: "" },
+                { name: "Shreshtha Kochgaway", urlImage: ShreshthaKochgaway },
                 { name: "Abhishek K.", urlImage: "" },
                 { name: "Aditya Anand", urlImage: "" },
                 { name: "Devesh", urlImage: "" },
                 { name: "Eshaan", urlImage: "" },
                 { name: "Himanshu", urlImage: "" },
-                { name: "Hritesh", urlImage: "" },
-                { name: "Naman Gupta", urlImage: "" },
+                { name: "Hritesh", urlImage: Hritesh },
+                { name: "Naman Gupta", urlImage: NamanGupta },
                 { name: "Ritesh", urlImage: "" },
-                { name: "Rohit Pradhan", urlImage: "" },
+                { name: "Rohit Pradhan", urlImage: RohitPradhan },
                 { name: "Saksham", urlImage: "" },
                 { name: "Sejal", urlImage: "" },
-                { name: "Shashi", urlImage: "" },
-                { name: "Shivam", urlImage: "" },
+                { name: "Shashi", urlImage: ShashiKiran },
+                { name: "Shivam", urlImage: Shivam },
                 { name: "Subhadeep", urlImage: "" },
-                { name: "Snehil Sinha", urlImage: "" },
-                { name: "Nittishna Dhar", urlImage: "" },
+                { name: "Snehil Sinha", urlImage: SnehilSinha },
+                { name: "Nittishna Dhar", urlImage: NittishnaDhar },
               ]}
             />
             
@@ -290,14 +331,15 @@ const SelfAcc = () => {
           <motion.div className="details">
             <Part
               lead="Jyotsna Singh "
+              leadImageUrl={JyotsnaSingh}
               domain="Content Writer Lead"
               member={[
-                {name:"Abir Mishra",urlImage:""},
-                {name:"Ashwani",urlImage:""},
-                {name:"Asmita Hobisyashi",urlImage:""},
-                {name:"Maan Singh",urlImage:""},
-                {name:"Sayak",urlImage:""},
-                {name:"Surya",urlImage:""},
+                {name:"Abir Mishra",urlImage: AbirMishra },
+                {name:"Ashwani",urlImage: Ashwani },
+                {name:"Asmita Hobisyashi",urlImage: AsmitaHobisyashi },
+                {name:"Maan Singh",urlImage: "" },
+                {name:"Sayak",urlImage: Sayak },
+                {name:"Surya",urlImage: Surya },
               ]}
             />
           </motion.div>
@@ -337,13 +379,14 @@ const SelfAcc = () => {
         {allAcc.six ? (
           <motion.div className="details">
             <Part
-              lead="Sneha Priyangi "
+              lead="Sneha Priyangi"
+              leadImageUrl={SnehaPriyangi}
               domain="Marketing Lead"
               member={[
                 {name:"Akansha",urlImage:""},
                 {name:"Aryan Kumar",urlImage:""},
-                {name:"Pratyush ",urlImage:""},
-                {name:"Rupabarna",urlImage:""},
+                {name:"Pratyush ",urlImage: Pratyush },
+                {name:"Rupabarna",urlImage: Rupabarna },
                 {name:"Samar",urlImage:""},
               ]}
             />
@@ -384,20 +427,21 @@ const SelfAcc = () => {
         {allAcc.seven ? (
           <motion.div className="details">
             <Part
-              lead="Nittishna "
+              lead="Nittishna"
+              leadImageUrl={NittishnaDhar}
               domain="Women-in-tech Lead"
               member={[
                 {name:"Akansha",urlImage:""},
-                {name:"Asmita Hobisyachi",urlImage:""},
+                {name:"Asmita Hobisyachi",urlImage: AsmitaHobisyashi },
                 {name:"Ishika ",urlImage:""},
-                {name:"Jyotsna Singh",urlImage:""},
+                {name:"Jyotsna Singh",urlImage: JyotsnaSingh },
                 {name:"Maddhuja Sen",urlImage:""},
                 {name:"Mughda Hazra",urlImage:""},
-                {name:"Rimsha Aiman",urlImage:""},
-                {name:"Rupabarna",urlImage:""},
-                {name:"Rupanshi",urlImage:""},
+                {name:"Rimsha Aiman",urlImage: RimshaAiman },
+                {name:"Rupabarna",urlImage: Rupabarna },
+                {name:"Rupanshi",urlImage: RupanshiChawda },
                 {name:"Sejal",urlImage:""},
-                {name:"Sneha Priyangi",urlImage:""},
+                {name:"Sneha Priyangi",urlImage: SnehaPriyangi },
               ]}
             />
           </motion.div>
