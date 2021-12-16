@@ -50,12 +50,12 @@
     margin-top: 42px;
 
   }
-  .card:hover .circleBorder{
-    /* animation: rotate 60s linear infinite; */
 
-  }
+  /* .card:hover .circleBorder {
+    animation: rotate 60s linear infinite;
+  } */
 
-  /* @keyframes rotate {
+  @keyframes rotate {
     0%{
       transform: rotate(360deg);
     }
@@ -63,7 +63,7 @@
       transform: rotate(0deg);
 
     }
-  } */
+  }
   
   .cardImage {
     height: 150px;
