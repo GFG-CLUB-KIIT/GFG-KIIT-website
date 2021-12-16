@@ -15,12 +15,10 @@ const SmallCard = ({ name, urlImage }) => {
     <div
       className="smallCard"
       style={{
-
         backgroundImage: `url(${
-          urlImage
-            ? urlImage
-            : "https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+          urlImage  ? urlImage : "https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
         })`,
+        backgroundRepeat: "no-repeat"
       }}
     >
       <div

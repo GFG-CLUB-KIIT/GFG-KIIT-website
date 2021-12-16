@@ -5,7 +5,7 @@ import "./Part.css";
 import { motion } from "framer-motion";
 import memberDetails from "../memberDetails";
 
-const Part = ({ lead,domain, member }) => {
+const Part = ({ lead, leadImageUrl, domain, member }) => {
 
   return (
     <div className="webAccord">
@@ -21,7 +21,7 @@ const Part = ({ lead,domain, member }) => {
           delay: 0,
         }}
       >
-        <Card name={lead} domain={domain} />
+        <Card name={lead} leadImageUrl={leadImageUrl} domain={domain} />
       </motion.div>
 
       <motion.div
