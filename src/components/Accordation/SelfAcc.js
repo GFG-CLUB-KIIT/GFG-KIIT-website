@@ -42,6 +42,13 @@ import OmPrakash from '../../profile/OmPrakash.jpg';
 import ShashwatSrijan from '../../profile/ShashwatSrijan.jpeg';
 import AnubhabSwain from '../../profile/AnubhabSwain.jpeg';
 import RimshaAiman from '../../profile/RimshaAiman.png';
+import AbhishekK from '../../profile/AbhishekK.jpg';
+import EshaanAnand from '../../profile/EshaanAnand.jpeg';
+import AkashKumarGautam from '../../profile/AkashKumarGautam.jpg';
+import AmanSingh from '../../profile/AmanSingh.jpg';
+import AnupamKarmarkar from '../../profile/AnupamKarmarkar.jpg';
+import MugdhaHazra from '../../profile/MugdhaHazra.jpeg';
+import Arpit from '../../profile/Arpit.jpg';
 
 const SelfAcc = () => {
   const [count, setCount] = useState(0);
@@ -118,9 +125,9 @@ const SelfAcc = () => {
               leadImageUrl={OmPrakash}
               domain="Web Development lead"
               member={[
-                {name:"Aman Singh",urlImage:""},
+                {name:"Aman Singh",urlImage:AmanSingh},
                 {name:"Ankit Raj",urlImage: AnkitRaj},
-                {name:"Anupam Karmakar",urlImage:""},
+                {name:"Anupam Karmakar",urlImage:AnupamKarmarkar},
                 {name:"Nilabja Saniyal ",urlImage:""},
                 {name:"Tamoghno Bakshi",urlImage: TamoghnoBakshi},
                 {name:"Sourav Dash",urlImage: SouravDash},
@@ -173,7 +180,7 @@ const SelfAcc = () => {
                 {name:"Sumit Kumar",urlImage: SumitKumar},
                 {name:"Soumik",urlImage: Soumik},
                 {name:"Rupanshi",urlImage: RupanshiChawda},
-                {name:"Mughda Hazra",urlImage:""},
+                {name:"Mugdha Hazra",urlImage:MugdhaHazra},
                 {name:"Avik Ranjan Das",urlImage: AvikRanjan},
                 {name:"Abhishek Dutt",urlImage:""},
                 {name:"Shishir",urlImage: Shishir},
@@ -221,7 +228,7 @@ const SelfAcc = () => {
               leadImageUrl={ShashwatSrijan}
               domain="UI-UX lead"
               member={[
-                { name: "Arpit Sahu", urlImage: "" },
+                { name: "Arpit Sahu", urlImage: Arpit },
                 { name: "Pranjal ", urlImage: Pranjal },
                 { name: "Sanskar", urlImage: Sanskar },
                 { name: "Yash", urlImage: Yash },
@@ -272,22 +279,20 @@ const SelfAcc = () => {
               member={[
                 { name: "Abhinav Deep", urlImage: AbhinavDeep },
                 { name: "Abhinav Prakash", urlImage: AbhinavPrakash },
-                { name: "Piyush", urlImage: "" },
+                { name: "Abhinav Prakash", urlImage: AbhinavPrakash },
+                { name: "Akash Kumar", urlImage: AkashKumarGautam },
                 { name: "Shreshtha Kochgaway", urlImage: ShreshthaKochgaway },
-                { name: "Abhishek K.", urlImage: "" },
-                { name: "Aditya Anand", urlImage: "" },
+                { name: "Abhishek K.", urlImage: AbhishekK },
                 { name: "Devesh", urlImage: "" },
-                { name: "Eshaan", urlImage: "" },
+                { name: "Eshaan", urlImage: EshaanAnand },
                 { name: "Himanshu", urlImage: "" },
                 { name: "Hritesh", urlImage: Hritesh },
                 { name: "Naman Gupta", urlImage: NamanGupta },
-                { name: "Ritesh", urlImage: "" },
                 { name: "Rohit Pradhan", urlImage: RohitPradhan },
                 { name: "Saksham", urlImage: "" },
                 { name: "Sejal", urlImage: "" },
                 { name: "Shashi", urlImage: ShashiKiran },
                 { name: "Shivam", urlImage: Shivam },
-                { name: "Subhadeep", urlImage: "" },
                 { name: "Snehil Sinha", urlImage: SnehilSinha },
                 { name: "Nittishna Dhar", urlImage: NittishnaDhar },
               ]}
@@ -337,7 +342,6 @@ const SelfAcc = () => {
                 {name:"Abir Mishra",urlImage: AbirMishra },
                 {name:"Ashwani",urlImage: Ashwani },
                 {name:"Asmita Hobisyashi",urlImage: AsmitaHobisyashi },
-                {name:"Maan Singh",urlImage: "" },
                 {name:"Sayak",urlImage: Sayak },
                 {name:"Surya",urlImage: Surya },
               ]}
@@ -383,11 +387,9 @@ const SelfAcc = () => {
               leadImageUrl={SnehaPriyangi}
               domain="Marketing Lead"
               member={[
-                {name:"Akansha",urlImage:""},
-                {name:"Aryan Kumar",urlImage:""},
                 {name:"Pratyush ",urlImage: Pratyush },
                 {name:"Rupabarna",urlImage: Rupabarna },
-                {name:"Samar",urlImage:""},
+                {name:"Ashutosh",urlImage: "" },
               ]}
             />
           </motion.div>
@@ -431,7 +433,6 @@ const SelfAcc = () => {
               leadImageUrl={NittishnaDhar}
               domain="Women-in-tech Lead"
               member={[
-                {name:"Akansha",urlImage:""},
                 {name:"Asmita Hobisyachi",urlImage: AsmitaHobisyashi },
                 {name:"Ishika ",urlImage:""},
                 {name:"Jyotsna Singh",urlImage: JyotsnaSingh },
