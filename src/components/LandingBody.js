@@ -38,12 +38,9 @@ class LandingBody extends Component {
             <img src={upcomingEvent} />
             </div>
               <div id="event_context">
-                  <div id="event_content">
-                      {/* <div id="event_title">Dev<lable className="cast_green">Cast</lable> E03</div> */}
-                      
-                  </div>
                   
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5EUJt-7O_KYdyc5MfmMVp7HWmWuHmg9bjhOA0pskhPaUwEQ/viewform" id="register_button" target="_blank" rel="noopener noreferrer">Register Now</a>
+                  
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd92kMp5172dJbyNmzSp2Yn5-xok9Ane-Oryw3SviobvZJD6w/viewform" id="register_button" target="_blank" rel="noopener noreferrer">Register Now</a>
                   {/* <a href="/RegistrationForm" id="watch_now_button">Watch Now</a> */}
               </div>
           </div>
