@@ -108,8 +108,8 @@
 
 #event_img {
   padding: 3% 0% 5% 4%;
-  width: 90%;
   float: left;
+  width: 80%;
 }
 
 #event_img_display {
@@ -127,17 +127,16 @@
 }
 
 #event_context {
-  width: 44%;
   float: left;
   text-align: right;
+  width: 83%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
 }
 
-#event_content {
-  float: left;
-  width: 100%;
-  border-right: 2px solid;
-  padding-right: 10px;
-}
+
 
 #event_title {
   font-size: 35px;
@@ -164,26 +163,25 @@
 }
 
 #register_button {
-  margin-top: -11.6rem;
-    margin-right: -24rem;
-    text-decoration: none;
-    padding: 15px 52px;
-    font-size: 21px;
-    background-color: #5fc7a6;
-    border-radius: 20px;
-    text-align: center;
-    color: black;
-    font-weight: 600;
-    float: right;
-    transition: 0.6s ease;
-    z-index: 3;
-    position: relative;
-    border-radius: 50px;
+  text-decoration: none;
+  padding: 15px 39px;
+  font-size: 24px;
+  background-color: #e7f1ff;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  transition: 0.6s ease;
+  z-index: 3;
+  border-radius: 50px;
+  background: linear-gradient(to right, #0d1c2f, #4f5d6d);
+
+
 
 }
 
 #register_button:hover {
-  background-color: #11db9b;
+  background: linear-gradient(to right, #4f5d6d, #0d1c2f);
   box-shadow: 4px 4px 8px gray;
 }
 
@@ -369,12 +367,14 @@
     padding: 5% 4% 0% 4%;
   }
 
-  #event_context,
+
   .LI_context {
     width: 96%;
     padding: 0%;
     /* margin-bottom: 50px; */
   }
+
+
 
   #event_button {
     margin-top: 1rem;
