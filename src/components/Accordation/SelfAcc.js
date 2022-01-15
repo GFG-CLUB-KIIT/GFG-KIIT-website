@@ -7,6 +7,7 @@ import ShashiKiran from '../../profile/ShashiKiran.png';
 import TamoghnoBakshi from '../../profile/TamoghnoBakshi.jpg';
 import AnkitRaj from '../../profile/AnkitRaj.png';
 import SouravDash from '../../profile/SouravDash.png';
+import HimanshuMishra from '../../profile/HimanshuMishra.jpeg';
 import DevanshShaw from '../../profile/DevanshShaw.png';
 import AshishKumarMishra from '../../profile/AshishKumarMishra.png';
 import AvikRanjan from '../../profile/AvikRanjan.png';
@@ -125,6 +126,7 @@ const SelfAcc = () => {
               leadImageUrl={OmPrakash}
               domain="Web Development lead"
               member={[
+                {name:"Himanshu Mishra",urlImage:HimanshuMishra},
                 {name:"Aman Singh",urlImage:AmanSingh},
                 {name:"Ankit Raj",urlImage: AnkitRaj},
                 {name:"Anupam Karmakar",urlImage:AnupamKarmarkar},
@@ -285,7 +287,6 @@ const SelfAcc = () => {
                 { name: "Abhishek K.", urlImage: AbhishekK },
                 { name: "Devesh", urlImage: "" },
                 { name: "Eshaan", urlImage: EshaanAnand },
-                { name: "Himanshu", urlImage: "" },
                 { name: "Hritesh", urlImage: Hritesh },
                 { name: "Naman Gupta", urlImage: NamanGupta },
                 { name: "Rohit Pradhan", urlImage: RohitPradhan },
