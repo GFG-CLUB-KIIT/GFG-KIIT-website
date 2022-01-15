@@ -281,7 +281,6 @@ const SelfAcc = () => {
               member={[
                 { name: "Abhinav Deep", urlImage: AbhinavDeep },
                 { name: "Abhinav Prakash", urlImage: AbhinavPrakash },
-                { name: "Abhinav Prakash", urlImage: AbhinavPrakash },
                 { name: "Akash Kumar", urlImage: AkashKumarGautam },
                 { name: "Shreshtha Kochgaway", urlImage: ShreshthaKochgaway },
                 { name: "Abhishek K.", urlImage: AbhishekK },
