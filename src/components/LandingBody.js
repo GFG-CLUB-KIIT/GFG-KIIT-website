@@ -31,19 +31,19 @@ class LandingBody extends Component {
                     </div>
                 </div>
             </div>
-          <h1 id="upcomingEvent">Upcoming Event</h1>
-          <div id="landing_line_Event"></div>
-          <div id="event">
+          {/* <h1 id="upcomingEvent">Upcoming Event</h1> */}
+          {/* <div id="landing_line_Event"></div> */}
+          {/* <div id="event">
             <div id="event_img">
             <img src={upcomingEvent} />
-            </div>
-              <div id="event_context">
+            </div> */}
+              {/* <div id="event_context"> */}
                   
                   
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd92kMp5172dJbyNmzSp2Yn5-xok9Ane-Oryw3SviobvZJD6w/viewform" id="register_button" target="_blank" rel="noopener noreferrer">Register Now</a>
+                  {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLSd92kMp5172dJbyNmzSp2Yn5-xok9Ane-Oryw3SviobvZJD6w/viewform" id="register_button" target="_blank" rel="noopener noreferrer">Register Now</a> */}
                   {/* <a href="/RegistrationForm" id="watch_now_button">Watch Now</a> */}
-              </div>
-          </div>
+              {/* </div> */}
+          {/* </div> */}
           <h1 id="landingProjectsDisplay">Projects</h1>
           <div id="landing_line_Project"></div>
           <div id="projects">

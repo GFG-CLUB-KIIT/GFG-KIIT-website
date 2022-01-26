@@ -311,6 +311,12 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.event .flex-container .askMeAnything {
+  background-image: url("images/askMeAnything.png");
+  background-size: 90% !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 @media only screen and (max-width: 600px) {
   #Events_title {

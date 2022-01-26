@@ -21,6 +21,26 @@ export default class PastEvents extends Component {
       return (
          <div id="event-slider-main" onLoad={this.createHandler}>
             <Slider {...settings}>
+               <section className="ask-me-anything1 event">
+                  <div className="flex-container">
+                     <div className="text-container">
+                        <h4 style={{fontFamily:"Roboto", color:"#aaa"}}>January 15th, 2022</h4>
+                        <div>
+                           <h2>
+                              Ask Me 
+                              <span style={{color: '#575962'}}> Anything</span>
+                           </h2>
+                           <h3>feat. Chaudhary Hamdan & Swarna Anand</h3>
+                        </div>
+                        <p>
+                           Greetings! GFG KIIT had an amazing AMA Session. Our panelists have cracked internships at the American multinational investment bank and financial services firm, "Goldman Sachs."
+                           Chaudhary Hamdan and Swarna Anand had some amazing tips for all the students out there
+                           looking to crack their dream companies.
+                        </p>
+                     </div>
+                     <div className="img-container askMeAnything"></div>
+                  </div>
+               </section>
                <section className="gfg-i-knack event">
                   <div className="flex-container">
                      <div className="text-container">
@@ -29,9 +49,9 @@ export default class PastEvents extends Component {
                            <h2>Geek-I-Knack</h2>
                         </div>
                         <p>
-                           GFG-KIIT, with other GFG chapters across India, has come up with a super cool innovative event: “Geek-I-Knack”.Geek-i-Knack is a 3-day full-fledged Placement Interview-Drive (from Coding round to HR interview), designed just for Computer Science Geeks, to give them an authentic aid for the much-feared company placements, with help of industry experts, which might ultimately help them in achieving their utmost goal: To bag a dream job in FAANG.
+                           GFG-KIIT, with other GFG chapters across India, had come up with a super cool innovative event: “Geek-I-Knack”. Geek-i-Knack was a 3-day full-fledged Placement Interview-Drive (from Coding round to HR interview), designed just for Computer Science Geeks, to give them an authentic aid for the much-feared company placements, with help of industry experts, which might ultimately help them in achieving their utmost goal: To bag a dream job in FAANG.
                         </p>
-                        <a href="https://practice.geeksforgeeks.org/courses/geek-I-knack" id="register_button" target="_blank" rel="noopener noreferrer">Register Now</a>
+                        {/* <a href="https://practice.geeksforgeeks.org/courses/geek-I-knack" id="register_button" target="_blank" rel="noopener noreferrer">Register Now</a> */}
                      </div>
                      <div className="img-container geekIknack"></div>
                   </div>
