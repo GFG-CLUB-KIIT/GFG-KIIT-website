@@ -67,6 +67,23 @@
   position: relative;
   float: left;
 }
+#recruitment
+{
+  margin-left: 8%;
+  width: 26%;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 50px;
+  font-family: sans-serif;
+  position: relative;
+  float: left;
+}
+#recruitment_img
+{
+  cursor: pointer;
+  
+}
 
 #landing_line_Event {
   float: left;
@@ -342,7 +359,8 @@
   }
 
   #upcomingEvent,
-  #landing_intro_title {
+  #landing_intro_title
+  #recruitment {
     width: 100%;
   }
 
@@ -350,11 +368,18 @@
     margin-left: 25%;
   }
 
-  #upcomingEvent {
+  #upcomingEvent
+  {
     margin-left: 12%;
     font-size: 30px;
     padding-left: 13%;
   }
+   #recruitment
+   {
+    margin-left: 12%;
+    font-size: 30px;
+    padding-left: 13%;
+   }
 
   #event_title {
     margin-top: 15px;
@@ -552,7 +577,7 @@
     font-size: 38px;
   }
 
-  #upcomingEvent {
+  #upcomingEvent #recruitment{
     margin-left: 0.5%;
   }
 
