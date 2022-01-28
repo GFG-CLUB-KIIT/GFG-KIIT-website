@@ -326,6 +326,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.invitation-code{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 75vw;
+  padding: 19px;
+}
 
 @media screen and (max-width: 730px) {
 
