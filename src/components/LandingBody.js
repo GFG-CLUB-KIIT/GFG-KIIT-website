@@ -60,7 +60,7 @@ class LandingBody extends Component {
             <a href="/RegistrationForm" id="watch_now_button">Watch Now</a>
           </div> */}
         </div>
-    
+
         {/* Upcoming event */}
         <h1 id="upcomingEvent">Upcoming Event</h1>
         <div id="landing_line_Event"></div>
@@ -68,17 +68,21 @@ class LandingBody extends Component {
           <div id="event_img">
             <img src={upcomingEvent} />
           </div>
-          {/* <div id="event_context">
+          <div id="event_context">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSd92kMp5172dJbyNmzSp2Yn5-xok9Ane-Oryw3SviobvZJD6w/viewform"
+              href="https://bit.ly/BattlefieldKIIT"
               id="register_button"
               target="_blank"
               rel="noopener noreferrer"
             >
               Register Now
             </a>
-            <a href="/RegistrationForm" id="watch_now_button">Watch Now</a>
-          </div> */}
+
+            {/* <a href="/RegistrationForm" id="watch_now_button">Watch Now</a> */}
+          </div>
+          <div className="invitation-code">
+            <h2>Use Invitation Code:- BREAKTHEZEALKIITIAN</h2>
+          </div>
         </div>
         <h1 id="landingProjectsDisplay">Projects</h1>
         <div id="landing_line_Project"></div>
