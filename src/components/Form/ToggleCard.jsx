@@ -32,26 +32,25 @@ const ToggleCard = ({ title, value, setInputVal, name }) => {
                   defaultValue="First Year"
                   name="radio-buttons-group"
                   onChange={handleChange}
-color="success" 
                 >
                   <FormControlLabel
                     value="First Year"
-                    control={<Radio />}
+                    control={<Radio color="success"  />}
                     label="First Year"
                   />
                   <FormControlLabel
                     value="Second Year"
-                    control={<Radio />}
+                    control={<Radio color="success"  />}
                     label="Second Year"
                   />
                   <FormControlLabel
                     value="Third Year"
-                    control={<Radio />}
+                    control={<Radio color="success"  />}
                     label="Third Year"
                   />
                   <FormControlLabel
                     value="Fourth Year"
-                    control={<Radio />}
+                    control={<Radio color="success"  />}
                     label="Fourth Year"
                   />
                 </RadioGroup>
