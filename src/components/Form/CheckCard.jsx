@@ -46,18 +46,18 @@ const CheckCard = ({ title, value, setInputVal, name, myId }) => {
                 <div className="check-list">
                   <FormGroup>
                     <FormControlLabel
-                      control={<Checkbox />}
+                      control={<Checkbox color="success" />}
                       label="Marketing"
                       onChange={(e) => setMarketing(e.target.checked)}
                     />
                     <FormControlLabel
-                      control={<Checkbox />}
+                      control={<Checkbox color="success" />}
                       defaultChecked={false}
                       label="Content"
                       onChange={(e) => setContent(e.target.checked)}
                     />
                     <FormControlLabel
-                      control={<Checkbox />}
+                      control={<Checkbox color="success"  />}
                       // checked={UIUX}
                       label="UI/UX"
                       onChange={(e) => setUIUX(e.target.checked)}
