@@ -10,6 +10,7 @@ import FormInfo from "./FormInfo";
 import Alert from "@mui/material/Alert";
 import fetch from "isomorphic-fetch";
 import { useState, useEffect } from "react";
+import Footer from '../Footer';
 // const Form = () => {
 //   return <div>Hi there!</div>;
 // };
@@ -21,7 +22,6 @@ function Form() {
     domain: [],
     discord: "",
   });
-  const [isAlert, setIsAlert] = useState(false);
   const [isSucess, setIsSucess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmit, setIsSubmit] = useState("");
@@ -37,19 +37,18 @@ function Form() {
       document.getElementById("name").scrollIntoView({
         behavior: "smooth",
       });
-      setIsAlert(true);
-
+    
       return;
     }
     if (!inputVal.email) {
       // document.getElementsByClassName("name")
-      document.getElementById("email").classList.add("error");
+      document.getElementById("form-email").classList.add("error");
       flag = false;
       setIsLoading(false);
-      document.getElementById("email").scrollIntoView({
+      document.getElementById("form-email").scrollIntoView({
         behavior: "smooth",
       });
-      setIsAlert(true);
+    
 
       return;
     }
@@ -61,7 +60,7 @@ function Form() {
       document.getElementById("domain").scrollIntoView({
         behavior: "smooth",
       });
-      setIsAlert(true);
+      
 
       return;
     }
@@ -76,7 +75,6 @@ function Form() {
     }
 
     if (flag) {
-      setIsAlert(false);
 
       fetch(`https://gfgkiit-backend.herokuapp.com/upload-form`, {
         method: "POST",
@@ -105,11 +103,7 @@ function Form() {
     }
   };
 
-  const getData = async () => {
-    let data = await fetch("https://gfgkiit-backend.herokuapp.com/get-forms");
-    let parsedData = await data.json();
-    console.log(parsedData);
-  };
+ 
 
   // Checking Is Submit
 
@@ -135,19 +129,12 @@ function Form() {
           <div className="designBox">
             <div className="form-design-background"></div>
           </div>
-          <div id="form-alert" className={isAlert ? "" : "form-hidden"}>
-            <Alert className="form-alert-box" severity="error">
-              Please fill all the fields
-            </Alert>
-          </div>
           <FormInfo
-            title={"Recruitment 2022: Phase 1"}
-            content={
-              "Bonjour Geeks! Yet to join the gang of cool and fun geeks in KIIT? We backed you up!  Once again GFG-KIIT is back with recruitments. So steel yourselves and get ready to exert all efforts to be on board! For further updates follow us on:"
-            }
-            discordLink={"discord.com"}
-            instagramLink={"instagram.com"}
-            linkedInLink={"linkedin.com"}
+            title="Recruitment 2022: Phase 1"
+            content="Bonjour Geeks! Yet to join the gang of cool and fun geeks in KIIT? We backed you up!  Once again GFG-KIIT is back with recruitments. So steel yourselves and get ready to exert all efforts to be on board! For further updates follow us on:"
+            discordLink="https://discord.gg/F5XW7mpa"
+            instagramLink="instagram.com"
+            linkedinLink="linkedin.com"
           />
           <TextCard
             myId="name"
@@ -157,7 +144,7 @@ function Form() {
             name="name"
           />
           <TextCard
-            myId="email"
+            myId="form-email"
             title={"Email"}
             value={inputVal}
             setInputVal={setInputVal}
@@ -190,9 +177,6 @@ function Form() {
             <Button onClick={submit} variant="contained" color="success">
               Submit
             </Button>
-            <Button onClick={getData} variant="contained" color="success">
-              Get Data
-            </Button>
           </div>
           {isLoading ? <Loading /> : ""}
         </div>
@@ -203,6 +187,7 @@ function Form() {
           </div>
         </>
       )}
+      <Footer bgColor="footer-landing"></Footer>
     </>
   );
 }

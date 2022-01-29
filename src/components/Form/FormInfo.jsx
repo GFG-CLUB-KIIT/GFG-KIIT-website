@@ -13,7 +13,7 @@ const FormInfo = ({
 }) => {
   return (
     <>
-      <div id="card-div">
+      <div style={{marginTop:'100px'}} id="card-div">
         <Card id="card" sx={{ maxWidth: 345 }}>
           <CardContent>
             <Typography
@@ -47,16 +47,8 @@ const FormInfo = ({
               component="div"
               fontSize="15px"
             >
-              <a href="{discordLink}">Discord</a>
-            </Typography>
-            <Typography
-              gutterBottom
-              variant="h5"
-              component="div"
-              fontSize="15px"
-            >
-              <a href="{instagramLink}">
-               Instagram
+              <a target="_blank" href={discordLink}>
+                Discord
               </a>
             </Typography>
             <Typography
@@ -65,8 +57,18 @@ const FormInfo = ({
               component="div"
               fontSize="15px"
             >
-              <a href="{linkedinLink}">
-               LinkedIn
+              <a target="_blank" href={instagramLink}>
+                Instagram
+              </a>
+            </Typography>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              fontSize="15px"
+            >
+              <a target="_blank" href={linkedinLink}>
+                LinkedIn
               </a>
             </Typography>
           </CardContent>
