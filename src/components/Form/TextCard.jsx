@@ -49,6 +49,7 @@ const TextCard = ({ title, myId, value, setInputVal, name }) => {
                   label="Your answer"
                   variant="standard"
                   onChange={handleChange}
+color="success" 
                 />
               </Box>
             </inputfield>
