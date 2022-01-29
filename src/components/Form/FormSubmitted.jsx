@@ -1,5 +1,5 @@
 import React from "react";
-import loadingGif from "../Images/form-submitted-gif.gif";
+import loadingGif from "../../img/form-submitted-gif.gif";
 const FormSubmitted = () => {
   return (
     <>

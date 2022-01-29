@@ -1,17 +1,15 @@
-import "./Form.css";
-import TextCard from "./Components/TextCard";
-import TextCardUnimportant from "./Components/TextCardUnimportant";
-import ToggleCard from "./Components/ToggleCard";
+import "../../css/Form.css";
+import TextCard from "./TextCard";
+import TextCardUnimportant from "./TextCardUnimportant";
+import ToggleCard from "./ToggleCard";
 import Button from "@mui/material/Button";
-import "./CSS/Form.css";
-import { useState, useEffect } from "react";
-import CheckCard from "./Components/CheckCard";
+import CheckCard from "./CheckCard";
+import Loading from "./Loading";
+import FormSubmitted from "./FormSubmitted";
+import FormInfo from "./FormInfo";
 import Alert from "@mui/material/Alert";
 import fetch from "isomorphic-fetch";
-import Loading from "./Components/Loading";
-import FormSubmitted from "./Components/FormSubmitted";
-import FormInfo from "./Components/FormInfo";
-
+import { useState, useEffect } from "react";
 // const Form = () => {
 //   return <div>Hi there!</div>;
 // };

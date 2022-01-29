@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import Instagram from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 
 const FormInfo = ({
   title,
@@ -58,7 +56,7 @@ const FormInfo = ({
               fontSize="15px"
             >
               <a href="{instagramLink}">
-                <InstagramIcon />
+               Instagram
               </a>
             </Typography>
             <Typography
@@ -68,7 +66,7 @@ const FormInfo = ({
               fontSize="15px"
             >
               <a href="{linkedinLink}">
-                <LinkedInIcon />
+               LinkedIn
               </a>
             </Typography>
           </CardContent>

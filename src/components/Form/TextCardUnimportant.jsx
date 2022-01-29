@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
-import "../CSS/TextCard.css";
+import "../../css/TextCard.css";
 const TextCard = ({ title, myId, value, setInputVal, name }) => {
   const handleChange = (e) => {
     setInputVal({
