@@ -5,7 +5,9 @@ const FormSubmitted = () => {
     <>
       <div className="form-submitted">
         <img className="image-unselectable" width="350px" src={loadingGif} />
-        <h2>Form submitted sucessfully, you can close this window now!</h2>
+        <h2 className="aboutUs-slogan">
+          Form submitted sucessfully, you can close this window now!
+        </h2>
       </div>
     </>
   );

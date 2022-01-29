@@ -22,7 +22,6 @@ function Form() {
     domain: [],
     discord: "",
   });
-  const [isSucess, setIsSucess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmit, setIsSubmit] = useState("");
 
@@ -70,36 +69,45 @@ function Form() {
     //   setIsLoading(false);
     // }
     if (!flag) {
-      setIsSucess(false);
       setIsLoading(false);
     }
 
     if (flag) {
 
-      fetch(`https://gfgkiit-backend.herokuapp.com/upload-form`, {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: inputVal.name,
-          email: inputVal.email,
-          year: inputVal.year,
-          domain: inputVal.domain,
-          discord: inputVal.discord,
-        }),
-      })
-        .then((response) => {
-          localStorage.setItem("gfgreg", "true");
-          setIsSucess(true);
-          setIsLoading(false);
-        })
-        .catch((err) => {
-          console.log(err);
-          setIsLoading(false);
-        });
-      // console.log(inputVal);
+     fetch(`https://gfgkiit-backend.herokuapp.com/upload-form`, {
+       method: "POST",
+       headers: {
+         Accept: "application/json",
+         "Content-Type": "application/json",
+       },
+       body: JSON.stringify({
+         name: inputVal.name,
+         email: inputVal.email,
+         year: inputVal.year,
+         domain: inputVal.domain,
+         discord: inputVal.discord,
+       }),
+     })
+       .then(() => {
+         fetch(`https://gfgkiit-backend.herokuapp.com/sendmail`, {
+           method: "POST",
+           headers: {
+             Accept: "application/json",
+             "Content-Type": "application/json",
+           },
+           body: JSON.stringify({
+             mailId: inputVal.email,
+           }),
+         }).then(() => {
+           localStorage.setItem("gfgreg", "true");
+           setIsLoading(false);
+           window.scroll(0,0);
+         });
+       })
+       .catch((err) => {
+         console.log(err);
+         setIsLoading(false);
+       });
     }
   };
 
@@ -115,17 +123,8 @@ function Form() {
 
   return (
     <>
-      <div id="form-sucess" className={isSucess ? "" : "form-hidden"}>
-        <Alert
-          onClose={() => {
-            setIsSucess(false);
-          }}
-        >
-          Thanks for your submission!
-        </Alert>
-      </div>
       {!isSubmit ? (
-        <div className="Form-js">
+        <div className="form-js">
           <div className="designBox">
             <div className="form-design-background"></div>
           </div>
@@ -185,6 +184,7 @@ function Form() {
           <div className="form-submitted">
             <FormSubmitted />
           </div>
+          
         </>
       )}
       <Footer bgColor="footer-landing"></Footer>

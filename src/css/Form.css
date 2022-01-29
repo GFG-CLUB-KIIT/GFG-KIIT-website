@@ -4,7 +4,9 @@
     background-color: black;
     width: 100%;
 } */
-
+.form-js{
+    margin-bottom: 5rem;
+}
 .form-submit-button {
     display: flex;
     align-items: center;
