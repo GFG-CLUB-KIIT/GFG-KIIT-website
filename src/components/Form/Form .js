@@ -128,13 +128,16 @@ function Form() {
           <div className="designBox">
             <div className="form-design-background"></div>
           </div>
-          <FormInfo
-            title="Recruitment 2022: Phase 1"
-            content="Bonjour Geeks! Yet to join the gang of cool and fun geeks in KIIT? We backed you up!  Once again GFG-KIIT is back with recruitments. So steel yourselves and get ready to exert all efforts to be on board! For further updates follow us on:"
-            discordLink="https://discord.gg/F5XW7mpa"
-            instagramLink="instagram.com"
-            linkedinLink="linkedin.com"
-          />
+          <div className="formInfo">
+            <FormInfo
+              title="Recruitment 2022: Phase 1"
+              content="Bonjour Geeks! Yet to join the gang of cool and fun geeks in KIIT? We backed you up!  Once again GFG-KIIT is back with recruitments. So steel yourselves and get ready to exert all efforts to be on board! For further updates follow us on:"
+              discordLink="https://discord.gg/F5XW7mpa"
+              instagramLink="https://www.instagram.com/gfgkiit/"
+              linkedinLink="linkedin.com"
+            />
+          </div>
+
           <TextCard
             myId="name"
             title={"Name"}
@@ -163,15 +166,19 @@ function Form() {
             setInputVal={setInputVal}
             name="domain"
           />
-          <TextCardUnimportant
-            myId="discord"
-            title={
-              "Discord ID: ( ex: abcdg#1234) (In case you don't have a discord account, please make one. We will be communicating via discord for all team related activities.)"
-            }
-            value={inputVal}
-            setInputVal={setInputVal}
-            name="discord"
-          />
+          <div className="discord-style">
+            {" "}
+            <TextCardUnimportant
+              myId="discord"
+              title={
+                "Discord ID: ( ex: abcdg#1234) (In case you don't have a discord account, please make one. We will be communicating via discord for all team related activities.)"
+              }
+              value={inputVal}
+              setInputVal={setInputVal}
+              name="discord"
+            />
+          </div>
+
           <div className="form-submit-button">
             <Button onClick={submit} variant="contained" color="success">
               Submit
@@ -184,7 +191,6 @@ function Form() {
           <div className="form-submitted">
             <FormSubmitted />
           </div>
-          
         </>
       )}
       <Footer bgColor="footer-landing"></Footer>

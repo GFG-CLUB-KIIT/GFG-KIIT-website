@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import "../../css/TextCard.css";
-const TextCard = ({ title, myId, value, setInputVal, name }) => {
+const TextCardUnimportant = ({ title, myId, value, setInputVal, name }) => {
   const handleChange = (e) => {
     setInputVal({
       ...value,
@@ -31,7 +31,7 @@ const TextCard = ({ title, myId, value, setInputVal, name }) => {
               <Box
                 component="form"
                 sx={{
-                  "& > :not(style)": { m: 1, width: "25ch" },
+                  "& > :not(style)": { m: 1, width: "41vw" },
                 }}
                 noValidate
                 autoComplete="off"
@@ -51,4 +51,4 @@ const TextCard = ({ title, myId, value, setInputVal, name }) => {
   );
 };
 
-export default TextCard;
+export default TextCardUnimportant;

@@ -21,7 +21,7 @@ const FormInfo = ({
               gutterBottom
               variant="h5"
               component="div"
-              fontSize="37px"
+              fontSize="2rem"
             >
               {title}
             </Typography>
