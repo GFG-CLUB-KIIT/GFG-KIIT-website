@@ -1,0 +1,43 @@
+#card-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96vw;
+    margin: 30px;
+
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    min-width: 60vw;
+    min-height: 20vh;
+    border-radius: 13px;
+    padding: 0.5rem 3rem;
+    border: 1.5px solid #0000ff00;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(17.5px);
+    -webkit-backdrop-filter: blur(17.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.card-title {
+    font-size: 23px;
+    margin-left: -8px;
+    margin-top: 12px;
+}
+
+.list-items {
+    list-style: none;
+    padding-left: 0;
+    font-size: 17px;
+}
+
+.error {
+    border: 1.5px solid red;
+    border-radius: 12px;
+
+}

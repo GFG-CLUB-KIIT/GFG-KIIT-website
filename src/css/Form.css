@@ -1,0 +1,101 @@
+/* .app-js{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+} */
+.form-js{
+    margin-bottom: 5rem;
+}
+.form-submit-button {
+    display: flex;
+    align-items: center;
+    margin-left: 20.3vw;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+#form-alert {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    z-index: 20;
+}
+
+.form-alert-box {
+    width: 30vw;
+    justify-content: center;
+}
+
+#form-sucess {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 32px;
+}
+
+.form-hidden {
+    display: none;
+    opacity: 0;
+}
+
+.form-submitted {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-unselectable {
+    -drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Loading Bar */
+#root {
+    overflow: hidden;
+}
+
+.form-loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0c0c0cb5;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-submitted {
+    display: flex;
+    flex-direction: column;
+}
+
+.designBox {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    position: fixed;
+    margin-top: -10vh;
+
+}
+
+.form-design-background {
+    width: 120vw;
+    height: 200px;
+    background: linear-gradient(180deg, #91EF71 0%, rgba(2, 214, 112, 0.49) 100%);
+    margin-left: -60px;
+    transform: rotate(-14deg);
+}
