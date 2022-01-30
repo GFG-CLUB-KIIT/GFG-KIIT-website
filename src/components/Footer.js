@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../css/footer.css";
 import Login from "./Auth/Login";
 function FooterLanding(props) {
-  const [isLogin, setIsLogin] = useState(1);
+  const [isLogin, setIsLogin] = useState(0);
 
  
   return (
