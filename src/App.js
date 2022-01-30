@@ -4,11 +4,10 @@ import LandingBody from './components/LandingBody';
 import Events from './components/Events';
 import Project from './components/Project';
 import Member from './components/Member';
-// import Form from './components/Form/Form';
-
 import './App.css'; 
 import {BrowserRouter, Route , Switch } from 'react-router-dom';
 import Form from './components/Form/Form ';
+import Login from './components/Auth/Login';
 
 class App extends React.Component {
   render() {

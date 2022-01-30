@@ -1,0 +1,36 @@
+.first-box{
+    width: min(90vw,90vh);
+    height: min(90vw,90vh);
+    background-color: white;
+    background: rgba( 255, 255, 255, 0.55 );
+
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 15px );
+-webkit-backdrop-filter: blur( 15px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.exitLogo{
+    margin-left: min(85vw,85vh);
+}
+
+input {
+    background: none;
+    border: 1px solid rgb(37, 37, 37)
+}
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(19, 18, 18);
+    /* opacity: 1; Firefox */
+  }
+
+.loginBtn {
+    background: linear-gradient(90deg, #72C9BF 0%, #33B77B 51.28%, #5BBB60 97.04%);
+  }
+
+  .loginBtn:hover {
+    background: linear-gradient(10deg, #72C9BF 0%, #33B77B 51.28%, #5BBB60 97.04%);
+    box-shadow: #33B77B;
+    box-shadow: 10px;
+  }
+  
