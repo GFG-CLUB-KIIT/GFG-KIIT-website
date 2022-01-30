@@ -6,7 +6,7 @@ import { Toggle } from '../ToggleSwitch'
 class Navbar extends Component {
    componentDidMount(){
       const body = document.querySelector("body");
-      const navbar = document.getElementById("navbar-main");
+      const navbar = document.querySelector(".navbar");
       const menu = document.querySelector(".menu-list");
       const menuBtn = document.getElementById("burger-menu");
    
@@ -14,12 +14,12 @@ class Navbar extends Component {
       // var listItem=menu.querySelectorAll(".list-item");
       window.onscroll = ()=>{
          if (window.scrollY > 20){
-            // navbar.classList.add("sticky");
+            navbar.classList.remove("notGlass");
             logo.classList.add("make-smaller");
             // listItem.style.color="#fefefe";
          }
          else{
-            // navbar.classList.remove("sticky");
+            navbar.classList.add("notGlass");
             logo.classList.remove("make-smaller");
             // listItem.style.color="#343434";
          }
@@ -60,7 +60,7 @@ class Navbar extends Component {
    }
    render() {
       return (
-         <nav class="navbar" id="navbar-main">
+         <nav class="navbar notGlass " id="navbar-main">
             <div class="content">
               <div class="logo"><a href="/"><img className="gfg-logo" src={logo} alt="logo"></img></a></div>
                   <ul class="menu-list"> 
