@@ -6,10 +6,20 @@ import { GlobalStyles } from "../components/Global";
 
 export const Toggle = () => {
   const [theme, setTheme] = useState(localStorage.getItem("myGfgTheme")? localStorage.getItem("myGfgTheme"):"light");
+  React.useEffect(() => {
   const navbar = document.getElementById("navbar-main");
+    if (theme === "light") { 
+      navbar.classList.add("lightnav");
+    }
+    else   {
+      navbar.classList.add("darknav");
+    }  
+    
+  }, []);
 
   const toggleTheme = () => {
-    setTheme(x) 
+  const navbar = document.getElementById("navbar-main");
+    setTheme(localStorage.getItem("myGfgTheme")? localStorage.getItem("myGfgTheme"):"light") 
     if (theme === "light") { 
       localStorage.setItem("myGfgTheme","dark")
       setTheme("dark"); 
@@ -25,17 +35,17 @@ export const Toggle = () => {
   };
   
 
-  let x = localStorage.getItem("myGfgTheme")? localStorage.getItem("myGfgTheme"):"light";
+  
 
   return (
     // <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-    <ThemeProvider theme={x==="light"? lightTheme:darkTheme}>
+    <ThemeProvider theme={theme==="light"? lightTheme:darkTheme}>
       <>
         <GlobalStyles />
         <label className="switch">
           {/* <input type="checkbox" onClick={toggleTheme}></input>
           <span class="slider round"></span> */}
-          <box-icon type='solid' color ={x==='dark'?'#e9e9e2':'#060606'} onClick={toggleTheme}  name={x==='dark'?'sun':'moon'} id="themeIcon"></box-icon>
+          <box-icon type='solid' color ={theme==='dark'?'#e9e9e2':'#060606'} onClick={toggleTheme}  name={theme==='dark'?'sun':'moon'} id="themeIcon"></box-icon>
         </label>
         
 
