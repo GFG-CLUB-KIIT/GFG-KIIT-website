@@ -73,7 +73,7 @@ function FooterLanding(props) {
                 </li>
                 <li>
                   <a
-                    href="https://instagram.com/gfg_kiit_club?igshid=rnewwd09app3"
+                    href="https://www.instagram.com/gfgkiit/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
