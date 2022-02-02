@@ -33,9 +33,9 @@ class AboutUs extends Component {
                                     <div className="overlay">
                                         <div className="flex-container">
                                             <a href="https://www.linkedin.com/in/nittishna-dhar-9952831b9/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                            <a href="https://github.com/krishmurarka" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                            <a href="https://www.instagram.com/krish_murarka/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                            <a href="https://twitter.com/MurarkaKrish" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -52,9 +52,9 @@ class AboutUs extends Component {
                                     <div className="overlay">
                                         <div className="flex-container">
                                             <a href="https://www.linkedin.com/in/rimsha-aiman-926b481b5/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                            <a href="https://github.com/abhinavprkash" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                            <a href="https://www.instagram.com/_abhinavprkash_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                            <a href="https://twitter.com/abhinaprkash" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                         </div>
                                     </div>
                                 </div>
