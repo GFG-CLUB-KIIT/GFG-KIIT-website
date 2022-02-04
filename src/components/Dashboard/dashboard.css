@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.admin-db-container {
+    position: relative;
+    width: 100%;
+    /* background: rgba(106, 106, 106, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(4, 12, 124, 0.37); */
+    /* backdrop-filter: blur(2px); */
+    /* -webkit-backdrop-filter: blur(2px); */
+    /* border-radius: 10px; */
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+    /* background-color: rgb(235, 235, 235); */
+    /* z-index: -5; */
+
+}
+
+.admin-db-navigation {
+    position: fixed;
+    width: 19vw;
+    height: 100%;
+    background-color: #A4FFE7;
+    overflow: hidden;
+    background: rgba(0, 188, 54, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border-left: 10px solid rgba(27, 77, 4, 0.514);
+    top: 0;
+    padding-top: 20px;
+}
+
+.admin-db-navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+/* .admin-db-navigation ul li:hover{
+  background-color: white;
+  background: blue;
+} */
+
+.admin-db-active-li {
+    background-color: white;
+}
+
+.admin-db-navigation ul li a {
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
+
+.admin-db-navigation ul li a:hover {
+    color: black;
+}
+
+.admin-db-navigation ul li a .admin-db-icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 50px;
+    line-height: 64px;
+    text-align: center;
+}
+
+.admin-db-navigation ul li a .admin-db-title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.admin-db-profilePic {
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.admin-db-profilePic img {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 3px solid rgba(27, 77, 4, 0.514);
+}
+
+.admin-db-name {
+    margin-top: 10px;
+}
+
+.admin-db-search {
+    /* background-color: black; */
+    /* background-color: #116952; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    margin-left: 19vw;
+    width: 80vw;
+}
+
+.admin-db-searchbox {
+    height: 50px;
+    width: 390px;
+    margin-top: 5rem;
+}
+
+.admin-db-searchbox input {
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+}
+
+.admin-db-active-li a {
+    color: black;
+}
