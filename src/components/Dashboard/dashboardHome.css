@@ -1,0 +1,214 @@
+.admin-accordion-container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin-left: 18vw;
+    width: 81vw;
+    /* background-color: beige; */
+}
+
+.admin-accordion-item {
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.admin-accordion-item-header {
+    margin-top: 1rem;
+    width: 50vw;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+
+}
+
+.admin-accordion-item-header div {
+    /* text-align:right; */
+}
+
+.admin-accordion-item-body {
+    display: flex;
+    justify-content: center;
+    /* background-color: pink; */
+    width: 50vw;
+    height: max-content;
+    /* border-radius: 25px; */
+}
+
+.admin-accordion-item-body img {
+    margin-top: 1rem;
+    width: 50vw;
+    border-radius: 20px;
+    /* filter: blur(2px); */
+    /* height: 30vh; */
+}
+
+.admin-accordion-item-delete {
+    width: 45vw;
+    height: 40px;
+    background-color: rgb(236, 158, 158);
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 12px;
+    line-height: 40px;
+    user-select: none;
+    cursor: pointer;
+    background: rgba(188, 40, 40, 0.65);
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-bottom: 1rem;
+}
+
+.admin-accordion-item-delete:hover {
+    background-color: rgb(245, 96, 96);
+}
+
+.admin-accordion-item-save {
+    width: 45vw;
+    height: 40px;
+    background-color: rgb(206, 238, 155);
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 5px;
+    line-height: 40px;
+    user-select: none;
+    cursor: pointer;
+    background: rgba(130, 177, 130, 0.65);
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.admin-accordion-item-save:hover {
+    background-color: rgb(110, 187, 110);
+}
+
+.admin-db-events-title {
+    margin-left: 18vw;
+    width: 81vw;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 1rem;
+    /* background-color: black; */
+}
+
+.admin-accordion-item-update-link {
+    display: flex;
+}
+
+.admin-accordion-item-update-link input {
+    width: 20vw;
+    height: 35px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5px;
+    line-height: 40px;
+    border: 1px solid black;
+    margin-right: .2vw;
+}
+
+.admin-accordion-item-body-logo {
+    width: 4.5vw;
+    height: 35px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 5px;
+    line-height: 28px;
+    border: 1px solid black;
+    background-color: rgb(173, 173, 173);
+    margin-right: .2vw;
+    cursor: pointer;
+}
+
+.admin-accordion-item-body-logo:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+.accordion-body-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .accordion-item-hide {
+    display: none;
+} */
+
+/* css for add events */
+.admin-db-addEvents-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 18vw;
+    width: 81vw;
+
+}
+
+.admin-db-addevents-addPoster {
+    margin-top: 1rem;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 20px;
+    background-color: rgb(231 231 231);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted black;
+    cursor: pointer;
+}
+
+.admin-db-addevents-addPoster:hover {
+    background-color: rgb(167, 167, 167);
+}
+
+.admin-db-addEvents-link {
+    width: 45vw;
+}
+
+.admin-db-addEvents-link input {
+    margin-top: 5px;
+    border: 1px solid black;
+    width: 45vw;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.admin-db-addEvents-save {
+    width: 45vw;
+    height: 40px;
+    background-color: rgb(206, 238, 155);
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 5px;
+    line-height: 40px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    background: rgba(130, 177, 130, 0.65);
+    /* box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%); */
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-bottom: 2rem;
+}
+
+.admin-db-addEvents-save:hover {
+    background-color: rgb(110, 187, 110);
+
+}
