@@ -6,6 +6,9 @@ import Project from './components/Project';
 import Member from './components/Member';
 import Form from "./components/Form/Form ";
 import Dashboard from "./components/Dashboard/Dashboard";
+import DashboardForm from "./components/Dashboard/DashboardForm";
+import DashboardMember from "./components/Dashboard/DashboardMember";
+import DashboardAccount from "./components/Dashboard/DashboardAccount";
 import './App.css'; 
 import {BrowserRouter, Route , Switch } from 'react-router-dom';
 
@@ -23,7 +26,10 @@ class App extends React.Component {
             <Route path="/Projects" exact component={Project} />
             <Route path="/Member" exact component={Member} />
             <Route path="/Form" exact component={Form} />
-            <Route path="/Dashboard" exact component={Dashboard}/>
+            <Route path="/Dashboard" exact component={Dashboard} />
+            <Route path="/DashboardForm" exact component={DashboardForm} />
+            <Route path="/DashboardMember" exact component={DashboardMember} />
+            <Route path="/DashboardAccount" exact component={DashboardAccount} />
             <Route
               render={() => (
                 <div className="main_title_error">404 : Page Not Found</div>
