@@ -1,0 +1,87 @@
+.edit-popup-content {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(150, 244, 244, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+}
+
+.popup-cross {
+      position: absolute;
+      color: #040303;
+      right: 0;
+      margin: 6rem 9rem;
+      cursor: pointer;
+}
+
+
+.edit-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 18vw;
+    width: 81vw;
+
+}
+
+.edit-addPoster {
+  margin-top: 11rem;
+  width: 13vw;
+  height: 31vh;
+  border-radius: 20px;
+  background-color: rgb(231 231 231);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dotted black;
+  cursor: pointer;
+}
+
+.edit-addPoster:hover {
+    background-color: rgb(167, 167, 167);
+}
+
+.edit-link {
+    width: 45vw;
+}
+
+.edit-link input {
+       margin-top: 5px;
+       border: 1px solid black;
+       width: 45vw;
+       height: 40px;
+       border-radius: 10px;
+       text-align: center;
+       background-color: #ffffffd9;
+}
+
+.edit-save {
+    width: 45vw;
+    height: 40px;
+    background-color: rgb(206, 238, 155);
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 5px;
+    line-height: 40px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    background: rgba(130, 177, 130, 0.65);
+    /* box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%); */
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-bottom: 2rem;
+}
+
+.edit-save:hover {
+    background-color: rgb(110, 187, 110);
+
+}

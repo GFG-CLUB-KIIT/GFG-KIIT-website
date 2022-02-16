@@ -1,6 +1,7 @@
 .myAccord{
     width: 80vw;
     padding: 1rem 2rem;
+    /* margin-left: 27rem; */
 }
 
 ::-webkit-scrollbar {

@@ -1,11 +1,17 @@
 import React from 'react'
+import SelfAcc from '../Accordation/SelfAcc';
+import DashboardNav from './DashboardNav'
+import DashboardSearch from './DashboardSearch';
+import MemberDelete from './MemberDel';
 
 const DashboardMember = () => {
   return (
     <>
-        <h1>Hi! I am DB members page</h1>
+      <DashboardSearch/>
+      <DashboardNav active={3} />
+      <MemberDelete/>
     </>
-  )
+  );
 }
 
 export default DashboardMember

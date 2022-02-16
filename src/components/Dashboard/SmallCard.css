@@ -1,0 +1,119 @@
+.smallCard {
+    width: 10rem;
+    height: 12rem;
+    
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all 5s ease-in-out;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+
+.socialDetails {
+    background-color: rgba(36, 34, 34, 0.445);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    /* margin-left: 20rem; */
+}
+
+.smallCard:hover .socialDetails{
+    opacity: 1;
+}
+
+.smallCardSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.smallCardName {
+    color: #fff;
+    background: linear-gradient(180deg, transparent, #000);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    width: 100%;
+}
+
+.smallCardIcon {
+    color: rgb(238, 238, 238);
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+}
+.smallCardIcon:hover{
+    color: aqua;
+}
+
+.smallCard:hover .smallCardName {
+    background-color: rgba(36, 34, 34, 0.445);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* All Title  */
+.smallCardTitle {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    padding: 4px 6px;
+    margin-top: 4px;
+}
+
+.titleSmall {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FEFEFE;
+    margin: 0 6px;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.webTitle {
+    background-color: red;
+    padding: 0 4px;
+    color: white;
+
+}
+
+.uiTitle {
+    background-color: rgb(148, 44, 207);
+    padding: 0 4px;
+    color: white;
+
+}
+.twitterIcon:hover{
+    color: #55adee;
+}
+.linkedIcon:hover{
+    color: #0a66c2;
+}
+.editIcon:hover{
+    color: rgb(112, 175, 115);
+}
+.instaIcon:hover{
+    color: rgb(255, 0, 119);
+}
