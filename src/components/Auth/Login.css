@@ -8,7 +8,6 @@ box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 15px );
 -webkit-backdrop-filter: blur( 15px );
 border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .exitLogo{
@@ -19,9 +18,8 @@ input {
     background: none;
     border: 1px solid rgb(37, 37, 37)
 }
-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+input::placeholder { 
     color: rgb(19, 18, 18);
-    /* opacity: 1; Firefox */
   }
 
 .loginBtn {
@@ -32,5 +30,11 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     background: linear-gradient(10deg, #72C9BF 0%, #33B77B 51.28%, #5BBB60 97.04%);
     box-shadow: #33B77B;
     box-shadow: 10px;
+  }
+
+  .loginSvg{
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+
   }
   

@@ -60,6 +60,8 @@ const MyAccordion = ({  data }) => {
     console.log(error)
       }
     }
+
+ 
     
   };
   return (
@@ -71,7 +73,13 @@ const MyAccordion = ({  data }) => {
             className="admin-accordion-item-header"
           >
             <div>{data.title}</div>
-            <div>{show ? "-" : "+"}</div>
+            <div>
+              {show ? (
+                <box-icon name="chevron-up"></box-icon>
+              ) : (
+                <box-icon name="chevron-down"></box-icon>
+              )}
+            </div>
           </div>
 
           <div className={`accordion-body-container ${show ? "" : "hidden"}`}>
@@ -97,13 +105,15 @@ const MyAccordion = ({  data }) => {
                 onChange={inputHandler}
               />
             </div>
-            <div className="admin-accordion-item-save" onClick={saveData} >Save</div>
+            <div className="admin-accordion-item-save" onClick={saveData}>
+              Save
+            </div>
             <div className="admin-accordion-item-delete">Delete</div>
           </div>
         </div>
       </div>
 
-      {isLoading? <Loading/>:"" }
+      {isLoading ? <Loading /> : ""}
     </>
   );
 };

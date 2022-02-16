@@ -1,7 +1,7 @@
-import Card from "./Card";
+import Card from "../Accordation/Card";
 import React from "react";
 import SmallCard from "./SmallCard";
-import "./Part.css";
+import "../Accordation/Part.css";
 import { motion } from "framer-motion";
 import memberDetails from "../memberDetails";
 
@@ -43,10 +43,10 @@ const Part = ({ lead, leadImageUrl, domain, member }) => {
           return (
             <SmallCard
               name={user.name}
-              urlImage={user.urlImage}
-              // githubUrl={user.githubUrl}
-              // instaUrl={user.instaUrl}
-              // twitterUrl={user.twitterUrl}
+              imageUrl={user.imageUrl}
+              githubUrl={user.githubUrl}
+              instaUrl={user.instaUrl}
+              twitterUrl={user.twitterUrl}
             />
           );
         })}
