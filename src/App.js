@@ -10,11 +10,10 @@ import './App.css';
 import {BrowserRouter, Route , Switch } from 'react-router-dom';
 
 
-
-class App extends React.Component {
-  render() {
-    return (
-      <div className="mainBody">
+const App = () => {
+  const [isAuth, setIsAuth] = React.useState(0);
+  return (
+    <div className="mainBody">
         <Navbar></Navbar>
         <BrowserRouter>
           <Switch>
@@ -23,7 +22,9 @@ class App extends React.Component {
             <Route path="/Projects" exact component={Project} />
             <Route path="/Member" exact component={Member} />
             <Route path="/Form" exact component={Form} />
-            <Route path="/Dashboard" exact component={Dashboard}/>
+            <Route path="/Dashboard" exact render={() => isAuth? ( 
+                <div className="main_title_error">401 : Page Not Found</div>
+              ): <Dashboard/> }/>
             <Route
               render={() => (
                 <div className="main_title_error">404 : Page Not Found</div>
@@ -32,8 +33,9 @@ class App extends React.Component {
           </Switch>
         </BrowserRouter>
       </div>
-    );
-  }
+  )
 }
+
+
 
 export default App;

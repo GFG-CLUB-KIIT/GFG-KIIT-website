@@ -8,13 +8,13 @@ const Accordion = () => {
   const [firstLoad, setFirstLoad] = useState(1);
 
   // fetching Data
-  useEffect( async () => {
-    
-    const data =  await fetch('https://gfgkiit-backend.herokuapp.com/get-all-lists')
-    const parsedData =  await data.json();
-    setData(parsedData)
+  useEffect(async () => {
+    const data = await fetch(
+      `https://gfgkiit-backend.herokuapp.com/get-all-lists`
+    );
+    const parsedData = await data.json();
+    setData(parsedData);
     console.log(parsedData);
-    
   }, [firstLoad]);
   return (
     <>

@@ -1,32 +1,29 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./dashboardHome.css";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
-import Loading from '../Form/Loading'
-import fetch from 'isomorphic-fetch'
+import Loading from "../Form/Loading";
+import fetch from "isomorphic-fetch";
 
-const MyAccordion = ({  data }) => {
+const MyAccordion = ({ data }) => {
   const [show, setShow] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [firstLoad, setFirstLoad] = useState(1);
 
   const [inputVals, setInputVals] = useState({
-    image:data.image,
+    image: data.image,
     title: data.title,
     link: data.link,
   });
 
   useEffect(() => {
-    console.log(data._id)
+    console.log(data._id);
 
     setInputVals({
-      image:data.image,
+      image: data.image,
       title: data.title,
       link: data.link,
-    })
-
+    });
   }, [firstLoad]);
-
-
 
   // Link and Title Input handler
   const inputHandler = (e) => {
@@ -38,29 +35,30 @@ const MyAccordion = ({  data }) => {
 
   // Save Button
   const saveData = async () => {
-    setIsLoading(true)
+    setIsLoading(true);
     try {
-      const response = await fetch(`https://gfgkiit-backend.herokuapp.com/update-list/${data._id}`, {
-      method: "PUT",
-      headers: {
-        Accept: "application/json",
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(inputVals),
-    });
-    if(response)
-    {
-      console.log(response)
-      setIsLoading(false)
-    }
+      const response = await fetch(
+        `https://gfgkiit-backend.herokuapp.com/update-list/${data._id}`,
+        {
+          method: "PUT",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(inputVals),
+        }
+      );
+      if (response) {
+        console.log(response);
+        setIsLoading(false);
+      }
     } catch (error) {
-      if(error) {
-      setIsLoading(false)
+      if (error) {
+        setIsLoading(false);
 
-    console.log(error)
+        console.log(error);
       }
     }
-    
   };
   return (
     <>
@@ -97,13 +95,15 @@ const MyAccordion = ({  data }) => {
                 onChange={inputHandler}
               />
             </div>
-            <div className="admin-accordion-item-save" onClick={saveData} >Save</div>
+            <div className="admin-accordion-item-save" onClick={saveData}>
+              Save
+            </div>
             <div className="admin-accordion-item-delete">Delete</div>
           </div>
         </div>
       </div>
 
-      {isLoading? <Loading/>:"" }
+      {isLoading ? <Loading /> : ""}
     </>
   );
 };
