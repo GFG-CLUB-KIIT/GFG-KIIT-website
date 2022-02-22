@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect,useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import LandingBody from './components/LandingBody';
 import Events from './components/Events';
@@ -8,10 +8,25 @@ import Form from "./components/Form/Form ";
 import Dashboard from "./components/Dashboard/Dashboard";
 import './App.css'; 
 import {BrowserRouter, Route , Switch } from 'react-router-dom';
+import { isAuth } from './actions/auth';
 
 
 const App = () => {
-  const [isAuth, setIsAuth] = React.useState(0);
+
+  const [isAdmin, setIsAdmin] = useState(0);
+  const [firstload, setFirstload] = useState(1);
+
+  useEffect(() => {
+    
+    if(isAuth())
+    {
+      setIsAdmin(1);
+    }else {
+      setIsAdmin(0);
+    }
+  }, [firstload]);
+
+
   return (
     <div className="mainBody">
         <Navbar></Navbar>
@@ -22,7 +37,7 @@ const App = () => {
             <Route path="/Projects" exact component={Project} />
             <Route path="/Member" exact component={Member} />
             <Route path="/Form" exact component={Form} />
-            <Route path="/Dashboard" exact render={() => isAuth? ( 
+            <Route path="/Dashboard" exact render={() => !isAdmin? ( 
                 <div className="main_title_error">401 : Page Not Found</div>
               ): <Dashboard/> }/>
             <Route

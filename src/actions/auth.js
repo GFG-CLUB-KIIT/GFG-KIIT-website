@@ -4,7 +4,7 @@ import cookie from "js-cookie";
 
 export const signup = (user) => {
   return fetch(`https://gfgkiit-backend.herokuapp.com/signup`, {
-    method: "POST", 
+    method: "POST",
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -32,25 +32,36 @@ export const removeStaff = (id) => {
     .catch((err) => console.log(err));
 };
 
+export const login = async (user) => {
+  try {
+    const response = await fetch(
+      `https://gfgkiit-backend.herokuapp.com/login`,
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(user),
+      }
+    );
 
-
-export const login = (user) => {
-  return fetch(`https://gfgkiit-backend.herokuapp.com/signin`, {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(user),
-  })
-    .then((response) => {
-      console.log(response.json())
+    if (response) {
+      console.log(response);
       return response.json();
-    })
-    .catch((err) => console.log(err));
+    }
+  } catch (error) {
+    console.log(error);
+  }
+
+  // .then((response) => {
+  //   console.log(response.json());
+  //   return response.json();
+  // })
+  // .catch((err) => {
+  //   return err;
+  // });
 };
-
-
 
 export const signout = (next) => {
   removeCookie("token");
@@ -60,11 +71,9 @@ export const signout = (next) => {
   })
     .then((response) => {
       console.log("signout success");
-      next();
     })
     .catch((err) => {
       console.log(err);
-      next();
     });
 };
 
@@ -123,11 +132,9 @@ export const isAuth = () => {
   if (process.browser) {
     const cookieChecked = getCookie("token");
     if (cookieChecked) {
-      if (localStorage.getItem("user"))                                                 
+      if (localStorage.getItem("user"))
         return JSON.parse(localStorage.getItem("user"));
-       else 
-        return false;
-      
+      else return false;
     }
   }
 };
@@ -143,7 +150,7 @@ export const updateUser = (user, next) => {
   }
 };
 
-export const forgotPassword = (email) => { 
+export const forgotPassword = (email) => {
   return fetch(`https://gfgkiit-backend.herokuapp.com/forgot-password`, {
     method: "PUT",
     headers: {
