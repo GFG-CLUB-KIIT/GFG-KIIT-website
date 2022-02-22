@@ -20,8 +20,8 @@
     margin-top: 1rem;
     width: 50vw;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.87);
-    color: white;
+    background: linear-gradient(90deg, #99f2b4 0%, #cdfdf2 97.04%);
+   
     border-radius: 20px;
     display: flex;
     justify-content: space-between;

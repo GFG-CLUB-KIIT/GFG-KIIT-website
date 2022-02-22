@@ -1,0 +1,72 @@
+.login-main-div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 96vh;
+    width: 57rem;
+    background-color: white;
+
+}
+
+.login-content {
+    height: 80vh;
+    width: 49rem;
+
+    /* background-color: black; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    z-index: 2;
+    position: fixed;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-content p {
+    text-align: end;
+    margin-right: 1rem;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.login-form-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 44vh;
+    height: 44vh;
+    margin-top: 12rem;
+}
+
+.login-form {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    margin-right: 8rem;
+}
+
+.forgot-password {
+    font-size: 10px;
+    margin-left: 12.5rem;
+}
+
+.login-button {
+    width: 18.7rem;
+    height: 2.7rem;
+    background-color: #009783;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8rem;
+    position: absolute;
+    bottom: 7rem;
+    right: 0;
+    margin-right: 7.6rem;
+    border-radius: 5px;
+    color: white;
+}

@@ -4,18 +4,44 @@ import Logo from "../../img/logo.png";
 import { authenticate, isAuth, login } from "../../actions/auth";
 import { useHistory } from "react-router-dom";
 
-
-function Login({ setIsLogin }) {
+const [loading, setLoading] = useState(0);
+import TextField from "@mui/material/TextField";
+import IconButton from "@mui/material/IconButton";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import InputLabel from "@mui/material/InputLabel";
+import InputAdornment from "@mui/material/InputAdornment";
+import FormControl from "@mui/material/FormControl";
+import Visibility from "@mui/icons-material/Visibility";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import LoginWave from "./LoginWave.svg";
+function Logins({ setIsLogin }) {
   let history = useHistory();
 
+  //mui
+  const [values, setValues] = React.useState({
+    password: "",
+    showPassword: false,
+  });
 
-  const [loading, setLoading] = useState(0);
+  const handleChange = (prop) => (event) => {
+    setValues({ ...values, [prop]: event.target.value });
+  };
+  const handleClickShowPassword = () => {
+    setValues({
+      ...values,
+      showPassword: !values.showPassword,
+    });
+  };
+
+  const handleMouseDownPassword = (event) => {
+    event.preventDefault();
+  };
+
   // Form Values
   const [inputVals, setInputVals] = useState({
     email: "",
     password: "",
   });
-
 
   // Form Input Handler
   const inputHandler = (e) => {
@@ -74,9 +100,6 @@ function Login({ setIsLogin }) {
             // route.push("/");
           } else {
             setLoading(0);
-
-
-            
           }
         });
       }
@@ -124,8 +147,8 @@ function Login({ setIsLogin }) {
               onChange={inputHandler}
               required
             />
-          </div>
-          <div className="flex flex-col w-60 mt-3">
+          </div>{" "}
+          {/* <div className="flex flex-col w-60 mt-3">
             <label className=" font- font-medium ">Password</label>
             <input
               type="password"
@@ -136,16 +159,57 @@ function Login({ setIsLogin }) {
               onChange={inputHandler}
               required
             />
+          </div> */}
+          <div className="login-form-component">
+            <TextField
+              style={{ margin: ".5rem 0" }}
+              sx={{ m: 0, width: "300px" }}
+              id="outlined-basic"
+              label="Email"
+              variant="outlined"
+            />
+            <FormControl
+              style={{ margin: ".5rem 0" }}
+              sx={{ m: 0, width: "300px" }}
+              variant="outlined"
+            >
+              <InputLabel htmlFor="outlined-adornment-password">
+                Password
+              </InputLabel>
+              <OutlinedInput
+                id="outlined-adornment-password"
+                type={values.showPassword ? "text" : "password"}
+                value={values.password}
+                onChange={handleChange("password")}
+                endAdornment={
+                  <InputAdornment position="end">
+                    <IconButton
+                      aria-label="toggle password visibility"
+                      onClick={handleClickShowPassword}
+                      onMouseDown={handleMouseDownPassword}
+                      edge="end"
+                    >
+                      {values.showPassword ? <VisibilityOff /> : <Visibility />}
+                    </IconButton>
+                  </InputAdornment>
+                }
+                label="Password"
+              />
+            </FormControl>
+            <div style={{ cursor: "pointer" }} className="forgot-password">
+              Forgot password?
+            </div>
           </div>
-
           {/* Login Button */}
           <button className=" loginBtn w-60 mt-5 p-2  text-lg text-white rounded-sm ">
             {loading ? "Logging in...." : "Login"}
           </button>
+          {/* <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"></svg> */}
+          <img className="loginSvg" src={LoginWave} alt="wave" />
         </form>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default Logins;

@@ -69,7 +69,13 @@ const MyAccordion = ({ data }) => {
             className="admin-accordion-item-header"
           >
             <div>{data.title}</div>
-            <div>{show ? "-" : "+"}</div>
+            <div>
+              {show ? (
+                <box-icon name="chevron-up"></box-icon>
+              ) : (
+                <box-icon name="chevron-down"></box-icon>
+              )}
+            </div>
           </div>
 
           <div className={`accordion-body-container ${show ? "" : "hidden"}`}>

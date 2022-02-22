@@ -6,9 +6,13 @@ import Project from './components/Project';
 import Member from './components/Member';
 import Form from "./components/Form/Form ";
 import Dashboard from "./components/Dashboard/Dashboard";
+import DashboardForm from "./components/Dashboard/DashboardForm";
+import DashboardMember from "./components/Dashboard/DashboardMember";
+import DashboardAccount from "./components/Dashboard/DashboardAccount";
 import './App.css'; 
 import {BrowserRouter, Route , Switch } from 'react-router-dom';
 import { isAuth } from './actions/auth';
+import AdminLogin from './components/Auth/AdminLogin';
 
 
 const App = () => {
@@ -37,9 +41,16 @@ const App = () => {
             <Route path="/Projects" exact component={Project} />
             <Route path="/Member" exact component={Member} />
             <Route path="/Form" exact component={Form} />
-            <Route path="/Dashboard" exact render={() => !isAdmin? ( 
-                <div className="main_title_error">401 : Page Not Found</div>
-              ): <Dashboard/> }/>
+            <Route path="/Dashboard" exact component={Dashboard} />
+            <Route path="/Dashboard/Form" exact>
+              <DashboardForm />
+            </Route>
+            <Route path="/Dashboard/Member" exact component={DashboardMember} />
+            <Route
+              path="/Dashboard/Account"
+              exact
+              component={DashboardAccount}
+            />
             <Route
               render={() => (
                 <div className="main_title_error">404 : Page Not Found</div>
