@@ -3,6 +3,8 @@ import { api } from "./AccordionAPI";
 import MyAccordion from "./MyAccordion";
 import "./dashboardHome.css";
 import AddEvents from "./AddEvents";
+import fetch from "isomorphic-fetch"
+
 const Accordion = () => {
   const [data, setData] = useState([]);
   const [firstLoad, setFirstLoad] = useState(1);

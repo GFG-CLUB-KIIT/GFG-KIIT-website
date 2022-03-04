@@ -3,6 +3,7 @@ import "./dashboardHome.css";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 import Loading from "../Form/Loading";
 import fetch from "isomorphic-fetch";
+import { uploadPhoto } from "../../actions/image";
 
 const MyAccordion = ({ data }) => {
   const [show, setShow] = useState(false);
@@ -60,6 +61,38 @@ const MyAccordion = ({ data }) => {
       }
     }
   };
+
+  // Handle Photo
+  const handlePhoto = (e) => {
+    setIsLoading(1);
+    let formFile = new FormData();
+    formFile.append("image", e.target.files[0]);
+
+    uploadPhoto(formFile)
+      .then((data,err) => {
+        if (err) {
+          setIsLoading(0);
+          // setHideButton(false);
+        } else {
+          // localStorage.setItem("addProdImage", JSON.stringify(data.data[0].url));
+          // setPhoto(loc
+          setInputVals({
+            ...inputVals,
+            image: data.data[0].url,
+          });
+
+          // formData.set("photo", JSON.parse(localStorage.getItem("image")));
+          // setHideButton(false);
+          // alert("done");
+          setIsLoading(0);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        setIsLoading(0);
+
+      });
+  };
   return (
     <>
       <div className="admin-accordion-container">
@@ -90,9 +123,17 @@ const MyAccordion = ({ data }) => {
                 placeholder="Change Title"
                 onChange={inputHandler}
               />
-              <div className="admin-accordion-item-body-logo">
-                <AddAPhotoIcon />
-              </div>
+              <label className="addImage">
+                <div className="admin-accordion-item-body-logo">
+                  <input
+                    type="file"
+                    accept="image/*"
+                    hidden
+                    onChange={handlePhoto}
+                  />
+                  <AddAPhotoIcon />
+                </div>
+              </label>
               <input
                 type="text"
                 name="link"

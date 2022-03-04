@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// import Link from "next/link"
 import { isAuth, signout } from "../actions/auth";
 import "../css/footer.css";
 import Login from "./Auth/Login";
@@ -135,9 +136,11 @@ function FooterLanding(props) {
                   </div>
                   <div class="description2">
                     {isAdmin ? (
-                      <p class="community strong cursor-pointer hover:text-blue-400 " onClick={logOut}  >
-                        Log Out
+                      <a href="/dashboard" >
+                      <p class="community strong cursor-pointer hover:text-blue-400 "   >
+                        Dashboard
                       </p>
+                      </a>
                     ) : (
                       <p
                         class="community strong cursor-pointer hover:text-blue-400 "

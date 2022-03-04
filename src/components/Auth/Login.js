@@ -4,7 +4,6 @@ import Logo from "../../img/logo.png";
 import { authenticate, isAuth, login } from "../../actions/auth";
 import { useHistory } from "react-router-dom";
 
-const [loading, setLoading] = useState(0);
 import TextField from "@mui/material/TextField";
 import IconButton from "@mui/material/IconButton";
 import OutlinedInput from "@mui/material/OutlinedInput";
@@ -14,9 +13,17 @@ import FormControl from "@mui/material/FormControl";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import LoginWave from "./LoginWave.svg";
+
 function Logins({ setIsLogin }) {
+  const [loading, setLoading] = useState(0);
+
   let history = useHistory();
 
+  // Form Values
+  const [inputVals, setInputVals] = useState({
+    email: "",
+    password: "",
+  });
   //mui
   const [values, setValues] = React.useState({
     password: "",
@@ -24,7 +31,11 @@ function Logins({ setIsLogin }) {
   });
 
   const handleChange = (prop) => (event) => {
-    setValues({ ...values, [prop]: event.target.value });
+    setInputVals({
+      ...inputVals,
+      [prop]: event.target.value,
+    });
+    // setValues({ ...values, [prop]: event.target.value });
   };
   const handleClickShowPassword = () => {
     setValues({
@@ -36,12 +47,6 @@ function Logins({ setIsLogin }) {
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
   };
-
-  // Form Values
-  const [inputVals, setInputVals] = useState({
-    email: "",
-    password: "",
-  });
 
   // Form Input Handler
   const inputHandler = (e) => {
@@ -96,6 +101,7 @@ function Logins({ setIsLogin }) {
             console.log(data);
             setLoading(0);
             history.push("/dashboard");
+            window.location.reload();
 
             // route.push("/");
           } else {
@@ -136,7 +142,7 @@ function Logins({ setIsLogin }) {
           className="flex flex-col  justify-center items-center h-full  "
           onSubmit={submit}
         >
-          <div className="flex flex-col w-60 mt-3">
+          {/* <div className="flex flex-col w-60 mt-3">
             <label className=" font- font-medium ">Email</label>
             <input
               type="email"
@@ -147,7 +153,7 @@ function Logins({ setIsLogin }) {
               onChange={inputHandler}
               required
             />
-          </div>{" "}
+          </div> */}
           {/* <div className="flex flex-col w-60 mt-3">
             <label className=" font- font-medium ">Password</label>
             <input
@@ -167,6 +173,8 @@ function Logins({ setIsLogin }) {
               id="outlined-basic"
               label="Email"
               variant="outlined"
+              value={inputVals.email}
+              onChange={handleChange("email")}
             />
             <FormControl
               style={{ margin: ".5rem 0" }}
@@ -179,7 +187,7 @@ function Logins({ setIsLogin }) {
               <OutlinedInput
                 id="outlined-adornment-password"
                 type={values.showPassword ? "text" : "password"}
-                value={values.password}
+                value={inputVals.password}
                 onChange={handleChange("password")}
                 endAdornment={
                   <InputAdornment position="end">

@@ -1,3 +1,5 @@
+import fetch from "isomorphic-fetch"
+
 export const uploadProductPhoto = async (photo, token , setUploadState) => {
 
     setUploadState({
