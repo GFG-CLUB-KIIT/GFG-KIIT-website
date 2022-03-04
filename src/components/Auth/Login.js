@@ -1,6 +1,9 @@
 import "./Login.css";
 import React, { useState, useEffect } from "react";
 import Logo from "../../img/logo.png";
+import { authenticate, isAuth, login } from "../../actions/auth";
+import { useHistory } from "react-router-dom";
+
 import TextField from "@mui/material/TextField";
 import IconButton from "@mui/material/IconButton";
 import OutlinedInput from "@mui/material/OutlinedInput";
@@ -9,8 +12,18 @@ import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import LoginWave from "./LoginWave.svg"
-function Logins( {setIsLogin} ) {
+import LoginWave from "./LoginWave.svg";
+
+function Logins({ setIsLogin }) {
+  const [loading, setLoading] = useState(0);
+
+  let history = useHistory();
+
+  // Form Values
+  const [inputVals, setInputVals] = useState({
+    email: "",
+    password: "",
+  });
   //mui
   const [values, setValues] = React.useState({
     password: "",
@@ -18,7 +31,11 @@ function Logins( {setIsLogin} ) {
   });
 
   const handleChange = (prop) => (event) => {
-    setValues({ ...values, [prop]: event.target.value });
+    setInputVals({
+      ...inputVals,
+      [prop]: event.target.value,
+    });
+    // setValues({ ...values, [prop]: event.target.value });
   };
   const handleClickShowPassword = () => {
     setValues({
@@ -31,12 +48,6 @@ function Logins( {setIsLogin} ) {
     event.preventDefault();
   };
 
-  // Form Values
-  const [inputVals, setInputVals] = useState({
-    email: "",
-    password: "",
-  });
-
   // Form Input Handler
   const inputHandler = (e) => {
     setInputVals({
@@ -46,11 +57,59 @@ function Logins( {setIsLogin} ) {
   };
 
   // Form Submit
-  const submit = (e) => {
+  const submit = async (e) => {
+    setLoading(1);
     e.preventDefault();
 
-    console.log("Submitted Successfully");
-    console.log(inputVals);
+    const { email, password } = inputVals;
+    setInputVals({
+      email: "",
+      password: "",
+      loading: "true",
+      error: "",
+      message: "",
+    });
+
+    const user = { email, password };
+
+    // try {
+    //   const response = await login(user);
+    //   if (response) {
+    //     console.log(response);
+    //     return;
+    //   }
+    // } catch (error) {
+    //   console.log(error);
+    //   return;
+    // }
+
+    login(user).then((data) => {
+      console.log("hello");
+      console.log(data);
+
+      // return;
+      if (data.error) {
+        setLoading(0);
+
+        setInputVals({
+          ...inputVals,
+          loading: "",
+        });
+      } else {
+        authenticate(data, () => {
+          if (isAuth()) {
+            console.log(data);
+            setLoading(0);
+            history.push("/dashboard");
+            window.location.reload();
+
+            // route.push("/");
+          } else {
+            setLoading(0);
+          }
+        });
+      }
+    });
   };
 
   return (
@@ -107,15 +166,15 @@ function Logins( {setIsLogin} ) {
               required
             />
           </div> */}
-
           <div className="login-form-component">
-  
             <TextField
               style={{ margin: ".5rem 0" }}
               sx={{ m: 0, width: "300px" }}
               id="outlined-basic"
               label="Email"
               variant="outlined"
+              value={inputVals.email}
+              onChange={handleChange("email")}
             />
             <FormControl
               style={{ margin: ".5rem 0" }}
@@ -128,7 +187,7 @@ function Logins( {setIsLogin} ) {
               <OutlinedInput
                 id="outlined-adornment-password"
                 type={values.showPassword ? "text" : "password"}
-                value={values.password}
+                value={inputVals.password}
                 onChange={handleChange("password")}
                 endAdornment={
                   <InputAdornment position="end">
@@ -149,13 +208,11 @@ function Logins( {setIsLogin} ) {
               Forgot password?
             </div>
           </div>
-
           {/* Login Button */}
           <button className=" loginBtn w-60 mt-5 p-2  text-lg text-white rounded-sm ">
-            Login
+            {loading ? "Logging in...." : "Login"}
           </button>
           {/* <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"></svg> */}
-
           <img className="loginSvg" src={LoginWave} alt="wave" />
         </form>
       </div>

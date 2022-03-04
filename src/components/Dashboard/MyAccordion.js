@@ -1,32 +1,30 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./dashboardHome.css";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
-import Loading from '../Form/Loading'
-import fetch from 'isomorphic-fetch'
+import Loading from "../Form/Loading";
+import fetch from "isomorphic-fetch";
+import { uploadPhoto } from "../../actions/image";
 
-const MyAccordion = ({  data }) => {
+const MyAccordion = ({ data }) => {
   const [show, setShow] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [firstLoad, setFirstLoad] = useState(1);
 
   const [inputVals, setInputVals] = useState({
-    image:data.image,
+    image: data.image,
     title: data.title,
     link: data.link,
   });
 
   useEffect(() => {
-    console.log(data._id)
+    console.log(data._id);
 
     setInputVals({
-      image:data.image,
+      image: data.image,
       title: data.title,
       link: data.link,
-    })
-
+    });
   }, [firstLoad]);
-
-
 
   // Link and Title Input handler
   const inputHandler = (e) => {
@@ -38,31 +36,62 @@ const MyAccordion = ({  data }) => {
 
   // Save Button
   const saveData = async () => {
-    setIsLoading(true)
+    setIsLoading(true);
     try {
-      const response = await fetch(`https://gfgkiit-backend.herokuapp.com/update-list/${data._id}`, {
-      method: "PUT",
-      headers: {
-        Accept: "application/json",
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(inputVals),
-    });
-    if(response)
-    {
-      console.log(response)
-      setIsLoading(false)
-    }
+      const response = await fetch(
+        `https://gfgkiit-backend.herokuapp.com/update-list/${data._id}`,
+        {
+          method: "PUT",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(inputVals),
+        }
+      );
+      if (response) {
+        console.log(response);
+        setIsLoading(false);
+      }
     } catch (error) {
-      if(error) {
-      setIsLoading(false)
+      if (error) {
+        setIsLoading(false);
 
-    console.log(error)
+        console.log(error);
       }
     }
+  };
 
- 
-    
+  // Handle Photo
+  const handlePhoto = (e) => {
+    setIsLoading(1);
+    let formFile = new FormData();
+    formFile.append("image", e.target.files[0]);
+
+    uploadPhoto(formFile)
+      .then((data,err) => {
+        if (err) {
+          setIsLoading(0);
+          // setHideButton(false);
+        } else {
+          // localStorage.setItem("addProdImage", JSON.stringify(data.data[0].url));
+          // setPhoto(loc
+          setInputVals({
+            ...inputVals,
+            image: data.data[0].url,
+          });
+
+          // formData.set("photo", JSON.parse(localStorage.getItem("image")));
+          // setHideButton(false);
+          // alert("done");
+          setIsLoading(0);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        setIsLoading(0);
+
+      });
   };
   return (
     <>
@@ -94,9 +123,17 @@ const MyAccordion = ({  data }) => {
                 placeholder="Change Title"
                 onChange={inputHandler}
               />
-              <div className="admin-accordion-item-body-logo">
-                <AddAPhotoIcon />
-              </div>
+              <label className="addImage">
+                <div className="admin-accordion-item-body-logo">
+                  <input
+                    type="file"
+                    accept="image/*"
+                    hidden
+                    onChange={handlePhoto}
+                  />
+                  <AddAPhotoIcon />
+                </div>
+              </label>
               <input
                 type="text"
                 name="link"

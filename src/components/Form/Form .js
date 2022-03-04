@@ -9,8 +9,9 @@ import FormSubmitted from "./FormSubmitted";
 import FormInfo from "./FormInfo";
 import Alert from "@mui/material/Alert";
 import fetch from "isomorphic-fetch";
-import { useState, useEffect ,useRef } from "react";
-import Footer from '../Footer';
+import { useState, useEffect, useRef } from "react";
+import Footer from "../Footer";
+
 // const Form = () => {
 //   return <div>Hi there!</div>;
 // };
@@ -36,7 +37,7 @@ function Form() {
       document.getElementById("name").scrollIntoView({
         behavior: "smooth",
       });
-    
+
       return;
     }
     if (!inputVal.email) {
@@ -47,7 +48,6 @@ function Form() {
       document.getElementById("form-email").scrollIntoView({
         behavior: "smooth",
       });
-    
 
       return;
     }
@@ -59,7 +59,6 @@ function Form() {
       document.getElementById("domain").scrollIntoView({
         behavior: "smooth",
       });
-      
 
       return;
     }
@@ -73,45 +72,42 @@ function Form() {
     }
 
     if (flag) {
-
-     fetch(`https://gfgkiit-backend.herokuapp.com/upload-form`, {
-       method: "POST",
-       headers: {
-         Accept: "application/json",
-         "Content-Type": "application/json",
-       },
-       body: JSON.stringify({
-         name: inputVal.name,
-         email: inputVal.email,
-         year: inputVal.year,
-         domain: inputVal.domain,
-         discord: inputVal.discord,
-       }),
-     })
-       .then(() => {
-         fetch(`https://gfgkiit-backend.herokuapp.com/sendmail`, {
-           method: "POST",
-           headers: {
-             Accept: "application/json",
-             "Content-Type": "application/json",
-           },
-           body: JSON.stringify({
-             mailId: inputVal.email,
-           }),
-         }).then(() => {
-           localStorage.setItem("gfgreg", "true");
-           setIsLoading(false);
-           window.scroll(0,0);
-         });
-       })
-       .catch((err) => {
-         console.log(err);
-         setIsLoading(false);
-       });
+      fetch(`https://gfgkiit-backend.herokuapp.com/upload-form`, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: inputVal.name,
+          email: inputVal.email,
+          year: inputVal.year,
+          domain: inputVal.domain,
+          discord: inputVal.discord,
+        }),
+      })
+        .then(() => {
+          fetch(`https://gfgkiit-backend.herokuapp.com/sendmail`, {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              mailId: inputVal.email,
+            }),
+          }).then(() => {
+            localStorage.setItem("gfgreg", "true");
+            setIsLoading(false);
+            window.scroll(0, 0);
+          });
+        })
+        .catch((err) => {
+          console.log(err);
+          setIsLoading(false);
+        });
     }
   };
-
- 
 
   // Checking Is Submit
 
@@ -121,10 +117,7 @@ function Form() {
     }
   }, [isLoading]);
 
-
-
   // Lottie Files for IS Submit
-  
 
   return (
     <>

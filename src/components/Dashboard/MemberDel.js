@@ -53,7 +53,7 @@ import MugdhaHazra from "../../profile/MugdhaHazra.jpeg";
 import Arpit from "../../profile/Arpit.jpg";
 import EditPopup from "./EditPopup";
 import DomainAdd from "./DomainAdd";
-import _fetch from "isomorphic-fetch";
+import fetch from "isomorphic-fetch";
 
 const MemberDel = () => {
   const [count, setCount] = useState(0);

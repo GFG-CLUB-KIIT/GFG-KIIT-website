@@ -1,10 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+// import Link from "next/link"
+import { isAuth, signout } from "../actions/auth";
 import "../css/footer.css";
 import Login from "./Auth/Login";
 function FooterLanding(props) {
   const [isLogin, setIsLogin] = useState(0);
+  const [isAdmin, setIsAdmin] = useState(0);
+  const [firstLoad, setFirstLoad] = useState(1);
 
- 
+  const logOut = async () => {
+
+    try {
+    const response =  await  signout(); 
+      if(response)
+      {
+        alert("Done ")
+      }
+    } catch (error) {
+      
+    }
+  };
+
+  useEffect(() => {
+    if (isAuth()) {
+      setIsAdmin(1);
+    } else {
+      setIsAdmin(0);
+    }
+  }, [firstLoad]);
+
   return (
     <>
       <div>
@@ -111,15 +135,23 @@ function FooterLanding(props) {
                     <br></br>
                   </div>
                   <div class="description2">
-                    <p
-                      class="community strong cursor-pointer hover:text-blue-400 "
-                      onClick={() => {
-                        window.scroll(500,500);
-                        setIsLogin(1);
-                      }}
-                    >
-                      Login as a Admin
-                    </p>
+                    {isAdmin ? (
+                      <a href="/dashboard" >
+                      <p class="community strong cursor-pointer hover:text-blue-400 "   >
+                        Dashboard
+                      </p>
+                      </a>
+                    ) : (
+                      <p
+                        class="community strong cursor-pointer hover:text-blue-400 "
+                        onClick={() => {
+                          window.scroll(500, 500);
+                          setIsLogin(1);
+                        }}
+                      >
+                        Login as a Admin
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>

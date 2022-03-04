@@ -3,17 +3,24 @@ import { api } from "./AccordionAPI";
 import MyAccordion from "./MyAccordion";
 import "./dashboardHome.css";
 import AddEvents from "./AddEvents";
+import fetch from "isomorphic-fetch"
+
 const Accordion = () => {
   const [data, setData] = useState([]);
   const [firstLoad, setFirstLoad] = useState(1);
 
   // fetching Data
-  useEffect( async () => {
-    
-    const data =  await fetch('https://gfgkiit-backend.herokuapp.com/get-all-lists')
-    const parsedData =  await data.json();
-    setData(parsedData)
+  useEffect(async () => {
+    try {
+      const data = await fetch(
+      `https://gfgkiit-backend.herokuapp.com/get-all-lists`
+    );
+    const parsedData = await data.json();
+    setData(parsedData);
     console.log(parsedData);
+    } catch (error) {
+      console.log(error)
+    }
     
   }, [firstLoad]);
   return (
