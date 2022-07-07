@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./SelfAcc.css";
 import { motion } from "framer-motion";
-import Card from "./Card";
 import Part from "./Part";
 import ShashiKiran from '../../profile/ShashiKiran.png';
 import TamoghnoBakshi from '../../profile/TamoghnoBakshi.jpg';
 import AnkitRaj from '../../profile/AnkitRaj.png';
 import SouravDash from '../../profile/SouravDash.png';
-import HimanshuMishra from '../../profile/HimanshuMishra.jpeg';
+import HimanshuMishra from '../../profile/HimanshuMishra.jpg';
 import DevanshShaw from '../../profile/DevanshShaw.png';
 import AshishKumarMishra from '../../profile/AshishKumarMishra.png';
 import AvikRanjan from '../../profile/AvikRanjan.png';
@@ -38,10 +37,7 @@ import Pratyush from '../../profile/Pratyush.jpg';
 import Rupabarna from '../../profile/Rupabarna.jpg';
 import SnehaPriyangi from '../../profile/SnehaPriyangi.jpg';
 import JyotsnaSingh from '../../profile/JyotsnaSingh.jpg';
-import TaranpreetSingh from '../../profile/TaranpreetSinghChabbra.jpg';
 import OmPrakash from '../../profile/OmPrakash.jpg';
-import ShashwatSrijan from '../../profile/ShashwatSrijan.jpeg';
-import AnubhabSwain from '../../profile/AnubhabSwain.jpeg';
 import RimshaAiman from '../../profile/RimshaAiman.png';
 import AbhishekK from '../../profile/AbhishekK.jpg';
 import EshaanAnand from '../../profile/EshaanAnand.jpeg';
@@ -50,6 +46,12 @@ import AmanSingh from '../../profile/AmanSingh.jpg';
 import AnupamKarmarkar from '../../profile/AnupamKarmarkar.jpg';
 import MugdhaHazra from '../../profile/MugdhaHazra.jpeg';
 import Arpit from '../../profile/Arpit.jpg';
+import AditiSinha from '../../profile/AditiSinha.jpeg';
+import AmbrishaVaibhav from '../../profile/AmbrishaVaibhav.jpg';
+import AnirudhSharma from '../../profile/AnirudhSharma.jpeg';
+import AsthaBarwal from '../../profile/AsthaBarwal.jpg';
+import ShivliSingh from '../../profile/ShivliSingh.jpg';
+import VaibhavYadav from '../../profile/VaibhavYadav.jpg';
 
 const SelfAcc = () => {
   const [count, setCount] = useState(0);
@@ -123,11 +125,11 @@ const SelfAcc = () => {
         {allAcc.one ? (
           <motion.div className="details">
             <Part
-              lead="Om Prakash"
-              leadImageUrl={OmPrakash}
+              lead="Himanshu Mishra"
+              leadImageUrl={HimanshuMishra}
               domain="Web Development Lead"
               member={[
-                { name: "Himanshu Mishra", urlImage: HimanshuMishra },
+                { name: "Om Prakash", urlImage: OmPrakash },
                 { name: "Aman Singh", urlImage: AmanSingh },
                 { name: "Ankit Raj", urlImage: AnkitRaj },
                 { name: "Anupam Karmakar", urlImage: AnupamKarmarkar },
@@ -176,8 +178,8 @@ const SelfAcc = () => {
         {allAcc.four ? (
           <motion.div className="details">
             <Part
-              lead="Taranpreet Singh"
-              leadImageUrl={TaranpreetSingh}
+              lead="Vaibhav Yadav"
+              leadImageUrl={VaibhavYadav}
               domain="Android Development lead"
               member={[
                 { name: "Sumit Kumar", urlImage: SumitKumar },
@@ -227,8 +229,8 @@ const SelfAcc = () => {
         {allAcc.three ? (
           <motion.div className="details">
             <Part
-              lead="Shashwat Srijan"
-              leadImageUrl={ShashwatSrijan}
+              lead="Astha Barwal"
+              leadImageUrl={AsthaBarwal}
               domain="UI-UX lead"
               member={[
                 { name: "Arpit Sahu", urlImage: Arpit },
@@ -277,8 +279,8 @@ const SelfAcc = () => {
         {allAcc.two ? (
           <motion.div className="details">
             <Part
-              lead="Anubhab Swain"
-              leadImageUrl={AnubhabSwain}
+              lead="Anirudh Sharma"
+              leadImageUrl={AnirudhSharma}
               domain="Competitive Programming Lead"
               member={[
                 { name: "Abhinav Deep", urlImage: AbhinavDeep },
@@ -337,8 +339,8 @@ const SelfAcc = () => {
         {allAcc.five ? (
           <motion.div className="details">
             <Part
-              lead="Jyotsna Singh "
-              leadImageUrl={JyotsnaSingh}
+              lead="Ambrisha Vaibhav"
+              leadImageUrl={AmbrishaVaibhav}
               domain="Content Writer Lead"
               member={[
                 { name: "Abir Mishra", urlImage: AbirMishra },
@@ -386,8 +388,8 @@ const SelfAcc = () => {
         {allAcc.six ? (
           <motion.div className="details">
             <Part
-              lead="Sneha Priyangi"
-              leadImageUrl={SnehaPriyangi}
+              lead="Shivli Singh"
+              leadImageUrl={ShivliSingh}
               domain="Marketing Lead"
               member={[
                 { name: "Pratyush ", urlImage: Pratyush },
@@ -433,8 +435,8 @@ const SelfAcc = () => {
         {allAcc.seven ? (
           <motion.div className="details">
             <Part
-              lead="Nittishna"
-              leadImageUrl={NittishnaDhar}
+              lead="Aditi Sinha"
+              leadImageUrl={AditiSinha}
               domain="Women-in-tech Lead"
               member={[
                 { name: "Asmita Hobisyachi", urlImage: AsmitaHobisyashi },
