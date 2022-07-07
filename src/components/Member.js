@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import NittishnaDhar from '../profile/NittishnaDhar.jpeg';
-import RimshaAiman from '../profile/RimshaAiman.png';
-import adityaDas from '../profile/AdityaDas.png';
+import AvishiktaMajumder from '../profile/AvishiktaMajumder.jpg'
+import ShivliSingh from '../profile/ShivliSingh.jpg'
 
 import Background from './Background';
 import Footer from './Footer';
@@ -29,40 +28,40 @@ class AboutUs extends Component {
                         <div className="aboutUs_slogan">Small team with millions <br /> of creativity</div>
                         <div className="head_members">
                             <div className="head_member_card">
-                                <div className="head_member_photo" style={{ backgroundImage: `url(${NittishnaDhar})` }}>
+                                <div className="head_member_photo" style={{ backgroundImage: `url(${AvishiktaMajumder})` }}>
                                     <div className="overlay">
                                         <div className="flex-container">
-                                            <a href="https://www.linkedin.com/in/nittishna-dhar-9952831b9/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                            <a href="https://github.com/krishmurarka" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                            <a href="https://www.instagram.com/krish_murarka/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                            <a href="https://twitter.com/MurarkaKrish" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                            <a href="https://www.linkedin.com/in/iamavishikta/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="head_member_about">
-                                    <div className="head_member_name">Nittishna Dhar</div>
+                                    <div className="head_member_name">Avishikta Majumder</div>
                                     <div className="head_member_desg">President</div>
                                     <div className="head_member_words">
-                                        Nittishna Dhar is the Campus President of GeeksforGeeks - KIIT. She is a Computer Science Engineering undergrad. She is also a Google WE'21 scholar and a runner-up in the MLSA Greenhack competition. She spends her free time singing and playing the guitar. She is continually seeking ways to improve herself and advocates for gender equality in the tech business.
+                                        Avishikta Majumder is the Campus President of GeeksforGeeks - KIIT. She is a Computer Science Engineering undergrad. She is also a Google WE'21 scholar and a runner-up in the MLSA Greenhack competition. She spends her free time singing and playing the guitar. She is continually seeking ways to improve herself and advocates for gender equality in the tech business.
                                     </div>
                                 </div>
                             </div>
                             <div className="head_member_card">
-                                <div className="head_member_photo photo_abhinav" style={{ backgroundImage: `url(${RimshaAiman})` }}>
+                                <div className="head_member_photo photo_abhinav" style={{ backgroundImage: `url(${ShivliSingh})` }}>
                                     <div className="overlay">
                                         <div className="flex-container">
                                             <a href="https://www.linkedin.com/in/rimsha-aiman-926b481b5/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                                            <a href="https://github.com/abhinavprkash" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                            <a href="https://www.instagram.com/_abhinavprkash_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                                            <a href="https://twitter.com/abhinaprkash" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="inverse_aboutus_abhinav">
-                                    <div className="head_member_name">Rimsha Aiman</div>
+                                    <div className="head_member_name">Shivli Singh</div>
                                     <div className="head_member_desg">Secretary</div>
                                     <div className="head_member_words">
-                                        Rimsha Aiman is the secretory of GeeksforGeeks-KIIT.  She is currently pursuing her bachelor's in Computer Science.  Machine learning is something she is passionate about and would choose ML models over Victoria's secrets anyday.
+                                        Shivvli Singh is the secretory of GeeksforGeeks-KIIT.  She is currently pursuing her bachelor's in Computer Science.  Machine learning is something she is passionate about and would choose ML models over Victoria's secrets anyday.
                                     </div>
                                 </div>
                             </div>
