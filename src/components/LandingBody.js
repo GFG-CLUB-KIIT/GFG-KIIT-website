@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 import upcomingEvent from "../img/upcomingEvent.jpg";
 import recruitment from "../img/recruitment.png";
+import Kubekon from '../img/kubecon.jfif'
 import fetch from "isomorphic-fetch";
 
 const LandingBody = () => {
@@ -56,27 +57,25 @@ const LandingBody = () => {
 
       {/* Recruitment Page */}
 
-      <h1 id="upcomingEvent">Recruitment</h1>
-            <div id="landing_line_Event"></div>
-            <div id="event">
-              <div id="event_img">
-                <img src={recruitment}/>
-              </div>
-              <div id="event_context">
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSe4Hb0tL_S160EucKcQ4KBfA1CUpO7U9J1jKcoBvM_Dd3Stqw/viewform"
-                  id="register_button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Register Now
-                </a>
+      <h1 id="upcomingEvent" className='text-sky-500'>KubeKon</h1>
+      <div id="landing_line_Event"></div>
+      <div id="event">
+        <div id="event_img" className="mb-2">
+          <img src={Kubekon} />
+        </div>
+        <div id="event_context">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe1CHb1TWOUKAAXD60n9lTO4J5UQwT2lSKBRIUOa7YRbjp2Tw/viewform"
+            id="register_button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Register Now
+          </a>
+          {/* <a href="/RegistrationForm" id="watch_now_button">Watch Now</a> */}
+        </div>
+      </div>
 
-                {/* <a href="/RegistrationForm" id="watch_now_button">Watch Now</a> */}
-              </div>
-             
-            </div>
-      
 
       {/* \createdAt: "2022-02-04T16:54:26.367Z"
 image: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
@@ -104,7 +103,7 @@ title: "Upcoming Events" */}
 
                 {/* <a href="/RegistrationForm" id="watch_now_button">Watch Now</a> */}
               </div>
-             
+
             </div>
           </>
         );

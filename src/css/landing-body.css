@@ -57,6 +57,7 @@
 
 /*EVENT*/
 #upcomingEvent {
+  color: rgb(59 130 246);
   margin-left: 8%;
   width: 26%;
   margin-bottom: 10px;
@@ -67,8 +68,8 @@
   position: relative;
   float: left;
 }
-#recruitment
-{
+
+#recruitment {
   margin-left: 8%;
   width: 26%;
   margin-bottom: 10px;
@@ -79,10 +80,10 @@
   position: relative;
   float: left;
 }
-#recruitment_img
-{
+
+#recruitment_img {
   cursor: pointer;
-  
+
 }
 
 #landing_line_Event {
@@ -117,16 +118,23 @@
 }
 
 #event {
-  float: left;
   width: 90%;
-  margin-left: 5%;
-  overflow-x: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #event_img {
-  padding: 3% 0% 5% 4%;
-  float: left;
-  width: 80%;
+  width: 50%;
+  overflow: hidden;
+}
+
+#event_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #event_img_display {
@@ -326,7 +334,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.invitation-code{
+
+.invitation-code {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -367,8 +376,7 @@
   }
 
   #upcomingEvent,
-  #landing_intro_title
-  #recruitment {
+  #landing_intro_title #recruitment {
     width: 100%;
   }
 
@@ -376,18 +384,17 @@
     margin-left: 25%;
   }
 
-  #upcomingEvent
-  {
+  #upcomingEvent {
     margin-left: 12%;
     font-size: 30px;
     padding-left: 13%;
   }
-   #recruitment
-   {
+
+  #recruitment {
     margin-left: 12%;
     font-size: 30px;
     padding-left: 13%;
-   }
+  }
 
   #event_title {
     margin-top: 15px;
@@ -585,7 +592,7 @@
     font-size: 38px;
   }
 
-  #upcomingEvent #recruitment{
+  #upcomingEvent #recruitment {
     margin-left: 0.5%;
   }
 

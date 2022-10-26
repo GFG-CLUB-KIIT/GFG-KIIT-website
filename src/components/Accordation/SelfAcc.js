@@ -53,6 +53,8 @@ import AsthaBarwal from '../../profile/AsthaBarwal.jpg';
 import ShivliSingh from '../../profile/ShivliSingh.jpg';
 import VaibhavYadav from '../../profile/VaibhavYadav.jpg';
 
+import { images } from '../../constants/images'
+
 const SelfAcc = () => {
   const [count, setCount] = useState(0);
   const [allAcc, setAllAcc] = useState({
@@ -179,7 +181,7 @@ const SelfAcc = () => {
           <motion.div className="details">
             <Part
               lead="Vaibhav Yadav"
-              leadImageUrl={VaibhavYadav}
+              leadImageUrl={images.VaibhavYadav}
               domain="Android Development lead"
               member={[
                 { name: "Sumit Kumar", urlImage: SumitKumar },
